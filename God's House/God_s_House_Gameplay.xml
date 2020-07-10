@@ -5,29 +5,14 @@
 	<Types>
 		<Row Type="BUILDING_GODS_HOUSE" Kind="KIND_BUILDING" />
 	</Types>
-
 	<!-- Define the building here. For examples of additional properties and values, look at Buildings.xml in /Base/Assets/Gameplay/Data/-->
 	<Buildings>
 		<Row BuildingType="BUILDING_GODS_HOUSE" Name="LOC_BUILDING_GODS_HOUSE" PrereqDistrict="DISTRICT_CITY_CENTER" PurchaseYield="YIELD_FAITH" Cost="10" AdvisorType="ADVISOR_GENERIC" />
 	</Buildings>
 	<Building_YieldChanges>
-		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_CULTURE" YieldChange="1"/>
 		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_FAITH" YieldChange="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_FOOD" YieldChange="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_GOLD" YieldChange="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_SCIENCE" YieldChange="1"/>
 	</Building_YieldChanges>
 	<Building_GreatPersonPoints>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_ADMIRAL" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_WRITER" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_MUSICIAN" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT" PointsPerTurn="1"/>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST" PointsPerTurn="1"/>
 	</Building_GreatPersonPoints>
 	<Building_GreatWorks>
 		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_PALACE" NumSlots="10" />
@@ -108,6 +93,7 @@
 			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
 			<RunOnce>true</RunOnce>
 			<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
 		</Row>
 		<!--Multiply Treasury-->
 		<Row>
@@ -115,6 +101,7 @@
 			<ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
 			<RunOnce>true</RunOnce>
 			<Permanent>true</Permanent>
+			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
@@ -122,25 +109,25 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
 			<Name>Amount</Name>
-			<Value>3</Value>
+			<Value>100</Value>
 		</Row>
 		<!--Adjust Charges-->
 		<Row>
 			<ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
 			<Name>Amount</Name>
-			<Value>5</Value>
+			<Value>20</Value>
 		</Row>
 		<!--Adjust City Appeal-->
 		<Row>
 			<ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
 			<Name>Amount</Name>
-			<Value>10</Value>
+			<Value>100</Value>
 		</Row>
 		<!--Adjust City Growth-->
 		<Row>
 			<ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
 			<Name>Amount</Name>
-			<Value>50</Value>
+			<Value>100</Value>
 		</Row>
 		<!--Adjust City Trade Route Capacity-->
 		<Row>
@@ -152,7 +139,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_GOLD</ModifierId>
 			<Name>Amount</Name>
-			<Value>25000</Value>
+			<Value>50000</Value>
 		</Row>
 		<Row>
 			<ModifierId>GODS_HOUSE_GOLD</ModifierId>
@@ -162,7 +149,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_FAITH</ModifierId>
 			<Name>Amount</Name>
-			<Value>25000</Value>
+			<Value>50000</Value>
 		</Row>
 		<Row>
 			<ModifierId>GODS_HOUSE_FAITH</ModifierId>
@@ -172,7 +159,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_CULTURE</ModifierId>
 			<Name>Amount</Name>
-			<Value>25000</Value>
+			<Value>50000</Value>
 		</Row>
 		<Row>
 			<ModifierId>GODS_HOUSE_CULTURE</ModifierId>
@@ -182,7 +169,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
 			<Name>Amount</Name>
-			<Value>25000</Value>
+			<Value>50000</Value>
 		</Row>
 		<Row>
 			<ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
@@ -192,7 +179,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_FOOD</ModifierId>
 			<Name>Amount</Name>
-			<Value>25000</Value>
+			<Value>50000</Value>
 		</Row>
 		<Row>
 			<ModifierId>GODS_HOUSE_FOOD</ModifierId>
@@ -202,7 +189,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
 			<Name>Amount</Name>
-			<Value>25000</Value>
+			<Value>50000</Value>
 		</Row>
 		<Row>
 			<ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
@@ -224,7 +211,7 @@
 		<Row>
 			<ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
 			<Name>Amount</Name>
-			<Value>100</Value>
+			<Value>200</Value>
 		</Row>
 	</ModifierArguments>
 	<BuildingModifiers>
