@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gods_House_Icons -->
+<!-- Author: mrlonis -->
+<!-- DateCreated: 07/11/2020 -->
+<!-- Last Modified By: mrlonis -->
+<!-- Last Modified On: 07/12/2020 -->
+<GameData>
+	<!-- For simplicity, reuse an existing icon. -->
+	<IconDefinitions>
+		<Row Name="ICON_BUILDING_GODS_HOUSE" Atlas="ICON_ATLAS_BUILDINGS" Index="26"/>
+	</IconDefinitions>
+</GameData>

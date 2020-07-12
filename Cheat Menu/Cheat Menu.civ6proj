@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Advanced Cheat Menu</Name>
+    <Guid>22715362-7109-4220-a753-ed2757063945</Guid>
+    <ProjectGuid>af423f95-1397-4d6a-86c3-036947549e8f</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds A Menu With Selected Cheat Options For InGame.</Teaser>
+    <Description>Adds A Menu With Selected Cheat Options For InGame.[NEWLINE][NEWLINE][NEWLINE]Add +1000 [ICON_Faith][NEWLINE]Add +1000 [ICON_Gold][NEWLINE]Complete Production in Selected City[NEWLINE]Complete Current Reaserching Civic[NEWLINE]Complete Current Reaserching Tech[NEWLINE]Add +5 Envoy[NEWLINE]Add +10 Era Points[NEWLINE]Add +1 Governor Title Point[NEWLINE]Restore Selected Unit Movement + Attack[NEWLINE]Restore Selected Unit Health[NEWLINE]Give +1 Promotion to Selected Unit[NEWLINE]Add +5  Movement to Selected Unit[NEWLINE]Duplicate Selected Unit (NOT for Great Persons and Religious Units)[NEWLINE]Add +1 Population to Selected City[NEWLINE]Add FULL Loyalty to Selected City [NEWLINE]Complete All Tech Research[NEWLINE]Complete All Civic Research[NEWLINE]Raze Selected City[NEWLINE]Toggle Map Observer&lt;/en_US&gt;
+			&lt;it_IT&gt;Aggiunge un menu con le opzioni cheat selezionate per InGame.[NEWLINE][NEWLINE][NEWLINE]Add +1000 [ICON_Faith][NEWLINE]Add +1000 [ICON_Gold][NEWLINE]Complete Production in Selected City[NEWLINE]Complete Current Reaserching Civic[NEWLINE]Complete Current Reaserching Tech[NEWLINE]Add +5 Envoy[NEWLINE]Add +10 Era Points[NEWLINE]Add +1 Governor Title Point[NEWLINE]Restore Selected Unit Movement + Attack[NEWLINE]Restore Selected Unit Health[NEWLINE]Give +1 Promotion to Selected Unit[NEWLINE]Add +5  Movement to Selected Unit[NEWLINE]Duplicate Selected Unit (NOT for Great Persons and Religious Units)[NEWLINE]Add +1 Population to Selected City[NEWLINE]Add FULL Loyalty to Selected City [NEWLINE]Complete All Tech Research[NEWLINE]Complete All Civic Research[NEWLINE]Raze Selected City[NEWLINE]Toggle Map Observer</Description>
+    <Authors>mrlonis</Authors>
+    <SpecialThanks>Sparrow</SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>false</SupportsMultiplayer>
+    <SupportsHotSeat>false</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Cheat Menu</AssemblyName>
+    <RootNamespace>Cheat Menu</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="CheatPanel_Keybind_Options"><File>Text/Input_Config.xml</File></UpdateDatabase><UpdateText id="CheatPanel_Text_FrontEnd"><File>Text/Options_Text.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><AddGameplayScripts id="CheatPanel_Scripts"><Properties><LoadOrder>900</LoadOrder></Properties><File>Script/Cheat_Menu_Script.lua</File></AddGameplayScripts><AddUserInterfaces id="CheatPanel_UI"><Properties><Context>InGame</Context><LoadOrder>900</LoadOrder></Properties><File>Popups/Raze_City_Reminder_Popup.xml</File><File>Panels/Cheat_Menu_World_Tracker.xml</File></AddUserInterfaces><ImportFiles id="CheatPanel_Import"><Properties><LoadOrder>900</LoadOrder></Properties><File>Script/Cheat_Menu_Script.lua</File><File>Popups/Raze_City_Reminder_Popup.lua</File><File>Panels/Cheat_Menu_World_Tracker.lua</File><File>Panels/Cheat_Menu_Functions.lua</File></ImportFiles><UpdateText id="CheatPanel_Text"><File>Text/Options_Text.xml</File><File>Text/Localisation.sql</File></UpdateText></InGameActions>]]></InGameActionData>
+    <ModProperties>
+      <CustomProperties xmlns="" />
+    </ModProperties>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Cheat_Menu.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Text" />
+    <Folder Include="Script" />
+    <Folder Include="Popups" />
+    <Folder Include="Panels" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Panels\Cheat_Menu_Functions.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Panels\Cheat_Menu_World_Tracker.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Panels\Cheat_Menu_World_Tracker.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Popups\Raze_City_Reminder_Popup.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Popups\Raze_City_Reminder_Popup.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Script\Cheat_Menu_Script.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Input_Config.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\Options_Text.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
