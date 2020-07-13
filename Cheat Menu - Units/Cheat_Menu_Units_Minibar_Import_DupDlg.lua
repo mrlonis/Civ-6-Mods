@@ -11,6 +11,7 @@ function HideDup()
         --Controls.GUI_Cheat_Menu_Units_SpawnDlg_CollapseAnim:SetToBeginning();
         --Controls.GUI_Cheat_Menu_Units_SpawnDlg_CollapseAnim:Play();
     end
+
     Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:SetHide( true );
 
     UILens.ClearLayerHexes( UILens.CreateLensLayerHash("Movement_Path") );
@@ -35,6 +36,7 @@ function ShowDup()
         Controls.GUI_Cheat_Menu_Units_SpawnDlg_ExpandAnim:SetToEnd();
         Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:SetHide( false );
     end
+
     RefreshDlg();
 
     FixUiMode();
@@ -55,6 +57,7 @@ function OnDlgOK()
 
     if targetPlotId ~= nil then 
         local plot = Map.GetPlotByIndex(targetPlotId);
+
         if plot ~= nil then
             x = plot:GetX();
             y = plot:GetY();
@@ -62,21 +65,25 @@ function OnDlgOK()
     end
 
     local pSelectedUnit = UI.GetHeadSelectedUnit();
+
     if ( pSelectedUnit ~= nil ) then
         -- local units = Players[selPlayerId]:GetUnits();
         -- local unit = units:FindID(selUnitId);
-            
         local unit = nil;
+
         if UnitManager then 
             unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
         end
+
         if unit and Players[selPlayerId]:IsHuman() then
             local unitType	:string = GameInfo.Units[unit:GetUnitType()].UnitType;
             local pRelig = nil;
+
             if Players[selPlayerId]:GetReligion() ~= nil and Players[selPlayerId]:GetReligion():GetReligionTypeCreated() ~= -1 then
                 pRelig = Players[selPlayerId]:GetReligion():GetReligionTypeCreated();
                 print( " DuplicateUnit player religion type created: ", pRelig );
             end
+
             ExposedMembers.MOD_Cheat_Menu_Units.OnDuplicate(selPlayerId, selUnitId, unitType, targetPlayerId, targetUnitType, targetPlotId, x, y, unit:GetUnitType(), Controls.GUI_Cheat_Menu_Units_ValidLoc:IsChecked(), targetUnitCnt, pRelig );
         end
     end
@@ -105,8 +112,8 @@ end
 --******************************************************************************
 -- Populate Combo Box (Pull Down)
 function PopulateComboBox(control, values, selected_value, selection_handler)
-
     control:ClearEntries();
+
     for i, v in ipairs(values) do
         local instance = {};
         control:BuildEntry( "InstanceOne", instance );
@@ -120,6 +127,7 @@ function PopulateComboBox(control, values, selected_value, selection_handler)
             --button:SetSizeX(control:GetSizeX()-30);	
         end
     end
+
     control:CalculateInternals();	
 
     if(selection_handler) then
@@ -136,7 +144,6 @@ function PopulateComboBox(control, values, selected_value, selection_handler)
             end
         );
     end
-        
 end
 
 --******************************************************************************
@@ -201,10 +208,8 @@ end
 --	RETURN 2: iconShadowInfo - table containing textureSheetShadow, textureOffsetShadowX, and textureOffsetShadowY
 -- ===========================================================================
 function GetUnitIcon( unitInfo:table, iconSize:number )	
-    
     local iconInfo:table = {};
     if unitInfo then
-
         local unitIcon:string = nil;
 
         --local individual:number = pUnit:GetGreatPerson():GetIndividual();
@@ -227,6 +232,7 @@ function GetUnitIcon( unitInfo:table, iconSize:number )
             iconInfo.textureOffsetX, iconInfo.textureOffsetY, iconInfo.textureSheet = IconManager:FindIconAtlas("ICON_UNIT_UNKNOWN", iconSize);		--If not, resolve the index to be a generic unknown index
         end
     end
+
     return iconInfo;
 end
 
@@ -300,7 +306,7 @@ end
  --Cheat_Menu_Units_Minibar: CanTrain	true
 
  --******************************************************************************
- local function OnUnitTypeSelected(voidValue1, voidValue2, control)
+local function OnUnitTypeSelected(voidValue1, voidValue2, control)
     --print("OnUnitTypeSelected: ", voidValue1, voidValue2, control);
     --if voidValue1 ~= 0 and voidValue2 ~= 0 then
         --local button = Controls.GUI_Cheat_Menu_Units_UnitsPD:GetButton();
@@ -313,11 +319,12 @@ end
         
         -- Update unit icon
         local iconInfo:table, iconShadowInfo:table = GetUnitIcon(unitInfo, 22, true);
+
         if iconInfo.textureSheet then
             Controls.UnitTypeIcon1:SetTexture( iconInfo.textureOffsetX, iconInfo.textureOffsetY, iconInfo.textureSheet );
         end
     --end
- end
+end
 
  --******************************************************************************
 RefreshUnitListPopup = function()
@@ -364,6 +371,7 @@ RefreshUnitListPopup = function()
         local bType:string = b.UnitType;
         return aType < bType;
     end
+
     table.sort(militaryUnits, sortFunc);
     table.sort(navalUnits, sortFunc);
     table.sort(aAirUnits, sortFunc);
@@ -388,6 +396,7 @@ end
 function AddUnitToUnitList(unitInfo:table)
     local unitIndex = nil;
     local pSelectedUnit = UI.GetHeadSelectedUnit();
+
     if ( pSelectedUnit ~= nil ) then
         -- local units = Players[selPlayerId]:GetUnits();
         -- local unit = units:FindID(selUnitId);
@@ -396,6 +405,7 @@ function AddUnitToUnitList(unitInfo:table)
         if UnitManager then 
             unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
         end
+        
         if unit and Players[selPlayerId]:IsHuman() then
             FixUiMode();
             unitIndex = GameInfo.Units[unit:GetUnitType()].Index;
