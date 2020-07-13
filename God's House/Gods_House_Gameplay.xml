@@ -24,8 +24,6 @@
              YieldType="YIELD_FAITH"
              YieldChange="1"/>
     </Building_YieldChanges>
-    <Building_GreatPersonPoints>
-    </Building_GreatPersonPoints>
     <Building_GreatWorks>
         <Row BuildingType="BUILDING_GODS_HOUSE"
              GreatWorkSlotType="GREATWORKSLOT_PALACE"
