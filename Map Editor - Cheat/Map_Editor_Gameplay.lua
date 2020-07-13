@@ -25,6 +25,7 @@ local function IsXP2()
         --print("Expansion 2 detected");
         return true;
     end
+
     --print("Expansion 1/none detected");
     return false;
 end
@@ -33,6 +34,7 @@ end
 local function popTerTypeToIdx()
     if terTypeToIdx == nil then
         terTypeToIdx = {};
+
         for type in GameInfo.Terrains() do
             terTypeToIdx[type.TerrainType] = type.Index;
         end
@@ -43,6 +45,7 @@ end
 local function popFeaTypeToIdx()
     if feaTypeToIdx == nil then
         feaTypeToIdx = {};
+
         for type in GameInfo.Features() do
             feaTypeToIdx[type.FeatureType] = type.Index;
         end
@@ -53,6 +56,7 @@ end
 local function popResTypeToIdx()
     if resTypeToIdx == nil then
         resTypeToIdx = {};
+
         for type in GameInfo.Resources() do
             resTypeToIdx[type.ResourceType] = type.Index;
         end
@@ -63,6 +67,7 @@ end
 local function popImpTypeToIdx()
     if impTypeToIdx == nil then
         impTypeToIdx = {};
+
         for type in GameInfo.Improvements() do
             impTypeToIdx[type.ImprovementType] = type.Index;
         end
@@ -98,11 +103,13 @@ local function isImprovementChangeAllowed(plotId, terType, feaType, resType, imp
     local res = true;
     local logPrefix = logPrefixParam;
     local logPrefixN;
+
     if logPrefix == nil then
         logPrefix = "";
     else 
         logPrefix = logPrefix .. "";
     end
+
     logPrefixN = logPrefix .. "   ";
     logPrefix = logPrefix .. "isImprovementChangeAllowed( )\t\t";
     print( logPrefix, " Start" );
@@ -141,6 +148,7 @@ local function isImprovementChangeAllowed(plotId, terType, feaType, resType, imp
             if res and impType ~= -1 and impType ~= nil and ( not plot:IsOwned() ) then
                 local impDesc = GameInfo.Improvements[impType];
                 local iType = impDesc.ImprovementType;
+
                 if not impDesc.CanBuildOutsideTerritory and iType ~= "IMPROVEMENT_BARBARIAN_CAMP" and iType ~= "IMPROVEMENT_GOODY_HUT" then
                     logReason = " DENIED. Selected improvement can only be placed on owned tile. ";
                     locReason = "LOC_MAP_EDITOR_VALID_DENY_OWNED_TILE" ;
@@ -149,23 +157,26 @@ local function isImprovementChangeAllowed(plotId, terType, feaType, resType, imp
             end
 
             if impType ~= nil and impType ~= -1 then
-
                 local ter = nil;
+
                 if terType ~= nil and terType ~= -1 then
                     ter = GameInfo.Terrains[terType];
                 end
 
                 local fea = nil;
+
                 if feaType ~= nil and feaType ~= -1 then
                     fea = GameInfo.Features[feaType];
                 end
 
                 local rest = nil;
+
                 if resType ~= nil and resType ~= -1 then
                     rest = GameInfo.Resources[resType];
                 end
 
                 local imp = nil;
+
                 if impType ~= nil and impType ~= -1 then
                     imp = GameInfo.Improvements[impType];
                 end
@@ -183,6 +194,7 @@ local function isImprovementChangeAllowed(plotId, terType, feaType, resType, imp
                         res = false;
                     end
                 end
+
                 if res and IsDbTableContainsAny( GameInfo.Improvement_ValidFeatures(), "ImprovementType", imp.ImprovementType ) then
                     if fea ~= nil and ( not IsDbTableContains( GameInfo.Improvement_ValidFeatures(), "ImprovementType", imp.ImprovementType, "FeatureType", fea.FeatureType ) ) then
                         logReason = " DENIED. Invalid feature under improvement.";
@@ -190,6 +202,7 @@ local function isImprovementChangeAllowed(plotId, terType, feaType, resType, imp
                         res = false;
                     end
                 end
+
                 if res and IsDbTableContainsAny( GameInfo.Improvement_ValidResources(), "ImprovementType", imp.ImprovementType ) then
                     if rest ~= nil and ( not IsDbTableContains( GameInfo.Improvement_ValidResources(), "ImprovementType", imp.ImprovementType, "ResourceType", rest.ResourceType ) ) then
                         logReason = " DENIED. Invalid resource under improvement.";
@@ -209,9 +222,11 @@ local function isImprovementChangeAllowed(plotId, terType, feaType, resType, imp
     end
     
     local logPrefixNL = "";
+
     if logReason ~= nil and logReason ~= "" then
         logPrefixNL = "\n" .. "                         " .. logReason;
     end
+
     print( logPrefix, " End  ", plotId, terType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv, logPrefixNL );
     return res, locReason;
 end
@@ -221,11 +236,13 @@ local function isResourceChangeAllowed(plotId, terType, feaType, resType, impTyp
     local res = true;
     local logPrefix = logPrefixParam;
     local logPrefixN;
+
     if logPrefix == nil then
         logPrefix = "";
     else 
         logPrefix = logPrefix .. "";
     end
+
     logPrefixN = logPrefix .. "   ";
     logPrefix = logPrefix .. "isResourceChangeAllowed( )    \t\t";
     print( logPrefix, " Start" );
@@ -262,23 +279,26 @@ local function isResourceChangeAllowed(plotId, terType, feaType, resType, impTyp
 
         if res and isSafeBase then
             if resType ~= nil and resType ~= -1 then
-
                 local ter = nil;
+
                 if terType ~= nil and terType ~= -1 then
                     ter = GameInfo.Terrains[terType];
                 end
 
                 local fea = nil;
+
                 if feaType ~= nil and feaType ~= -1 then
                     fea = GameInfo.Features[feaType];
                 end
 
                 local rest = nil;
+
                 if resType ~= nil and resType ~= -1 then
                     rest = GameInfo.Resources[resType];
                 end
 
                 local imp = nil;
+
                 if impType ~= nil and impType ~= -1 then
                     imp = GameInfo.Improvements[impType];
                 end
@@ -313,6 +333,7 @@ local function isResourceChangeAllowed(plotId, terType, feaType, resType, impTyp
                         res = false;
                     end
                 end
+
                 if IsDbTableContainsAny( GameInfo.Resource_ValidFeatures(), "ResourceType", rest.ResourceType ) then
                     if res and fea ~= nil and ( not IsDbTableContains( GameInfo.Resource_ValidFeatures(), "ResourceType", rest.ResourceType, "FeatureType", fea.FeatureType ) ) then
                         logReason = " DENIED. Invalid feature under resource.";
@@ -343,7 +364,6 @@ local function isResourceChangeAllowed(plotId, terType, feaType, resType, impTyp
                     --end
                 --end
             elseif resType == -1 then
-
                 if res and ( impType == nil or not isImprovementChangeAllowed(plotId, terType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv, logPrefixN) ) then
                     -- deny change resource under any existing unchanged improvement or if improvement change denied and there is existing improvement
                     if plot:GetImprovementType() ~= -1 then
@@ -360,9 +380,11 @@ local function isResourceChangeAllowed(plotId, terType, feaType, resType, impTyp
     end
     
     local logPrefixNL = "";
+
     if logReason ~= nil and logReason ~= "" then
         logPrefixNL = "\n" .. "                         " .. logReason;
     end
+
     print( logPrefix, " End  ", plotId, terType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv, logPrefixNL );
     return res, locReason;
 end
@@ -373,11 +395,13 @@ local function isFeatureChangeAllowed(plotId, terType, feaType, resType, impType
     local res = true;
     local logPrefix = logPrefixParam;
     local logPrefixN;
+
     if logPrefix == nil then
         logPrefix = "";
     else 
         logPrefix = logPrefix .. "";
     end
+
     logPrefixN = logPrefix .. "   ";
     logPrefix = logPrefix .. "isFeatureChangeAllowed( )    \t\t";
     print( logPrefix, " Start" );
@@ -417,16 +441,19 @@ local function isFeatureChangeAllowed(plotId, terType, feaType, resType, impType
             if feaType ~= nil then
                 local feaDesc = GameInfo.Features[feaType];
                 local feaTiles = 1;
+
                 if feaDesc ~= nil then
                     feaTiles = feaDesc.Tiles;
                 end
+
                 if feaTiles > 1 then
                     local aPlots = {};
+
                     if (ExposedMembers.MOD_Map_Editor.CustomGetMultiTileFeaturePlotList(plot, feaType, aPlots)) then
                         for aPlotIdx in pairs(aPlots) do
                             local aPlot = Map.GetPlotByIndex(aPlotIdx);
+
                             if res and aPlot ~= nil then
-            
                                 if res and plot:IsCity() then
                                     logReason = " DENIED. Changes under city center are not allowed (multi tile natural wonder)." ;
                                     locReason = "LOC_MAP_EDITOR_VALID_FEA_DENY_CITYCENTR" ;
@@ -451,23 +478,26 @@ local function isFeatureChangeAllowed(plotId, terType, feaType, resType, impType
             end
 
             if feaType ~= nil and feaType ~= -1 then
-
                 local ter = nil;
+
                 if terType ~= nil and terType ~= -1 then
                     ter = GameInfo.Terrains[terType];
                 end
 
                 local fea = nil;
+
                 if feaType ~= nil and feaType ~= -1 then
                     fea = GameInfo.Features[feaType];
                 end
 
                 local rest = nil;
+
                 if resType ~= nil and resType ~= -1 then
                     rest = GameInfo.Resources[resType];
                 end
 
                 local imp = nil;
+
                 if impType ~= nil and impType ~= -1 then
                     imp = GameInfo.Improvements[impType];
                 end
@@ -505,9 +535,9 @@ local function isFeatureChangeAllowed(plotId, terType, feaType, resType, impType
                     end
                 end
             elseif feaType == -1 then
-            
                 local feaC = nil;
                 local feaTypeC = plot:GetFeatureType();
+
                 if feaTypeC ~= nil and feaTypeC ~= -1 then
                     feaC = GameInfo.Features[feaTypeC];
                 end
@@ -545,9 +575,11 @@ local function isFeatureChangeAllowed(plotId, terType, feaType, resType, impType
     end
     
     local logPrefixNL = "";
+
     if logReason ~= nil and logReason ~= "" then
         logPrefixNL = "\n" .. "                         " .. logReason;
     end
+
     print( logPrefix, " End  ", plotId, terType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv, logPrefixNL );
     return res, locReason;
 end
@@ -557,11 +589,13 @@ local function isTerrainChangeAllowed(plotId, terType, feaType, resType, impType
     local res = true;
     local logPrefix = logPrefixParam;
     local logPrefixN;
+
     if logPrefix == nil then
         logPrefix = "";
     else 
         logPrefix = logPrefix .. "";
     end
+
     logPrefixN = logPrefix .. "   ";
     logPrefix = logPrefix .. "isTerrainChangeAllowed( )    \t\t";
     print( logPrefix, " Start" );
@@ -609,7 +643,6 @@ local function isTerrainChangeAllowed(plotId, terType, feaType, resType, impType
         end
 
         if isSafeBase or isSafeAdv then
-            
             if res and plot:IsCity() then
                 logReason = " DENIED. Changes under city center are not allowed." ;
                 locReason = "LOC_MAP_EDITOR_VALID_DENY_CITYCENTR" ;
@@ -659,16 +692,17 @@ local function isTerrainChangeAllowed(plotId, terType, feaType, resType, impType
                     res = false;
                 end
             end
-
         end
-
     end
     
     local logPrefixNL = "";
+
     if logReason ~= nil and logReason ~= "" then
         logPrefixNL = "\n" .. "                         " .. logReason;
     end
+
     print( logPrefix, " End  ", plotId, terType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv, logPrefixNL );
+
     return res, locReason;
 end
 
@@ -687,6 +721,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
 
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then 
             --if owner ~= nil and owner ~= plot:GetOwner() then
             --	plot:SetOwner( owner ); -- function expected instead of nil
@@ -697,6 +732,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             local isTerChangeAllowed;
             isTerChangeAllowed, terReason = isTerrainChangeAllowed(plotId, terType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv);
             local resTerType = terType;
+
             if not isTerChangeAllowed  or terType == nil then
                 resTerType = plot:GetTerrainType();
             end
@@ -704,6 +740,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             local isFeaChangeAllowed;
             isFeaChangeAllowed, feaReason = isFeatureChangeAllowed(plotId, resTerType, feaType, resType, impType, routeType, isSafeBase, isSafeAdv);
             local resFeaType = feaType;
+
             if not isFeaChangeAllowed or feaType == nil then
                 resFeaType = plot:GetFeatureType();
             end
@@ -711,6 +748,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             local isResChangeAllowed;
             isResChangeAllowed, resReason = isResourceChangeAllowed(plotId, resTerType, resFeaType, resType, impType, routeType, isSafeBase, isSafeAdv);
             local resResType = resType;
+
             if not isResChangeAllowed  or resType == nil then
                 resResType = plot:GetResourceType();
             end
@@ -718,6 +756,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             local isImpChangeAllowed;
             isImpChangeAllowed, impReason = isImprovementChangeAllowed(plotId, resTerType, resFeaType, resResType, impType, routeType, isSafeBase, isSafeAdv);
             local resImpType = impType;
+
             if not isImpChangeAllowed  or impType == nil then
                 resImpType = plot:GetImprovementType();
             end
@@ -726,11 +765,13 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
 
             -- remove old plot settings to prevent even temporary invalid combinations
             local plot = Map.GetPlotByIndex(plotId);
+
             if isImpChangeAllowed and ( terType ~= nil or feaType ~= nil or resType ~= nil ) and impType ~= nil then
                 ImprovementBuilder.SetImprovementType( plot, -1 );
             end
 
             local plot = Map.GetPlotByIndex(plotId);
+
             if isResChangeAllowed and ( terType ~= nil or feaType ~= nil ) and resType ~= nil then
                 --local amberIdx = resTypeToIdx["RESOURCE_AMBER"];
                 --if amberIdx ~= nil then
@@ -742,6 +783,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             end
 
             local plot = Map.GetPlotByIndex(plotId);
+
             if isFeaChangeAllowed and ( terType ~= nil ) and feaType ~= nil then
                 TerrainBuilder.SetFeatureType(plot, -1);
             end
@@ -777,6 +819,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
                 if feaTypeC ~= -1 then
                     local feaC = GameInfo.Features[feaTypeC];
                     --print(" OnChangePlot: ", 442, feaC.Impassable);
+
                     if feaC.Impassable then
                         --print(" OnChangePlot: ", 443, feaC.Impassable);
                         res = true; -- if old feature is impassable request fix data
@@ -787,8 +830,10 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
                     local feaDesc = GameInfo.Features[feaType];
 
                     local feaTiles = 1;
+
                     if feaDesc ~= nil then
                         feaTiles = feaDesc.Tiles;
+
                         if feaDesc.Impassable then
                             res = true;  -- if new feature is impassable request fix data
                         end
@@ -797,10 +842,13 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
 
                     if feaTiles > 1 then
                         local aPlots = {};
+
                         if (ExposedMembers.MOD_Map_Editor.CustomGetMultiTileFeaturePlotList(plot, feaType, aPlots)) then
                             -- clear all natural wonder tiles
+
                             for k, aPlotIdx in pairs(aPlots) do
                                 local aPlot = Map.GetPlotByIndex(aPlotIdx);
+
                                 if aPlot ~= nil then
                                     ImprovementBuilder.SetImprovementType( aPlot, -1 );
                                     ResourceBuilder.SetResourceType( aPlot, -1, 0 );
@@ -829,7 +877,6 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
                     else
                         ResourceBuilder.SetResourceType( plot, resType, resCnt );
                     end
-                    
                 else
                     ResourceBuilder.SetResourceType( plot, resType, 0 );
                 end
@@ -837,6 +884,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             end
 
             plot = Map.GetPlotByIndex(plotId);
+
             if impType ~= nil and isImpChangeAllowed then
                 --print(" OnChangePlot: ", 8, impType);
                 --ImprovementBuilder.SetImprovementType( plot, impType, Game.GetLocalPlayer() );
@@ -844,6 +892,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             end
 
             plot = Map.GetPlotByIndex(plotId);
+
             if routeType ~= nil then
                 --print(" OnChangePlot: ", 10, routeType)
                 if routeType == RouteTypes.NONE or ( not plot:IsWater() and not plot:IsImpassable() ) then
@@ -853,6 +902,7 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             end
             
             plot = Map.GetPlotByIndex(plotId);
+
             if elevationType ~= nil and IsXP2() then
                 --print(" OnChangePlot: ", 12, elevationType);
                 local cElevation = TerrainManager.GetCoastalLowlandType(plot);
@@ -867,50 +917,53 @@ local function ChangePlot( plotId, terType, feaType, resType, resCnt, impType, r
             plot = Map.GetPlotByIndex(plotId);
             
             local mapContinents = Map.GetContinentsInUse();
+            print(" OnChangePlot: ", 14, contType);
+            local ccontType = plot:GetContinentType();
+            print(" OnChangePlot contType: ", 141, contType, ccontType);
+            local contType1 = contType;
 
-                print(" OnChangePlot: ", 14, contType);
-                local ccontType = plot:GetContinentType();
-                print(" OnChangePlot contType: ", 141, contType, ccontType);
-                local contType1 = contType;
-                if contType1 == nil then
-                    if ccontType ~= -1 then
-                        contType1 = ccontType;
-                    else
-                        contType1 = -1;
-                    end
-                end
-
-                if plot:IsWater() then
-                    TerrainBuilder.SetContinentType(plot, contType1);
-                    --plot = Map.GetPlotByIndex(plotId);
-                    --TerrainBuilder.SetContinentType(plot, contType1);
-                    print(" OnChangePlot Water plot: ", 142, contType, ccontType);
+            if contType1 == nil then
+                if ccontType ~= -1 then
+                    contType1 = ccontType;
                 else
-                    if ccontType ~= contType or ccontType == -1 then
-                        --if mapContinents[2] ~= nil then
-                            --TerrainBuilder.SetContinentType(plot, mapContinents[2]);
-                            --plot = Map.GetPlotByIndex(plotId);
-                            --print(" OnChangePlot Terrain plot: ", 143, mapContinents[2]);
-                        --end
-                        if contType == -1 and mapContinents[1] ~= nil then
-                            TerrainBuilder.SetContinentType(plot, mapContinents[1]);
-                            plot = Map.GetPlotByIndex(plotId);
-                            print(" OnChangePlot Terrain plot: ", 144, mapContinents[1]);
-                        end
-                        if contType ~= nil and contType ~= -1 then
-                            TerrainBuilder.SetContinentType(plot, contType);
-                            print(" OnChangePlot Terrain plot: ", 145, contType, ccontType);
-                        end
+                    contType1 = -1;
+                end
+            end
+
+            if plot:IsWater() then
+                TerrainBuilder.SetContinentType(plot, contType1);
+                --plot = Map.GetPlotByIndex(plotId);
+                --TerrainBuilder.SetContinentType(plot, contType1);
+                print(" OnChangePlot Water plot: ", 142, contType, ccontType);
+            else
+                if ccontType ~= contType or ccontType == -1 then
+                    --if mapContinents[2] ~= nil then
+                        --TerrainBuilder.SetContinentType(plot, mapContinents[2]);
+                        --plot = Map.GetPlotByIndex(plotId);
+                        --print(" OnChangePlot Terrain plot: ", 143, mapContinents[2]);
+                    --end
+
+                    if contType == -1 and mapContinents[1] ~= nil then
+                        TerrainBuilder.SetContinentType(plot, mapContinents[1]);
+                        plot = Map.GetPlotByIndex(plotId);
+                        print(" OnChangePlot Terrain plot: ", 144, mapContinents[1]);
+                    end
+
+                    if contType ~= nil and contType ~= -1 then
+                        TerrainBuilder.SetContinentType(plot, contType);
+                        print(" OnChangePlot Terrain plot: ", 145, contType, ccontType);
                     end
                 end
-                print(" OnChangePlot: ", 15, contType, ccontType);
-            
+            end
+
+            print(" OnChangePlot: ", 15, contType, ccontType);
 
         end --if plot ~= nil then 
     end -- if plotId ~= nil then
     
     --print(" OnChangePlot: ", 16, plotId, res);
     print( "Reasons 2: ", terReason, feaReason, resReason, impReason );
+
     return res, terReason, feaReason, resReason, impReason;
 end
 
@@ -927,17 +980,14 @@ local function GetRiverPlotFunctions( plotId, plotSide )
             setFunc = TerrainBuilder["SetWOfRiver"]; 
             checkFunc = plot["IsWOfRiver"];
             checkFlowFunc = plot["GetRiverEFlowDirection"]; 
-
         elseif plotSide == 2 then --river.SEAST
             setFunc = TerrainBuilder["SetNWOfRiver"]; 
             checkFunc = plot["IsNWOfRiver"];
             checkFlowFunc = plot["GetRiverSEFlowDirection"]; 
-
         else -- plotSide == 3 == river.SWEST
              setFunc = TerrainBuilder["SetNEOfRiver"]; 
              checkFunc = plot["IsNEOfRiver"];
              checkFlowFunc = plot["GetRiverSWFlowDirection"]; 
-
         end
     else
         -- plot == nil
@@ -953,6 +1003,7 @@ local function SetOfRiver(plotId, plotSide, rivId, enabled, fDir)
     local res = false;
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then
             print("SetOfRiver", plotId, plotSide, enabled, fDir);
             local setFunc;
@@ -978,11 +1029,13 @@ local function SetOfRiver(plotId, plotSide, rivId, enabled, fDir)
                 and (not checkFunc(plot) 
                 or checkFlowFunc(plot) ~= fDir) then 
                 -- add or change river
+
                 if IsXP2() then
                     setFunc(plot, enabled, fDir, rivId);
                 else
                     setFunc(plot, enabled, fDir);
                 end
+
                 plot, setFunc, checkFunc, checkFlowFunc = GetRiverPlotFunctions( plotId, plotSide );
 
                 if checkFunc(plot) ~= enabled or checkFlowFunc ~= fDir then
@@ -1036,6 +1089,7 @@ local function ChangePlotRiver(plotId, river, rivId, isSafeBase, isSafeAdv )
 
                 if river.SEAST == true then
                     local fDir = river.FDIR_SEAST;
+
                     if fDir == FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST then
                         --startFromWest = false;
                         sides = {};
@@ -1051,6 +1105,7 @@ local function ChangePlotRiver(plotId, river, rivId, isSafeBase, isSafeAdv )
                     if river[ param[1] ] == true then
                         -- add river requested
                         local adjPlot = Map.GetAdjacentPlot( plot:GetX(), plot:GetY(), param[5] );
+
                         if not isSafeBase or ( not plot:IsWater() and adjPlot ~= nil and not adjPlot:IsWater() ) then
                             local fDir = river[ param[2] ];
                             SetOfRiver(plotId, param[4] , rivId, true, fDir); -- plotSide: 1 == river.EAST; 2 == river.SEAST; 3 == river.SWEST
@@ -1071,7 +1126,9 @@ local function ChangePlotRiver(plotId, river, rivId, isSafeBase, isSafeAdv )
             end -- river
         end
     end
+
     print("River plot update -", rivId, 44);
+
     return res, reasonRem;
 end
 
@@ -1083,13 +1140,15 @@ local function ChangePlotCliff(plotId, cliffs, isSafeBase, isSafeAdv)
 
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then 
-            
             if cliffs then
                 print("Cliffs plot update -", cliffs.EAST, cliffs.SEAST, cliffs.SWEST);
                 reasonRem = {};
+
                 if cliffs.EAST == true then
                     local adjPlot = Map.GetAdjacentPlot( plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_EAST);
+
                     if not isSafeBase or ( adjPlot ~= nil and plot:IsWater() ~= adjPlot:IsWater() ) then
                         plot = Map.GetPlotByIndex(plotId);
                         TerrainBuilder.SetWOfCliff(plot, true);
@@ -1110,6 +1169,7 @@ local function ChangePlotCliff(plotId, cliffs, isSafeBase, isSafeAdv)
 
                 if cliffs.SEAST == true then
                     local adjPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_SOUTHEAST);
+
                     if not isSafeBase or ( adjPlot ~= nil and plot:IsWater() ~= adjPlot:IsWater() ) then
                         plot = Map.GetPlotByIndex(plotId);
                         TerrainBuilder.SetNWOfCliff(plot, true);
@@ -1130,6 +1190,7 @@ local function ChangePlotCliff(plotId, cliffs, isSafeBase, isSafeAdv)
 
                 if cliffs.SWEST == true then
                     local adjPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
+
                     if not isSafeBase or ( adjPlot ~= nil and plot:IsWater() ~= adjPlot:IsWater() ) then
                         plot = Map.GetPlotByIndex(plotId);
                         TerrainBuilder.SetNEOfCliff(plot, true);
@@ -1150,6 +1211,7 @@ local function ChangePlotCliff(plotId, cliffs, isSafeBase, isSafeAdv)
             end -- cliff
         end
     end
+
     return res, reasonRem;
 end
 
@@ -1178,7 +1240,6 @@ end
 
 --************************************************************
 function DeleteUnits(plotId)
-
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
         if plot ~= nil then 
@@ -1221,9 +1282,11 @@ local function GetCityForTileOwner( plotId, newOwner, plot, newOwnerPlayer, newO
     res = newOwnerCapital;
     -- newOwnerCities:GetCount();
     local closestCity = FindClosestCityByOwner( plotId, newOwner, plot, newOwnerPlayer, newOwnerCities );
+
     if closestCity ~= nil then
         res = closestCity;
     end
+
     return res;
 end
 
@@ -1236,6 +1299,7 @@ function ChangePlotOwner( plotId, newOwner, safeMod, safeAdvMod )
         if newOwner ~= -1 then
             local newOwnerPlayer = Players[ newOwner ];
             local newOwnerCities = newOwnerPlayer:GetCities();
+            
             if newOwnerCities ~= nil then
                 local tileOwnerCity = GetCityForTileOwner( plotId, newOwner, plot, newOwnerPlayer, newOwnerCities );
 
