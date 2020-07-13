@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>My Custom Mod</Name>
+    <Guid>e6da8246-e803-48be-abe0-d76ba3b4dc65</Guid>
+    <ProjectGuid>0c876a46-3c31-41fd-bb3f-ad43ef67d6b1</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>This is a brief description of the mod.</Teaser>
+    <Description>This is a brief description of the mod.</Description>
+    <Authors>Matthew Lonis</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Civ-6-Mods</AssemblyName>
+    <RootNamespace>Civ-6-Mods</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Civ_6_Mods.Art.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
