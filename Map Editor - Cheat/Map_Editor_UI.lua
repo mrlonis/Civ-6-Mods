@@ -61,6 +61,7 @@ function IsXP2()
         --print("Expansion 2 detected");
         return true;
     end
+
     --print("Expansion 1/none detected");
     return false;
 end
@@ -70,6 +71,7 @@ end
 local function AddButtonToTopPanel()
     if not IsBtnAdded then
         local tPanRightStack:table = ContextPtr:LookUpControl("/InGame/TopPanel/RightContents"); -- top panel right stack where clock civilopedia and menu is
+
         if tPanRightStack ~= nil then
             Controls.Map_Editor_LaunchBarBtn:ChangeParent(tPanRightStack);
 
@@ -87,6 +89,7 @@ end
 local function UnAddButtonToTopPanel()
     if IsBtnAdded then
         local tPanRightStack:table = ContextPtr:LookUpControl("/InGame/TopPanel/RightContents"); -- top panel right stack where clock civilopedia and menu is
+
         if tPanRightStack ~= nil then
             tPanRightStack:ReleaseChild(Controls.Map_Editor_LaunchBarBtn);
             tPanRightStack:CalculateSize();
@@ -110,6 +113,7 @@ end
 -- Change interface mode to selection
 local function FixUiMode( )
     local cMode = UI.GetInterfaceMode();
+
     if not isShown and cMode ~= InterfaceModeTypes.SELECTION then
         UI.SetInterfaceMode( InterfaceModeTypes.SELECTION );
     elseif isShown then
@@ -151,7 +155,6 @@ local function UpdateWndSizeAndBg( )
 
         Controls.Map_Editor_DlgValidationContent:SetHide( false );
     end
-
 end
 
 --******************************************************************************
@@ -161,12 +164,12 @@ local function UpdateFixUi()
     --else
         --Controls.Map_Editor_FixMeAnim:SetHide( true );
     --end
-
 end
 
 --******************************************************************************
 local function HighlightSelection( )
     UILens.ClearLayerHexes( UILens.CreateLensLayerHash("Hex_Coloring_Great_People") );
+
     if UILens.IsLayerOn( UILens.CreateLensLayerHash("Hex_Coloring_Great_People") ) then
         UILens.ToggleLayerOff( UILens.CreateLensLayerHash("Hex_Coloring_Great_People") );
     end
@@ -188,6 +191,7 @@ end
 function UpdateRiverSelection( plotId, fromBtn )
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then			
             river = {};
             river.EAST = plot:IsWOfRiver();
@@ -222,12 +226,15 @@ function UpdateRiverSelection( plotId, fromBtn )
                     break;
                 end
             end
+
             if not river.EAST then
                 RIVER_F_DIR_E_IDX = 1;
             end
+
             if not river.SEAST then
                 RIVER_F_DIR_SE_IDX = 1;
             end
+
             if not river.SWEST then
                 RIVER_F_DIR_SW_IDX = 1;
             end
@@ -289,6 +296,7 @@ function UpdateRiverSelection( plotId, fromBtn )
     Controls.Map_Editor_RiverHexED0:SetHide( true );
     Controls.Map_Editor_RiverHexED1:SetHide( true );
     Controls.Map_Editor_RiverHexED2:SetHide( true );
+
     if river.EAST == true then
         if river.FDIR_EAST == FlowDirectionTypes.FLOWDIRECTION_NORTH then
             Controls.Map_Editor_RiverHexED1:SetHide( false );
@@ -297,6 +305,7 @@ function UpdateRiverSelection( plotId, fromBtn )
         else
             Controls.Map_Editor_RiverHexED2:SetHide( false );
         end
+
         Controls.Map_Editor_RiverHexEBG:SetHide( true );
         --print("River EAST show FLOWDIRECTION_NORTH", river.EAST, river.FDIR_EAST, FlowDirectionTypes.FLOWDIRECTION_NORTH );
         --print("River EAST show FLOWDIRECTION_SOUTH", river.EAST, river.FDIR_EAST, FlowDirectionTypes.FLOWDIRECTION_SOUTH );
@@ -306,6 +315,7 @@ function UpdateRiverSelection( plotId, fromBtn )
     Controls.Map_Editor_RiverHexSED0:SetHide( true );
     Controls.Map_Editor_RiverHexSED1:SetHide( true );
     Controls.Map_Editor_RiverHexSED2:SetHide( true );
+
     if river.SEAST == true then
         if river.FDIR_SEAST == FlowDirectionTypes.FLOWDIRECTION_NORTHEAST then
             Controls.Map_Editor_RiverHexSED1:SetHide( false );
@@ -314,6 +324,7 @@ function UpdateRiverSelection( plotId, fromBtn )
         else
             Controls.Map_Editor_RiverHexSED2:SetHide( false );
         end
+
         Controls.Map_Editor_RiverHexSEBG:SetHide( true );
         --print("River SEAST show FLOWDIRECTION_NORTHEAST", river.SEAST, river.FDIR_SEAST, FlowDirectionTypes.FLOWDIRECTION_NORTHEAST );
         --print("River SEAST show FLOWDIRECTION_SOUTHWEST", river.SEAST, river.FDIR_SEAST, FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST );
@@ -323,6 +334,7 @@ function UpdateRiverSelection( plotId, fromBtn )
     Controls.Map_Editor_RiverHexSWD0:SetHide( true );
     Controls.Map_Editor_RiverHexSWD1:SetHide( true );
     Controls.Map_Editor_RiverHexSWD2:SetHide( true );
+
     if river.SWEST == true then
         if river.FDIR_SWEST == FlowDirectionTypes.FLOWDIRECTION_NORTHWEST then
             Controls.Map_Editor_RiverHexSWD1:SetHide( false );
@@ -331,21 +343,21 @@ function UpdateRiverSelection( plotId, fromBtn )
         else
             Controls.Map_Editor_RiverHexSWD2:SetHide( false );
         end
+
         Controls.Map_Editor_RiverHexSWBG:SetHide( true );
         --print("River SWEST show FLOWDIRECTION_NORTHWEST", river.SWEST, river.FDIR_SWEST, FlowDirectionTypes.FLOWDIRECTION_NORTHWEST);
         --print("River SWEST show FLOWDIRECTION_SOUTHEAST", river.SWEST, river.FDIR_SWEST, FlowDirectionTypes.FLOWDIRECTION_SOUTHEAST);
     end
-    
     --if	Controls.Map_Editor_CBRiverUnch:IsChecked() then
         --river = nil;
     --end
-
 end
 
 --******************************************************************************
 function UpdateCliffsSelection( plotId, fromBtn )
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then			
             if fromBtn == nil or fromBtn == false then
                 cliffs.EAST = plot:IsWOfCliff();
@@ -360,7 +372,6 @@ function UpdateCliffsSelection( plotId, fromBtn )
             cliffs.SWEST = false;
         end
     end
-
 
     --print("cliffs update UI ---", cliffs.EAST, cliffs.SEAST, cliffs.SWEST );
 
@@ -397,6 +408,7 @@ local function HideDlg()
 
     FixUiMode();
     UILens.ClearLayerHexes( UILens.CreateLensLayerHash("Hex_Coloring_Great_People") );
+
     if UILens.IsLayerOn( UILens.CreateLensLayerHash("Hex_Coloring_Great_People") ) then
         UILens.ToggleLayerOff( UILens.CreateLensLayerHash("Hex_Coloring_Great_People") );
     end
@@ -428,7 +440,6 @@ local function OnTopBtnClick()
         isShown = true;
         ShowDlg();
     end
-    
 end
 
 --******************************************************************************
@@ -472,6 +483,7 @@ OnInputHandler = function ( pInputStruct:table )
     if msg == KeyEvents.KeyUp then
         --print("OnInput ## KeyUp", 1, isShown, pInputStruct );
         local key = pInputStruct:GetKey();
+
         if isShown and key == Keys.VK_ESCAPE then
             --print("OnInput ## KeyUp", 2 );
             OnTopBtnClick();
@@ -487,7 +499,6 @@ OnInputHandler = function ( pInputStruct:table )
         --	print(" Key: ", i, k);
         --end
     end
-
 
     return false;
 end
@@ -605,7 +616,6 @@ local function UpdateReasonsCliff( cliReason )
     local colorEr = "[COLOR_RED]";
     local colorEn = "[ENDCOLOR]";
 
-
     if cliReason ~= nil and cliReason ~= "" then
         if cliReason.EAST ~= nil and cliReason.EAST ~= "" then
             clifReason1 = clifReason1 .. " " .. colorEr .. Locale.Lookup(cliReason.EAST) .. colorEn;
@@ -644,7 +654,6 @@ end
 
 --******************************************************************************
 local function RequestDelayedNMProcess( )
-    
     Controls.Map_Editor_PendingNWMetaTimer:SetPauseTime(3);
     Controls.Map_Editor_PendingNWMetaTimer:SetToBeginning();
     Controls.Map_Editor_PendingNWMetaTimer:Play();
@@ -653,7 +662,6 @@ end
 
 --******************************************************************************
 local function ApplyChanges( isAutoApply )
-    
     local res = false;
     
     local safeMod = Controls.Map_Editor_CBSafeMode:IsChecked();
@@ -685,12 +693,14 @@ local function ApplyChanges( isAutoApply )
         table.insert(plotsPendingForNWUpdate, selPlotId);
         RequestDelayedNMProcess( );
     elseif not Controls.Map_Editor_StackRiverBody:IsHidden() then
-        local riverNum				:number = -99;
+        local riverNum:number = -99;
+
         if IsXP2() then
             riverNum = RiverManager.GetNumRivers();
         end
 
         local river1 = river;
+
         if	Controls.Map_Editor_CBRiverUnch:IsChecked() then
             river1 = nil;
         end
@@ -711,12 +721,12 @@ local function ApplyChanges( isAutoApply )
             -- new river was created
             UpdateCBRivers( riverNum );
         end
-
     elseif not Controls.Map_Editor_StackCliBody:IsHidden() then
         local river1 = river;
         river1 = nil;
             
         local cliffs1 = cliffs;
+
         if	Controls.Map_Editor_CBCliffUnch:IsChecked() then
             cliffs1 = nil;
         end
@@ -752,6 +762,7 @@ local function OnSelectPlot(plotId, plotEdge, boolParam)
     --print(" Selected plot: ", 1, plotId, Game.GetLocalPlayer() );
     
     local plot = Map.GetPlotByIndex(plotId);
+
     if plot ~= nil then
         selPlotId = plotId;
 
@@ -759,7 +770,6 @@ local function OnSelectPlot(plotId, plotEdge, boolParam)
 
         if not Controls.Map_Editor_CBPaintMode:IsChecked() then
             UpdateCBSelection(plotId);
-
             --print(" Selected plot (res copy): ", 2, plotId, terType, featType, resType, imprType, routeType);
         else
             ApplyChanges( true );
@@ -772,8 +782,6 @@ end
 function OnInit(isReload:boolean)
     if isReload then
         AddButtonToTopPanel();
-        
-
         --ContextPtr:SetInputHandler( OnInputHandler, true );
             --local tPan:table = ContextPtr:LookUpControl("/InGame/TopOptionsMenu"); -- top panel
             --if tPan ~= nil and tPan.SetInputHandler ~= nil then
@@ -795,6 +803,7 @@ function OnSaveComplete()
     local defaultFileName = "Map_Editor Mod Autosave";
     local gameFile = {};
     gameFile.Name = defaultFileName;
+
     if(g_ShowCloudSaves) then
         gameFile.Location = UI.GetDefaultCloudSaveLocation();
     else
@@ -804,6 +813,7 @@ function OnSaveComplete()
             gameFile.Path = g_CurrentDirectoryPath .. "/" .. gameFile.Name ;
         end
     end
+
     gameFile.Type = g_GameType;
     gameFile.FileType = g_FileType;
 
@@ -816,6 +826,7 @@ function SaveLoad()
     local defaultFileName = "Map_Editor Mod Autosave";
     local gameFile = {};
     gameFile.Name = defaultFileName;
+
     if(g_ShowCloudSaves) then
         gameFile.Location = UI.GetDefaultCloudSaveLocation();
     else
@@ -825,6 +836,7 @@ function SaveLoad()
             gameFile.Path = g_CurrentDirectoryPath .. "/" .. gameFile.Name ;
         end
     end
+
     gameFile.Type = g_GameType;
     gameFile.FileType = g_FileType;
     --UIManager:SetUICursor( 1 );
@@ -854,6 +866,7 @@ LateInitialize = function ()
             UpdateWndSizeAndBg( );
         end 
     );
+
     Controls.Map_Editor_BtnTabRiv:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
     
     Controls.Map_Editor_BtnTabCliff:RegisterCallback( Mouse.eLClick, function() 
@@ -864,6 +877,7 @@ LateInitialize = function ()
             UpdateWndSizeAndBg( );
         end 
     );
+
     Controls.Map_Editor_BtnTabCliff:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_BtnTabTer:RegisterCallback( Mouse.eLClick, function() 
@@ -874,6 +888,7 @@ LateInitialize = function ()
             UpdateWndSizeAndBg( );
         end 
     );
+
     Controls.Map_Editor_BtnTabTer:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_PendingNWMetaTimer:RegisterEndCallback(UpdateNWondersOnPendingPlots);
@@ -901,12 +916,14 @@ LateInitialize = function ()
             UpdateFixUi();
         end 
     );
+
     Controls.Map_Editor_Fix:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_OK:RegisterCallback( Mouse.eLClick, function() 
             ApplyChanges( false );
         end 
     );
+
     Controls.Map_Editor_OK:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_CANCEL:RegisterCallback( Mouse.eLClick, function() UpdateCBSelection( selPlotId ); end );
@@ -924,6 +941,7 @@ LateInitialize = function ()
             UpdateRiverSelection( nil, true );
         end 
     );
+
     Controls.Map_Editor_BtnRiverE:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_BtnRiverSE:RegisterCallback( Mouse.eLClick, function() 
@@ -946,6 +964,7 @@ LateInitialize = function ()
             UpdateRiverSelection( nil, true );
         end 
     );
+
     Controls.Map_Editor_BtnRiverSW:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     
@@ -956,6 +975,7 @@ LateInitialize = function ()
             UpdateCliffsSelection( nil, true );
         end 
     );
+
     Controls.Map_Editor_BtnCliffE:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_BtnCliffSE:RegisterCallback( Mouse.eLClick, function() 
@@ -964,6 +984,7 @@ LateInitialize = function ()
             UpdateCliffsSelection( nil, true );
         end 
     );
+
     Controls.Map_Editor_BtnCliffSE:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     Controls.Map_Editor_BtnCliffSW:RegisterCallback( Mouse.eLClick, function() 
@@ -972,6 +993,7 @@ LateInitialize = function ()
             UpdateCliffsSelection( nil, true );
         end 
     );
+
     Controls.Map_Editor_BtnRiverSW:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
     
     Controls.Map_Editor_RemoveUnits:RegisterCallback( Mouse.eLClick, function() ShowConfirmDeleteDialog(); end );
@@ -989,6 +1011,7 @@ LateInitialize = function ()
             Controls.Map_Editor_EBResValue:SetText(tostring(resCnt));
         end 
     );
+
     Controls.Map_Editor_BtnResValueRight:RegisterCallback( Mouse.eLClick, function() 
             --print(" Click Cliff SW "); 
             resCnt = tonumber(Controls.Map_Editor_EBResValue:GetText() or 1);
@@ -1017,6 +1040,7 @@ LateInitialize = function ()
     if GameConfiguration.IsAnyMultiplayer() then
         Controls.Map_Editor_ShowStatus:SetHide( true );
     end
+
     Controls.Map_Editor_ShowStatus:RegisterCallback( Mouse.eLClick, function() 
             --print(" Click Cliff SW "); 
             --if Controls.Map_Editor_DlgValidationContent:IsHidden() then
@@ -1122,6 +1146,7 @@ LateInitialize = function ()
             CBSelectionNoneCont(selPlotId);
         end 
     );
+
     Controls.Map_Editor_None:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end );
 
     InitCBAll();
@@ -1132,7 +1157,6 @@ LateInitialize = function ()
 
     LuaEvents.Mod_Map_Editor_UiInit(); -- notify listeners
     print( " ################ End Initializing Mod Map_Editor UI Script... ################ " );
-
 end
 
 --************************************************************
