@@ -13,39 +13,39 @@ include("AnimSidePanelSupport");
 include("Cheat_Menu_CityBannerManager");
 include( "CitySupport" );
 
-local playerID 						= Game.GetLocalPlayer();
-local pPlayer 						= Players[playerID];
-local pTreasury 					= pPlayer:GetTreasury();
-local pReligion 					= pPlayer:GetReligion();
-local pEnvoy 						= pPlayer:GetInfluence();
-local pVis 							= PlayersVisibility[playerID];
-local pNewGP 						= 1;
-local pNewEnvoy 					= 5;
-local pNewReligion 					= 1000;
-local pNewFavor						= 100;
-local pNewPopulation				= 1;
-local m_hideCheatPanel				= false;
-local m_IsLoading:boolean			= false;
-local m_IsAttached:boolean			= false;
+local playerID = Game.GetLocalPlayer();
+local pPlayer = Players[playerID];
+local pTreasury = pPlayer:GetTreasury();
+local pReligion = pPlayer:GetReligion();
+local pEnvoy = pPlayer:GetInfluence();
+local pVis = PlayersVisibility[playerID];
+local pNewGP = 1;
+local pNewEnvoy = 5;
+local pNewReligion = 1000;
+local pNewFavor	= 100;
+local pNewPopulation = 1;
+local m_hideCheatPanel = false;
+local m_IsLoading:boolean = false;
+local m_IsAttached:boolean = false;
 
 -- // ----------------------------------------------------------------------------------------------
 -- // MENU BUTTON FUNCTIONS
 -- // ----------------------------------------------------------------------------------------------
 
 function ChangeLUXURYResources(playerID)
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.ChangeLUXURYResources(playerID);
     end
 end
 
 function ChangeSTRATEGICResources(playerID)
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.ChangeSTRATEGICResources(playerID);
     end
 end
 
 function ChangeBONUSResources(playerID)
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.ChangeBONUSResources(playerID);
     end
 end
@@ -86,14 +86,14 @@ end
 
 function CompleteAllResearch()
     local pTechs = pPlayer:GetTechs()
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.CompleteAllResearch(playerID);	
     end		
 end
 
 function CompleteAllCivic()
     local pTechs = pPlayer:GetCulture()
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.CompleteAllCivic(playerID);	
     end		
 end
@@ -105,8 +105,8 @@ function CompleteResearch()
         local pCost = pTechs:GetResearchCost(pRTech)	
         local pProgress = pTechs:GetResearchProgress(pRTech)
         local pResearchComplete = (pCost - pProgress)
-        if pPlayer:IsHuman() then		
-            ExposedMembers.MOD_CheatMenu.CompleteResearch(playerID, pResearchComplete);				
+        if pPlayer:IsHuman() then
+            ExposedMembers.MOD_CheatMenu.CompleteResearch(playerID, pResearchComplete);
         end		
     end
 end
@@ -114,12 +114,12 @@ end
 function CompleteCivic()
     local pCivics = pPlayer:GetCulture()
     local pRCivic = pCivics:GetProgressingCivic()
-    if pRCivic >= 0 then		
+    if pRCivic >= 0 then
         local pCost = pCivics:GetCultureCost(pRCivic)	
         local pProgress = pCivics:GetCulturalProgress(pRCivic)
         local pCivicComplete = (pCost - pProgress)
-        if pPlayer:IsHuman() then		
-            ExposedMembers.MOD_CheatMenu.CompleteCivic(playerID, pCivicComplete);				
+        if pPlayer:IsHuman() then
+            ExposedMembers.MOD_CheatMenu.CompleteCivic(playerID, pCivicComplete);
         end
     end	
 end
@@ -138,13 +138,13 @@ function ChangePopulation()
 end
 
 function RestoreCityHealth()
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.RestoreCityHealth(playerID);
     end
 end
 
 function ChangeCityLoyalty()
-    if pPlayer:IsHuman() then		
+    if pPlayer:IsHuman() then
         ExposedMembers.MOD_CheatMenu.ChangeCityLoyalty(playerID);
     end
 end
@@ -252,8 +252,8 @@ function ChangeGovPoints()
 end
 
 function RevealAll()
-    if pPlayer:IsHuman() then		
-        LuaEvents.ChangeFOW(playerID)	
+    if pPlayer:IsHuman() then
+        LuaEvents.ChangeFOW(playerID)
         ExposedMembers.MOD_CheatMenu.RevealAll(playerID);
     end		
 end
@@ -261,11 +261,13 @@ end
 function RefreshActionPanel()
     if pPlayer:IsHuman() then
         local UPContextPtr :table = ContextPtr:LookUpControl("/InGame/ActionPanel");
+        
         if UPContextPtr ~= nil then
-            UPContextPtr:RequestRefresh(); 
+            UPContextPtr:RequestRefresh();
         end
     end
-    ContextPtr:RequestRefresh(); 
+
+    ContextPtr:RequestRefresh();
 end
 
 -- // ----------------------------------------------------------------------------------------------
