@@ -48,9 +48,10 @@ include( "Cheat_Menu_Units_Minibar_Import_Btns" );
 function ShowHideSelectedUnit()
     isPlayerActive = true;
     local pSelectedUnit :table = UI.GetHeadSelectedUnit();
+
     if pSelectedUnit ~= nil then
-        selPlayerId  = pSelectedUnit:GetOwner();
-        selUnitId    = pSelectedUnit:GetID();
+        selPlayerId = pSelectedUnit:GetOwner();
+        selUnitId = pSelectedUnit:GetID();
         Refresh( selPlayerId, selUnitId );
     else
         Hide();
@@ -69,6 +70,7 @@ end
 --******************************************************************************
 function OnPlayerChangeClose( ePlayer:number )
     local isPaused:boolean = GameConfiguration.IsPaused();
+
     if isPaused then
         Events.GameConfigChanged.Add(OnGameConfigChanged_Hotseat_Paused);
     end
@@ -90,7 +92,8 @@ end
 
 --******************************************************************************
 function OnPhaseBegin()
-    ContextPtr:RequestRefresh(); OnRefresh();
+    ContextPtr:RequestRefresh();
+    OnRefresh();
 end
 
 --******************************************************************************
@@ -150,9 +153,7 @@ end
 
 --******************************************************************************
 local function OnUnitPromotionChanged(player, unitId)
-    
     if player == selPlayerId and unitId == selUnitId and Players[player] ~= nil and Players[player]:IsHuman() then
-        
         if ExposedMembers.MOD_Cheat_Menu_Units.GetAutorestorePromo() then
             ExposedMembers.MOD_Cheat_Menu_Units.OnCheatPromote(selPlayerId, selUnitId);
         end
@@ -162,6 +163,7 @@ local function OnUnitPromotionChanged(player, unitId)
             ContextPtr:RequestRefresh(); OnRefresh();
             UiRefreshUnitPanel();
         end
+
         RequestDelayedMovementCheat();
         --if ExposedMembers.MOD_Cheat_Menu_Units.GetAutorestoreMove() then
         --	ExposedMembers.MOD_Cheat_Menu_Units.OnCheatMovement(player, unitId);
@@ -199,8 +201,8 @@ local function OnUnitSelectionChanged(playerId, unitId, locationX, locationY, lo
         --print(" Unit selected", unitId);
         selPlayerId = playerId;
         selUnitId = unitId;
-        if Players[selPlayerId] ~= nil and Players[selPlayerId]:IsHuman() then
 
+        if Players[selPlayerId] ~= nil and Players[selPlayerId]:IsHuman() then
             if ExposedMembers.MOD_Cheat_Menu_Units.GetAutorestorePromo() then
                 ExposedMembers.MOD_Cheat_Menu_Units.OnCheatPromote(selPlayerId, selUnitId);
             end
@@ -223,6 +225,7 @@ local function OnUnitSelectionChanged(playerId, unitId, locationX, locationY, lo
         --print(" Unit deselected", unitId);
         selPlayerId  = nil;
         selUnitId    = nil;
+
         if UI and ( UI.GetHeadSelectedUnit() == nil ) then
             Hide();
         end
@@ -251,8 +254,10 @@ function OnSelectPlot( plotId, plotEdge, boolParam )
     if Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:IsHidden() then
         return;
     end
+
     targetPlotId = nil;
     local plot = Map.GetPlotByIndex(plotId);
+
     if plot ~= nil then
         targetPlotId = plotId;
         
@@ -275,6 +280,7 @@ function OnSelectPlot( plotId, plotEdge, boolParam )
         local startPlotId :number = plotId;
         local endPlotId   :number = plotId;
         local lensNameBase = "MovementGood";
+
         if not UILens.IsLensActive(lensNameBase) then
             print(" OnSelectPlot", 4);
             UILens.SetActive(lensNameBase);	
@@ -310,6 +316,7 @@ end
 function Hide( fromRefresh )
     Controls.GUI_Cheat_Menu_Units_Minibar_ExpandAnim:SetToEnd();  -- offset 0
     Controls.GUI_Cheat_Menu_Units_Minibar_CollapseAnim:SetToBeginning();  -- offset 0
+
     if not Controls.GUI_Cheat_Menu_Units_Minibar_Context:IsHidden() then
         Controls.GUI_Cheat_Menu_Units_Minibar_CollapseAnim:Play();  -- offset 150
     end
@@ -334,6 +341,7 @@ function Show()
     else
         Controls.GUI_Cheat_Menu_Units_Minibar_Context:SetHide( false );
     end
+
     isMinibarClosed = false;
     FixUiMode();
 end
@@ -342,12 +350,12 @@ end
 -- Change interface mode to selection
 function FixUiMode()
     local cMode = UI.GetInterfaceMode();
+
     if Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:IsHidden() and not Controls.GUI_Cheat_Menu_Units_Minibar_Context:IsHidden() and not isMinibarClosed and cMode ~= InterfaceModeTypes.SELECTION then
         UI.SetInterfaceMode( InterfaceModeTypes.SELECTION );
     elseif not Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:IsHidden() then
         UI.SetInterfaceMode( InterfaceModeTypes.WB_SELECT_PLOT );
     end
-
 end
 
 --******************************************************************************
@@ -373,7 +381,6 @@ function UiRefreshSelection(PlayerID, UnitID)
             ----RequestDelayedReselect();
         --end
     --end 
-
 end
 
 --******************************************************************************
@@ -385,6 +392,7 @@ function UiRefreshUnitPanel()
         --UI.DeselectUnitID(selUnitId);
         --UI.SelectUnitID(selUnitId);
         local UPContextPtr :table = ContextPtr:LookUpControl("/InGame/UnitPanel");
+
         if UPContextPtr ~= nil then
             --print(" UiRefreshUnitPanel 2 ", selUnitId, UPContextPtr);
             UPContextPtr:RequestRefresh(); OnRefresh(); -- Refresh Unit Panel
@@ -393,6 +401,7 @@ function UiRefreshUnitPanel()
             --for k,v in pairs(Events.UnitOperationDeactivated) do print ("Events.OnUnitOperationDeactivated",k,v) end
         end
     end
+
     ContextPtr:RequestRefresh(); OnRefresh(); -- Refresh Self, i.e. Unit Cheats Panel
 end
 
@@ -417,6 +426,7 @@ end
 function Refresh( playerId, unitId )
     Controls.GUI_Cheat_Menu_UnitsButtonCollapse:SetTextureOffsetVal(0,29);
     print( "Refresh()", isMinibarCollapsed );
+
     if isMinibarCollapsed then
         Controls.GUI_Cheat_Menu_UnitsButtonCollapse:SetHide( true );
         Controls.GUI_Cheat_Menu_UnitsButtonHeal:SetHide( true );
@@ -442,7 +452,6 @@ function Refresh( playerId, unitId )
         Controls.GUI_Cheat_Menu_Units_CheatsButton_Grid:SetHide( true );
 
         Controls.GUI_Cheat_Menu_UnitsButtonRestore:SetAlpha( 0.5 );
-
     else
         if ExposedMembers.MOD_Cheat_Menu_Units_Initialized ~= nil and ExposedMembers.MOD_Cheat_Menu_Units_Initialized then
             Controls.GUI_Cheat_Menu_UnitsButtonAttack:SetSelected( ExposedMembers.MOD_Cheat_Menu_Units.GetAutorestoreAttack() );
@@ -451,6 +460,7 @@ function Refresh( playerId, unitId )
             Controls.GUI_Cheat_Menu_UnitsButtonPromote:SetSelected( ExposedMembers.MOD_Cheat_Menu_Units.GetAutorestorePromo() );
             Controls.GUI_Cheat_Menu_UnitsButtonDuplicate:SetSelected( not Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:IsHidden() );
         end
+
         Controls.GUI_Cheat_Menu_UnitsButtonCollapse:SetHide( false );
         Controls.GUI_Cheat_Menu_UnitsButtonHeal:SetHide( false );
         Controls.GUI_Cheat_Menu_UnitsButtonPromote:SetHide( false );
@@ -480,6 +490,7 @@ function Refresh( playerId, unitId )
     if Players and Players[ playerId ] and playerId ~= nil and playerId ~= -1 and unitId ~= nil and unitId ~= -1 then
         local units = Players[playerId]:GetUnits();
         local unit = units:FindID(unitId);
+
         if unit ~= nil then
             Show();
         else
@@ -516,32 +527,35 @@ local function GetUnitMoves(playerId, unitId)
     local movesRemaining = 0;
     local queuedEndPlotId:number = nil;
     local unit = nil;
+
     if UnitManager then 
         unit = UnitManager.GetUnit( playerId, unitId ); 
     end
+
     if unit ~= nil then
         movesRemaining = unit:GetMovesRemaining();
         queuedEndPlotId = UnitManager.GetQueuedDestination( unit );
         --print( "Get Unit Moves From UI ", movesRemaining, unit:GetMovementMovesRemaining() );
     end
+
     return movesRemaining, queuedEndPlotId;
 end
 
 --******************************************************************************
 local function LookAtPlot( PlayerID, UnitID )
     if UnitID ~= nil and PlayerID ~= nil then
-        
         if UnitManager then 
             unit = UnitManager.GetUnit( PlayerID, UnitID ); 
         end
+
         if unit and Players[ PlayerID ] ~= nil and Players[ PlayerID ]:IsHuman() then
             -- Look at unit position
             local plot = Map.GetPlot( unit:GetX(), unit:GetY() );
+
             if plot ~= nil then
                 UI.LookAtPlot( plot );
             end
         end
-        
     end 
 end
 
@@ -564,7 +578,6 @@ end
 --**************************************************************************************************************************************************************************************************
 
 include( "Cheat_Menu_Units_Minibar_Import_DupDlg" );
-
 
 --******************************************************************************
 -- Init buttons
@@ -593,7 +606,6 @@ local function InitializeControls()
     Controls.GUI_Cheat_Menu_UnitsButtonRestore:RegisterCallback( Mouse.eLClick, OnRestore );
     Controls.GUI_Cheat_Menu_UnitsButtonRestore:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 
-    
     -- Dialog
     
     --Controls.GUI_Cheat_Menu_Units_UnitsPD:RegisterSelectionCallback( OnUnitTypeSelected );
@@ -614,10 +626,8 @@ local function InitializeControls()
     Controls.GUI_Cheat_Menu_Units_SpawnDlgContainerCANCEL:RegisterCallback( Mouse.eLClick, OnDlgCancel );
     Controls.GUI_Cheat_Menu_Units_SpawnDlgContainerCANCEL:RegisterCallback( Mouse.eMouseEnter, function() UI.PlaySound("Main_Menu_Mouse_Over"); end);
 
-
     Controls.GUI_MoveDelayTimer:RegisterEndCallback( OnGUI_MoveDelayTimerEnd );
     Controls.GUI_ReselectDelayTimer:RegisterEndCallback( OnGUI_ReselectDelayTimerEnd );
-
     
     Controls.GUI_Cheat_Menu_Units_Minibar_CollapseAnim:SetToBeginning();  -- offset 0
     Controls.GUI_Cheat_Menu_Units_Minibar_ExpandAnim:SetToEnd(); -- offset 0
@@ -628,8 +638,8 @@ end
 --******************************************************************************
 -- Cheat_Menu_Units mod
 local function InitializeCheat_Menu_Units()
-        Events.GameCoreEventPublishComplete.Remove( InitializeCheat_Menu_Units );
-        ContextPtr:RequestRefresh(); OnRefresh();
+    Events.GameCoreEventPublishComplete.Remove( InitializeCheat_Menu_Units );
+    ContextPtr:RequestRefresh(); OnRefresh();
 end
 
 --************************************************************
