@@ -54,9 +54,11 @@ end
 function ShowRazeCityReminderPopup(player:number)
     local localPlayerID = Game.GetLocalPlayer();
     local localPlayer = Players[localPlayerID];
+
     if (localPlayer == nil) then
         return;
     end 
+
     g_pSelectedCity  = UI.GetHeadSelectedCity();
     Controls.PanelHeader:LocalizeAndSetText("LOC_DESTROY_CITY_HEADER");
     Controls.CityHeader:LocalizeAndSetText("LOC_RAZE_CITY_NAME_LABEL");
@@ -72,6 +74,7 @@ function ShowRazeCityReminderPopup(player:number)
     local eOwnerBeforeOccupation = g_pSelectedCity:GetOwnerBeforeOccupation();
     local bWipedOut = (originalOwnerPlayer:GetCities():GetCount() < 1);
     local eLastTransferType = g_pSelectedCity:GetLastTransferType();
+
     if (localPlayer:GetDiplomacy():CanLiberateCityTo(eOwnerBeforeOccupation)) then
         Controls.Button2:LocalizeAndSetText("LOC_RAZE_CITY_LIBERATE_FOUNDER_BUTTON_LABEL", PlayerConfigurations[eOwnerBeforeOccupation]:GetCivilizationShortDescription());
         Controls.Button2:LocalizeAndSetToolTip("LOC_DESTROY_CITY_LIBERATE_EXPLANATION");
@@ -79,7 +82,9 @@ function ShowRazeCityReminderPopup(player:number)
     else
         Controls.Button2:SetHide(true);
     end
+
     Controls.Button3:LocalizeAndSetText("LOC_RAZE_CITY_KEEP_BUTTON_LABEL");
+
     if (eLastTransferType == CityTransferTypes.BY_GIFT) then
         Controls.Button3:LocalizeAndSetToolTip("LOC_KEEP_CITY_EXPLANATION");
     elseif (bWipedOut ~= true) then
@@ -87,7 +92,9 @@ function ShowRazeCityReminderPopup(player:number)
     else
         Controls.Button3:LocalizeAndSetToolTip("LOC_KEEP_CITY_EXPLANATION");
     end
+
     Controls.Button4:LocalizeAndSetText("LOC_RAZE_CITY_RAZE_BUTTON_LABEL");
+
     if g_pSelectedCity:IsCapital() then
         Controls.Button4:LocalizeAndSetToolTip("LOC_RAZE_CITY_RAZE_DISABLED_EXPLANATION");
         Controls.Button4:SetDisabled(true);
@@ -95,6 +102,7 @@ function ShowRazeCityReminderPopup(player:number)
         Controls.Button4:LocalizeAndSetToolTip("LOC_RAZE_CITY_EXPLANATION");
         Controls.Button4:SetDisabled(false);
     end
+
     Controls.PopupStack:CalculateSize();
     Controls.PopupStack:ReprocessAnchoring();
     Controls.RazeCityPanel:ReprocessAnchoring();
@@ -108,6 +116,7 @@ function OnInputHandler( uiMsg, wParam, lParam )
             OnClose();
         end
     end
+
     return true;
 end
 
@@ -128,7 +137,11 @@ function Initialize()
     LuaEvents.NotificationPanel_OpenRazeCityChooser.Add(OnShowRazeCityReminderPopup);
     Controls.ModalScreenClose:RegisterCallback(Mouse.eLClick, OnClose);
     LuaEvents.ShowRazeCityReminderPopup.Add(OnShowRazeCityReminderPopup);
-    if ( not ExposedMembers.MOD_CheatMenu) then ExposedMembers.MOD_CheatMenu = {}; end
+
+    if ( not ExposedMembers.MOD_CheatMenu) then
+        ExposedMembers.MOD_CheatMenu = {};
+    end
+
     ExposedMembers.MOD_CheatMenu.DestroyCity = OnShowRazeCityReminderPopup;
     ExposedMembers.MOD_CheatMenu_Initialized = true;
 end
