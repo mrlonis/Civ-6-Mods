@@ -15,7 +15,7 @@
         <!-- The description of the building, used in various places. -->
         <Row Tag="LOC_BUILDING_GODS_HOUSE_DESCRIPTION"
              Language="en_US">
-            <Text>God's house will provide you with the answers and great fortune!</Text>
+            <Text>God's house will connect you with the almighty!</Text>
         </Row>
 
         <!-- Pedia text (historical context) about the new building. -->
