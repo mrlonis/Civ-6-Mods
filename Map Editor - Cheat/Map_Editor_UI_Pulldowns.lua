@@ -27,6 +27,7 @@ function IsTable( instance )
     if instance ~= nil and type(instance) == "table" then
         return true;
     end
+
     return false;
 end
 
@@ -46,12 +47,14 @@ function FindIndexInCbEntriesTable( entries, typeIndex )
                 return k;
             end
         end
+
         for k, v in pairs( entries ) do
             if IsTable(v) and v.Type == typeIndex then
                 return k;
             end
         end
     end
+
     print(" FindIndexInCbEntriesTable NOT FOUND ################################", #entries, typeIndex );
     return 1;
 end
@@ -71,6 +74,7 @@ function AddCBEntry( entries, index, pulldown )
     else
         pdEntry.Button:SetText( " ??? " );
     end
+
     if entry.TText ~= nil then
         pdEntry.Button:SetToolTipString( entry.TText );
     end
@@ -84,15 +88,16 @@ function AddCBEntry( entries, index, pulldown )
     else
         pdEntry.Button:SetVoids( index, NIL_INT_REPRESENTATION_FOR_SET_VOIDS );
     end
-    
 end
 
 --******************************************************************************
 function AddCBEntries( entries, pulldown )
     pulldown:ClearEntries();
+
     for index = 1, #entries do 
         AddCBEntry( entries, index, pulldown );   
     end
+
     pulldown:CalculateInternals();
 end
 
@@ -104,6 +109,7 @@ end
 --******************************************************************************
 function SelectCBEntries( entries, type, pulldownBtn )
     local entry;
+
     if entries == nil or #entries == 0 then
         return;
     end
@@ -129,6 +135,7 @@ end
 function UpdateCBSelectionTer( plotId )
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then
             terType = plot:GetTerrainType();
         end
@@ -151,7 +158,6 @@ end
 
 --******************************************************************************
 function InitCBTerType()
-    
     local entries2 = EntriesTer;
     local type2 = terType;
     local pdNameSuffix2 = "TerType";
@@ -230,14 +236,15 @@ function InitCBFeature()
     local pdNameSuffix2 = "Feature";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                featType = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesFea, type1, pdNameSuffix2 ); -- !!
-                UpdateNWondersOnPendingPlots();
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
+            end
+            
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            featType = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesFea, type1, pdNameSuffix2 ); -- !!
+            UpdateNWondersOnPendingPlots();
             end
         );
 end
@@ -344,20 +351,22 @@ function InitCBRes()
     local pdNameSuffix2 = "Res";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                resType = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesRes, type1, pdNameSuffix2 ); -- !!
-                -- !! only for resource
-                if type1 ~= nil and type1 ~= -1 and Controls.Map_Editor_EBResValue:GetText() == "0" then
-                    Controls.Map_Editor_EBResValue:SetText("1");
-                    resCnt = 1;
-                end
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
             end
-        );
+            
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            resType = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesRes, type1, pdNameSuffix2 ); -- !!
+            -- !! only for resource
+            
+            if type1 ~= nil and type1 ~= -1 and Controls.Map_Editor_EBResValue:GetText() == "0" then
+                Controls.Map_Editor_EBResValue:SetText("1");
+                resCnt = 1;
+            end
+        end
+    );
 end
 
 --******************************************************************************
@@ -450,21 +459,21 @@ end
 
 --******************************************************************************
 function InitCBImpr()
-    
     local entries2 = EntriesImp;
     local type2 = imprType;
     local pdNameSuffix2 = "Impr";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                imprType = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesImp, type1, pdNameSuffix2 ); -- !!
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
             end
-        );
+            
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            imprType = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesImp, type1, pdNameSuffix2 ); -- !!
+        end
+    );
 end
 
 --******************************************************************************
@@ -562,15 +571,15 @@ function InitCBRoute()
     local pdNameSuffix2 = "Route";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                routeType = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesRou, type1, pdNameSuffix2 ); -- !!
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
             end
-        );
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            routeType = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesRou, type1, pdNameSuffix2 ); -- !!
+        end
+    );
 end
 
 --******************************************************************************
@@ -652,15 +661,15 @@ function InitCBOwner()
     local pdNameSuffix2 = "Owner";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                owner = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesOwn, type1, pdNameSuffix2 ); -- !!
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
             end
-        );
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            owner = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesOwn, type1, pdNameSuffix2 ); -- !!
+        end
+    );
 end
 
 --******************************************************************************
@@ -715,8 +724,10 @@ function UpdateCBSelectionElev( plotId )
     if not IsXP2() then
         Controls.Map_Editor_StackElev:SetHide( true );
     end
+
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then
             if IsXP2() then
                 elevationType = TerrainManager.GetCoastalLowlandType(plot);
@@ -741,21 +752,20 @@ end
 
 --******************************************************************************
 function InitCBElev()
-        
     local entries2 = EntriesEle;
     local type2 = elevationType;
     local pdNameSuffix2 = "Elev";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                elevationType = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesEle, type1, pdNameSuffix2 ); -- !!
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
             end
-        );
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            elevationType = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesEle, type1, pdNameSuffix2 ); -- !!
+        end
+    );
 end
 
 --******************************************************************************
@@ -791,6 +801,7 @@ function CBSelectionNoneElev( plotId )
     if not IsXP2() then
         Controls.Map_Editor_StackElev:SetHide( true );
     end
+
     elevationType = -1;
         
     local entries2 = EntriesEle;
@@ -812,6 +823,7 @@ end
 function UpdateCBSelectionCont( plotId )
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then
             contType = plot:GetContinentType();
         end
@@ -836,21 +848,20 @@ end
 
 --******************************************************************************
 function InitCBContType()
-        
     local entries2 = EntriesCont;
     local type2 = contType;
     local pdNameSuffix2 = "ContType";
 
     Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-            function ( index1:number, type1:number ) 
-                if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
-                    type1 = nil;
-                end
-                print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                contType = type1; -- !!
-                SelectCBEntriesStandardPDNaming( EntriesCont, type1, pdNameSuffix2 ); -- !!
+        function ( index1:number, type1:number ) 
+            if NIL_INT_REPRESENTATION_FOR_SET_VOIDS == type1 then
+                type1 = nil;
             end
-        );
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            contType = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesCont, type1, pdNameSuffix2 ); -- !!
+        end
+    );
 end
 
 --******************************************************************************
@@ -904,18 +915,17 @@ end
 
 --******************************************************************************
 function InitCBRivers( )
+    local entries2 = EntriesRiv;
+    local type2 = 1; -- WARN see if block!!!
+    local pdNameSuffix2 = "NewRivId";
 
-        local entries2 = EntriesRiv;
-        local type2 = 1; -- WARN see if block!!!
-        local pdNameSuffix2 = "NewRivId";
-
-        Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
-                    function ( index1:number, type1:number ) 
-                        print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
-                        rivId = type1; -- !!
-                        SelectCBEntriesStandardPDNaming( EntriesRiv, type1, pdNameSuffix2 ); -- !!
-                    end
-                );
+    Controls["Map_Editor_PD" .. pdNameSuffix2]:RegisterSelectionCallback( 
+        function ( index1:number, type1:number ) 
+            print("Map_Editor_PD " .. pdNameSuffix2 .. " selection changed to: ", index1, type1 );
+            rivId = type1; -- !!
+            SelectCBEntriesStandardPDNaming( EntriesRiv, type1, pdNameSuffix2 ); -- !!
+        end
+    );
 end
 
 --******************************************************************************
