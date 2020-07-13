@@ -5,280 +5,437 @@
 <!-- Last Modified By: mrlonis -->
 <!-- Last Modified On: 07/12/2020 -->
 <GameData>
-	<!-- Almost all gameplay types should first be added to the types table. -->
-	<!-- This serves as a central way to reference any type -->
-	<Types>
-		<Row Type="BUILDING_GODS_HOUSE" Kind="KIND_BUILDING" />
-	</Types>
-	<!-- Define the building here. For examples of additional properties and values, look at Buildings.xml in /Base/Assets/Gameplay/Data/-->
-	<Buildings>
-		<Row BuildingType="BUILDING_GODS_HOUSE" Name="LOC_BUILDING_GODS_HOUSE" PrereqDistrict="DISTRICT_CITY_CENTER" PurchaseYield="YIELD_FAITH" Cost="10" AdvisorType="ADVISOR_GENERIC" />
-	</Buildings>
-	<Building_YieldChanges>
-		<Row BuildingType="BUILDING_GODS_HOUSE" YieldType="YIELD_FAITH" YieldChange="1"/>
-	</Building_YieldChanges>
-	<Building_GreatPersonPoints>
-	</Building_GreatPersonPoints>
-	<Building_GreatWorks>
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_PALACE" NumSlots="10" />
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_RELIC" NumSlots="10" />
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_WRITING" NumSlots="10" />
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_ART" NumSlots="10" />
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_ARTIFACT" NumSlots="10" />
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_MUSIC" NumSlots="10" />
-		<Row BuildingType="BUILDING_GODS_HOUSE" GreatWorkSlotType="GREATWORKSLOT_CATHEDRAL" NumSlots="10" />
-	</Building_GreatWorks>
-	<!-- All bonuses are limited to human players only -->
-	<Modifiers>
-		<!-- Adjust city garrison strength -->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Adjust Builder Chargers-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_BUILDER_CHARGES</ModifierType>
-			<SubjectRequirementSetId>UNIT_IS_BUILDER</SubjectRequirementSetId>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Adjust City Appeal-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_APPEAL</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Adjust City Growth-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_GROWTH</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Adjust City Trade Route Capacity-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Adjust City Yield-->
-		<Row>
-			<ModifierId>GODS_HOUSE_GOLD</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_FAITH</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_CULTURE</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_FOOD</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Grant Unit-->
-		<Row>
-			<ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
-			<ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
-			<RunOnce>true</RunOnce>
-			<Permanent>true</Permanent>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-		<!--Multiply Treasury-->
-		<Row>
-			<ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
-			<ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
-			<RunOnce>true</RunOnce>
-			<Permanent>true</Permanent>
-			<OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-		</Row>
-	</Modifiers>
-	<ModifierArguments>
-		<!-- Adjust city garrison strength -->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
-			<Name>Amount</Name>
-			<Value>100</Value>
-		</Row>
-		<!--Adjust Charges-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
-			<Name>Amount</Name>
-			<Value>20</Value>
-		</Row>
-		<!--Adjust City Appeal-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
-			<Name>Amount</Name>
-			<Value>100</Value>
-		</Row>
-		<!--Adjust City Growth-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
-			<Name>Amount</Name>
-			<Value>100</Value>
-		</Row>
-		<!--Adjust City Trade Route Capacity-->
-		<Row>
-			<ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
-			<Name>Amount</Name>
-			<Value>10</Value>
-		</Row>
-		<!--Adjust City Yield-->
-		<Row>
-			<ModifierId>GODS_HOUSE_GOLD</ModifierId>
-			<Name>Amount</Name>
-			<Value>50000</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_GOLD</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_GOLD</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_FAITH</ModifierId>
-			<Name>Amount</Name>
-			<Value>50000</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_FAITH</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_FAITH</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_CULTURE</ModifierId>
-			<Name>Amount</Name>
-			<Value>50000</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_CULTURE</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_CULTURE</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
-			<Name>Amount</Name>
-			<Value>50000</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_PRODUCTION</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_FOOD</ModifierId>
-			<Name>Amount</Name>
-			<Value>50000</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_FOOD</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_FOOD</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
-			<Name>Amount</Name>
-			<Value>50000</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
-			<Name>YieldType</Name>
-			<Value>YIELD_SCIENCE</Value>
-		</Row>
-		<!--Grant Unit-->
-		<Row>
-			<ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
-			<Name>UnitType</Name>
-			<Value>UNIT_MODERN_ARMOR</Value>
-		</Row>
-		<Row>
-			<ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
-			<Name>Amount</Name>
-			<Value>1</Value>
-		</Row>
-		<!--Multiply Treasury-->
-		<Row>
-			<ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
-			<Name>Amount</Name>
-			<Value>200</Value>
-		</Row>
-	</ModifierArguments>
-	<BuildingModifiers>
-		<!-- Adjust city garrison strength -->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
-		</Row>
-		<!--Adjust Chargers-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
-		</Row>
-		<!--Adjust City Growth-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
-		</Row>
-		<!--Adjust City Growth-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
-		</Row>
-		<!--Adjust City Trade Route Capacity-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>COLOSSUS_ADDTRADEROUTE</ModifierId>
-		</Row>
-		<!--Adjust City Yield-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_GOLD</ModifierId>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_FAITH</ModifierId>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_CULTURE</ModifierId>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_FOOD</ModifierId>
-		</Row>
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
-		</Row>
-		<!--Grant Unit-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
-		</Row>
-		<!--Multiply Treasury-->
-		<Row>
-			<BuildingType>BUILDING_GODS_HOUSE</BuildingType>
-			<ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
-		</Row>
-	</BuildingModifiers>
+    <Types>
+        <Row Type="BUILDING_GODS_HOUSE"
+             Kind="KIND_BUILDING" />
+    </Types>
+    <Buildings>
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             Name="LOC_BUILDING_GODS_HOUSE"
+             PrereqDistrict="DISTRICT_CITY_CENTER"
+             PurchaseYield="YIELD_FAITH"
+             Cost="10"
+             AdvisorType="ADVISOR_GENERIC"
+             Housing="10"
+             CitizenSlots="1" />
+    </Buildings>
+    <Building_YieldChanges>
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             YieldType="YIELD_FAITH"
+             YieldChange="1"/>
+    </Building_YieldChanges>
+    <Building_GreatPersonPoints>
+    </Building_GreatPersonPoints>
+    <Building_GreatWorks>
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_PALACE"
+             NumSlots="10" />
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_RELIC"
+             NumSlots="10" />
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_WRITING"
+             NumSlots="10" />
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_ART"
+             NumSlots="10" />
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+             NumSlots="10" />
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+             NumSlots="10" />
+        <Row BuildingType="BUILDING_GODS_HOUSE"
+             GreatWorkSlotType="GREATWORKSLOT_CATHEDRAL"
+             NumSlots="10" />
+    </Building_GreatWorks>
+    <!-- All bonuses are limited to human players only -->
+    <Modifiers>
+        <!-- Adjust city garrison strength -->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Adjust Builder Chargers-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_BUILDER_CHARGES</ModifierType>
+            <SubjectRequirementSetId>UNIT_IS_BUILDER</SubjectRequirementSetId>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Adjust City Appeal-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_APPEAL</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Adjust City Growth-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_GROWTH</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Adjust City Trade Route Capacity-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Adjust City Yield-->
+        <Row>
+            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Adjust Great Person Points-->
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATGENERALPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATADMIRALPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATENGINEERPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATMERCHANTPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATPROPHETPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATSCIENTISTPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATWRITERPOINTS</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_DISTRICTS_ADJUST_GREAT_PERSON_POINTS</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Grant Unit-->
+        <Row>
+            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
+            <RunOnce>true</RunOnce>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <!--Multiply Treasury-->
+        <Row>
+            <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
+            <RunOnce>true</RunOnce>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+    </Modifiers>
+    <ModifierArguments>
+        <!-- Adjust city garrison strength -->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <!--Adjust Charges-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <!--Adjust City Appeal-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
+            <Name>Amount</Name>
+            <Value>100</Value>
+        </Row>
+        <!--Adjust City Growth-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
+            <Name>Amount</Name>
+            <Value>100</Value>
+        </Row>
+        <!--Adjust City Trade Route Capacity-->
+        <Row>
+            <ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
+            <Name>Amount</Name>
+            <Value>10</Value>
+        </Row>
+        <!--Adjust City Yield-->
+        <Row>
+            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_GOLD</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <Name>Amount</Name>
+            <Value>50</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FAITH</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <Name>Amount</Name>
+            <Value>50</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_CULTURE</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>50</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FOOD</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <Name>Amount</Name>
+            <Value>50</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_SCIENCE</Value>
+        </Row>
+        <!--Adjust Great Person Points-->
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATGENERALPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_GENERAL</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATGENERALPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATADMIRALPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_ADMIRAL</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATADMIRALPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATENGINEERPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_ENGINEER</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATENGINEERPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATMERCHANTPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_MERCHANT</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATMERCHANTPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATPROPHETPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_PROPHET</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATPROPHETPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATSCIENTISTPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_SCIENTIST</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATSCIENTISTPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATWRITERPOINTS</ModifierId>
+            <Name>GreatPersonClassType</Name>
+            <Value>GREAT_PERSON_CLASS_WRITER</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_GREATWRITERPOINTS</ModifierId>
+            <Name>Amount</Name>
+            <Value>2</Value>
+        </Row>
+        <!--Grant Unit-->
+        <Row>
+            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <Name>UnitType</Name>
+            <Value>UNIT_MODERN_ARMOR</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
+        <!--Multiply Treasury-->
+        <Row>
+            <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>200</Value>
+        </Row>
+    </ModifierArguments>
+    <BuildingModifiers>
+        <!-- Adjust city garrison strength -->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
+        </Row>
+        <!--Adjust Chargers-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
+        </Row>
+        <!--Adjust City Growth-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
+        </Row>
+        <!--Adjust City Growth-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
+        </Row>
+        <!--Adjust City Trade Route Capacity-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>COLOSSUS_ADDTRADEROUTE</ModifierId>
+        </Row>
+        <!--Adjust City Yield-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+        </Row>
+        <!--Adjust Great Person Points-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATGENERALPOINTS</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATADMIRALPOINTS</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATENGINEERPOINTS</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATMERCHANTPOINTS</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATPROPHETPOINTS</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATSCIENTISTPOINTS</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_GREATWRITERPOINTS</ModifierId>
+        </Row>
+        <!--Grant Unit-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+        </Row>
+        <!--Multiply Treasury-->
+        <Row>
+            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
+        </Row>
+    </BuildingModifiers>
 </GameData>
