@@ -44,14 +44,16 @@ function OnPromote()
     --print( "Cheat Promote" );
     if ( isPlayerActive ) then
         local pSelectedUnit = UI.GetHeadSelectedUnit();
+
         if ( pSelectedUnit ~= nil ) then
             -- local units = Players[selPlayerId]:GetUnits();
             -- local unit = units:FindID(selUnitId);
-            
             local unit = nil;
+
             if UnitManager then 
                 unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
             end
+
             if unit and Players[selPlayerId]:IsHuman() then
                 FixUiMode();
                 
@@ -75,14 +77,16 @@ function OnDuplicate()
         if ( pSelectedUnit ~= nil ) then
             -- local units = Players[selPlayerId]:GetUnits();
             -- local unit = units:FindID(selUnitId);
-            
             local unit = nil;
+
             if UnitManager then 
                 unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
             end
+
             if unit and Players[selPlayerId]:IsHuman() then
                 FixUiMode();
                 local unitType	:string = GameInfo.Units[unit:GetUnitType()].UnitType;
+
                 if Controls.GUI_Cheat_Menu_Units_SpawnDlgContainer:IsHidden() then
                     ShowDup();
                 else
@@ -102,14 +106,16 @@ function OnMovement()
     --print( "Cheat Add Movement" );
     if ( isPlayerActive ) then
         local pSelectedUnit = UI.GetHeadSelectedUnit();
+
         if ( pSelectedUnit ~= nil ) then
             -- local units = Players[selPlayerId]:GetUnits();
             -- local unit = units:FindID(selUnitId);
-            
             local unit = nil;
+
             if UnitManager then 
                 unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
             end
+
             if unit and Players[selPlayerId]:IsHuman() then
                 FixUiMode();
                 
@@ -130,14 +136,16 @@ function OnHeal()
     --print( "Cheat Heal" );
     if ( isPlayerActive ) then
         local pSelectedUnit = UI.GetHeadSelectedUnit();
+
         if ( pSelectedUnit ~= nil ) then
             --local units = Players[selPlayerId]:GetUnits();
             --local unit = units:FindID(selUnitId);
-            
             local unit = nil;
+
             if UnitManager then 
                 unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
             end
+
             if unit ~= nil and Players[selPlayerId]:IsHuman() then
                 FixUiMode();
                 
@@ -161,11 +169,12 @@ function OnAttack()
         if ( pSelectedUnit ~= nil ) then
             --local units = Players[selPlayerId]:GetUnits();
             --local unit = units:FindID(selUnitId);
-            
             local unit = nil;
+
             if UnitManager then 
                 unit = UnitManager.GetUnit( selPlayerId, selUnitId ); 
             end
+            
             if unit ~= nil and Players[selPlayerId]:IsHuman() then
                 FixUiMode();
                 
