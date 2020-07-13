@@ -11,12 +11,15 @@ function UpdateNWonderList( plotId )
     if mapNaturaWonders == nil then
         mapNaturaWonders = {};
     end
+
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex( plotId );
+
         if plot ~= nil then
             local curPlotNW		= plot:IsNaturalWonder();
             local curPlotFea	= plot:GetFeatureType();
             local savedMapNW	= mapNaturaWondersPlots[plotId];
+
             if curPlotNW == true and curPlotFea ~= savedMapNW then
                 -- add/update saved map NW
                 mapNaturaWondersPlots[plotId] = curPlotFea;
@@ -34,6 +37,7 @@ end
 function FindNWondersOnMap( plotId )
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex( plotId );
+
         if plot ~= nil then
             -- update only plots in radius
             --print("Update plots in radius", 1);
@@ -44,9 +48,11 @@ function FindNWondersOnMap( plotId )
             local radius = 5;
             local plotX = plot:GetX();
             local plotY = plot:GetY();
+
             for dx = -radius, radius do
                 for dy = -radius,radius do
                     local otherPlot = Map.GetPlotXY(plotX, plotY, dx, dy, radius);
+
                     if otherPlot then
                         --print("Update plots in radius", otherPlot:GetIndex());
                         UpdateNWonderList( otherPlot:GetIndex() );
@@ -64,6 +70,7 @@ function FindNWondersOnMap( plotId )
 
         for i = 0, (iW * iH) - 1, 1 do
             local plot = Map.GetPlotByIndex(i);
+
             if plot then
                 if plot:IsNaturalWonder() then
                     UpdateNWonderList( plot:GetIndex() );
@@ -76,6 +83,7 @@ end
 --******************************************************************************
 function FindNWonders()
     mapNaturaWonders = {};
+
     for plotId, NWId in pairs(mapNaturaWondersPlots) do
         mapNaturaWonders[NWId] = plotId;
     end
@@ -85,10 +93,13 @@ end
 --******************************************************************************
 function UpdateFeaWonderExistMark()
     print(" [#UpdateFeaWonderExistMark] ", 1);
+
     if EntriesFea == nil then
         return;
     end
+
     print(" [#UpdateFeaWonderExistMark] ", 2);
+
     for _, entry in ipairs(EntriesFea) do 
         if entry.Type ~= nil and entry.Type ~= -1 and entry.Type ~= 0 and entry.Type.Index > -1 then
             if mapNaturaWonders[ entry.Type.Index ] ~= nil then
@@ -96,6 +107,7 @@ function UpdateFeaWonderExistMark()
                 entry.Button:SetText(  entry.Text .. " *" );
 
                 local tts = entry.TText;--entry.Button:GetToolTipString();
+
                 if tts ~= nil then
                     entry.Button:SetToolTipString(  tts .. "[NEWLINE]Exist on the map" );
                 end
@@ -104,6 +116,7 @@ function UpdateFeaWonderExistMark()
                 print(" [#UpdateFeaWonderExistMark] ", 4);
                 entry.Button:SetText(  entry.Text );
                 local tts = entry.TText;--entry.Button:GetToolTipString();
+
                 if tts ~= nil then
                     entry.Button:SetToolTipString( tts );
                 end
@@ -117,12 +130,14 @@ end
 function UpdateNWondersOnPendingPlots()
     --print("UpdateNWondersOnPendingPlots()", 1);
     local processed = {};
+
     for i, plotId in ipairs( plotsPendingForNWUpdate ) do
         if processed[plotId] == nil then
             FindNWondersOnMap( plotId );
             processed[plotId] = plotId;
         end
     end
+
     plotsPendingForNWUpdate = {};
     FindNWonders();
     UpdateFeaWonderExistMark();
@@ -134,6 +149,7 @@ end
 -- table example is GameInfo.Improvements()
 function GetAllRows( table1, table2, tbl1KeyColName, tbl1KeyColVal, tbl1ColName, tbl2KeyColName )
     local res = {};
+
     for row1 in table1() do
         if row1[tbl1KeyColName] == tbl1KeyColVal then
             for row2 in table2() do
@@ -160,20 +176,23 @@ function YieldToString( yieldType, yieldCount )
     
     res = "[" .. string.gsub( yieldType, "YIELD", "ICON" ) .. "]";
     local sign = "+";
+
     if yieldCount < 0 then
         sign = "-";
     end
+
     res = res .. " " .. sign .. yieldCount;
     return res;
 end
 
 --******************************************************************************
 function BuildListTerType( )
-    
     local entries = {};
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_TERRAINS_UNCH"), Type=nil });
+
     for type in GameInfo.Terrains() do
         local sText = Locale.Lookup(type.Name);
+
         if type.Water then
             sText = "[COLOR_FLOAT_SCIENCE]" .. sText .. "[ENDCOLOR]";
         elseif type.Mountain then
@@ -198,9 +217,11 @@ function BuildListFea( )
     
     for type in GameInfo.Features() do
         local tooltip = nil;
+
         if type.Description ~= nil then
             tooltip = Locale.Lookup( type.Description );
         end
+
         local sText = Locale.Lookup( type.Name );
 
         if type.NaturalWonder then
@@ -313,11 +334,13 @@ function BuildListRes( )
         end
 
         local yields = {};
+
         for row in GameInfo.Resource_YieldChanges() do
             if row.ResourceType == type.ResourceType then
                 table.insert( yields, row );
             end
         end
+
         if #yields > 0 then
             ttext = ttext .. "[NEWLINE][NEWLINE]" .. Locale.Lookup("LOC_MAP_EDITOR_RES_TT_YIELDS") .. "[NEWLINE]";
             for i, row in ipairs( yields ) do
@@ -327,6 +350,7 @@ function BuildListRes( )
         end
 
         local validTerrains = GetAllRows( GameInfo.Resource_ValidTerrains, GameInfo.Terrains, "ResourceType", type.ResourceType , "TerrainType", "TerrainType" );
+
         if #validTerrains > 0 then
             ttext = ttext .. "[NEWLINE][NEWLINE]" .. Locale.Lookup("LOC_MAP_EDITOR_RES_TT_VALID_TERRAINS");
             for i, terrain in ipairs( validTerrains ) do
@@ -335,6 +359,7 @@ function BuildListRes( )
         end
 
         local validFeatures = GetAllRows( GameInfo.Resource_ValidFeatures, GameInfo.Features, "ResourceType", type.ResourceType , "FeatureType", "FeatureType" );
+
         if #validFeatures > 0 then
             ttext = ttext .. "[NEWLINE][NEWLINE]" .. Locale.Lookup("LOC_MAP_EDITOR_RES_TT_VALID_FEATURES");
             for i, feature in ipairs( validFeatures ) do
@@ -342,10 +367,7 @@ function BuildListRes( )
             end
         end
 
-        
-
         entry.TText = ttext;
-
     end
     
     -- Sort Alphabetize groups
@@ -354,6 +376,7 @@ function BuildListRes( )
         local bType:string = b.Text;
         return aType < bType;
     end
+
     table.sort(luxu, sortFunc);
     table.sort(lux2, sortFunc);
     table.sort(stra, sortFunc);
@@ -372,7 +395,6 @@ end
 
 --******************************************************************************
 function BuildListImp( )
-    
     local entries = {};
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_IMPROVEMENT_UNCH"), Type=nil });
     table.insert(entries, { Text=Locale.Lookup("LOC_WORLDBUILDER_NO_IMPROVEMENT"), Type=-1 });
@@ -386,6 +408,7 @@ function BuildListImp( )
         local sText = Locale.Lookup(type.Name);
 
         local tooltip = type.Description;
+
         if tooltip ~= nil then 
             tooltip = Locale.Lookup( tooltip );
             if type.ImprovementType == 'IMPROVEMENT_POLDER' or type.ImprovementType == 'IMPROVEMENT_MEKEWAP' then
@@ -396,11 +419,11 @@ function BuildListImp( )
         if type.ImprovementType == 'IMPROVEMENT_POLDER' or type.ImprovementType == 'IMPROVEMENT_MEKEWAP' then
             sText = sText .. " [COLOR_RED]" .. " !" .. "[ENDCOLOR]";
         end
+
         if type.CanBuildOutsideTerritory or type.ImprovementType == "IMPROVEMENT_BARBARIAN_CAMP" or type.ImprovementType == "IMPROVEMENT_GOODY_HUT" then
             sText = "[COLOR_RED]" .. sText .. "[ENDCOLOR]";
             table.insert(outs, { Text=sText, Type=type, TText = tooltip });
         else
-            
             if type.Domain == "DOMAIN_SEA" then
                 sText = "[COLOR_FLOAT_SCIENCE]" .. sText .. "[ENDCOLOR]";
             elseif type.TraitType ~= nil then
@@ -424,6 +447,7 @@ function BuildListImp( )
         local bType:string = b.Text;
         return aType < bType;
     end
+
     table.sort(base, sortFunc);
     table.sort(outs, sortFunc);
     table.sort(spec, sortFunc);
@@ -438,7 +462,6 @@ end
 
 --******************************************************************************
 function BuildListRoute( )
-    
     local entries = {};
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_ROUTE_UNCH"), Type=nil });
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_ROUTE_NONE"), Type=RouteTypes.NONE });
@@ -452,7 +475,6 @@ end
 
 --******************************************************************************
 function BuildListOwner( )
-    
     local entries = {};
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_OWNER_UNCH"), Type=nil });
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_OWNER_NONE"), Type=-1 });
@@ -489,7 +511,6 @@ end
 
 --******************************************************************************
 function BuildListElev( )
-    
     local entries = {};
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_ELEVATION_UNCH"), Type=nil });
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_ELEVATION_NONE"), Type=-1 });
@@ -502,7 +523,6 @@ end
 
 --******************************************************************************
 function BuildListContType( )
-    
     local entries = {};
     table.insert(entries, { Text=Locale.Lookup("LOC_MAP_EDITOR_CONTINENTS_UNCH"), Type=nil });
     table.insert(entries, { Text=Locale.Lookup("LOC_TOOLTIP_CONTINENT_NONE"), Type=-1 });
@@ -523,7 +543,6 @@ end
 
 --******************************************************************************
 function BuildListRivers( )
-
     local riverNum :number = RiverManager.GetNumRivers();
         local type;
         local entries = {};
@@ -560,7 +579,6 @@ function BuildListRivers( )
                  str  = "(ID: " .. str .. ") " .. Locale.Lookup(namedRiver.Name);-- string.gsub( namedRiver.NamedRiverType, "NAMED_RIVER_", "" );
                  sText = str;
             end
-
 
             table.insert(entries, { Text=sText, Type=type });
         end
