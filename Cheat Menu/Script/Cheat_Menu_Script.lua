@@ -17,6 +17,7 @@ function ChangeLUXURYResources(playerID)
     local resourceInfo = GameInfo.Resources();
     local playerResources = Players[playerID]:GetResources();
     local iValue = math.random(1, 3);
+
     for resource in GameInfo.Resources() do
       if resource.ResourceClassType == "RESOURCECLASS_LUXURY" then
         playerResources:ChangeResourceAmount(resource.Index, iValue);
@@ -30,6 +31,7 @@ function ChangeSTRATEGICResources(playerID)
     local resourceInfo = GameInfo.Resources();
     local playerResources = Players[playerID]:GetResources();
     local iValue = math.random(1, 3);
+
     for resource in GameInfo.Resources() do
       if resource.ResourceClassType == "RESOURCECLASS_STRATEGIC" then
         playerResources:ChangeResourceAmount(resource.Index, iValue);
@@ -43,6 +45,7 @@ function ChangeBONUSResources(playerID)
     local resourceInfo = GameInfo.Resources();
     local playerResources = Players[playerID]:GetResources();
     local iValue = math.random(1, 3);
+
     for resource in GameInfo.Resources() do
       if resource.ResourceClassType == "RESOURCECLASS_BONUS" then
         playerResources:ChangeResourceAmount(resource.Index, iValue);
@@ -53,6 +56,7 @@ end
 function ChangeEraScore(playerID)
     local playerID = Game.GetLocalPlayer()
     local pPlayer = Players[playerID]
+
     if (Game.GetEras ~= nil) then
         Game.GetEras():ChangePlayerEraScore(playerID, 10);
     end
@@ -61,6 +65,7 @@ end
 function ChangeEraScoreBack(playerID)
     local playerID = Game.GetLocalPlayer()
     local pPlayer = Players[playerID]
+
     if (Game.GetEras ~= nil) then
         Game.GetEras():ChangePlayerEraScore(playerID, -10);
     end
@@ -74,10 +79,11 @@ end
 
 function CompleteProduction(playerID)
     local pPlayer = Players[playerID]
-    local pCity = pPlayer:GetCities():FindID(iCity)	
+    local pCity = pPlayer:GetCities():FindID(iCity)
     local pCityBuildQueue = pCity:GetBuildQueue();
+
     if iPlayer == playerID then
-        pCityBuildQueue:FinishProgress()		
+        pCityBuildQueue:FinishProgress()
     end
 end
 
@@ -85,6 +91,7 @@ function CompleteAllResearch(playerID)
     local playerID = Game.GetLocalPlayer()
     local pPlayer = Players[playerID]
     local pTechs = pPlayer:GetTechs()
+
     for kTech in GameInfo.Technologies() do
         pTechs:SetResearchProgress(kTech.Index, pTechs:GetResearchCost(kTech.Index))
     end
@@ -94,6 +101,7 @@ function CompleteAllCivic(playerID)
     local playerID = Game.GetLocalPlayer()
     local pPlayer = Players[playerID]
     local pTechs = pPlayer:GetCulture()
+
     for kTech in GameInfo.Civics() do
         pTechs:SetCulturalProgress(kTech.Index, pTechs:GetCultureCost(kTech.Index))
     end
@@ -118,9 +126,10 @@ function ChangeFaith(playerID, pNewReligion)
 end
 
 function ChangePopulation(playerID, pNewPopulation, pCity)
-    local pPlayer = Players[playerID]	
+    local pPlayer = Players[playerID]
+
     if iPlayer == playerID then
-        local pCity = pPlayer:GetCities():FindID(iCity)	
+        local pCity = pPlayer:GetCities():FindID(iCity)
         if pCity ~= nil then
             pCity:ChangePopulation(pNewPopulation);
         end
@@ -130,7 +139,8 @@ end
 function MakeFreeCity(playerID, pCity)
     local pPlayer = Players[playerID]
     if iPlayer == playerID then
-        local pCity = pPlayer:GetCities():FindID(iCity)	
+        local pCity = pPlayer:GetCities():FindID(iCity)
+
         if pCity ~= nil then
             CityManager.TransferCityToFreeCities(pCity);
         end	
@@ -138,13 +148,17 @@ function MakeFreeCity(playerID, pCity)
 end
 
 function RestoreCityHealth(playerID)
-    local pPlayer = Players[playerID]	
+    local pPlayer = Players[playerID]
+
     if iPlayer == playerID then
-        local pCity = pPlayer:GetCities():FindID(iCity)	
+        local pCity = pPlayer:GetCities():FindID(iCity)
+
         if (pCity ~= nil) then
             local pCityDistricts = pCity:GetDistricts();
+
             if (pCityDistricts ~= nil) then
                 local pCityCenter = pCityDistricts:GetDistrictAtLocation(pCity:GetX(), pCity:GetY());
+
                 if (pCityCenter ~= nil) then
                     pCityCenter:SetDamage(DefenseTypes.DISTRICT_GARRISON, 0);
                     pCityCenter:SetDamage(DefenseTypes.DISTRICT_OUTER, 0);
@@ -155,16 +169,18 @@ function RestoreCityHealth(playerID)
 end
 
 function ChangeCityLoyalty(playerID)
-    local pPlayer = Players[playerID]	
+    local pPlayer = Players[playerID]
+
     if iPlayer == playerID then
         local pCity = pPlayer:GetCities():FindID(iCity)
-        pCity:ChangeLoyalty(100)		
+        pCity:ChangeLoyalty(100)
     end
 end
 
 function UnitPromote(playerID, unitID)
     local pUnit = UnitManager.GetUnit(playerID, unitID)
     local pUnitExp = pUnit:GetExperience():GetExperienceForNextLevel();
+
     if pUnitExp > 0 then
         pUnit:GetExperience():ChangeExperience(pUnitExp);
         UnitManager.ChangeMovesRemaining(pUnit, 1);
@@ -173,6 +189,7 @@ end
 
 function UnitMovementChange(playerID, unitID)
     local pUnit = UnitManager.GetUnit(playerID, unitID)
+
     if (pUnit ~= nil) then
         UnitManager.RestoreMovement(pUnit);
         UnitManager.RestoreUnitAttacks(pUnit);
@@ -181,6 +198,7 @@ end
 
 function UnitAddMovement(playerID, unitID)
     local pUnit = UnitManager.GetUnit(playerID, unitID)
+
     if (pUnit ~= nil) then
         UnitManager.ChangeMovesRemaining(pUnit, 5);
         UnitManager.RestoreUnitAttacks(pUnit);
@@ -189,8 +207,9 @@ end
 
 function OnDuplicate(playerID, unitId, unitType)
     local DupeUnit = nil;
-    local pUnit = UnitManager.GetUnit( playerID, unitId ); 
+    local pUnit = UnitManager.GetUnit( playerID, unitId );
     local pPlot = Map.GetPlot(pUnit:GetX(), pUnit:GetY());
+
     if pUnit ~= nil and Players[playerID]:IsHuman() then
         DupeUnit = UnitManager.InitUnitValidAdjacentHex(playerID, unitType, pPlot:GetX(), pPlot:GetY(), 1);
     end
@@ -198,6 +217,7 @@ end
 
 function UnitHealChange(playerID, unitID)
     local pUnit = UnitManager.GetUnit(playerID, unitID)
+
     if (pUnit ~= nil) then
         pUnit:SetDamage(0);
     end
@@ -205,6 +225,7 @@ end
 
 function UnitFormCorps(playerID, unitID)
     local pUnit = UnitManager.GetUnit(playerID, unitID)
+
     if (pUnit ~= nil) then
         pUnit:SetMilitaryFormation(MilitaryFormationTypes.CORPS_FORMATION);
     end
@@ -212,6 +233,7 @@ end
 
 function UnitFormArmy(playerID, unitID)
     local pUnit = UnitManager.GetUnit(playerID, unitID)
+
     if (pUnit ~= nil) then
         pUnit:SetMilitaryFormation(MilitaryFormationTypes.ARMY_FORMATION);
     end
@@ -225,6 +247,7 @@ end
 
 function ChangeDiplomaticFavor(playerID, pNewFavor)
     local pPlayer = Players[playerID]
+
     if pPlayer:GetDiplomacy().ChangeFavor ~= nil then
         pPlayer:GetDiplomacy():ChangeFavor(pNewFavor);
     end	
@@ -237,6 +260,7 @@ end
 
 function RevealAll(playerID)
     local eObserverID = Game.GetLocalObserver();
+
     if (eObserverID == PlayerTypes.OBSERVER) then
         PlayerManager.SetLocalObserverTo(playerID);
     else
@@ -246,7 +270,7 @@ end
 
 function SetValues(playerID, cityID)
     iPlayer = playerID
-    iCity = cityID	
+    iCity = cityID
 end
 
 -- // ----------------------------------------------------------------------------------------------
@@ -255,7 +279,10 @@ end
 function Initialize()
     Events.CitySelectionChanged.Add(SetValues)
 
-    if ( not ExposedMembers.MOD_CheatMenu) then ExposedMembers.MOD_CheatMenu = {}; end
+    if ( not ExposedMembers.MOD_CheatMenu) then
+        ExposedMembers.MOD_CheatMenu = {};
+    end
+
     ExposedMembers.MOD_CheatMenu.MakeFreeCity = MakeFreeCity;
     ExposedMembers.MOD_CheatMenu.ChangeLUXURYResources = ChangeLUXURYResources;
     ExposedMembers.MOD_CheatMenu.ChangeSTRATEGICResources = ChangeSTRATEGICResources;
@@ -285,6 +312,7 @@ function Initialize()
     ExposedMembers.MOD_CheatMenu.UnitAddMovement = UnitAddMovement;
     ExposedMembers.MOD_CheatMenu.RestoreCityHealth = RestoreCityHealth;
     ExposedMembers.MOD_CheatMenu_Initialized = true;
+    
     print( "Cheat Menu Initialization Started" );
 end
 
