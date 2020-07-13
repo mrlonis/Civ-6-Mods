@@ -23,7 +23,7 @@ function tprint (tbl, indent)
       print(formatting)
       tprint(v, indent+1)
     elseif type(v) == 'boolean' then
-      print(formatting .. tostring(v))      
+      print(formatting .. tostring(v))
     elseif type(v) == 'userdata' then
         print(formatting .. tostring(v))
     else
