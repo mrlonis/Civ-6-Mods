@@ -27,6 +27,7 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
 
         -- Assume first tile is the western one, check the one to the east
         local pAdjacentPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_EAST);
+
         if (pAdjacentPlot ~= nil 
             and ( disableValidation or TerrainBuilder.CanHaveFeature(pAdjacentPlot, eFeatureType, true) == true )
             ) then
@@ -34,7 +35,6 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
             print(" CustomGetMultiTileFeaturePlotList: ", 2 );
             return true;
         end
-
     -- 2 tiles on coast, roughly facing camera
     elseif (customPlacement == "PLACEMENT_CLIFFS_DOVER") then
         local pNEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
@@ -45,6 +45,7 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
 
         -- W and SW are water, see if SE works
         local pSecondPlot;
+
         if ( disableValidation or ( pWPlot ~= nil and pSWPlot ~= nil and pWPlot:IsWater() and pWPlot:IsLake() == false and pSWPlot:IsWater() and pWPlot:IsLake() == false ) ) then
             pSecondPlot = pSEPlot;
 
@@ -65,10 +66,8 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
             table.insert(aPlots, pSecondPlot:GetIndex());
             return true;
         end
-
     -- 2 tiles, one on coastal land and one in water, try to face camera if possible
     elseif (customPlacement == "PLACEMENT_GIANTS_CAUSEWAY") then
-
         -- Assume first tile a land tile without hills, check around it in a preferred order for water
         if ( not disableValidation and ( pPlot:IsWater() or pPlot:IsHills() )) then
             print(" CustomGetMultiTileFeaturePlotList: ", 4 );
@@ -76,44 +75,48 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
         end
 
         local pSWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
+
         if (pSWPlot ~= nil and pSWPlot:IsWater() and pSWPlot:IsLake() == false) then
             table.insert(aPlots, pSWPlot:GetIndex());
             return true;
         end
 
         local pSEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_SOUTHEAST);
+
         if (pSEPlot ~= nil and pSEPlot:IsWater() and pSEPlot:IsLake() == false) then
             table.insert(aPlots, pSEPlot:GetIndex());
             return true;
         end
 
         local pWPlot  = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_WEST);
+
         if (pWPlot ~= nil and pWPlot:IsWater() and pWPlot:IsLake() == false) then
             table.insert(aPlots, pWPlot:GetIndex());
             return true;
         end
 
         local pEPlot  = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_EAST);
+
         if (pEPlot ~= nil and pEPlot:IsWater() and pEPlot:IsLake() == false) then
             table.insert(aPlots, pEPlot:GetIndex());
             return true;
         end
 
         local pNWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
+
         if (pNWPlot ~= nil and pNWPlot:IsWater() and pNWPlot:IsLake() == false) then
             table.insert(aPlots, pNWPlot:GetIndex());
             return true;
         end
 
         local pNEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
+
         if (pNEPlot ~= nil and pNEPlot:IsWater() and pNEPlot:IsLake() == false) then
             table.insert(aPlots, pNEPlot:GetIndex());
             return true;
         end
-        
     -- 3 tiles in triangle coast on front edge, land behind (with any rotation)
     elseif (customPlacement == "PLACEMENT_PIOPIOTAHI") then
-
         local pWPlot  = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_WEST);
         local pNWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
         local pNEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
@@ -122,7 +125,6 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
         local pSWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
         
         -- all 6 hexes around must be land
-
         if ( not disableValidation and ( pNWPlot == nil or pNEPlot == nil or pWPlot== nil or pSWPlot== nil or pSEPlot== nil or pEPlot== nil or pNWPlot:IsWater() or pNEPlot:IsWater() or pWPlot:IsWater() or pSWPlot:IsWater() or pSEPlot:IsWater() or pEPlot:IsWater() )) then
             print(" CustomGetMultiTileFeaturePlotList: ", 5 );
             return false;
@@ -190,6 +192,7 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pSWPlot:GetX(), pSWPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pWPlot:GetX(), pWPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pWPlot:GetX(), pWPlot:GetY(), DirectionTypes.DIRECTION_WEST);
+
                 if ( not disableValidation and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     print(" CustomGetMultiTileFeaturePlotList: ", 14 );
                     return false;
@@ -215,6 +218,7 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pWPlot:GetX(), pWPlot:GetY(), DirectionTypes.DIRECTION_WEST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pNWPlot:GetX(), pNWPlot:GetY(), DirectionTypes.DIRECTION_WEST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pNWPlot:GetX(), pNWPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
+
                 if ( not disableValidation and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     print(" CustomGetMultiTileFeaturePlotList: ", 18 );
                     return false;
@@ -240,6 +244,7 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pNEPlot:GetX(), pNEPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pEPlot:GetX(), pEPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pEPlot:GetX(), pEPlot:GetY(), DirectionTypes.DIRECTION_EAST);
+
                 if ( not disableValidation and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     print(" CustomGetMultiTileFeaturePlotList: ", 22 );
                     return false;
@@ -265,6 +270,7 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pNWPlot:GetX(), pNWPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pNEPlot:GetX(), pNEPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pNEPlot:GetX(), pNEPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
+
                 if ( not disableValidation and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     print(" CustomGetMultiTileFeaturePlotList: ", 26 );
                     return false;
@@ -290,16 +296,20 @@ function CustomGetMultiTileFeaturePlotList2(pPlot, eFeatureType, aPlots)
             -- second tile EAST
             table.insert(aPlots, pEPlot:GetIndex());
         end
+
         if tilesCount > 2 then
             -- third tile NORTHEAST
             table.insert(aPlots, pNEPlot:GetIndex());
         end
+
         if tilesCount > 3 then
             -- third tile NORTHWEST
             table.insert(aPlots, pNWPlot:GetIndex());
         end
+
         return true;
     end
+
     print(" CustomGetMultiTileFeaturePlotList: ", 27 );
     return false;
 end
@@ -324,6 +334,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
 
         -- Assume first tile is the western one, check the one to the east
         local pAdjacentPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_EAST);
+
         if (pAdjacentPlot ~= nil and ( disableValidation or TerrainBuilder.CanHaveFeature(pAdjacentPlot, eFeatureType, true) == true) ) then
             table.insert(aPlots, pAdjacentPlot:GetIndex());
             return true;
@@ -339,6 +350,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
 
         -- W and SW are water, see if SE works
         local pSecondPlot;
+
         if (pWPlot ~= nil and pSWPlot ~= nil and ( disableValidation or pWPlot:IsWater() and pWPlot:IsLake() == false and pSWPlot:IsWater() and pWPlot:IsLake() == false ) ) then
             pSecondPlot = pSEPlot;
 
@@ -358,46 +370,50 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
             table.insert(aPlots, pSecondPlot:GetIndex());
             return true;
         end
-
     -- 2 tiles, one on coastal land and one in water, try to face camera if possible
     elseif (customPlacement == "PLACEMENT_GIANTS_CAUSEWAY") then
-
         -- Assume first tile a land tile without hills, check around it in a preferred order for water
         if ( (not disableValidation) and ( pPlot:IsWater() or pPlot:IsHills() ) ) then
             return false;
         end
 
         local pSWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
+
         if (pSWPlot ~= nil and pSWPlot:IsWater() and pSWPlot:IsLake() == false) then
             table.insert(aPlots, pSWPlot:GetIndex());
             return true;
         end
 
         local pSEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_SOUTHEAST);
+
         if (pSEPlot ~= nil and pSEPlot:IsWater() and pSEPlot:IsLake() == false) then
             table.insert(aPlots, pSEPlot:GetIndex());
             return true;
         end
 
         local pWPlot  = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_WEST);
+
         if (pWPlot ~= nil and pWPlot:IsWater() and pWPlot:IsLake() == false) then
             table.insert(aPlots, pWPlot:GetIndex());
             return true;
         end
 
         local pEPlot  = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_EAST);
+
         if (pEPlot ~= nil and pEPlot:IsWater() and pEPlot:IsLake() == false) then
             table.insert(aPlots, pEPlot:GetIndex());
             return true;
         end
 
         local pNWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
+
         if (pNWPlot ~= nil and pNWPlot:IsWater() and pNWPlot:IsLake() == false) then
             table.insert(aPlots, pNWPlot:GetIndex());
             return true;
         end
 
         local pNEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
+
         if ( pNEPlot ~= nil and ( disableValidation or ( pNEPlot:IsWater() and pNEPlot:IsLake() == false ) ) ) then
             table.insert(aPlots, pNEPlot:GetIndex());
             return true;
@@ -429,11 +445,12 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
 
     -- 3 tiles in a straight line
     elseif (customPlacement == "PLACEMENT_ZHANGYE_DANXIA") then
-
         for i = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
             local pFirstPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), i);
+
             if ( pFirstPlot ~= nil and ( disableValidation or TerrainBuilder.CanHaveFeature(pFirstPlot, eFeatureType, true) ) ) then
                 local pSecondPlot = Map.GetAdjacentPlot(pFirstPlot:GetX(), pFirstPlot:GetY(), i);
+
                 if ( pSecondPlot ~= nil and ( disableValidation or TerrainBuilder.CanHaveFeature(pSecondPlot, eFeatureType, true) ) ) then
                     table.insert(aPlots, pFirstPlot:GetIndex());
                     table.insert(aPlots, pSecondPlot:GetIndex());
@@ -444,7 +461,6 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
 
     -- 3 tiles in triangle coast on front edge, land behind (with any rotation)
     elseif (customPlacement == "PLACEMENT_PIOPIOTAHI") then
-
         local pWPlot  = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_WEST);
         local pNWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
         local pNEPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
@@ -453,7 +469,6 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
         local pSWPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
         
         -- all 6 hexes around must be land
-
         if ( pNWPlot == nil or pNEPlot == nil or pWPlot== nil or pSWPlot== nil or pSEPlot== nil or pEPlot== nil or ( not disableValidation ) and ( pNWPlot:IsWater() or pNEPlot:IsWater() or pWPlot:IsWater() or pSWPlot:IsWater() or pSEPlot:IsWater() or pEPlot:IsWater() ) ) then
             return false;
         else
@@ -469,6 +484,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pSEPlot:GetX(), pSEPlot:GetY(), DirectionTypes.DIRECTION_SOUTHEAST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pSWPlot:GetX(), pSWPlot:GetY(), DirectionTypes.DIRECTION_SOUTHEAST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pSWPlot:GetX(), pSWPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
+
                 if ( ( not disableValidation ) and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     return false;
                 else
@@ -512,6 +528,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pSWPlot:GetX(), pSWPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pWPlot:GetX(), pWPlot:GetY(), DirectionTypes.DIRECTION_SOUTHWEST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pWPlot:GetX(), pWPlot:GetY(), DirectionTypes.DIRECTION_WEST);
+
                 if ( ( not disableValidation ) and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     return false;
                 else
@@ -533,6 +550,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pWPlot:GetX(), pWPlot:GetY(), DirectionTypes.DIRECTION_WEST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pNWPlot:GetX(), pNWPlot:GetY(), DirectionTypes.DIRECTION_WEST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pNWPlot:GetX(), pNWPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
+
                 if ( ( not disableValidation ) and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     return false;
                 else
@@ -554,6 +572,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pNEPlot:GetX(), pNEPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pEPlot:GetX(), pEPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pEPlot:GetX(), pEPlot:GetY(), DirectionTypes.DIRECTION_EAST);
+
                 if ( ( not disableValidation ) and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     return false;
                 else
@@ -575,6 +594,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 pWaterCheck1 = Map.GetAdjacentPlot(pNWPlot:GetX(), pNWPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
                 pWaterCheck2 = Map.GetAdjacentPlot(pNEPlot:GetX(), pNEPlot:GetY(), DirectionTypes.DIRECTION_NORTHWEST);
                 pWaterCheck3 = Map.GetAdjacentPlot(pNEPlot:GetX(), pNEPlot:GetY(), DirectionTypes.DIRECTION_NORTHEAST);
+
                 if ( ( not disableValidation ) and ( pWaterCheck1:IsWater() == false or pWaterCheck2:IsWater() == false or pWaterCheck3:IsWater() == false ) ) then
                     return false;
                 else
@@ -617,6 +637,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 table.insert(aPlots, pNEPlot:GetIndex());
             end
         end
+
         if tilesCount > 3 then
             -- "FEATURE_CHOCOLATEHILLS" shape ???
             -- "FEATURE_WHITEDESERT" shape ???
@@ -634,6 +655,7 @@ function CustomGetMultiTileFeaturePlotList(pPlot, eFeatureType, aPlots)
                 table.insert(aPlots, pNWPlot:GetIndex());
             end
         end
+
         return true;
     end
 
@@ -647,6 +669,7 @@ local function Initialize()
     if ExposedMembers.MOD_Map_Editor == nil then
         ExposedMembers.MOD_Map_Editor = {};
     end
+    
     ExposedMembers.MOD_Map_Editor.CustomGetMultiTileFeaturePlotList = CustomGetMultiTileFeaturePlotList;
     
     print( " ################ End Initializing Mod Map_Editor WonderGen Script... ################ " );
