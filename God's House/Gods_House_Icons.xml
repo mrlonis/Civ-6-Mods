@@ -5,8 +5,10 @@
 <!-- Last Modified By: mrlonis -->
 <!-- Last Modified On: 07/12/2020 -->
 <GameData>
-	<!-- For simplicity, reuse an existing icon. -->
-	<IconDefinitions>
-		<Row Name="ICON_BUILDING_GODS_HOUSE" Atlas="ICON_ATLAS_BUILDINGS" Index="26"/>
-	</IconDefinitions>
+    <!-- For simplicity, reuse an existing icon. -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_HOUSE"
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="26"/>
+    </IconDefinitions>
 </GameData>
