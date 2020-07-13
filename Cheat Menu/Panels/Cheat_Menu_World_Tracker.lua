@@ -37,13 +37,13 @@ end
 -- // Panel Control and Checkbox Attach
 -- // ----------------------------------------------------------------------------------------------
 function UpdateCheatPanel(hideCheatPanel:boolean)
-    m_hideCheatPanel = hideCheatPanel; 
+    m_hideCheatPanel = hideCheatPanel;
     Controls.CheatPanel:SetHide(m_hideCheatPanel);
     Controls.ToggleCheatPanel:SetCheck(not m_hideCheatPanel);
 end
 
 function InitDropdown()
-    local parent = ContextPtr:LookUpControl("/InGame/WorldTracker/CivicsCheckButton",	Controls.PanelStack );
+    local parent = ContextPtr:LookUpControl("/InGame/WorldTracker/CivicsCheckButton", Controls.PanelStack );
     if parent == nil then return end;
     Controls.CheatPanelStack:ChangeParent(parent);
     parent.ReprocessAnchoring();
@@ -54,13 +54,13 @@ end
 --	If the official Civ6 Expansion "Rise and Fall" (XP1) and "Gathering Storm" (XP2) is active.
 -- ====================================================================================================
 function IsExpansion1Active()
-    local isActive1:boolean  = Modding.IsModActive("1B28771A-C749-434B-9053-D1380C553DE9");
+    local isActive1:boolean = Modding.IsModActive("1B28771A-C749-434B-9053-D1380C553DE9");
     return isActive1;
 end
 
 -- ====================================================================================================
 function IsExpansion2Active()
-    local isActive2:boolean  = Modding.IsModActive("4873eb62-8ccc-4574-b784-dda455e74e68");
+    local isActive2:boolean = Modding.IsModActive("4873eb62-8ccc-4574-b784-dda455e74e68");
     return isActive2;
 end
 -- ====================================================================================================
@@ -177,7 +177,7 @@ end
 function OnInputHandler( pInputStruct:table )
     local uiMsg = pInputStruct:GetMessageType();
 
-    if uiMsg == KeyEvents.KeyUp then 
+    if uiMsg == KeyEvents.KeyUp then
         return KeyHandler( pInputStruct:GetKey() ); 
     end
 
