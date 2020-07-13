@@ -989,10 +989,8 @@ local function GetRiverPlotFunctions( plotId, plotSide )
              checkFunc = plot["IsNEOfRiver"];
              checkFlowFunc = plot["GetRiverSWFlowDirection"]; 
         end
-    else
-        -- plot == nil
-        print("GetRiverPlotFunctions(). Plot is nil ", plotId);
     end
+
     return plot, setFunc, checkFunc, checkFlowFunc;
 end
 
@@ -1044,7 +1042,9 @@ local function SetOfRiver(plotId, plotSide, rivId, enabled, fDir)
             end
         end
     end
+
     return res;
+
 end
 
 --******************************************************************************
@@ -1217,33 +1217,22 @@ end
 
 --******************************************************************************
 local function FixGameData()
-    --if TerrainBuilder.AnalyzeChokepoints ~= nil then
-        --TerrainBuilder.AnalyzeChokepoints();
-        --AreaBuilder.Recalculate();
-        --TerrainBuilder.StampContinents();
-        print(" ###### TerrainBuilder.AnalyzeChokepoints() ");
-        TerrainBuilder.AnalyzeChokepoints();
-    --end
+    TerrainBuilder.AnalyzeChokepoints();
 end
 
 --******************************************************************************
 local function FixAreaData()
-    --if TerrainBuilder.AnalyzeChokepoints ~= nil then
-        --TerrainBuilder.AnalyzeChokepoints();
-        print(" ###### AreaBuilder.Recalculate() ");
-        AreaBuilder.Recalculate();
-        --print(" ###### TerrainBuilder.StampContinents() ");
-        --TerrainBuilder.StampContinents();
-        --TerrainBuilder.AnalyzeChokepoints();
-    --end
+    AreaBuilder.Recalculate();
 end
 
 --************************************************************
 function DeleteUnits(plotId)
     if plotId ~= nil then
         local plot = Map.GetPlotByIndex(plotId);
+
         if plot ~= nil then 
             local aUnits = Units.GetUnitsInPlot(plot);
+            
             for i, pUnit in ipairs(aUnits) do
                 Players[pUnit:GetOwner()]:GetUnits():Destroy(pUnit);
             end
@@ -1317,6 +1306,7 @@ function ChangePlotOwner( plotId, newOwner, safeMod, safeAdvMod )
             end
         end
     end
+
     print("ChangePlotOwner", 4 );
 end
 
@@ -1333,6 +1323,7 @@ local function Initialize()
     if ExposedMembers.MOD_Map_Editor == nil then
         ExposedMembers.MOD_Map_Editor = {};
     end
+
     ExposedMembers.MOD_Map_Editor.ChangePlot = ChangePlot;
     ExposedMembers.MOD_Map_Editor.FixGameData = FixGameData;
     ExposedMembers.MOD_Map_Editor.FixAreaData = FixAreaData;
