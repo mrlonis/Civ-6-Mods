@@ -1,1 +1,6 @@
+# Files
 *.civ6suo
+
+# Folders
+/.vscode/
+/Assets/Mods/
