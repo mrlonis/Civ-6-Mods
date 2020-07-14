@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="bbbfece2-701b-4bdd-a037-60c9694f8543" version="1">
+  <Properties>
+    <Name>UC - Fresh Water Works</Name>
+    <Description>Aqueduct, Dam, and Canal provide more [ICON_Housing] Housing based on their placement. Aqueducts provide [ICON_Housing] Housing based on Appeal (just like Neighborhoods) once Urbanization is unlocked. Dams provide fresh water to directly adjacent cities. Canals provide fresh water to directly adjacent cities if the canal itself has access to fresh water.</Description>
+    <Teaser>Water works districts provide extra [ICON_Housing] Housing.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Database">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <File>UC_FWW_Shared.sql</File>
+      <File>UC_FWW_Aqueduct.sql</File>
+      <File>UC_FWW_Dam.sql</File>
+      <File>UC_FWW_Canal.sql</File>
+    </UpdateDatabase>
+    <UpdateDatabase id="Database_p0k">
+      <Properties>
+        <LoadOrder>16</LoadOrder>
+      </Properties>
+      <File>UC_FWW_p0k.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>UC_FWW_Aqueduct.sql</File>
+    <File>UC_FWW_Canal.sql</File>
+    <File>UC_FWW_Dam.sql</File>
+    <File>UC_FWW_p0k.sql</File>
+    <File>UC_FWW_Shared.sql</File>
+  </Files>
+</Mod>

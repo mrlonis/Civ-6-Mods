@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="6b9a23f0-cc69-4a8a-93c9-aaf5868d588a" version="4">
+  <Properties>
+    <Name>Cheat Menu For [COLOR_Civ6Yellow]Units[ENDCOLOR]</Name>
+    <Description>Adds UI mini bar with cheat actions for selected unit.[NEWLINE][NEWLINE]Cheat actions:[NEWLINE]* Heal Unit[NEWLINE]* Promote Unit[NEWLINE]* Add Movement Points[NEWLINE]* Restore attack ability after unit have already attacked[NEWLINE]* Duplicate/create unit[NEWLINE][NEWLINE]Version 19</Description>
+    <Created>1572274870</Created>
+    <Teaser>Adds UI mini bar with cheat actions for selected unit.</Teaser>
+    <Authors>_Zur13_</Authors>
+    <SpecialThanks>Gedemon</SpecialThanks>
+    <AffectsSavedGames>0</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <References>
+    <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="Expansion: Rise and Fall" />
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </References>
+  <InGameActions>
+    <AddUserInterfaces id="AddUiBar">
+      <Properties>
+        <Context>InGame</Context>
+        <LoadOrder>9999</LoadOrder>
+      </Properties>
+      <File>UnitCheats_Minibar.xml</File>
+    </AddUserInterfaces>
+    <AddGameplayScripts id="BaseScripts">
+      <Properties>
+        <LoadOrder>8888</LoadOrder>
+      </Properties>
+      <File>UnitCheats_Base.lua</File>
+    </AddGameplayScripts>
+    <UpdateDatabase id="NewAction" />
+    <ImportFiles id="UIImport">
+      <Properties>
+        <LoadOrder>5000</LoadOrder>
+      </Properties>
+      <File>UnitCheats_Minibar_Import_Btns.lua</File>
+      <File>UnitCheats_Minibar_Import_DupDlg.lua</File>
+    </ImportFiles>
+  </InGameActions>
+  <Files>
+    <File>UnitCheats_Base.lua</File>
+    <File>UnitCheats_Minibar.lua</File>
+    <File>UnitCheats_Minibar.xml</File>
+    <File>UnitCheats_Minibar_Import_Btns.lua</File>
+    <File>UnitCheats_Minibar_Import_DupDlg.lua</File>
+  </Files>
+</Mod>

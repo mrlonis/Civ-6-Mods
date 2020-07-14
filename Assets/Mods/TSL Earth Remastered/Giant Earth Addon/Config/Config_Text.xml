@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<Replace Tag="LOC_VIKING_GiantEarth_NAME" Language="en_US">
+			<Text>VIKING Giant Earth</Text>
+		</Replace>
+		<Replace Tag="LOC_VIKING_GiantEarth_DESC" Language="en_US"
+>			<Text>Earth (150x94) by VIKING with added YNAMP features.[NEWLINE]Part of the TSL Earth Remastered Map Pack.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

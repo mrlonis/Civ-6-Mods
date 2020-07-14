@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="2fc7368c-37ff-48c1-82c5-8b61c4478cac" version="1">
+  <Properties>
+    <Name>UC - Suburban Roads</Name>
+    <Description>Roads are automatically built around city centers and specialty districts (those requiring population) beginning with Civil Service or the Renaissance era, whichever comes first. The Government Plaza is always surrounded by Roads automatically.</Description>
+    <Created>1573245496</Created>
+    <Teaser>Roads are automatically built around districts.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Properties>
+        <LoadOrder>1300</LoadOrder>
+      </Properties>
+      <File>UC_VIA_Gameplay.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <File>UC_VIA_Text.sql</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>UC_VIA_Gameplay.sql</File>
+    <File>UC_VIA_Text.sql</File>
+  </Files>
+</Mod>

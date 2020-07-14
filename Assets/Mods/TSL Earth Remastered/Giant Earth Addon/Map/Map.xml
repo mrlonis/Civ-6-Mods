@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!-- Majors -->
+	<StartPosition>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_AMERICA"	        X="30" Y="64" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ARABIA"			X="85" Y="47" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_AUSTRALIA"         X="141" Y="15" />		
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_AZTEC"				X="19" Y="51" />		
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_BRAZIL"			X="43" Y="28" />		
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CHINA"				X="120" Y="61" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CREE"				X="21" Y="73" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_EGYPT"				X="80" Y="50" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ENGLAND"	        X="61" Y="70" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_FRANCE"			X="65" Y="66" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GEORGIA"			X="90" Y="63" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GERMANY"	        X="70" Y="67" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GREECE"			X="79" Y="57" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GREECE"			X="76" Y="55" Leader="LEADER_GORGO" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GREECE"			X="76" Y="55" AlternateStart="1" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_INDIA"				X="107" Y="53" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_INDIA"				X="111" Y="53" Leader="LEADER_CHANDRAGUPTA" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_INDIA"				X="106" Y="43" AlternateStart="1" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_JAPAN"				X="139" Y="61" />		
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KONGO"				X="77" Y="26"/>
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_NORWAY"			X="70" Y="85" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_NUBIA"				X="82" Y="40" />		
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ROME"				X="71" Y="59" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_RUSSIA"			X="87" Y="74" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SCOTLAND"			X="59" Y="75" />		
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SCYTHIA"	        X="90" Y="68" />		
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SPAIN"				X="61" Y="58" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUMERIA"	        X="91" Y="51" DisabledByCivilization="CIVILIZATION_AKKAD"/>			
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUMERIA"	        X="93" Y="48" AlternateStart="1"/>			
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_POLAND"			X="78" Y="68" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KOREA"				X="131" Y="63" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MACEDON"			X="76" Y="61" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MAPUCHE"			X="32" Y="15" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MONGOLIA"			X="117" Y="68" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_NETHERLANDS"		X="66" Y="70" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_PERSIA"			X="96" Y="53" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KHMER"				X="119" Y="44" DisabledByCivilization="CIVILIZATION_SUK_SIAM"/>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KHMER"				X="122" Y="42" AlternateStart="1"/>
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_INDONESIA"	        X="125" Y="31" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ZULU"				X="82" Y="20" />
+        <!-- Gathering Storm -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SWEDEN"	        X="76" Y="79" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MALI"				X="62" Y="42" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MAORI"				X="3"	Y="31" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_HUNGARY"	        X="95" Y="75" />		
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_HUNGARY"	        X="75" Y="65" Leader="LEADER_MATTHIAS_CORVINUS"/>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CANADA"	        X="29"	Y="70" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_FRANCE"	        X="62" Y="63" Leader="LEADER_ELEANOR_FRANCE" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_PHOENICIA"	        X="68" Y="53" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_INCA"				X="34"	Y="28" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_OTTOMAN"	        X="108" Y="69" />			
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_OTTOMAN"	        X="82" Y="61" Leader="LEADER_SULEIMAN"/>	
+		<!-- New Frontier -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MAYA"				X="26"	Y="50" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GRAN_COLOMBIA"		X="32"	Y="40" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ETHIOPIA"			X="85"	Y="38" />
+		<!-- Modded Civs -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_TIBET" X="114" Y="56" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_BURMA" X="116" Y="47" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_SIAM" 	X="119" Y="44" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_GAUL" 	X="65" Y="62" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_ICELAND" 	X="51" Y="85" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_ETHIOPIA" 	X="85" Y="38" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SUK_SWAHILI" 	X="86" Y="30" />
+	</StartPosition>	
+	
+	<!-- Minors -->
+	<StartPosition>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ANTIOCH"		X="87" Y="55" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_AMSTERDAM"	    X="66" Y="70" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_BABYLON"		X="91" Y="55" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_BRUSSELS"		X="66" Y="70" />						
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="39" Y="20"/>		
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CARTHAGE"		X="68" Y="51" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GENEVA"		X="68" Y="64" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_HATTUSA"		X="86" Y="59" />			
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_HONG_KONG"	    X="126" Y="50" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_JAKARTA"		X="122" Y="31" />				
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_JERUSALEM"	    X="85" Y="51" />
+        <Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KABUL"			X="101" Y="57" />		
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KANDY"			X="109" Y="37" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_KUMASI"		X="66" Y="37" />		
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_LA_VENTA"		X="22" Y="49" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_LISBON"		X="57" Y="56" />				
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MOHENJO_DARO" 	X="102" Y="53" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_NAN_MADOL"	    X="149" Y="41" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_PRESLAV"		X="79" Y="64" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SEOUL"			X="131" Y="63" />				
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_STOCKHOLM"	    X="77" Y="77" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_TORONTO"		X="29" Y="70" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_VALLETTA"		X="71" Y="52" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_VILNIUS"		X="80" Y="72" />							
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_YEREVAN"		X="90" Y="59" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="86" Y="30" DisabledByCivilization="CIVILIZATION_SUK_SWAHILI"/>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="135" Y="34" AlternateStart="1"/>
+		<!-- DLC -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_AUCKLAND" 	    X="0" Y="17" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ANTANANARIVO" 	X="90" Y="22" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ARMAGH" 		X="56" Y="72" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_GRANADA" 		X="60" Y="54" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MUSCAT" 		X="95" Y="47" DisabledByCivilization="CIVILIZATION_ISUKA_DOHA"/>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MUSCAT" 		X="95" Y="44" AlternateStart="1"/>
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_PALENQUE" 	    X="25" Y="46" />		
+		<!-- Gathering Storm -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_AKKAD"	        X="90" Y="51" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_BOLOGNA"		X="71" Y="62" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CAHOKIA"		X="24" Y="63" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CARDIFF"		X="57" Y="69" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_FEZ"			X="60" Y="50" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MEXICO_CITY"	X="19"	Y="51" DisabledByCivilization="CIVILIZATION_AZTEC" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_MEXICO_CITY"	X="31"	Y="40" AlternateStart="1" />		
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_NAZCA"			X="31"	Y="30" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_NGAZARGAMU"	X="74"	Y="40" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_RAPA_NUI"		X="26"	Y="22" />	
+		<!-- New Frontier -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_CAGUANA"		X="36"	Y="51" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_HUNZA"			X="105"	Y="61" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_LAHORE"		X="105"	Y="57" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_SINGAPORE"		X="120"	Y="38" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_TARUGA"		X="70"	Y="38" />
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_VATICAN_CITY"	X="71"	Y="59" DisabledByCivilization="CIVILIZATION_ROME"/>
+		
+		<!-- Asia and East Europe City States Pack by Isuka -->
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_LHASA"		X="111"	Y="58" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_PYONGYANG"	X="130"	Y="67" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_RYUKU"		X="134"	Y="55" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_SEVASTOPOL"	X="86"	Y="64" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_MANILA"		X="130"	Y="44" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_SAIGON"		X="122"	Y="42" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_KIEV"		X="83"	Y="69" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_SAMARKAND"	X="102"	Y="61" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_SINGAPORE"	X="120"	Y="38" DisabledByCivilization="CIVILIZATION_ISUKA_MALACCA"/>	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_DOHA"		X="96"	Y="48" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_ANGKOR"		X="120"	Y="46" DisabledByCivilization="CIVILIZATION_KHMER"/>	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_EMISHI"		X="140"	Y="66" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_HANOI"		X="121"	Y="50" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_KATHMANDU"	X="114"	Y="56" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_MALACCA"		X="118"	Y="39" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_SUSA"		X="96"	Y="53" DisabledByCivilization="CIVILIZATION_PERSIA"/>	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_BAGAN"		X="116"	Y="47" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_BRUNEI"		X="122"	Y="31" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_KUCHA"		X="109"	Y="63" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_YAKUTIA"		X="125"	Y="78" />	
+		<Replace MapName="VIKING_GiantEarth" Civilization="CIVILIZATION_ISUKA_KASHGAR"		X="106"	Y="60" />	
+	</StartPosition>
+	
+	<RegionPosition>
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_AMERICA_EAST"	X="30" Y="64" Width="11" Height="9" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_AMERICA_CENTRAL"	X="20" Y="64" Width="9" Height="9" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_AMERICA_SOUTH"	X="20" Y="57" Width="13" Height="6" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_AMERICA_WEST"	X="9" Y="57" Width="10" Height="18" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_ARCTIC_AMERICA_WEST"	X="0" Y="76" Width="20" Height="11" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_ARCTIC_AMERICA_EAST"	X="20" Y="74" Width="18" Height="19" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_CENTRAL_AMERICA"		X="14" Y="44" Width="15" Height="12" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_CARIBBEAN"				X="27" Y="44" Width="11" Height="12" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_VENEZUELA"				X="28" Y="39" Width="10" Height="4" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_GRAN_COLOMBIA"			X="26" Y="32" Width="5" Height="8" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_AMAZON"				X="32" Y="32" Width="4" Height="6" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SOUTH_AMERICA_WEST"	X="28" Y="21" Width="8" Height="10" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SOUTH_AMERICA_EAST"	X="37" Y="21" Width="10" Height="17" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_PATAGONIA"				X="31" Y="12" Width="8" Height="8" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_ANTARCTIC_AMERICA"		X="31" Y="5" Width="10" Height="6" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_AUSTRALIA"				X="122" Y="7" Width="21" Height="20" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_ZEALANDIA"				X="144" Y="7" Width="9" Height="13" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_MELANESIA"				X="129" Y="29" Width="14" Height="25" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_POLYNESIA"				X="144" Y="23" Width="14" Height="33" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_OCEANIA"				X="0" Y="25" Width="8" Height="31" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SOUTH_ASIA"			X="115" Y="28" Width="13" Height="26" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_CENTRAL_ASIA"			X="94" Y="59" Width="20" Height="9" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_PERSIA"				X="94" Y="53" Width="9" Height="5" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_EAST_ASIA"				X="115" Y="55" Width="27" Height="13" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_ASIA"			X="94" Y="69" Width="47" Height="4" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SIBERIA_WEST"			X="94" Y="74" Width="10" Height="19" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SIBERIA_CENTRAL"		X="105" Y="74" Width="15" Height="19" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SIBERIA_EAST"			X="121" Y="74" Width="13" Height="19" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SIBERIA_FAR_EAST"		X="135" Y="74" Width="14" Height="19" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_INDIA"					X="104" Y="34" Width="11" Height="24" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_MIDDLE_EAST"			X="81" Y="53" Width="12" Height="4" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_TURKEY"				X="81" Y="57" Width="12" Height="4" />		
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_ARABIA"				X="85" Y="40" Width="18" Height="12" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_MEDITERRANEAN"			X="55" Y="54" Width="25" Height="6" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SOUTH_EUROPA"			X="55" Y="61" Width="27" Height="7" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_EUROPA"			X="63" Y="69" Width="19" Height="2" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_BRITTANIA"				X="52" Y="69" Width="10" Height="12" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SCANDINAVIA"			X="64" Y="79" Width="18" Height="12" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_BALTICS"				X="63" Y="72" Width="22" Height="6" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_EAST_EUROPA"			X="83" Y="62" Width="10" Height="28" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_EGYPT"					X="79" Y="40" Width="6" Height="12" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_NORTH_AFRICA"			X="50" Y="49" Width="28" Height="4" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SAHARA"				X="50" Y="40" Width="28" Height="8" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_CENTRAL_AFRICA"		X="54" Y="23" Width="27" Height="16" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_EAST_AFRICA"			X="82" Y="23" Width="10" Height="16" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_SOUTH_AFRICA"			X="73" Y="13" Width="12" Height="8" />
+		<Replace MapName="VIKING_GiantEarth" Region="HUGE_EARTH_MADAGASCAR"			X="86" Y="17" Width="12" Height="5" />
+	</RegionPosition>	
+</GameData>

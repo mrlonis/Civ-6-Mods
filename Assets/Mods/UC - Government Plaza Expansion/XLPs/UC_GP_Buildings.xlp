@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssetObjects::XLP>
+    <m_Version>
+        <major>4</major>
+        <minor>0</minor>
+        <build>253</build>
+        <revision>867</revision>
+    </m_Version>
+    <m_ClassName text="UITexture"/>
+    <m_PackageName text="UI/Icons"/>
+    <m_Entries>
+        <Element>
+            <m_EntryID text="UC_GP_Buildings256"/>
+            <m_ObjectName text="UC_GP_Buildings256"/>
+        </Element>
+        <Element>
+            <m_EntryID text="UC_GP_Buildings128"/>
+            <m_ObjectName text="UC_GP_Buildings128"/>
+        </Element>
+        <Element>
+            <m_EntryID text="UC_GP_Buildings80"/>
+            <m_ObjectName text="UC_GP_Buildings80"/>
+        </Element>
+        <Element>
+            <m_EntryID text="UC_GP_Buildings50"/>
+            <m_ObjectName text="UC_GP_Buildings50"/>
+        </Element>
+        <Element>
+            <m_EntryID text="UC_GP_Buildings38"/>
+            <m_ObjectName text="UC_GP_Buildings38"/>
+        </Element>
+        <Element>
+            <m_EntryID text="UC_GP_Buildings32"/>
+            <m_ObjectName text="UC_GP_Buildings32"/>
+        </Element>
+		<Element>
+			<m_EntryID text="UC_GP_Buildings256_FOW"/>
+			<m_ObjectName text="UC_GP_Buildings256_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="UC_GP_Buildings128_FOW"/>
+			<m_ObjectName text="UC_GP_Buildings128_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="UC_GP_Buildings80_FOW"/>
+			<m_ObjectName text="UC_GP_Buildings80_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="UC_GP_Buildings50_FOW"/>
+			<m_ObjectName text="UC_GP_Buildings50_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="UC_GP_Buildings38_FOW"/>
+			<m_ObjectName text="UC_GP_Buildings38_FOW"/>
+		</Element>
+		<Element>
+			<m_EntryID text="UC_GP_Buildings32_FOW"/>
+			<m_ObjectName text="UC_GP_Buildings32_FOW"/>
+		</Element>
+    </m_Entries>
+    <m_AllowedPlatforms>
+        <Element>WINDOWS</Element>
+        <Element>LINUX</Element>
+        <Element>MACOS</Element>
+        <Element>IOS</Element>
+    </m_AllowedPlatforms>
+</AssetObjects::XLP>

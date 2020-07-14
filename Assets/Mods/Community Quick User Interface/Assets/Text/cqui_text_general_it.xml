@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+    <!--  ITALIAN -->
+    <Replace Tag="LOC_CQUI_NAME" Language="it_IT">
+      <Text>CQUI</Text>
+    </Replace>
+
+    <!-- MESSAGES -->
+    <Replace Tag="LOC_CQUI_CIVIC_MESSAGE_S" Language="it_IT">
+      <Text>Progresso civico corrente, </Text>
+    </Replace>
+    <Replace Tag="LOC_CQUI_TECH_MESSAGE_S" Language="it_IT">
+      <Text>Tecnologia corrente, </Text>
+    </Replace>
+    <Replace Tag="LOC_CQUI_HALF_MESSAGE_E" Language="it_IT">
+      <Text>, è ad un turno dall'Ispirazione massima potenziale.</Text>
+    </Replace>
+    <Replace Tag="LOC_CQUI_FINISH_MESSAGE_E" Language="it_IT">
+      <Text>, è completata.</Text>
+    </Replace>
+
+    <!-- CITY PANEL -->
+    <Replace Tag="LOC_CQUI_CITY_ENTERTAINMENT" Language="it_IT">
+      <Text>Svaghi</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_CITY_FROM_POPULATION" Language="it_IT">
+      <Text>dalla Popolazione</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_CITY_RELIGIOUS_MINORITIES" Language="it_IT">
+      <Text>Minoranze Religiose</Text>
+    </Replace>
+    <Replace Tag="LOC_HUD_CITY_PILLAGED" Language="it_IT">
+      <Text>[COLOR:StatBadCS](Saccheggiato)[ENDCOLOR]</Text>
+    </Replace>
+
+    <!-- CITY VIEW -->
+    <Replace Tag="LOC_HUD_CITY_NEXT_PLOT" Language="it_IT">
+      <Text>La città si espanderà in questa casella alla prossima crescita dei confini culturali</Text>
+    </Replace>
+
+    <!-- POPUPS -->
+    <Replace Tag="LOC_CQUI_GREAT_PERSON_PROGRESS" Language="it_IT">
+      <Text>Progresso:</Text>
+    </Replace>
+
+    <!-- ActionPanel -->
+    <Replace Tag="LOC_CQUI_ACTION_PANEL_ENCAMPMENT_RANGED_ATTACK" Language="it_IT">
+      <Text>Attacco a distanza Accampamento</Text>
+    </Replace>
+    <Replace Tag="LOC_CQUI_ACTION_PANEL_ENCAMPMENT_RANGED_ATTACK_TOOLTIP" Language="it_IT">
+      <Text>Il tuo accampamento è in grado di eseguire un attacco a distanza</Text>
+    </Replace>
+
+    <!-- Policyreminderpopup -->
+    <Replace Tag="LOC_POLICY_REMINDER_TITLE" Language="it_IT">
+      <Text>PROMEMORIA POLITICHE</Text>
+    </Replace>
+    <Replace Tag="LOC_POLICY_REMINDER_TEXT" Language="it_IT">
+      <Text>Sono state sbloccate nuove politiche sociali.</Text>
+    </Replace>
+    <Replace Tag="LOC_POLICY_REMINDER_ACTION_BUTTON" Language="it_IT">
+      <Text>CAMBIA POLITICHE</Text>
+    </Replace>
+    <Replace Tag="LOC_POLICY_REMINDER_ACTION_BUTTON_TOOLTIP" Language="it_IT">
+      <Text>In questo turno puoi modificare le tue politiche sociali.</Text>
+    </Replace>
+
+    <!-- Diplomacy View -->
+    <Replace Tag="LOC_CQUI_DIPLOMACY_VIEW_TOTAL_SCORE_PER_TURN_TEXT" Language="it_IT">
+      <Text>Totale</Text>
+    </Replace>
+
+    <!-- Smartbanner unlocked citizen -->
+    <Replace Tag="LOC_CQUI_SMARTBANNER_UNLOCKEDCITIZEN_TOOLTIP" Language="it_IT">
+      <Text>Ci sono cittadini sbloccati che vengono assegnati automaticamente dal governatore della città.</Text>
+    </Replace>
+
+  </LocalizedText>
+</GameData>

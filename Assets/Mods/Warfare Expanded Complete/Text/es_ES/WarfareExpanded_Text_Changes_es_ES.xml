@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<!-- Land Units -->
+		<Replace Tag="LOC_UNIT_AT_CREW_NAME" Language="es_ES">
+			<Text>Armas Pesadas</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AT_CREW_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de apoyo de la Era Atómica.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MODERN_AT_NAME" Language="es_ES">
+			<Text>Armas Pesadas Modernas</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AT_CREW_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de apoyo de la Era de la Información.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HELICOPTER_NAME" Language="es_ES">
+			<Text>Helicóptero de Ataque</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HELICOPTER_DESCRIPTION" Language="es_ES">
+			<Text>Veloz unidad anticaballería de la Era de la Información.</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_MACHINERY" Language="es_ES">
+			<Text>Revisa la construcción para mejorar el rendimiento de tu considerable contingente de tropas a distancia.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INDIAN_VARU_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de caballería pesada exclusiva de la India de la Época Clásica. Las unidades enemigas adyacentes reciben -5 [ICON_STRENGTH] de Fuerza de combate.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACHINE_GUN_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de apoyo de la Era Moderna. Bonus [ICON_Strength] a la Fuerza de combate contra unidades cuerpo a cuerpo, anticaballería y caballería ligera. No puede moverse y atacar en el mismo turno a menos que se haya ganado la promoción de Fuego y Maniobra.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INFANTRY_DESCRIPTION" Language="es_ES">
+			<Text>Unidad cuerpo a cuerpo de la Era Atómica.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PIKE_AND_SHOT_DESCRIPTION" Language="es_ES">
+			<Text>Unidad anticaballería del Renacimiento.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_TANK_DESCRIPTION" Language="es_ES">
+			<Text>Veloz unidad de caballería pesada de la Era Atómica que ignora las zonas de control.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MODERN_ARMOR_NAME" Language="es_ES">
+			<Text>Tanque de Batalla Principal</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_OBSERVATION_BALLOON_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de apoyo de la Era Industrial. +1 al Alcance [ICON_Range] de las unidades de asedio que estén en el radio de 1 hexágono.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ARTILLERY_NAME" Language="es_ES">
+			<Text>Artillería Pesada</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MECHANIZED_INFANTRY_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de infantería montada de la Era de la Información.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SWEDEN_CAROLEAN_DESCRIPTION" Language="es_ES">
+			<Text>Unidad exlusiva sueca de la Era Industrial que sustituye a la Infantería de Línea. Es más rápida que la Infantería de Línea. +3 a la Fuerza de combate [ICON_Strength] por Movimiento [ICON_Movement] sin usar</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="es_ES">
+			<Text>Unidad cuerpo a cuerpo exclusiva de Macedonia. +5 a la Fuerza de combate [ICON_Strength] al asediar distritos. 50% de bonificación de apoyo adicional.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="es_ES">
+			<Text>Unidad de caballería pesada exlusiva de Macedonia que remplaza al Jinete Blindado. +5 adicional de Fuerza de combate [ICON_Strength] cuando está adyancente a un Gran General. +5 puntos de Gran General cuando mata una unidad enemiga. Comienza con un ascenso gratis.</Text>
+		</Replace>
+		<!-- Air Units -->
+		<Replace Tag="LOC_UNIT_BOMBER_DESCRIPTION" Language="es_ES">
+			<Text>Actualización del Bombardero Temprano de la Era Atómica.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BIPLANE_NAME" Language="es_ES">
+			<Text>Caza Temprano</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_FIGHTER_DESCRIPTION" Language="es_ES">
+			<Text>Actualización del Caza Temprano de la Era Atómica.</Text>
+		</Replace>
+		<!-- Naval Units -->
+		<Replace Tag="LOC_UNIT_CARAVEL_DESCRIPTION" Language="es_ES">
+			<Text>Veloz unidad de eploración naval cuerpo a cuerpo de la Edad Media.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_DESTROYER_DESCRIPTION" Language="es_ES">
+			<Text>Unidad naval cuerpo a cuerpo de la Era Atómica. Revela Asaltantes navales cuando se encuentran dentro del Alcance visual.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BATTLESHIP_DESCRIPTION" Language="es_ES">
+			<Text>Unidad naval de bombardeo de la Era Atómica. Proporciona protección aérea a casillas a una distancia ante ataques nucleares.</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_NUCLEAR_SUBMARINE_NAME" Language="es_ES">
+			<Text>Submarino de Misiles Balísticos</Text>
+		</Replace>
+		<!-- S&T:UU -->
+		<Replace Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_NAME" Language="es_ES">
+			<Text>Navío de Primera</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_DESCRIPTION" Language="es_ES">
+			<Text>Unidad naval de bombardeo exclusiva de Inglaterra del Renacimiento. +7 [ICON_Strength] de Fuerza de combate cuando está adyacente a otro Navío de Primera.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_1" Language="es_ES">
+			<Text>In the rating system of the British Royal Navy used to categorise sailing warships, a first rate was the designation for the largest ships of the line, equivalent to the super-dreadnought of more recent times. Originating in the Jacobean era with the designation of Ships Royal capable of carrying at least 400 men, the size and establishment of first-rates evolved over the following 250 years to eventually denote ships of the line carrying at least 80 guns across three gundecks. By the end of the eighteenth century, a first-rate carried not less than 100 guns and more than 850 crew, and had a measurement tonnage of some 2,000 tons.</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

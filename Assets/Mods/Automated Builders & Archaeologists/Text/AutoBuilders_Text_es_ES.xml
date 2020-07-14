@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AutoBuilders_Text_es_ES -->
+<!-- Author: MadManCam -->
+<!-- DateCreated: 5/27/2018 5:36:48 AM -->
+<GameData>
+	<LocalizedText>
+
+		<Replace Tag="LOC_CNO_AUTOUNITS_AUTOMATE_TOOLTIP" Language="es_ES">
+			<Text>Automatizar acciones</Text>
+			<Gender>masculine</Gender>
+			<Plurality>2</Plurality>
+		</Replace>
+		<Replace Tag="LOC_CNO_AUTOUNITS_STOP_AUTOMATE_TOOLTIP" Language="es_ES">
+			<Text>Detener la automatización</Text>
+			<Gender>masculine</Gender>
+			<Plurality>2</Plurality>
+		</Replace>
+
+	</LocalizedText>
+</GameData>

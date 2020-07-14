@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+<IconTextureAtlases>
+	<Row Name="ICON_ATLAS_AMATHERIA" IconSize="256" IconsPerRow="8" IconsPerColumn="8" Filename="AmatheriaResources256.dds"/>
+	<Row Name="ICON_ATLAS_AMATHERIA" IconSize="64" IconsPerRow="8" IconsPerColumn="8" Filename="AmatheriaResources64.dds"/>
+	<Row Name="ICON_ATLAS_AMATHERIA_FOW" IconSize="64" IconsPerRow="8" IconsPerColumn="8" Filename="AmatheriaResourcesFOW.dds"/>
+	<Row Name="ICON_ATLAS_AMATHERIA" IconSize="50" IconsPerRow="8" IconsPerColumn="8" Filename="AmatheriaResources50.dds"/>
+	<Row Name="ICON_ATLAS_AMATHERIA" IconSize="38" IconsPerRow="8" IconsPerColumn="8" Filename="AmatheriaResources38.dds"/>
+	<Row Name="ICON_ATLAS_AMATHERIA" Baseline="6" IconSize="22" IconsPerRow="8" IconsPerColumn="8" Filename="AmatheriaResources22.dds"/>
+</IconTextureAtlases>
+
+<IconDefinitions>
+		<Row Name="ICON_RESOURCE_GRANITE"        Atlas="ICON_ATLAS_AMATHERIA" Index="0"/>
+		<Row Name="ICON_RESOURCE_LIMESTONE"        Atlas="ICON_ATLAS_AMATHERIA" Index="1"/>
+		<Row Name="ICON_RESOURCE_ALGAE"        Atlas="ICON_ATLAS_AMATHERIA" Index="3"/>
+		<Row Name="ICON_RESOURCE_CAVIAR"        Atlas="ICON_ATLAS_AMATHERIA" Index="4"/>
+		<Row Name="ICON_RESOURCE_SEASHELLS"        Atlas="ICON_ATLAS_AMATHERIA" Index="5"/>
+		<Row Name="ICON_RESOURCE_SALMON"        Atlas="ICON_ATLAS_AMATHERIA" Index="6"/>
+		<Row Name="ICON_RESOURCE_CORAL"        Atlas="ICON_ATLAS_AMATHERIA" Index="7"/>
+		<Row Name="ICON_RESOURCE_PLATINUM"        Atlas="ICON_ATLAS_AMATHERIA" Index="9"/>
+		<Row Name="ICON_RESOURCE_LEAD"        Atlas="ICON_ATLAS_AMATHERIA" Index="10"/>
+		<Row Name="ICON_RESOURCE_LAPIS"        Atlas="ICON_ATLAS_AMATHERIA" Index="18"/>
+		<Row Name="ICON_RESOURCE_QUARTZ"        Atlas="ICON_ATLAS_AMATHERIA" Index="27"/>
+		<Row Name="ICON_RESOURCE_RUBY"        Atlas="ICON_ATLAS_AMATHERIA" Index="36"/>
+		<Row Name="ICON_RESOURCE_MAPLE"        Atlas="ICON_ATLAS_AMATHERIA" Index="45"/>
+		<Row Name="ICON_RESOURCE_OAK"        Atlas="ICON_ATLAS_AMATHERIA" Index="46"/>
+		<Row Name="ICON_RESOURCE_SANDALWOOD"        Atlas="ICON_ATLAS_AMATHERIA" Index="54"/>
+		<Row Name="ICON_RESOURCE_POPPIES"        Atlas="ICON_ATLAS_AMATHERIA" Index="60"/>	
+		<Row Name="ICON_RESOURCE_BERRIES"        Atlas="ICON_ATLAS_AMATHERIA" Index="62"/>
+		<Row Name="ICON_RESOURCE_ALOE"        Atlas="ICON_ATLAS_AMATHERIA" Index="63"/>
+		<Row Name="ICON_RESOURCE_BAMBOO"        Atlas="ICON_ATLAS_AMATHERIA" Index="20"/>
+		<Row Name="ICON_RESOURCE_SAKURA"        Atlas="ICON_ATLAS_AMATHERIA" Index="30"/>
+		<Row Name="ICON_RESOURCE_EBONY"        Atlas="ICON_ATLAS_AMATHERIA" Index="21"/>
+		<Row Name="ICON_RESOURCE_CASHMERE"        Atlas="ICON_ATLAS_AMATHERIA" Index="12"/>
+		<Row Name="ICON_RESOURCE_PINE"        Atlas="ICON_ATLAS_AMATHERIA" Index="23"/>
+		<Row Name="ICON_RESOURCE_TIN"        Atlas="ICON_ATLAS_AMATHERIA" Index="31"/>
+		<Row Name="ICON_RESOURCE_RUBBER"        Atlas="ICON_ATLAS_AMATHERIA" Index="22"/>
+		<Row Name="ICON_RESOURCE_TRAVERTINE"        Atlas="ICON_ATLAS_AMATHERIA" Index="16"/>
+		<Row Name="ICON_RESOURCE_ALABASTER"        Atlas="ICON_ATLAS_AMATHERIA" Index="24"/>
+		<Row Name="ICON_RESOURCE_OXEN"        Atlas="ICON_ATLAS_AMATHERIA" Index="17"/>
+		<Row Name="ICON_RESOURCE_GOLD2"        Atlas="ICON_ATLAS_AMATHERIA" Index="11"/>	
+		<Row Name="ICON_RESOURCE_HAM"        Atlas="ICON_ATLAS_AMATHERIA" Index="19"/>
+		<Row Name="ICON_RESOURCE_COD"        Atlas="ICON_ATLAS_AMATHERIA" Index="25"/>
+		<Row Name="ICON_RESOURCE_MACKEREL"        Atlas="ICON_ATLAS_AMATHERIA" Index="26"/>
+		<Row Name="ICON_RESOURCE_MUSSELS"        Atlas="ICON_ATLAS_AMATHERIA" Index="28"/>
+		<Row Name="ICON_RESOURCE_SPONGE"        Atlas="ICON_ATLAS_AMATHERIA" Index="32"/>
+		<Row Name="ICON_RESOURCE_SEA_URCHIN"        Atlas="ICON_ATLAS_AMATHERIA" Index="29"/>	
+		<Row Name="ICON_RESOURCE_ORCA"        Atlas="ICON_ATLAS_AMATHERIA" Index="33"/>
+		<Row Name="ICON_RESOURCE_WOLF"        Atlas="ICON_ATLAS_AMATHERIA" Index="34"/>
+		<Row Name="ICON_RESOURCE_TIGER"        Atlas="ICON_ATLAS_AMATHERIA" Index="35"/>
+		<Row Name="ICON_RESOURCE_LION"        Atlas="ICON_ATLAS_AMATHERIA" Index="37"/>
+		<Row Name="ICON_RESOURCE_MUSHROOMS"        Atlas="ICON_ATLAS_AMATHERIA" Index="39"/>
+		<Row Name="ICON_RESOURCE_MEDIHERBS"        Atlas="ICON_ATLAS_AMATHERIA" Index="38"/>
+		<Row Name="ICON_RESOURCE_TOXINS"        Atlas="ICON_ATLAS_AMATHERIA" Index="40"/>
+		<Row Name="ICON_RESOURCE_HONEY"        Atlas="ICON_ATLAS_AMATHERIA" Index="41"/>
+		<Row Name="ICON_RESOURCE_DATES"        Atlas="ICON_ATLAS_AMATHERIA" Index="42"/>
+		<Row Name="ICON_RESOURCE_SAFFRON"        Atlas="ICON_ATLAS_AMATHERIA" Index="44"/>
+		<Row Name="ICON_RESOURCE_TOMATO"        Atlas="ICON_ATLAS_AMATHERIA" Index="48"/>
+		<Row Name="ICON_RESOURCE_BARLEY"        Atlas="ICON_ATLAS_AMATHERIA" Index="50"/>
+		<Row Name="ICON_RESOURCE_MAIZE"        Atlas="ICON_ATLAS_AMATHERIA" Index="52"/>
+		<Row Name="ICON_RESOURCE_POTATO"        Atlas="ICON_ATLAS_AMATHERIA" Index="51"/>
+		<Row Name="ICON_RESOURCE_SORGHUM"        Atlas="ICON_ATLAS_AMATHERIA" Index="49"/>
+		<Row Name="ICON_RESOURCE_STRAWBERRY"        Atlas="ICON_ATLAS_AMATHERIA" Index="53"/>
+	
+	
+		<Row Name="ICON_RESOURCE_GRANITE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="0"/>
+		<Row Name="ICON_RESOURCE_LIMESTONE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="1"/>
+		<Row Name="ICON_RESOURCE_ALGAE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="3"/>
+		<Row Name="ICON_RESOURCE_CAVIAR_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="4"/>
+		<Row Name="ICON_RESOURCE_SEASHELLS_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="5"/>
+		<Row Name="ICON_RESOURCE_SALMON_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="6"/>
+		<Row Name="ICON_RESOURCE_CORAL_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="7"/>
+		<Row Name="ICON_RESOURCE_PLATINUM_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="9"/>
+		<Row Name="ICON_RESOURCE_LEAD_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="10"/>
+		<Row Name="ICON_RESOURCE_LAPIS_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="18"/>
+		<Row Name="ICON_RESOURCE_QUARTZ_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="27"/>
+		<Row Name="ICON_RESOURCE_RUBY_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="36"/>
+		<Row Name="ICON_RESOURCE_MAPLE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="45"/>
+		<Row Name="ICON_RESOURCE_OAK_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="46"/>
+		<Row Name="ICON_RESOURCE_SANDALWOOD_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="54"/>
+		<Row Name="ICON_RESOURCE_POPPIES_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="60"/>	
+		<Row Name="ICON_RESOURCE_BERRIES_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="62"/>
+		<Row Name="ICON_RESOURCE_ALOE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="63"/>
+		<Row Name="ICON_RESOURCE_BAMBOO_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="20"/>
+		<Row Name="ICON_RESOURCE_SAKURA_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="30"/>
+		<Row Name="ICON_RESOURCE_EBONY_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="21"/>
+		<Row Name="ICON_RESOURCE_CASHMERE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="12"/>
+		<Row Name="ICON_RESOURCE_PINE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="23"/>
+		<Row Name="ICON_RESOURCE_TIN_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="31"/>
+		<Row Name="ICON_RESOURCE_RUBBER_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="22"/>
+		<Row Name="ICON_RESOURCE_TRAVERTINE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="16"/>
+		<Row Name="ICON_RESOURCE_ALABASTER_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="24"/>
+		<Row Name="ICON_RESOURCE_OXEN_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="17"/>
+		<Row Name="ICON_RESOURCE_GOLD2_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="11"/>
+		<Row Name="ICON_RESOURCE_HAM_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="19"/>
+		<Row Name="ICON_RESOURCE_COD_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="25"/>
+		<Row Name="ICON_RESOURCE_MACKEREL_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="26"/>
+		<Row Name="ICON_RESOURCE_MUSSELS_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="28"/>
+		<Row Name="ICON_RESOURCE_SPONGE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="32"/>
+		<Row Name="ICON_RESOURCE_SEA_URCHIN_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="29"/>
+		<Row Name="ICON_RESOURCE_ORCA_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="33"/>
+		<Row Name="ICON_RESOURCE_WOLF_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="34"/>
+		<Row Name="ICON_RESOURCE_TIGER_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="35"/>
+		<Row Name="ICON_RESOURCE_LION_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="37"/>
+		<Row Name="ICON_RESOURCE_MUSHROOMS_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="39"/>
+		<Row Name="ICON_RESOURCE_MEDIHERBS_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="38"/>
+		<Row Name="ICON_RESOURCE_TOXINS_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="40"/>
+		<Row Name="ICON_RESOURCE_HONEY_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="41"/>
+		<Row Name="ICON_RESOURCE_DATES_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="42"/>
+		<Row Name="ICON_RESOURCE_SAFFRON_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="44"/>
+		<Row Name="ICON_RESOURCE_TOMATO_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="48"/>
+		<Row Name="ICON_RESOURCE_BARLEY_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="50"/>
+		<Row Name="ICON_RESOURCE_MAIZE_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="52"/>
+		<Row Name="ICON_RESOURCE_POTATO_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="51"/>
+		<Row Name="ICON_RESOURCE_SORGHUM_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="49"/>
+		<Row Name="ICON_RESOURCE_STRAWBERRY_FOW"        Atlas="ICON_ATLAS_AMATHERIA_FOW" Index="53"/>
+	
+	
+	
+		
+		<Row Name="RESOURCE_GRANITE"        Atlas="ICON_ATLAS_AMATHERIA" Index="0"/>
+		<Row Name="RESOURCE_LIMESTONE"        Atlas="ICON_ATLAS_AMATHERIA" Index="1"/>
+		<Row Name="RESOURCE_ALGAE"        Atlas="ICON_ATLAS_AMATHERIA" Index="3"/>
+		<Row Name="RESOURCE_CAVIAR"        Atlas="ICON_ATLAS_AMATHERIA" Index="4"/>
+		<Row Name="RESOURCE_SEASHELLS"        Atlas="ICON_ATLAS_AMATHERIA" Index="5"/>
+		<Row Name="RESOURCE_SALMON"        Atlas="ICON_ATLAS_AMATHERIA" Index="6"/>
+		<Row Name="RESOURCE_CORAL"        Atlas="ICON_ATLAS_AMATHERIA" Index="7"/>
+		<Row Name="RESOURCE_PLATINUM"        Atlas="ICON_ATLAS_AMATHERIA" Index="9"/>
+		<Row Name="RESOURCE_LEAD"        Atlas="ICON_ATLAS_AMATHERIA" Index="10"/>
+		<Row Name="RESOURCE_LAPIS"        Atlas="ICON_ATLAS_AMATHERIA" Index="18"/>
+		<Row Name="RESOURCE_QUARTZ"        Atlas="ICON_ATLAS_AMATHERIA" Index="27"/>
+		<Row Name="RESOURCE_RUBY"        Atlas="ICON_ATLAS_AMATHERIA" Index="36"/>
+		<Row Name="RESOURCE_MAPLE"        Atlas="ICON_ATLAS_AMATHERIA" Index="45"/>
+		<Row Name="RESOURCE_OAK"        Atlas="ICON_ATLAS_AMATHERIA" Index="46"/>
+		<Row Name="RESOURCE_SANDALWOOD"        Atlas="ICON_ATLAS_AMATHERIA" Index="54"/>
+		<Row Name="RESOURCE_POPPIES"        Atlas="ICON_ATLAS_AMATHERIA" Index="60"/>	
+		<Row Name="RESOURCE_BERRIES"        Atlas="ICON_ATLAS_AMATHERIA" Index="62"/>
+		<Row Name="RESOURCE_ALOE"        Atlas="ICON_ATLAS_AMATHERIA" Index="63"/>
+		<Row Name="RESOURCE_BAMBOO"        Atlas="ICON_ATLAS_AMATHERIA" Index="20"/>
+		<Row Name="RESOURCE_SAKURA"        Atlas="ICON_ATLAS_AMATHERIA" Index="30"/>
+		<Row Name="RESOURCE_EBONY"        Atlas="ICON_ATLAS_AMATHERIA" Index="21"/>
+		<Row Name="RESOURCE_CASHMERE"        Atlas="ICON_ATLAS_AMATHERIA" Index="12"/>
+		<Row Name="RESOURCE_PINE"        Atlas="ICON_ATLAS_AMATHERIA" Index="23"/>
+		<Row Name="RESOURCE_TIN"        Atlas="ICON_ATLAS_AMATHERIA" Index="31"/>
+		<Row Name="RESOURCE_RUBBER"        Atlas="ICON_ATLAS_AMATHERIA" Index="22"/>
+		<Row Name="RESOURCE_TRAVERTINE"        Atlas="ICON_ATLAS_AMATHERIA" Index="16"/>
+		<Row Name="RESOURCE_ALABASTER"        Atlas="ICON_ATLAS_AMATHERIA" Index="24"/>
+		<Row Name="RESOURCE_OXEN"        Atlas="ICON_ATLAS_AMATHERIA" Index="17"/>
+		<Row Name="RESOURCE_GOLD2"        Atlas="ICON_ATLAS_AMATHERIA" Index="11"/>
+		<Row Name="RESOURCE_HAM"        Atlas="ICON_ATLAS_AMATHERIA" Index="19"/>
+		<Row Name="RESOURCE_COD"        Atlas="ICON_ATLAS_AMATHERIA" Index="25"/>
+		<Row Name="RESOURCE_MACKEREL"        Atlas="ICON_ATLAS_AMATHERIA" Index="26"/>
+		<Row Name="RESOURCE_MUSSELS"        Atlas="ICON_ATLAS_AMATHERIA" Index="28"/>
+		<Row Name="RESOURCE_SPONGE"        Atlas="ICON_ATLAS_AMATHERIA" Index="32"/>
+		<Row Name="RESOURCE_SEA_URCHIN"        Atlas="ICON_ATLAS_AMATHERIA" Index="29"/>	
+		<Row Name="RESOURCE_ORCA"        Atlas="ICON_ATLAS_AMATHERIA" Index="33"/>
+		<Row Name="RESOURCE_WOLF"        Atlas="ICON_ATLAS_AMATHERIA" Index="34"/>
+		<Row Name="RESOURCE_TIGER"        Atlas="ICON_ATLAS_AMATHERIA" Index="35"/>
+		<Row Name="RESOURCE_LION"        Atlas="ICON_ATLAS_AMATHERIA" Index="37"/>
+		<Row Name="RESOURCE_MUSHROOMS"        Atlas="ICON_ATLAS_AMATHERIA" Index="39"/>
+		<Row Name="RESOURCE_MEDIHERBS"        Atlas="ICON_ATLAS_AMATHERIA" Index="38"/>
+		<Row Name="RESOURCE_TOXINS"        Atlas="ICON_ATLAS_AMATHERIA" Index="40"/>
+		<Row Name="RESOURCE_HONEY"        Atlas="ICON_ATLAS_AMATHERIA" Index="41"/>
+		<Row Name="RESOURCE_DATES"        Atlas="ICON_ATLAS_AMATHERIA" Index="42"/>
+		<Row Name="RESOURCE_SAFFRON"        Atlas="ICON_ATLAS_AMATHERIA" Index="44"/>
+		<Row Name="RESOURCE_TOMATO"        Atlas="ICON_ATLAS_AMATHERIA" Index="48"/>
+		<Row Name="RESOURCE_BARLEY"        Atlas="ICON_ATLAS_AMATHERIA" Index="50"/>
+		<Row Name="RESOURCE_MAIZE"        Atlas="ICON_ATLAS_AMATHERIA" Index="52"/>
+		<Row Name="RESOURCE_POTATO"        Atlas="ICON_ATLAS_AMATHERIA" Index="51"/>
+		<Row Name="RESOURCE_SORGHUM"        Atlas="ICON_ATLAS_AMATHERIA" Index="49"/>
+		<Row Name="RESOURCE_STRAWBERRY"        Atlas="ICON_ATLAS_AMATHERIA" Index="53"/>
+	
+	
+	
+	
+</IconDefinitions>
+</GameInfo>

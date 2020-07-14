@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- author: totalslacker -->
+<GameInfo>
+	<Maps>
+		<!-- Rise and Fall compatability -->
+		<Row Domain="Maps:Expansion1Maps" File="TSLEE_RF.lua" Name="LOC_MAP_TSLEE" Description="LOC_MAP_TSLEE_DESC" RequiresUniqueLeaders="1" SortIndex="-110"/>
+		<Row Domain="Maps:Expansion1Maps" File="CordiformEarth_RF.lua" Name="LOC_MAP_CORDEARTH" Description="LOC_MAP_CORDEARTH_DESC" RequiresUniqueLeaders="1" SortIndex="-100"/>
+		<Row Domain="Maps:Expansion1Maps" File="TinyEarth_RF.lua" Name="LOC_MAP_TINYEARTH" Description="LOC_MAP_TINYEARTH_DESC" RequiresUniqueLeaders="1" SortIndex="-90"/>
+		<Row Domain="Maps:Expansion1Maps" File="CogEarth_RF.lua" Name="LOC_MAP_CogEarth" Description="LOC_MAP_CogEarth_DESC" RequiresUniqueLeaders="1" SortIndex="-80"/>
+		<!-- Gathering Storm Compatability -->
+		<Row Domain="Maps:Expansion2Maps" File="TSLEE_GS.lua" Name="LOC_MAP_TSLEE" Description="LOC_MAP_TSLEE_DESC" RequiresUniqueLeaders="1" SortIndex="-110"/>
+		<Row Domain="Maps:Expansion2Maps" File="CordiformEarth_GS.lua" Name="LOC_MAP_CORDEARTH" Description="LOC_MAP_CORDEARTH_DESC" RequiresUniqueLeaders="1" SortIndex="-100"/>
+		<Row Domain="Maps:Expansion2Maps" File="TinyEarth.lua" Name="LOC_MAP_TINYEARTH" Description="LOC_MAP_TINYEARTH_DESC" RequiresUniqueLeaders="1" SortIndex="-90"/>
+		<Row Domain="Maps:Expansion2Maps" File="CogEarth.lua" Name="LOC_MAP_CogEarth" Description="LOC_MAP_CogEarth_DESC" RequiresUniqueLeaders="1" SortIndex="-80"/>
+	</Maps>
+	<MapSizes>
+	<!-- Delete the comment tags below to set the default number of players in the set-up menu  -->
+<!-- 		
+		<Update>
+			<Set DefaultPlayers="44" />
+		</Update>	
+							 -->			
+	</MapSizes>
+	<Parameters>
+		<!-- TSL Earth Gathering Storm -->
+		<!-- Custom Options -->
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="MapName" 	Name="TSL City Map" Description="" Domain="text" DefaultValue="TSLEE" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="ExtraTribes" Name="LOC_GOODYHUTS" Description="LOC_GOODYHUTS_DESC" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Horses" Name="LOC_HORSES" Description="LOC_HORSES_DESC" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="Horses" GroupId="MapOptions" SortIndex="1007"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Lakes" Name="LOC_LAKES" Description="LOC_LAKES_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Lakes" GroupId="MapOptions" SortIndex="1008"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Bosporus" Name="LOC_BOSPORUS" Description="LOC_BOSPORUS_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Bosporus" GroupId="MapOptions" SortIndex="1009"/>	
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Sinai" Name="LOC_SINAI" Description="LOC_SINAI_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Sinai" GroupId="MapOptions" SortIndex="1010"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="GoldenGate" Name="LOC_GOLDEN_GATE" Description="LOC_GOLDEN_GATE_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="GoldenGate" GroupId="MapOptions" SortIndex="1011"/>		
+		<!-- Natural Wonder Options -->
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="NaturalWondersText" Name="LOC_NAT_WONDERS" Description="" Domain="NaturalWonders" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="NaturalWonders" GroupId="MapOptions" SortIndex="1012"/>	
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Cliffs" Name="LOC_CLIFFS_DOVER" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Cliffs" GroupId="MapOptions" SortIndex="1015"/>	
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="CraterLake" Name="LOC_CRATER_LAKE" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="CraterLake" GroupId="MapOptions" SortIndex="1016"/>	
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="DeadSea" Name="LOC_DEAD_SEA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="DeadSea" GroupId="MapOptions" SortIndex="1018"/>	
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="VikingNWs" Name="LOC_VIKING_DLC" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="VikingNWs" GroupId="MapOptions" SortIndex="1024"/>	
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="EyeSahara" Name="LOC_EYE_SAHARA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="EyeSahara" GroupId="MapOptions" SortIndex="1027"/>			
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Gobustan" Name="LOC_GOBUSTAN" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Gobustan" GroupId="MapOptions" SortIndex="1030"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Pamukkale" Name="LOC_PAMUKKALE" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Pamukkale" GroupId="MapOptions" SortIndex="1033"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="WhiteDesert" Name="LOC_WHITE_DESERT" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="WhiteDesert" GroupId="MapOptions" SortIndex="1036"/>		
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="rainfall"	GroupId="MapOptions" Hash="0" SortIndex="250"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>
+		<Row Key1="Map" Key2="TSLEE_GS.lua" ParameterId="AutoCityNaming" Name="LOC_MAP_AUTO_CITY_NAMING_NAME" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="AutoCityNaming" GroupId="MapOptions" Visible="1" SortIndex="1011"/>		
+
+		
+		<!-- Cordiform Earth Gathering Storm -->
+		<!-- Custom Options -->
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="MapName" 	Name="TSL City Map" Description="" Domain="text" DefaultValue="CordEarth" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>		
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="ExtraTribes" Name="More Goody Huts" Description="" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="Horses" Name="Horses in Americas" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="Horses" GroupId="MapOptions" SortIndex="1009"/>	
+		<!-- Natural Wonder Options -->
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="NaturalWondersText" Name="LOC_NAT_WONDERS" Description="" Domain="NaturalWonders" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="NaturalWonders" GroupId="MapOptions" SortIndex="1012"/>			
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="Cliffs" Name="LOC_CLIFFS_DOVER" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Cliffs" GroupId="MapOptions" SortIndex="1015"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="DeadSea" Name="LOC_DEAD_SEA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="DeadSea" GroupId="MapOptions" SortIndex="1018"/>		
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="CraterLake" Name="LOC_CRATER_LAKE" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="CraterLake" GroupId="MapOptions" SortIndex="1021"/>	
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="VikingNWs" Name="LOC_VIKING_DLC" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="VikingNWs" GroupId="MapOptions" SortIndex="1024"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="EyeSahara" Name="LOC_EYE_SAHARA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="EyeSahara" GroupId="MapOptions" SortIndex="1027"/>			
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="WhiteDesert" Name="LOC_WHITE_DESERT" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="WhiteDesert" GroupId="MapOptions" SortIndex="1030"/>			
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="rainfall"	GroupId="MapOptions" Hash="0" SortIndex="250"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>
+		<Row Key1="Map" Key2="CordiformEarth_GS.lua" ParameterId="AutoCityNaming" Name="LOC_MAP_AUTO_CITY_NAMING_NAME" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="AutoCityNaming" GroupId="MapOptions" Visible="1" SortIndex="2000"/>			
+		
+		<!-- Tiny Earth Gathering Storm -->
+		<!-- Custom Options -->
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="MapName" 	Name="TSL City Map" Description="" Domain="text" DefaultValue="TinyEarth" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>		
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="ExtraTribes" Name="More Goody Huts" Description="" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>	
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="rainfall"	GroupId="MapOptions" Hash="0" SortIndex="250"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="TinyEarth.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>	
+		
+		<!-- Cog Earth Gathering Storm -->
+		<!-- Custom Options -->		
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="MapName" 	Name="Map Name" Description="" Domain="text" DefaultValue="CogEarth" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>	
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="ExtraTribes" Name="More Goody Huts" Description="" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>	
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="Horses" Name="Horses in Americas" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="Horses" GroupId="MapOptions" SortIndex="1009"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="GoldenGate" Name="LOC_GOLDEN_GATE" Description="LOC_GOLDEN_GATE_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="GoldenGate" GroupId="MapOptions" SortIndex="1012"/>
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_OFF" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="CogEarth.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>		
+		
+
+		<!-- TSL Earth Rise and Fall -->
+		<!-- Custom Options -->
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="MapName" 	Name="TSL City Map" Description="" Domain="text" DefaultValue="TSLEE" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="ExtraTribes" Name="LOC_GOODYHUTS" Description="LOC_GOODYHUTS_DESC" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Horses" Name="LOC_HORSES" Description="LOC_HORSES_DESC" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="Horses" GroupId="MapOptions" SortIndex="1007"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Lakes" Name="LOC_LAKES" Description="LOC_LAKES_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Lakes" GroupId="MapOptions" SortIndex="1008"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Lakes" Name="LOC_LAKES" Description="LOC_LAKES_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Lakes" GroupId="MapOptions" SortIndex="1008"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Bosporus" Name="LOC_BOSPORUS" Description="LOC_BOSPORUS_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Bosporus" GroupId="MapOptions" SortIndex="1009"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Sinai" Name="LOC_SINAI" Description="LOC_SINAI_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Sinai" GroupId="MapOptions" SortIndex="1010"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="GoldenGate" Name="LOC_GOLDEN_GATE" Description="LOC_GOLDEN_GATE_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="GoldenGate" GroupId="MapOptions" SortIndex="1011"/>				
+		<!-- Natural Wonder Options -->
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="NaturalWondersText" Name="LOC_NAT_WONDERS" Description="" Domain="NaturalWonders" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="NaturalWonders" GroupId="MapOptions" SortIndex="1012"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Cliffs" Name="LOC_CLIFFS_DOVER" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Cliffs" GroupId="MapOptions" SortIndex="1015"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="CraterLake" Name="LOC_CRATER_LAKE" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="CraterLake" GroupId="MapOptions" SortIndex="1016"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="DeadSea" Name="LOC_DEAD_SEA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="DeadSea" GroupId="MapOptions" SortIndex="1018"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="VikingNWs" Name="LOC_VIKING_DLC" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="VikingNWs" GroupId="MapOptions" SortIndex="1024"/>	
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="EyeSahara" Name="LOC_EYE_SAHARA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="EyeSahara" GroupId="MapOptions" SortIndex="1027"/>		
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="rainfall"	GroupId="MapOptions" Hash="0" SortIndex="250"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>
+		<Row Key1="Map" Key2="TSLEE_RF.lua" ParameterId="AutoCityNaming" Name="LOC_MAP_AUTO_CITY_NAMING_NAME" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="AutoCityNaming" GroupId="MapOptions" Visible="1" SortIndex="1011"/>
+		
+		<!-- Cordiform Earth Rise and Fall -->
+		<!-- Custom Options -->
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="MapName" 	Name="TSL City Map" Description="" Domain="text" DefaultValue="CordEarth" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>		
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="ExtraTribes" Name="More Goody Huts" Description="" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="Horses" Name="Horses in Americas" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="Horses" GroupId="MapOptions" SortIndex="1009"/>	
+		<!-- Natural Wonder Options -->
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="NaturalWondersText" Name="LOC_NAT_WONDERS" Description="" Domain="NaturalWonders" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="NaturalWonders" GroupId="MapOptions" SortIndex="1012"/>			
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="Cliffs" Name="LOC_CLIFFS_DOVER" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="Cliffs" GroupId="MapOptions" SortIndex="1015"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="DeadSea" Name="LOC_DEAD_SEA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="DeadSea" GroupId="MapOptions" SortIndex="1018"/>		
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="CraterLake" Name="LOC_CRATER_LAKE" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="CraterLake" GroupId="MapOptions" SortIndex="1021"/>	
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="VikingNWs" Name="LOC_VIKING_DLC" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="VikingNWs" GroupId="MapOptions" SortIndex="1024"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="EyeSahara" Name="LOC_EYE_SAHARA" Description="" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="EyeSahara" GroupId="MapOptions" SortIndex="1027"/>					
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="rainfall"	GroupId="MapOptions" Hash="0" SortIndex="250"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>
+		<Row Key1="Map" Key2="CordiformEarth_RF.lua" ParameterId="AutoCityNaming" Name="LOC_MAP_AUTO_CITY_NAMING_NAME" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="AutoCityNaming" GroupId="MapOptions" Visible="1" SortIndex="2000"/>	
+
+		<!-- Tiny Earth Rise and Fall -->
+		<!-- Custom Options -->
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="MapName" 	Name="TSL City Map" Description="" Domain="text" DefaultValue="TinyEarth" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>		
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="ExtraTribes" Name="More Goody Huts" Description="" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>	
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="Rainfall" Name="LOC_MAP_RAINFALL_NAME" Description="LOC_MAP_RAINFALL_DESCRIPTION" Domain="Rainfall" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="rainfall"	GroupId="MapOptions" Hash="0" SortIndex="250"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="TinyEarth_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>	
+
+		<!-- Cog Earth Rise and Fall -->
+		<!-- Custom Options -->		
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="MapName" 	Name="Map Name" Description="" Domain="text" DefaultValue="CogEarth" 		ConfigurationGroup="Map" ConfigurationId="MapName" GroupId="MapOptions" Visible="0" SortIndex="1003"/>	
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="ForceTSL" Name="LOC_FORCE_TSL" Description="" Domain="ForceTSL" DefaultValue="FORCE_TSL_AI" ConfigurationGroup="Map" ConfigurationId="ForceTSL" GroupId="MapOptions" SortIndex="1006"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="ExtraTribes" Name="More Goody Huts" Description="" Domain="ExtraTribes" DefaultValue="2" ConfigurationGroup="Map" ConfigurationId="ExtraTribes" GroupId="MapOptions" SortIndex="290"/>	
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="Horses" Name="Horses in Americas" Description="" Domain="bool" DefaultValue="1" ConfigurationGroup="Map" ConfigurationId="Horses" GroupId="MapOptions" SortIndex="1009"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="GoldenGate" Name="LOC_GOLDEN_GATE" Description="LOC_GOLDEN_GATE_DESC" Domain="bool" DefaultValue="0" ConfigurationGroup="Map" ConfigurationId="GoldenGate" GroupId="MapOptions" SortIndex="1012"/>
+		<!-- YNAMP Options -->
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="RiversPlacement" Name="LOC_MAP_RIVERS_PLACEMENT_NAME" Description="LOC_MAP_RIVERS_PLACEMENT_DESCRIPTION" Domain="RiversPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="RiversPlacement"	GroupId="MapOptions" SortIndex="231"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="ContinentsPlacement" Name="LOC_MAP_CONTINENT_PLACEMENT_NAME" Description="LOC_MAP_CONTINENT_PLACEMENT_DESCRIPTION" Domain="ContinentsPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ContinentsPlacement"	GroupId="MapOptions" SortIndex="232"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="NaturalWondersPlacement" Name="LOC_MAP_NATURAL_WONDERS_PLACEMENT_NAME" Description="LOC_MAP_NATURAL_WONDERS_PLACEMENT_DESCRIPTION" Domain="NaturalWondersPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="NaturalWondersPlacement"	GroupId="MapOptions" Hash="0" SortIndex="244"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="FeaturesPlacement" Name="LOC_MAP_FEATURES_PLACEMENT_NAME" Description="LOC_MAP_FEATURES_PLACEMENT_DESCRIPTION" Domain="FeaturesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="FeaturesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="245"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="ResourcesPlacement" Name="LOC_MAP_RESOURCES_PLACEMENT_NAME" Description="LOC_MAP_RESOURCES_PLACEMENT_DESCRIPTION" Domain="ResourcesPlacement" DefaultValue="PLACEMENT_IMPORT" ConfigurationGroup="Map"	ConfigurationId="ResourcesPlacement"	GroupId="MapOptions" Hash="0" SortIndex="269"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="Resources" Name="LOC_MAP_RESOURCES_NAME" Description="LOC_MAP_RESOURCES_DESCRIPTION" Domain="Resources" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="resources"	GroupId="MapOptions" Hash="0" SortIndex="270"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="CivilizationPlacement" Name="LOC_MAP_CIVILIZATION_PLACEMENT_NAME" Description="LOC_MAP_CIVILIZATION_PLACEMENT_DESCRIPTION" Domain="CivilizationPlacement" DefaultValue="PLACEMENT_TSL" ConfigurationGroup="Map"	ConfigurationId="CivilizationPlacement"	GroupId="MapOptions" Hash="0" SortIndex="280"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="ForceTSL" Name="LOC_MAP_FORCE_TSL_NAME" Description="LOC_MAP_FORCE_TSL_DESCRIPTION" Domain="ForceTSL" DefaultValue="FORCE_TSL_OFF" ConfigurationGroup="Map"	ConfigurationId="ForceTSL"	GroupId="MapOptions" Hash="0" SortIndex="281"/>
+		<Row Key1="Map" Key2="CogEarth_RF.lua" ParameterId="StartPosition" Name="LOC_MAP_START_POSITION_NAME" Description="LOC_MAP_START_POSITION_DESCRIPTION" Domain="StartPosition" DefaultValue="2" ConfigurationGroup="Map"	ConfigurationId="start"	GroupId="MapOptions" Hash="0" SortIndex="285"/>				
+	</Parameters>
+	<ParameterDependencies>
+		<!-- Turn off the resources and start position options for the maps in this mod, as they have no effect -->
+		<Row ParameterId="Resources" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TSLEE_GS.lua"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TSLEE_GS.lua"/>		
+		<Row ParameterId="Resources" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="CordiformEarth_GS.lua"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="CordiformEarth_GS.lua"/>
+		<Row ParameterId="Resources" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TinyEarth.lua"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TinyEarth.lua"/>		
+		<Row ParameterId="Resources" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TSLEE_RF.lua"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TSLEE_RF.lua"/>		
+		<Row ParameterId="Resources" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="CordiformEarth_RF.lua"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="CordiformEarth_RF.lua"/>
+		<Row ParameterId="Resources" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TinyEarth_RF.lua"/>
+		<Row ParameterId="StartPosition" ConfigurationGroup="Map" ConfigurationId="MAP_SCRIPT" Operator="NotEquals" 
+		ConfigurationValue="TinyEarth_RF.lua"/>				
+		<!-- Natural Wonder Options -->
+		<!-- Disable options -->
+		<!-- <Row ParameterId="TerraMB"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Cliffs"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="CraterLake"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="DeadSea"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="VikingNWs"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="EyeSahara"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Gobustan"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Pamukkale"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="WhiteDesert"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="BlueHole"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="GrandCanyon"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Ngorongoro"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="TonleSap"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Barringer"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="BioBay"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Dallol"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Gibraltar"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="GrandMesa"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Kailash"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="LakeVic"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Motlatse"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Namib"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="OldFaithful"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Ounianga"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Salar"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Sinai"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="VicFalls"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- <Row ParameterId="Vredefort"	ConfigurationGroup="Map" ConfigurationId="NaturalWonders" Operator="NotEquals"	ConfigurationValue="0"/> -->
+		<!-- Enable options -->
+		
+	</ParameterDependencies>
+	<DomainValues>
+		<Replace Domain="CityNames" Value="0" 	Name="LOC_CITY_NAMES_RAND" Description="LOC_CITY_NAMES_RAND_DESC" 	SortIndex="10"/>
+		<Replace Domain="CityNames" Value="1" 	Name="LOC_CITY_NAMES_TSL" 	Description="LOC_CITY_NAMES_TSL_DESC" 	SortIndex="20"/>	
+		<!-- Obselete code -->
+		<!-- <Replace Domain="MapName" Value="TSLEE" 	Name="LOC_MAP_TSLEE" Description="LOC_MAP_TSLEE_DESC" 	SortIndex="10"/> -->
+		<!-- <Replace Domain="MapName" Value="TinyEarth" 	Name="LOC_MAP_TINYEARTH" 	Description="LOC_MAP_TINYEARTH_DESC" 	SortIndex="20"/> -->
+		<!-- <Replace Domain="MapName" Value="CordEarth" 	Name="LOC_MAP_CORDEARTH" 	Description="LOC_MAP_CORDEARTH_DESC" 	SortIndex="30"/>		 -->
+		<Replace Domain="ExtraTribes" Value="1" Name="No" Description="" 	SortIndex="10"/>
+		<Replace Domain="ExtraTribes" Value="2" Name="Yes" Description="" 	SortIndex="20"/>			
+		<Replace Domain="NaturalWonders" Value="0" Name="LOC_NAT_WONDERS_DISABLE_TEXT" Description="" 	SortIndex="20"/>		
+	</DomainValues>	
+	<MapSupportedValues>
+		<!-- No longer used -->
+		<!-- TSL City Names must match the map name, also used for map options. Hidden options selected automatically with corresponding map -->
+		<!-- <Row Map="TSLEE_GS.lua" Domain="MapName" Value="TSLEE" /> -->
+		<!-- <Row Map="CordiformEarth_GS.lua" Domain="MapName" Value="CordEarth" /> -->
+		<!-- <Row Map="TinyEarth.lua" Domain="MapName" Value="TinyEarth" /> -->
+		<!-- <Row Map="TSLEE_RF.lua" Domain="MapName" Value="TSLEE" /> -->
+		<!-- <Row Map="CordiformEarth_RF.lua" Domain="MapName" Value="CordEarth" /> -->
+		<!-- <Row Map="TinyEarth_RF.lua" Domain="MapName" Value="TinyEarth" />		 -->
+	</MapSupportedValues>	
+</GameInfo>

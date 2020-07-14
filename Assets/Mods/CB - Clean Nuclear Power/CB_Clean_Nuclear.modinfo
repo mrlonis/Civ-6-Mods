@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="0a067fe6-2a23-451e-8003-9571d1ce0bf5" version="3">
+  <Properties>
+    <Name>[COLOR:ResScienceLabelCS]CB[ENDCOLOR] - Clean Nuclear Power</Name>
+    <Description>Reduces the CO2 from all nuclear sources by 75%. Only minimal CO2 emissions remain.</Description>
+    <Created>1593746120</Created>
+    <Teaser>Reduces the CO2 from all nuclear sources by 75%.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Database">
+      <Properties>
+        <LoadOrder>1301</LoadOrder>
+      </Properties>
+      <File>CB_Clean_Nuclear_75.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>CB_Clean_Nuclear_75.sql</File>
+  </Files>
+</Mod>

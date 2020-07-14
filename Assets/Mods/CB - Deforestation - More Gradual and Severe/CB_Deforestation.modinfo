@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="9c88532e-b20b-42ed-9463-f90c2f42c5ba" version="3">
+  <Properties>
+    <Name>[COLOR:ResScienceLabelCS]CB[ENDCOLOR] - Deforestation: More Gradual and Severe</Name>
+    <Description>Adds more stages of deforestation in order to represent the current level of deforestation better as well as making the effects of the most dramatic deforestation more severe.</Description>
+    <Created>1593746227</Created>
+    <Teaser>Adds more stages of deforestation.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Properties>
+        <LoadOrder>1301</LoadOrder>
+      </Properties>
+      <File>CB_Deforestation_Gameplay.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <File>CB_Deforestation_Text.sql</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>CB_Deforestation_Gameplay.sql</File>
+    <File>CB_Deforestation_Text.sql</File>
+  </Files>
+</Mod>

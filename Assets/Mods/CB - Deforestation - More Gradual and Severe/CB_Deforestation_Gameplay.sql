@@ -1,0 +1,33 @@
+-- CB_Deforestation_Gameplay
+-- Author: JNR
+--------------------------------------------------------------
+
+-- DeforestationLevels
+--------------------------------------------------------------
+DELETE FROM DeforestationLevels WHERE DeforestationType IS NOT NULL;
+
+INSERT OR IGNORE INTO DeforestationLevels
+		(DeforestationType,						MaxDeforestationPercent,	DeforestationPointsPerTurn,	Name,											Description)
+VALUES	('DEFORESTATION_JNR_CB_NONE',			0,							-1,							'LOC_DEFORESTATION_JNR_CB_NONE_NAME',			'LOC_DEFORESTATION_JNR_CB_NONE_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_MINIMAL',		10,							0,							'LOC_DEFORESTATION_JNR_CB_MINIMAL_NAME',		'LOC_DEFORESTATION_JNR_CB_MINIMAL_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_LIGHT',			20,							1,							'LOC_DEFORESTATION_LIGHT_NAME',					'LOC_DEFORESTATION_JNR_CB_LIGHT_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_EXPECTED',		30,							2,							'LOC_DEFORESTATION_EXPECTED_NAME',				'LOC_DEFORESTATION_JNR_CB_EXPECTED_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_SIGNIFICANT',	40,							3,							'LOC_DEFORESTATION_JNR_CB_SIGNIFICANT_NAME',	'LOC_DEFORESTATION_JNR_CB_SIGNIFICANT_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_HEAVY',			50,							5,							'LOC_DEFORESTATION_HEAVY_NAME',					'LOC_DEFORESTATION_JNR_CB_HEAVY_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_EXTREME',		75,							7,							'LOC_DEFORESTATION_EXTREME_NAME',				'LOC_DEFORESTATION_JNR_CB_EXTREME_DESCRIPTION'),
+		('DEFORESTATION_JNR_CB_TOTAL',			100,						10,							'LOC_DEFORESTATION_JNR_CB_TOTAL_NAME',			'LOC_DEFORESTATION_JNR_CB_TOTAL_DESCRIPTION');
+--------------------------------------------------------------
+
+-- DeforestationEffects
+--------------------------------------------------------------
+DELETE FROM DeforestationEffects WHERE DeforestationEffectType IS NOT NULL;
+
+INSERT OR IGNORE INTO DeforestationEffects
+		(DeforestationEffectType,					CO2PercentModifier,	MaxAverageDeforestation,	Name)
+VALUES	('DEFORESTATIONEFFECT_JNR_CB_REDUCED',		-25,				0,							'LOC_DEFORESTATIONEFFECT_JNR_CB_REDUCED_NAME'),
+		('DEFORESTATIONEFFECT_JNR_CB_UNCHANGED',	0,					1,							'LOC_DEFORESTATIONEFFECT_JNR_CB_UNCHANGED_NAME'),
+		('DEFORESTATIONEFFECT_JNR_CB_LOW',			25,					3,							'LOC_DEFORESTATIONEFFECT_JNR_CB_LOW_NAME'),
+		('DEFORESTATIONEFFECT_JNR_CB_MEDIUM',		50,					5,							'LOC_DEFORESTATIONEFFECT_JNR_CB_MEDIUM_NAME'),
+		('DEFORESTATIONEFFECT_JNR_CB_HIGH',			75,					7,							'LOC_DEFORESTATIONEFFECT_JNR_CB_HIGH_NAME'),
+		('DEFORESTATIONEFFECT_JNR_CB_MASSIVE',		100,				9,							'LOC_DEFORESTATIONEFFECT_JNR_CB_MASSIVE_NAME');
+--------------------------------------------------------------

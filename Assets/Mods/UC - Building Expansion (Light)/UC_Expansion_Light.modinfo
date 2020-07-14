@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="30ca2aac-177e-402d-9bb3-8398102f6aa7" version="1">
+  <Properties>
+    <Name>UC - Building Expansion (Light)</Name>
+    <Description>This mod makes basic district buildings more interesting by adding a unique twist on how they grant their yield. Compatible with the "District Expansions" from the Urban Complexity series. This mod will only change buildings not included in such an Expansion active at the same time.</Description>
+    <Created>1588565344</Created>
+    <Teaser>District buildings no longer provide flat yields but with a unique twist instead.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Properties>
+        <LoadOrder>205</LoadOrder>
+      </Properties>
+      <File>Data/UC_Light_AERO.sql</File>
+      <File>Data/UC_Light_CMP.sql</File>
+      <File>Data/UC_Light_COM.sql</File>
+      <File>Data/UC_Light_ENC.sql</File>
+      <File>Data/UC_Light_ENT.sql</File>
+      <File>Data/UC_Light_HBR.sql</File>
+      <File>Data/UC_Light_PRD.sql</File>
+      <File>Data/UC_Light_REL.sql</File>
+      <File>Data/UC_Light_THR.sql</File>
+      <File>Data/UC_Light_Policies.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <Properties>
+        <LoadOrder>205</LoadOrder>
+      </Properties>
+      <File>Text/UC_Light_Text.sql</File>
+    </UpdateText>
+    <UpdateDatabase id="GameplayModSupport">
+      <Properties>
+        <LoadOrder>251</LoadOrder>
+      </Properties>
+      <File>ModSupport/UC_Light_RwF.sql</File>
+      <File>ModSupport/UC_Light_CX.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>Data/UC_Light_AERO.sql</File>
+    <File>Data/UC_Light_CMP.sql</File>
+    <File>Data/UC_Light_COM.sql</File>
+    <File>Data/UC_Light_ENC.sql</File>
+    <File>Data/UC_Light_ENT.sql</File>
+    <File>Data/UC_Light_HBR.sql</File>
+    <File>Data/UC_Light_Policies.sql</File>
+    <File>Data/UC_Light_PRD.sql</File>
+    <File>Data/UC_Light_REL.sql</File>
+    <File>Data/UC_Light_THR.sql</File>
+    <File>ModSupport/UC_Light_CX.sql</File>
+    <File>ModSupport/UC_Light_RwF.sql</File>
+    <File>Text/UC_Light_Text.sql</File>
+  </Files>
+</Mod>

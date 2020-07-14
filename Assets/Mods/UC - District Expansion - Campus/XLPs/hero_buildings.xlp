@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/hero_buildings"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="DIS_CMP_Laboratory"/>
+			<m_ObjectName text="DIS_CMP_Laboratory"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_Laboratory_Bld"/>
+			<m_ObjectName text="DIS_CMP_Laboratory_Bld"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Seowon_Laboratory"/>
+			<m_ObjectName text="DIS_Seowon_Laboratory"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_Seowon_Laboratory_Bld"/>
+			<m_ObjectName text="DIS_Seowon_Laboratory_Bld"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_LiberalArts"/>
+			<m_ObjectName text="DIS_CMP_LiberalArts"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_LiberalArts_Bld"/>
+			<m_ObjectName text="DIS_CMP_LiberalArts_Bld"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_School_Monument"/>
+			<m_ObjectName text="DIS_CMP_School_Monument"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_School"/>
+			<m_ObjectName text="DIS_CMP_School"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_Library_ANC"/>
+			<m_ObjectName text="DIS_CMP_Library_ANC"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_Library_IND"/>
+			<m_ObjectName text="DIS_CMP_Library_IND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_Academy"/>
+			<m_ObjectName text="DIS_CMP_Academy"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_OBS_Research"/>
+			<m_ObjectName text="DIS_CMP_OBS_Research"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_Academy_Bell"/>
+			<m_ObjectName text="DIS_CMP_Academy_Bell"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_OBS_LiberalArts"/>
+			<m_ObjectName text="DIS_CMP_OBS_LiberalArts"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_OBS_Laboratory"/>
+			<m_ObjectName text="DIS_CMP_OBS_Laboratory"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_CMP_OBS_Laboratory_Bld"/>
+			<m_ObjectName text="DIS_CMP_OBS_Laboratory_Bld"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

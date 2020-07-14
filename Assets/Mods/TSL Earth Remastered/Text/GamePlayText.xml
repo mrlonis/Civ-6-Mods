@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+
+
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- TSL Earth City Names: Default Layer (Modern) <en_US> -->
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+	<LocalizedText>
+		<Replace Tag="LOC_CITY_NAME_ST_LOUIS" Text="Cahokia" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_ST_LOUIS_CAHOKIA" Text="Cahokia" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_GORONTALO" Text="Gorantalo" Language="en_US" />
+	</LocalizedText>
+
+</GameData>

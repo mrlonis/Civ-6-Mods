@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3a797238-9b4c-457b-a2d1-54dce4b323e0" version="2.2.4">
+	<Properties>
+		<Name>TSL Earth Remastered</Name>
+		<Description>Supports Gathering Storm or Rise and Fall. Includes 5 TSL Earth maps with YNAMP support: TinyEarth, Standard Earth, Cordiform Earth, Huge Earth and Giant Earth. Rule changes for 60 players are included. See Civilopedia section for full details.[NEWLINE][NEWLINE][COLOR_RED]REQUIRES[ENDCOLOR] [COLOR_GREEN]Yet not Another Maps Pack[ENDCOLOR]</Description>
+		<Teaser>Supports Gathering Storm or Rise and Fall. 5 TSL Earth Maps with YNAMP support and rule changes for 60 players.</Teaser>
+		<Authors>totalslacker</Authors>
+		<AffectsSavedGames>1</AffectsSavedGames>
+		<SupportsMultiplayer>1</SupportsMultiplayer>
+		<SpecialThanks>Gedemon</SpecialThanks>
+		<CompatibleVersions>2.0</CompatibleVersions>
+	</Properties>
+	<Dependencies>
+		<Mod id="36e88483-48fe-4545-b85f-bafc50dde315" title="Yet (not) Another Maps Pack"/>
+	</Dependencies>	
+	<References>
+		<Mod id="02A8BDDE-67EA-4D38-9540-26E685E3156E" title="DLC: Aztec Civilization Pack" /> 
+		<Mod id="3809975F-263F-40A2-A747-8BFB171D821A" title="DLC: Poland Civilization Pack" />
+		<Mod id="E3F53C61-371C-440B-96CE-077D318B36C0" title="DLC: Australia Civilization Pack" />
+		<Mod id="E2749E9A-8056-45CD-901B-C368C8E83DEB" title="DLC: Persia and Macedon Civilization Pack" />
+		<Mod id="643EA320-8E1A-4CF1-A01C-00D88DDD131A" title="DLC: Nubia Civilization Pack" />
+		<Mod id="1F367231-A040-4793-BDBB-088816853683" title="DLC: Khmer and Indonesia Civilization Pack" />
+		<Mod id="2F6E858A-28EF-46B3-BEAC-B985E52E9BC1" title="DLC: Vikings Content" />
+		<Mod id="37fdca0b-9275-4235-9c18-c7ec348f930e" title="Sukritact's Resources" />
+	</References>
+	<ActionCriteria>
+		<Criteria id="Expansion1">
+			<GameCoreInUse>Expansion1</GameCoreInUse> 
+		</Criteria>
+		<Criteria id="Expansion2">
+			<GameCoreInUse>Expansion2</GameCoreInUse>
+		</Criteria>	
+		<Criteria id="DLCAztec">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_MONTEZUMA,StandardPlayers::LEADER_MONTEZUMA,Players:Expansion1_Players::LEADER_MONTEZUMA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLCPoland">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_JADWIGA,StandardPlayers::LEADER_JADWIGA,Players:Expansion1_Players::LEADER_JADWIGA</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLCAustralia">
+  			<LeaderPlayable>Players:StandardPlayers::LEADER_JOHN_CURTIN,StandardPlayers::LEADER_JOHN_CURTIN,Players:Expansion1_Players::LEADER_JOHN_CURTIN</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLCMacedoniaPersia">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_ALEXANDER,Players:StandardPlayers::LEADER_CYRUS,StandardPlayers::LEADER_ALEXANDER,StandardPlayers::LEADER_CYRUS,Players:Expansion1_Players::LEADER_ALEXANDER,Players:Expansion1_Players::LEADER_CYRUS</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLCNubia">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_AMANITORE,StandardPlayers::LEADER_AMANITORE,Players:Expansion1_Players::LEADER_AMANITORE</LeaderPlayable>
+		</Criteria>
+		<Criteria id="DLCIndonesiaKhmer">
+			<LeaderPlayable>Players:StandardPlayers::LEADER_GITARJA,Players:StandardPlayers::LEADER_JAYAVARMAN,StandardPlayers::LEADER_GITARJA,StandardPlayers::LEADER_JAYAVARMAN,Players:Expansion1_Players::LEADER_GITARJA,Players:Expansion1_Players::LEADER_JAYAVARMAN</LeaderPlayable>
+		</Criteria>
+	</ActionCriteria>
+	<InGameActions>	
+		<ImportFiles id="Maps">
+           	<Properties>
+				<LoadOrder>5</LoadOrder>
+           	</Properties>
+			<File>Maps/CordiformEarth_GS.lua</File>
+			<File>Maps/TSLEE_GS.lua</File>
+			<File>Maps/TinyEarth.lua</File>
+			<File>Maps/CordiformEarth_RF.lua</File>
+			<File>Maps/TSLEE_RF.lua</File>
+			<File>Maps/TinyEarth_RF.lua</File>			
+			<File>Maps/CogEarth.lua</File>
+			<File>Maps/CogEarth_RF.lua</File>
+			<File>Scripts/FeatureGeneratorTSLEE.lua</File>
+		</ImportFiles>	
+        <AddGameplayScripts id="XP_1_Scripts" criteria="Expansion1">
+               <File>Scripts/TSLEE_Script.lua</File>
+        </AddGameplayScripts>
+        <AddGameplayScripts id="XP_2_Scripts" criteria="Expansion2">
+               <File>Scripts/TSLEE_Script.lua</File>
+        </AddGameplayScripts>
+		<UpdateDatabase id="Tables">
+			<Properties>
+				<LoadOrder>-1</LoadOrder>
+			</Properties>
+			<File>Data/Tables.sql</File>
+		</UpdateDatabase>	
+		<UpdateDatabase id="UserSettings">
+			<Properties>
+				<LoadOrder>1</LoadOrder>
+			</Properties>
+			<File>UserSettings.sql</File>
+		</UpdateDatabase>			
+		<UpdateDatabase id="Gameplay">	
+			<Properties><LoadOrder>10</LoadOrder></Properties>
+			<Items>
+				<File>Data/Resources.sql</File>
+				<File>Data/Rules.sql</File>
+				<File>Maps/CityMap.xml</File>
+				<File>Maps/MapValues.xml</File>
+				<File>Maps/CogEarthValues.xml</File>
+				<File>Text/Civilopedia.sql</File>
+			</Items>
+		</UpdateDatabase>
+		<UpdateText id="Text">
+			<File>Text/CivilopediaText.sql</File>
+		</UpdateText>		
+		<UpdateDatabase id="XP_1_Gameplay" criteria="Expansion1">
+			<Properties><LoadOrder>15</LoadOrder></Properties>
+			<Items>
+				<File>Data/Rules_RF.sql</File>
+				<File>Data/GlobalParameters.sql</File>
+				<File>Data/LoyaltyChanges.sql</File>
+			</Items>
+		</UpdateDatabase>
+		<UpdateDatabase id="XP_2_Gameplay" criteria="Expansion2">
+			<Properties><LoadOrder>20</LoadOrder></Properties>
+			<Items>
+				<File>Data/Rules_RF.sql</File>
+				<File>Data/GlobalParameters.sql</File>
+				<File>Data/LoyaltyChanges.sql</File>
+			</Items>
+		</UpdateDatabase>		
+		<!-- VIKING Giant Earth -->
+		<ImportFiles id="Giant_Earth_IMPORT">
+			<File>Giant Earth Addon/Lua/VIKING_GiantEarth.lua</File>
+			<File>Giant Earth Addon/Lua/VIKING_GiantEarth_RF.lua</File>
+		</ImportFiles>
+		<UpdateDatabase id="NewAction">
+			<File>Giant Earth Addon/Map/Map.xml</File>
+			<File>Giant Earth Addon/Map/NaturalWonders.xml</File>
+			<File>Giant Earth Addon/Map/ExtraPlacement.xml</File>
+			<File>Giant Earth Addon/Map/Resource.xml</File>
+		</UpdateDatabase>	
+	<!-- Custom map labels. Delete the comment tags below to activate  -->
+<!-- 	
+		<UpdateDatabase id="XP_2_Named_Places" criteria="Expansion2">
+			<Properties><LoadOrder>500</LoadOrder></Properties>
+			<Items>
+				<File>Optional/NamedPlaces.xml</File>
+				<File>Optional/NamedPlaces.sql</File>				
+			</Items>
+		</UpdateDatabase>
+																		 -->
+		<UpdateDatabase id="end">
+			<Properties><LoadOrder>50</LoadOrder></Properties>
+			<File>Data/FountainPlacement.sql</File>
+		</UpdateDatabase>
+	</InGameActions>
+	<FrontEndActions>
+		<UpdateDatabase id="Maps">
+			<File>Data/Config.xml</File>
+		</UpdateDatabase>		
+		<UpdateText id="Text">
+			<File>Text/ConfigText.xml</File>
+		</UpdateText>			
+		<!-- Giant Earth -->
+		<UpdateDatabase id="Giant_Earth_SETTING">
+			<File>Giant Earth Addon/Config/Config.xml</File>
+		</UpdateDatabase>
+		<UpdateText id="Giant_Earth_Text">
+			<File>Giant Earth Addon/Config/Config_Text.xml</File>
+		</UpdateText>			
+	</FrontEndActions>		
+  <Files>
+	<File>Maps/TSLEE_GS.lua</File>
+	<File>Maps/TSLEE_RF.lua</File>
+	<File>Maps/TinyEarth.lua</File>
+	<File>Maps/TinyEarth_RF.lua</File>
+	<File>Maps/CordiformEarth_GS.lua</File>
+	<File>Maps/CordiformEarth_RF.lua</File>
+	<File>Maps/CogEarth.lua</File>
+	<File>Maps/CogEarth_RF.lua</File>
+	<File>Maps/CityMap.xml</File>
+	<File>Maps/MapValues.xml</File>
+	<File>Maps/CogEarthValues.xml</File>
+	<File>Scripts/FeatureGeneratorTSLEE.lua</File>	
+	<File>Scripts/TSLEE_Script.lua</File>
+	<File>Optional/NamedPlaces.xml</File>
+	<File>Optional/NamedPlaces.sql</File>
+	<File>Data/Config.xml</File>
+	<File>Data/GlobalParameters.sql</File>	
+	<File>Data/LoyaltyChanges.sql</File>	
+    <File>Data/Resources.sql</File>
+	<File>Data/Rules.sql</File>
+	<File>Data/Rules_RF.sql</File>
+	<File>Data/Tables.sql</File>
+	<File>Data/FountainPlacement.sql</File>
+	<File>Data/TinyEarthWonders.sql</File>
+	<File>Text/ConfigText.xml</File>
+	<File>Text/GameplayText.xml</File>
+	<File>Text/Civilopedia.sql</File>
+	<File>Text/CivilopediaText.sql</File>
+	<File>UserSettings.sql</File>
+	<!-- Giant Earth Addon -->
+	<File>Giant Earth Addon/Config/Config_Text.xml</File>
+	<File>Giant Earth Addon/Config/Config.xml</File>
+	<File>Giant Earth Addon/Lua/VIKING_GiantEarth.lua</File>
+	<File>Giant Earth Addon/Lua/VIKING_GiantEarth_RF.lua</File>
+	<File>Giant Earth Addon/Map/ExtraPlacement.xml</File>
+	<File>Giant Earth Addon/Map/Map.xml</File>
+	<File>Giant Earth Addon/Map/Resource.xml</File>
+	<File>Giant Earth Addon/Map/NaturalWonders.xml</File>
+  </Files>
+</Mod>

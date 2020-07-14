@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="57d60956-974e-46cd-ab76-4ef3bfc28c85" version="4">
+  <Properties>
+    <Name>[COLOR:ResScienceLabelCS]CB[ENDCOLOR] - Flood Barriers: Cost Scaling Adjustment</Name>
+    <Description>Flood Barrier cost no longer scales with the number of tiles threatened by flooding. The cost still scales with the sea level itself. Base cost is increased, however. This mod is intended to be used alongside mods which raise the number of floodable tiles which would otherwise cause the cost of Flood Barriers to skyrocket.</Description>
+    <Created>1593746267</Created>
+    <Teaser>Flood Barrier cost no longer scales with the number of tiles threatened by flooding.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Database">
+      <Properties>
+        <LoadOrder>1301</LoadOrder>
+      </Properties>
+      <File>CB_Flood_Barriers_Cost.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>CB_Flood_Barriers_Cost.sql</File>
+  </Files>
+</Mod>

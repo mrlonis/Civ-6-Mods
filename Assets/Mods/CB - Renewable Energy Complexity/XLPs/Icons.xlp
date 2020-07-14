@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UI/Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="JNRRenewableEnergyResource256"/>
+			<m_ObjectName text="JNRRenewableEnergyResource256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="JNRRenewableEnergyResource38"/>
+			<m_ObjectName text="JNRRenewableEnergyResource38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="JNRRenewableEnergyResource50"/>
+			<m_ObjectName text="JNRRenewableEnergyResource50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="JNRRenewableEnergyResource64"/>
+			<m_ObjectName text="JNRRenewableEnergyResource64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="JNRRenewableEnergyResourceFontIcon"/>
+			<m_ObjectName text="JNRRenewableEnergyResourceFontIcon"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CB_REC_Buildings128"/>
+			<m_ObjectName text="CB_REC_Buildings128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CB_REC_Buildings256"/>
+			<m_ObjectName text="CB_REC_Buildings256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CB_REC_Buildings32"/>
+			<m_ObjectName text="CB_REC_Buildings32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CB_REC_Buildings38"/>
+			<m_ObjectName text="CB_REC_Buildings38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CB_REC_Buildings50"/>
+			<m_ObjectName text="CB_REC_Buildings50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CB_REC_Buildings80"/>
+			<m_ObjectName text="CB_REC_Buildings80"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

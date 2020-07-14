@@ -1,0 +1,130 @@
+<Context Name="GUI_UnitCheats_Minibar">
+	<AlphaAnim											ID="GUI_MoveDelayTimer"																					Begin="0" End="1" Speed="2" Cycle="Once" Stopped="1"/>
+	<AlphaAnim											ID="GUI_ReselectDelayTimer"																				Begin="0" End="1" Speed="0.25" Cycle="Once" Stopped="1"/>
+	<Container											ID="GUI_UnitCheats_Minibar_Context"			Anchor="R,B"	Size="parent,parent"	Offset="0,0"		ConsumeMouse="0" Hidden="1">
+
+		<Container										ID="GUI_UnitCheats_SpawnDlgContainer"		Anchor="R,B"	Size="400,220"			Offset="120,302"	AnchorSide="I,I"	 ConsumeMouse="1" Hidden="1">
+			<!--<SlideAnim									ID="GUI_UnitCheats_SpawnDlg_CollapseAnim"	Anchor="R,B"	Size="parent,parent"						Begin="0,0" End="120,0"  Function="OutQuint" FunctionPower="1" Speed="2" Cycle="Once" Stopped="1">-->				
+				<!--<SlideAnim								ID="GUI_UnitCheats_SpawnDlg_ExpandAnim"		Anchor="R,B"	Size="parent,parent"						Begin="0,0" End="-120,0" Function="OutQuint" FunctionPower="3" Speed="2" Cycle="Once" Stopped="1">-->
+
+				<AlphaAnim								ID="GUI_UnitCheats_SpawnDlg_ExpandAnim"		Anchor="R,B"												AlphaBegin="0"			AlphaEnd="1"		Function="OutQuint" FunctionPower="2"	Speed="1"		Cycle="Once"	Stopped="1" >
+					
+					<Grid								ID="GUI_UnitCheats_SpawnDlgContext"			Anchor="R,B"	Size="parent,parent" 	Offset="0,0"		Style="CityPanelSlotGrid" ConsumeMouse="1" Hidden="0" >
+						
+						<Stack							ID="GUI_UnitCheats_Stack22"					Anchor="R,B"												StackGrowth="Bottom"	Padding="8">
+							<Grid																	Anchor="C,C"	Size="parent-24,24"		Offset="-8,0"		Style="CityPanelSlotGrid">
+								<Label					ID="GUI_UnitCheats_HeaderLbl"				Anchor="C,C"												String="Create Unit"	Style="DiplomacyCivHeader" FontStyle="stroke" ColorSet="BodyTextBright"/>
+							</Grid>
+							<Container																				Size="5,10"									ConsumeMouse="0"/>
+							
+
+							<Stack						ID="GUI_UnitCheats_Stack44"					Anchor="R,B"												StackGrowth="Right"		Padding="20" Style="CityPanelSlotGrid">
+								<Label					ID="GUI_UnitCheats_PlayerLbl"				Anchor="R,C"							Offset="0,0"		String="Player:"		Style="FontNormal14" FontStyle="stroke" ColorSet="BodyTextBright" Align="Right"/>
+								<PullDown				ID="GUI_UnitCheats_PlayersPD"				Anchor="L,C"												Style="PullDownBlue"	ScrollThreshold="400" Size="265,28" SpaceForScroll="10" ToolTip="Select Player Owner"/>
+								<Container																			Size="5,10"									ConsumeMouse="0"/>
+							</Stack>
+
+							<Stack						ID="GUI_UnitCheats_Stack55"					Anchor="R,B"												StackGrowth="Right"		Padding="20" Style="CityPanelSlotGrid">
+								<Label					ID="GUI_UnitCheats_UnitLbl"					Anchor="R,C"												String="Unit Type:"		Style="FontNormal14" FontStyle="stroke" ColorSet="BodyTextBright" Align="Right"/>
+								<PullDown				ID="GUI_UnitCheats_UnitsPD"					Anchor="L,C"	Size="265,28"			Offset="0,0"		Style="PullDownBlue"	ScrollThreshold="420" SpaceForScroll="10" ToolTip="Select Player Owner">
+									<ButtonData>
+										
+										<GridButton		ID="Button"													Size="265,28"								Style="UnitPanelHeader"		Texture="Controls_ButtonControl" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" TruncateWidth="210" StateOffsetIncrement="0,24">
+											<Image		ID="UnitTypeIcon1"							Anchor="L,C"	Size="22,22"			Offset="2,0"		Texture="UnitFlagAtlas22"/>
+										</GridButton>
+									</ButtonData>
+
+									<InstanceData		Name="UnitTypeListEntry">
+										<GridButton		ID="Button"									Anchor="L,T"	Size="265,28"								Style="UnitPanelHeader"		Texture="Controls_ButtonControl.dds" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="220">
+											<Image		ID="UnitTypeIcon"							Anchor="L,C"	Size="22,22"			Offset="2,0"		Texture="UnitFlagAtlas22"/>
+										</GridButton>
+									</InstanceData>
+								</PullDown>
+								<Container																			Size="5,10"									ConsumeMouse="0"/>
+							</Stack>
+
+							<Stack						ID="GUI_UnitCheats_Stack66"					Anchor="R,B"												StackGrowth="Right"		Padding="20" Style="CityPanelSlotGrid">
+								<Label					ID="GUI_UnitCheats_CntLbl"					Anchor="R,C"												String="Unit count:"	Style="FontNormal14" FontStyle="stroke" ColorSet="BodyTextBright" Align="Right"/>
+								<PullDown				ID="GUI_UnitCheats_CntPD"					Anchor="L,C"	Size="265,28"			Offset="0,0"		Style="PullDownBlue"	ScrollThreshold="400" SpaceForScroll="10" ToolTip="Number of units to create"/>
+								<Container																			Size="5,10"									ConsumeMouse="0"/>
+							</Stack>
+
+							<CheckBox					ID="GUI_UnitCheats_ValidLoc"				Anchor="R,C"							Offset="26,0"		String="Spawn Unit on Valid Adjacement Location" TextOffset="-5" WrapWidth="320" Style="MainMenuCheck" ColorSet="BodyTextBright" Align="Right" Disabled="false"/>
+							<Label						ID="GUI_UnitCheats_CoordLbl"				Anchor="R,C"							Offset="26,0"		String="Click on the map to select new unit location" WrapWidth="400" Style="FontNormal14" FontStyle="stroke" ColorSet="BodyTextBright" Align="Left"/>
+							<Container																				Size="5,10"									ConsumeMouse="0"/>
+
+							<Stack						ID="GUI_UnitCheats_Stack99"					Anchor="R,B"												StackGrowth="Right"	Padding="20">
+
+								
+								<GridButton				ID="GUI_UnitCheats_SpawnDlgContainerOK"     Anchor="R,B"	Size="60,22"			Offset="0,0"		String=""		Style="ShellButton" >
+									<Label				ID="GUI_UnitCheats_UnitLbl"					Anchor="C,C"												String="OK"		Style="FontNormal14" FontStyle="stroke" ColorSet="BodyTextBright"/>
+								</GridButton>
+								
+								<GridButton				ID="GUI_UnitCheats_SpawnDlgContainerCANCEL" Anchor="R,B"	Size="60,22"			Offset="0,0" 		String="Cancel" Style="ShellButton" >
+								</GridButton>
+
+								<Container																			Size="5,10"									ConsumeMouse="0"/>
+								
+							</Stack>
+							<Container																				Size="5,10"									ConsumeMouse="0"/>
+						</Stack>
+					</Grid>
+
+				</AlphaAnim>
+			<!--</SlideAnim>-->
+		</Container>
+
+
+
+		<Container							ID="GUI_UnitCheats_Minibar_Container"					Anchor="R,B"							Offset="120,240"	AnchorSide="I,I"				ConsumeMouse="1" Hidden="0" >
+
+			<!--<AlphaAnim							ID="GUI_UnitCheats_Minibar_AlphaAnim"			Anchor="R,B"												AlphaBegin="0"	AlphaEnd="-150,0"											Speed="0.4"		Cycle="Once"	Stopped="1" >-->
+			<AlphaAnim							ID="GUI_UnitCheats_Minibar_CollapseAnim"			Anchor="R,B"												AlphaBegin="1"		AlphaEnd="0"		Function="OutQuint" FunctionPower="2"	Speed="1"		Cycle="Once"	Stopped="1" >
+				<AlphaAnim						ID="GUI_UnitCheats_Minibar_ExpandAnim"				Anchor="R,B"												AlphaBegin="0"		AlphaEnd="1"		Function="OutQuint" FunctionPower="2"	Speed="1"		Cycle="Once"	Stopped="1" >
+				<!--<SlideAnim						ID="GUI_UnitCheats_Minibar_CollapseAnim"		Anchor="R,B"												Begin="0,0"		End="-150,0"		Function="OutQuint" FunctionPower="1"	Speed="0.4"		Cycle="Once"	Stopped="1" >
+					<SlideAnim					ID="GUI_UnitCheats_Minibar_ExpandAnim"				Anchor="R,B"												Begin="-150,0"	End="0,0"			Function="OutQuint" FunctionPower="1"	Speed="0.4"		Cycle="Once"	Stopped="1" >-->
+
+							<Container			ID="GUI_UnitCheats_CheatsButton_Container"			Anchor="R,B"	Size="360,56"			Offset="0,0"		ConsumeMouse="0" >
+								<Box			ID="GUI_UnitCheats_CheatsButton_Box"				Anchor="R,B" 	Size="parent,parent"	Offset="-2,0"		Style="ShellBGBox"					Color="8,92,42,90" />
+								<Grid			ID="GUI_UnitCheats_CheatsButton_Grid"				Anchor="R,B"	Size="parent,parent"	Offset="-22,0"		Style="ShellHeaderButtonGrid" />
+							
+								<Stack			ID="GUI_UnitCheats_Horizontal_Stack"				Anchor="R,B"												StackGrowth="Left"					Padding="4" >
+									<Container	ID="GUI_UnitCheatsButtonExpandCollapsePlaceholder"					Size="29,29"								ConsumeMouse="0" />
+
+									<Container	ID="GUI_UnitCheatsButtonOffset1"									Size="10,56"								ConsumeMouse="0" />
+									<Button		ID="GUI_UnitCheatsButtonPromote"					Anchor="L,C"	Size="44,54"								Texture="UnitPanel_ActionButton"	ToolTip="Cheat Promote Unit[NEWLINE]When toggled on automatically adds Experience to promote player units." Hidden="0" >
+										<Image	ID="GUI_UnitCheatsButtonPromoteIcon"				Anchor="C,C"	Size="38,38"			Offset="0,-2"		Texture="UnitActions50"				Icon="ICON_UNITCOMMAND_PROMOTE" />
+									</Button>
+									<Button		ID="GUI_UnitCheatsButtonDuplicate"					Anchor="L,C"	Size="44,54"								Texture="UnitPanel_ActionButton"	ToolTip="Cheat Duplicate Unit" Hidden="0" >
+										<Image	ID="GUI_UnitCheatsButtonStopDuplicate"				Anchor="C,C"	Size="38,38"			Offset="0,-2"		Texture="UnitActions50"				Icon="ICON_UNITOPERATION_MOVE_TO_UNIT" />
+									</Button>
+
+									<Container	ID="GUI_UnitCheatsButtonOffset2"									Size="10,56"								ConsumeMouse="0" />
+									<Button		ID="GUI_UnitCheatsButtonAttack"						Anchor="L,C"	Size="44,54"								Texture="UnitPanel_ActionButton"	ToolTip="Cheat Restore Unit Attack.[NEWLINE]When toggled on automatically restores unit attacks." Hidden="0" >
+										<Image	ID="GUI_UnitCheatsButtonAttackIcon"					Anchor="C,C"	Size="38,38"			Offset="0,-2"		Texture="UnitActions50"				Icon="ICON_UNITOPERATION_PILLAGE" />
+									</Button>
+									<Button		ID="GUI_UnitCheatsButtonHeal"						Anchor="L,C"	Size="44,54"								Texture="UnitPanel_ActionButton"	ToolTip="Cheat Heal Unit.[NEWLINE]When toggled on automatically restores unit health." Hidden="0" >
+										<Image	ID="GUI_UnitCheatsButtonHealIcon"					Anchor="C,C"	Size="38,38"			Offset="0,-2"		Texture="UnitActions50"				Icon="ICON_UNITOPERATION_HEAL" />
+									</Button>
+
+									<Container	ID="GUI_UnitCheatsButtonOffset3"									Size="10,56"								ConsumeMouse="0" />
+									<Button		ID="GUI_UnitCheatsButtonAddMovement"				Anchor="L,C"	Size="44,54"								Texture="UnitPanel_ActionButton"	ToolTip="Cheat Add Unit Movement.[NEWLINE]When toggled on automatically restores unit movement." Hidden="0" >
+										<Image	ID="GUI_UnitCheatsButtonStopAutomate"				Anchor="C,C"	Size="38,38"			Offset="0,-2"		Texture="UnitActions50"				Icon="ICON_UNITOPERATION_MOVE_TO" />
+									</Button>
+								
+									<Container	ID="GUI_UnitCheatsButtonOffset4"									Size="5,56"									ConsumeMouse="0" />
+								</Stack>
+							
+							</Container>
+					
+					</AlphaAnim>
+				</AlphaAnim>
+			<!--</AlphaAnim>-->
+
+			<Button								ID="GUI_UnitCheatsButtonCollapse"					Anchor="R,B"	Size="29,29"			Offset="0,0"		Texture="Controls_ExpandButton2"	NoStateChange="1" ToolTip="Collapse cheat panel" Hidden="0" />
+			<Button								ID="GUI_UnitCheatsButtonRestore"					Anchor="R,B"	Size="29,29"			Offset="0,0"		Texture="Controls_ExpandButton2"	NoStateChange="1" ToolTip="Restore cheat panel"  Hidden="0" />
+		</Container>
+
+	</Container>
+
+</Context>

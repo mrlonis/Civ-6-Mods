@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!-- ++++++++++++++++++++++++++++++ -->
+	<!--   Cordiform Earth start position   -->
+	<!-- ++++++++++++++++++++++++++++++ -->
+	
+	<!-- Majors -->
+	<StartPosition>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_AMERICA"	X="14" Y="32" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ARABIA"		X="48" Y="17" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_AUSTRALIA"	X="77" Y="9" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_AZTEC"		X="4" Y="27" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_BRAZIL"		X="21" Y="10" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CHINA"		X="58" Y="33" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CREE"		X="16" Y="38" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_EGYPT"		X="42" Y="17" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ENGLAND"	X="33" Y="33" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_FRANCE"		X="33" Y="29" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_GEORGIA"	X="48" Y="27" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_GERMANY"	X="37" Y="29" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_GREECE"		X="42" Y="22" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_INDIA"		X="58" Y="25" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_INDIA"		X="60" Y="18" AlternateStart="1" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_INDONESIA"	X="70" Y="19" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_JAPAN"		X="61" Y="47" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KHMER"		X="66" Y="25" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KONGO"		X="37" Y="7" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KOREA"		X="60" Y="40" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MACEDON"	X="40" Y="25" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MAPUCHE"	X="16" Y="6" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MONGOLIA"	X="54" Y="37" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_NETHERLANDS"	X="36" Y="32" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_NORWAY"		X="37" Y="39" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_NUBIA"		X="44" Y="12" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ROME"		X="37" Y="23" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_RUSSIA"		X="44" Y="33" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SCOTLAND"	X="32" Y="36" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SCYTHIA"	X="47" Y="30" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SPAIN"		X="31" Y="23" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUMERIA"	X="51" Y="18" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_PERSIA"		X="53" Y="22" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_POLAND"		X="42" Y="30" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ZULU"		X="41" Y="4" />
+		<!-- Gathering Storm -->
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SWEDEN"		X="39"	Y="37" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MALI"		X="31" 	Y="14" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MAORI"		X="1"	Y="7" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_HUNGARY"	X="40"	Y="28" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CANADA"		X="18"	Y="36" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_PHOENICIA"	X="47"	Y="21" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_PHOENICIA"	X="35"	Y="20" Leader="LEADER_DIDO"	/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_INCA"		X="14"	Y="11" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_OTTOMAN"	X="49"	Y="37" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_OTTOMAN"	X="43"	Y="25" Leader="LEADER_SULEIMAN" />
+		<!-- New Frontier -->
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MAYA"				X="7" 	Y="23" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_GRAN_COLOMBIA"		X="12" 	Y="18" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ETHIOPIA"			X="46" 	Y="11" />		
+		<!-- Community Civs -->
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_RL_SHOSHONE" 	X="10" Y="39" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUK_TIBET"		X="61" Y="28" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUK_BURMA" 		X="62" Y="25" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUK_SIAM" 		X="64" Y="23" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUK_GAUL" 		X="31" Y="28" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUK_ICELAND" 	X="31" Y="40" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SUK_ETHIOPIA" 	X="46" Y="11" />
+	</StartPosition>	
+	
+	<!-- Minors -->
+	<StartPosition>		
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ANTIOCH"		X="47" Y="21" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_AMSTERDAM"		X="36" Y="32" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_BABYLON"		X="50" Y="21" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_BRUSSELS"		X="39" Y="31" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="19" Y="7" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CARTHAGE"		X="35" Y="20" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_GENEVA"			X="34" Y="26" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_HATTUSA"		X="46" Y="25" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_HONG_KONG"		X="65" Y="32" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_JAKARTA"		X="69" Y="24" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_JERUSALEM"		X="46" Y="18" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KABUL"			X="55" Y="26" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KANDY"			X="61" Y="14" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KUMASI"			X="33" Y="13" DisabledByCivilization="CIVILIZATION_TARUGA"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_KUMASI"			X="32" Y="11" AlternateStart="1"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_LA_VENTA"		X="7" Y="26" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_LISBON"			X="29" Y="22" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MOHENJO_DARO"	X="56" Y="23" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_NAN_MADOL"		X="75" Y="30" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_PRESLAV"		X="44" Y="28" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SEOUL"			X="60" Y="40" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_STOCKHOLM"		X="39" Y="37" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_TORONTO"		X="18" Y="36" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_VALLETTA"		X="38" Y="20" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_VILNIUS"		X="41" Y="33" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_YEREVAN"		X="49" Y="24" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="44" Y="7" />
+		<!-- DLC -->
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_AUCKLAND" 		X="79" Y="6" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ANTANANARIVO" 	X="47" Y="6" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_ARMAGH" 		X="29" Y="35" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_GRANADA" 		X="32" Y="20" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MUSCAT" 		X="54" Y="16" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_PALENQUE" 		X="5" Y="23" DisabledByCivilization="CIVILIZATION_MAYA"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_AKKAD"			X="53"	Y="19" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_BOLOGNA"		X="38"	Y="26" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CAHOKIA"		X="11"	Y="33" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CARDIFF"		X="33"	Y="33" DisabledByCivilization="CIVILIZATION_ENGLAND"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CARDIFF"		X="31"	Y="32" AlternateStart="1"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_FEZ"			X="29"	Y="19" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MEXICO_CITY"	X="4"	Y="27" DisabledByCivilization="CIVILIZATION_AZTEC"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_MEXICO_CITY"	X="12"	Y="18" AlternateStart="1"/>
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_NAZCA"			X="12"	Y="12" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_NGAZARGAMU"		X="37"	Y="13" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_RAPA_NUI"		X="9"	Y="8" />	
+		<!-- New Frontier -->
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_CAGUANA"		X="16"	Y="24" />	
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_HUNZA"			X="54"	Y="29" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_LAHORE"			X="57"	Y="28" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_SINGAPORE"		X="66"	Y="19" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_TARUGA"			X="34"	Y="13" />
+		<Replace MapName="CordEarth" Civilization="CIVILIZATION_VATICAN_CITY"	X="37"	Y="23" DisabledByCivilization="CIVILIZATION_ROME"/>		
+	</StartPosition>
+	<!-- ++++++++++++++++++++++++++++++ -->
+	<!--   TSLEE start position   -->
+	<!-- ++++++++++++++++++++++++++++++ -->			
+	<!-- Majors -->
+	<StartPosition>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_AMERICA"	X="22" Y="40" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ARABIA"		X="49" Y="27" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_AUSTRALIA"	X="79" Y="7" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_AZTEC"		X="13" Y="32" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_BRAZIL"		X="29" Y="15" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CHINA"		X="65" Y="40" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CREE"		X="13" Y="48" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_EGYPT"		X="45" Y="30" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ENGLAND"	X="36" Y="47" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_FRANCE"		X="37" Y="43" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GEORGIA"	X="51" Y="41" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GERMANY"	X="41" Y="43" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GREECE"		X="45" Y="35" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_INDIA"		X="60" Y="33" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_INDIA"		X="60" Y="25" AlternateStart="1"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_INDONESIA"	X="71" Y="19" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_JAPAN"		X="77" Y="39" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KHMER"		X="67" Y="28" DisabledByCivilization="CIVILIZATION_SUK_SIAM"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KHMER"		X="69" Y="27" AlternateStart="1"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KONGO"		X="43" Y="14" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KOREA"		X="72" Y="41" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MACEDON"	X="43" Y="39" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MAPUCHE"	X="20" Y="8" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MONGOLIA"	X="65" Y="45" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NETHERLANDS"	X="40" Y="46" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NORWAY"		X="40" Y="55" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NUBIA"		X="46" Y="23" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ROME"		X="41" Y="36" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_RUSSIA"		X="49" Y="49" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SCOTLAND"	X="34" Y="52" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SCYTHIA"	X="51" Y="45" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SPAIN"		X="34" Y="37" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUMERIA"	X="52" Y="29" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_PERSIA"		X="54" Y="33" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_POLAND"		X="45" Y="45" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ZULU"		X="46" Y="7" />
+		<!-- Gathering Storm -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SWEDEN"		X="44"	Y="52" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MALI"		X="37" 	Y="24" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MAORI"		X="3"	Y="3" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_HUNGARY"	X="44"	Y="42" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CANADA"		X="20"	Y="45" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_PHOENICIA"	X="49"	Y="35" />
+		<!-- <Replace MapName="TSLEE" Civilization="CIVILIZATION_PHOENICIA"	X="38"	Y="33" /> -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_PHOENICIA"	X="38"	Y="33" Leader="LEADER_DIDO" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_INCA"		X="21"	Y="18" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_OTTOMAN"	X="61"	Y="48" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_OTTOMAN"	X="47"	Y="39" AlternateStart="1"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_OTTOMAN"	X="46"	Y="39" Leader="LEADER_SULEIMAN"/>	
+		<!-- New Frontier -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MAYA"				X="16" 	Y="30" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GRAN_COLOMBIA"		X="20" 	Y="26" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ETHIOPIA"			X="48" 	Y="21" />
+		<!-- Modded Civs -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_RL_SHOSHONE" 	X="11" Y="45" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_TIBET" 		X="64" Y="36" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_BURMA" 		X="65" Y="30" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_SIAM" 		X="67" Y="28" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_GAUL" 		X="39" Y="41" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_ICELAND" 	X="28" Y="55" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_ETHIOPIA" 	X="48" Y="21" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SUK_SWAHILI" 	X="50" Y="14" />
+	</StartPosition>	
+	
+	<!-- Minors -->
+	<StartPosition>		
+ 		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ANTIOCH"		X="49" Y="35" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ANTIOCH"		X="60" Y="41" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_AMSTERDAM"		X="40" Y="46" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_BABYLON"		X="52" Y="32" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_BRUSSELS"		X="40" Y="46" DisabledByCivilization="CIVILIZATION_NETHERLANDS" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_BRUSSELS"		X="43" Y="46" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_BUENOS_AIRES"	X="25" Y="11" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CARTHAGE"		X="38" Y="33" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GENEVA"			X="38" Y="43" DisabledByCivilization="CIVILIZATION_FRANCE" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GENEVA"			X="38" Y="40" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_HATTUSA"		X="49" Y="38" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_HONG_KONG"		X="69" Y="32" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_JAKARTA"		X="72" Y="25" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_JERUSALEM"		X="48" Y="31" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KABUL"			X="57" Y="37" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KANDY"			X="61" Y="21" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KUMASI"			X="39" Y="22" DisabledByCivilization="CIVILIZATION_TARUGA"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_KUMASI"			X="36" Y="21" AlternateStart="1"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_LA_VENTA"		X="16" Y="33" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_LISBON"			X="34" Y="37" DisabledByCivilization="CIVILIZATION_SPAIN" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_LISBON"			X="32" Y="36" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MOHENJO_DARO"	X="60" Y="33" DisabledByCivilization="CIVILIZATION_INDIA" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MOHENJO_DARO"	X="57" Y="33" AlternateStart="1"  />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NAN_MADOL"		X="81" Y="30" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_PRESLAV"		X="44" Y="42" DisabledByCivilization="CIVILIZATION_HUNGARY" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_PRESLAV"		X="47" Y="42" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SEOUL"			X="72" Y="41" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_STOCKHOLM"		X="24" Y="79" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_TORONTO"		X="20" Y="45" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_VALLETTA"		X="41" Y="36" DisabledByCivilization="CIVILIZATION_ROME" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_VALLETTA"		X="41" Y="33" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_VILNIUS"		X="45" Y="45" DisabledByCivilization="CIVILIZATION_POLAND" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_VILNIUS"		X="46" Y="48" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_YEREVAN"		X="52" Y="38" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ZANZIBAR"		X="50" Y="14" DisabledByCivilization="CIVILIZATION_SUK_SWAHILI"/>
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ZANZIBAR"		X="78" Y="22" AlternateStart="1"/>
+		<!-- DLC -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_AUCKLAND" 		X="1" Y="9" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ANTANANARIVO" 	X="53" Y="10" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_ARMAGH" 		X="32" Y="49" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_GRANADA" 		X="34" Y="34" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MUSCAT" 		X="49" Y="27" DisabledByCivilization="CIVILIZATION_ARABIA" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MUSCAT" 		X="55" Y="26" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_PALENQUE" 		X="16" Y="30" DisabledByCivilization="CIVILIZATION_MAYA"/>
+		<!-- Gathering Storm -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_AKKAD"			X="52"	Y="35" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_BOLOGNA"		X="40"	Y="39" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CAHOKIA"		X="18"	Y="41" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CARDIFF"		X="36"	Y="47" DisabledByCivilization="CIVILIZATION_ENGLAND"  />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CARDIFF"		X="34"	Y="46" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_FEZ"			X="34"	Y="30" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MEXICO_CITY"	X="14"	Y="32" DisabledByCivilization="CIVILIZATION_AZTEC"  />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_MEXICO_CITY"	X="20"	Y="26" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NAZCA"			X="14"	Y="11" DisabledByCivilization="CIVILIZATION_INCA"  />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NAZCA"			X="18"	Y="19" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NGAZARGAMU"		X="37"	Y="24" DisabledByCivilization="CIVILIZATION_MALI" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_NGAZARGAMU"		X="41"	Y="24" AlternateStart="1" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_RAPA_NUI"		X="13"	Y="15" />	
+		<!-- New Frontier -->
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_CAGUANA"		X="25"	Y="31" />	
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_HUNZA"			X="59"	Y="39" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_LAHORE"			X="60"	Y="36" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_SINGAPORE"		X="68"	Y="23" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_TARUGA"			X="39"	Y="22" />
+		<Replace MapName="TSLEE" Civilization="CIVILIZATION_VATICAN_CITY"	X="41"	Y="36" DisabledByCivilization="CIVILIZATION_ROME"/>
+	</StartPosition>	
+	
+	<!-- ++++++++++++++++++++++++++++++ -->
+	<!--   TinyEarth start position   -->
+	<!-- ++++++++++++++++++++++++++++++ -->			
+	<!-- Majors -->
+	<StartPosition>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_AMERICA"	X="20" Y="15" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ARABIA"		X="35" Y="12" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_AUSTRALIA"	X="7" Y="2" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_AZTEC"		X="17" Y="11" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_BRAZIL"		X="24" Y="5" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CHINA"		X="0" Y="15" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CREE"		X="19" Y="18" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_EGYPT"		X="32" Y="12" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ENGLAND"	X="28" Y="22" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_FRANCE"		X="28" Y="19" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_GEORGIA"	X="36" Y="17" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_GERMANY"	X="31" Y="20" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_GREECE"		X="32" Y="17" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_INDIA"		X="40" Y="14" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_INDONESIA"	X="0" Y="6" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_JAPAN"		X="7" Y="14" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_KHMER"		X="1" Y="10" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_KONGO"		X="30" Y="7" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_KOREA"		X="4" Y="16" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MACEDON"	X="31" Y="18" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MAPUCHE"	X="20" Y="3" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MONGOLIA"	X="0" Y="18" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_NORWAY"		X="30" Y="24" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_NUBIA"		X="33" Y="9" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ROME"		X="30" Y="16" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_RUSSIA"		X="34" Y="21" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SCOTLAND"	X="27" Y="24" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SCYTHIA"	X="40" Y="20" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SPAIN"		X="27" Y="16" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SUMERIA"	X="34" Y="15" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_PERSIA"		X="37" Y="14" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_POLAND"		X="32" Y="20" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ZULU"		X="32" Y="4" />
+		<!-- Gathering Storm -->
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SWEDEN"		X="31"	Y="23" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MALI"		X="29" 	Y="10" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MAORI"		X="12"	Y="5" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_HUNGARY"	X="31"	Y="18" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CANADA"		X="21"	Y="19" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_PHOENICIA"	X="29"	Y="13" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_INCA"		X="20"	Y="6" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_OTTOMAN"	X="39"	Y="17" />
+		<!-- New Frontier -->
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MAYA"				X="19" 	Y="11" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_GRAN_COLOMBIA"		X="20" 	Y="8" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ETHIOPIA"			X="34" 	Y="8" />		
+	</StartPosition>	
+	
+	<!-- Minors -->
+	<StartPosition>		
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_AKKAD"			X="34" Y="15" DisabledByCivilization="CIVILIZATION_SUMERIA"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_BABYLON"		X="34" Y="15" DisabledByCivilization="CIVILIZATION_SUMERIA"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="22" Y="3" DisabledByCivilization="CIVILIZATION_MAPUCHE"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="23" Y="2" AlternateStart="1"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CAHOKIA"		X="19" Y="15" DisabledByCivilization="CIVILIZATION_AMERICA"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CAHOKIA"		X="17" Y="15" AlternateStart="1"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CARTHAGE"		X="29" Y="13" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_FEZ"			X="26" Y="11" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_GENEVA"			X="28" Y="19" DisabledByCivilization="CIVILIZATION_FRANCE"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_GRANADA"		X="27" Y="13" DisabledByCivilization="CIVILIZATION_PHOENICIA"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_HONG_KONG"		X="2" Y="13" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_JAKARTA"		X="3" Y="9" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_JERUSALEM"		X="34" Y="15" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_KABUL"			X="38" Y="16" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_KANDY"			X="39" Y="7" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_KUMASI"			X="29" Y="9" DisabledByCivilization="CIVILIZATION_MALI"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_LISBON"			X="27" Y="16" DisabledByCivilization="CIVILIZATION_SPAIN"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_NAN_MADOL"		X="6" Y="10" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_PRESLAV"		X="31" Y="18" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SEOUL"			X="4" Y="16" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_STOCKHOLM"		X="31" Y="23" DisabledByCivilization="CIVILIZATION_NORWAY"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_VALLETTA"		X="30" Y="15" DisabledByCivilization="CIVILIZATION_ROME"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="34" Y="6" />
+		<!-- DLC -->
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_AUCKLAND" 		X="11" Y="3" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ANTANANARIVO" 	X="36" Y="4" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_ARMAGH" 		X="25" Y="22" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_BOLOGNA"		X="30" Y="15" DisabledByCivilization="CIVILIZATION_ROME"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CARDIFF"		X="27" Y="21" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_MUSCAT" 		X="37" Y="11" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_NAZCA"			X="18"	Y="5" DisabledByCivilization="CIVILIZATION_INCA"  />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_NGAZARGAMU"		X="29"	Y="10" DisabledByCivilization="CIVILIZATION_MALI"  />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_NGAZARGAMU"		X="31"	Y="9" AlternateStart="1"  />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_PALENQUE" 		X="19" Y="9" />
+		<!-- New Frontier -->
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_CAGUANA"		X="23"	Y="12" />	
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_HUNZA"			X="39"	Y="17" DisabledByCivilization="CIVILIZATION_OTTOMAN"/>
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_LAHORE"			X="39"	Y="15" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_SINGAPORE"		X="1"	Y="8" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_TARUGA"			X="30"	Y="8" />
+		<Replace MapName="TinyEarth" Civilization="CIVILIZATION_VATICAN_CITY"	X="30"	Y="16" DisabledByCivilization="CIVILIZATION_ROME"/>		
+	</StartPosition>		
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--      EXTRA SPAWNS      -->
+	<!-- +++++++++++++++++++++++++++ -->
+	
+	<!-- DO NOT ADD NATURAL WONDERS IN ExtraPlacement-->
+	<!-- See NaturalWonderPosition below -->
+
+	<ExtraPlacement>
+		<!-- Natural Wonder Tile Fixes -->
+		<!-- Change Matterhorn plot from flat to mountain	-->
+		<Replace MapName="CordEarth" X="35" Y="27"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="40" Y="40"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="30" Y="18"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<!-- Change Vesuvius plot from flat to mountain	-->
+		<Replace MapName="CordEarth" X="36" Y="21"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="41" Y="34"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<!-- Change Everest plots from flat to mountain	-->
+		<Replace MapName="CordEarth" X="58" Y="27"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="59" Y="27"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="59" Y="28"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="61" Y="35"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="62" Y="36"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="62" Y="35"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		<Replace MapName="TSLEE" X="62" Y="34"	TerrainType="TERRAIN_GRASS_HILLS" FeatureType="FEATURE_FOREST" ResourceType="RESOURCE_TEA" />	
+		<Replace MapName="TinyEarth" X="40" Y="15"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="41" Y="15"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="41" Y="16"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />		
+		<!-- Change Zhangye plots from flat to mountain	-->
+		<Replace MapName="CordEarth" X="55" Y="32"	TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="56" Y="32"	TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="57" Y="32"	TerrainType="TERRAIN_DESERT_MOUNTAIN" />	
+		<Replace MapName="TSLEE" X="61" Y="41"	TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="62" Y="41"	TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="63" Y="41"	TerrainType="TERRAIN_DESERT_MOUNTAIN" />			
+		<!-- Change Kilimanjaro plot from flat to mountain	-->
+		<Replace MapName="CordEarth" X="43" Y="8"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="49" Y="16"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="32" Y="7"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<!-- Change Roirama plots from flat to mountain -->
+		<Replace MapName="CordEarth" X="16" Y="16"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="15" Y="17"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="15" Y="18"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="16" Y="18"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="23" Y="24"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="24" Y="24"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="25" Y="24"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="23" Y="25"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />		
+		<!-- Add mountains for Mt. Fuji -->
+		<Replace MapName="CordEarth" X="61" Y="45"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="76" Y="39"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		<Replace MapName="TinyEarth" X="6" Y="15"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />				
+		<!-- Add mountain for Potosi -->
+		<Replace MapName="TSLEE" X="23" Y="15"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="17" Y="10"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="20" Y="5"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<!-- Add mountain for Krakatoa -->
+		<Replace MapName="TSLEE" X="67" Y="18"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="69" Y="16"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />		
+		<!-- Add mountain for Sri Pada -->
+		<Replace MapName="TSLEE" X="62" Y="20"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="61" Y="13"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />			
+		<!-- Add mountains to Gobustan -->
+		<Replace MapName="TSLEE" X="53" Y="39" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />	
+		<!-- Remove floodplains from Sicily if present -->
+		<Replace MapName="TSLEE" X="41" Y="35" FeatureType="NONE" />
+		<Replace MapName="TSLEE" X="42" Y="34" FeatureType="NONE" />
+		<Replace MapName="TSLEE" X="41" Y="33" FeatureType="NONE" />
+		
+		<!-- Configuration Settings -->
+		<!-- Remove Natural Wonders -->
+		<Replace MapName="CordEarth" X="33" Y="32" ConfigurationId="Cliffs" TerrainType="TERRAIN_PLAINS"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="36" Y="46" ConfigurationId="Cliffs" TerrainType="TERRAIN_PLAINS"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="37" Y="46" ConfigurationId="Cliffs" TerrainType="TERRAIN_PLAINS"	FeatureType="NONE" />	
+		<Replace MapName="CordEarth" X="8" Y="40" ConfigurationId="CraterLake" TerrainType="TERRAIN_PLAINS_HILLS" FeatureType="FEATURE_FOREST" />	
+		<Replace MapName="TSLEE" X="8" Y="44" ConfigurationId="CraterLake" TerrainType="TERRAIN_PLAINS_HILLS" FeatureType="FEATURE_FOREST" />			
+		<Replace MapName="CordEarth" X="47" Y="18" ConfigurationId="DeadSea"	FeatureType="NONE" />	
+		<Replace MapName="CordEarth" X="47" Y="18" ConfigurationId="DeadSea"	TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="CordEarth" X="47" Y="19" ConfigurationId="DeadSea"	TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="TSLEE" X="49" Y="30" ConfigurationId="DeadSea"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="49" Y="30" ConfigurationId="DeadSea"	TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="TSLEE" X="49" Y="31" ConfigurationId="DeadSea"	TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="CordEarth" X="29" Y="17" ConfigurationId="EyeSahara"	FeatureType="NONE" />
+		<Replace MapName="TSLEE" X="34" Y="27" ConfigurationId="EyeSahara"	FeatureType="NONE" />
+		<Replace MapName="CordEarth" X="31" Y="41" ConfigurationId="VikingNWs"	FeatureType="NONE" />	
+		<Replace MapName="CordEarth" X="31" Y="41" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="CordEarth" X="32" Y="41" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />	
+		<Replace MapName="CordEarth" X="37" Y="37" ConfigurationId="VikingNWs"	FeatureType="NONE" />	
+		<Replace MapName="CordEarth" X="37" Y="37" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="36" Y="37" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />	
+		<Replace MapName="CordEarth" X="37" Y="38" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="CordEarth" X="30" Y="37" ConfigurationId="VikingNWs"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="29" Y="55" ConfigurationId="VikingNWs"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="29" Y="55" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="TSLEE" X="30" Y="55" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />	
+		<Replace MapName="TSLEE" X="40" Y="53" ConfigurationId="VikingNWs"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="40" Y="53" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="39" Y="53" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />	
+		<Replace MapName="TSLEE" X="40" Y="54" ConfigurationId="VikingNWs"	TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="TSLEE" X="33" Y="52" ConfigurationId="VikingNWs"	FeatureType="NONE" />
+		<Replace MapName="CordEarth" X="40" Y="15" ConfigurationId="WhiteDesert"	FeatureType="NONE" />
+		<Replace MapName="TSLEE" X="42" Y="29" ConfigurationId="WhiteDesert"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="53" Y="39" ConfigurationId="Gobustan"	FeatureType="NONE" />	
+		<Replace MapName="TSLEE" X="52" Y="39" ConfigurationId="Gobustan"	FeatureType="FEATURE_FOREST" />	
+		<Replace MapName="TSLEE" X="53" Y="40" ConfigurationId="Gobustan"	FeatureType="FEATURE_FOREST" ResourceType="RESOURCE_OIL" />	
+		<Replace MapName="TSLEE" X="47" Y="37" ConfigurationId="Pamukkale"	TerrainType="TERRAIN_PLAINS_HILLS" FeatureType="FEATURE_FOREST" ResourceType="RESOURCE_COPPER" />
+		<Replace MapName="TSLEE" X="48" Y="37" ConfigurationId="Pamukkale"	TerrainType="TERRAIN_PLAINS_HILLS" FeatureType="FEATURE_FOREST" ResourceType="RESOURCE_DEER" />			
+		
+		<!-- Horses in Americas -->
+		<Replace MapName="TSLEE" X="9" Y="45" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TSLEE" X="13" Y="47" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TSLEE" X="15" Y="43" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TSLEE" X="15" Y="40" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TSLEE" X="24" Y="10" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />		
+		
+		<Replace MapName="CordEarth" X="17" Y="7" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="CordEarth" X="8" Y="33" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="CordEarth" X="11" Y="36" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="CordEarth" X="14" Y="39" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />		
+
+		<Replace MapName="TinyEarth" X="21" Y="3" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TinyEarth" X="16" Y="7" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TinyEarth" X="18" Y="18" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TinyEarth" X="18" Y="15" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />				
+
+		<!-- Civ Specific Resources -->
+		<Replace MapName="TSLEE" X="75" Y="5" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="TSLEE" X="77" Y="8" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="TSLEE" X="78" Y="8" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="TSLEE" X="78" Y="10" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="TSLEE" X="75" Y="12" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="TSLEE" X="73" Y="14" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="TSLEE" X="72" Y="11" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="TSLEE" X="70" Y="9" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+
+		<Replace MapName="CordEarth" X="69" Y="10" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />			
+		<Replace MapName="CordEarth" X="75" Y="9" Civilization="CIVILIZATION_AUSTRALIA"		ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="CordEarth" X="72" Y="10" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="CordEarth" X="76" Y="11" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="CordEarth" X="74" Y="7" Civilization="CIVILIZATION_AUSTRALIA"		ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="CordEarth" X="75" Y="13" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="CordEarth" X="76" Y="11" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		
+		<Replace MapName="TinyEarth" X="5" Y="1" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="TinyEarth" X="6" Y="3" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_HORSES" />
+		<Replace MapName="TinyEarth" X="3" Y="1" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+
+		<!-- Extra lakes for wonders -->
+		<Replace MapName="TSLEE" X="12" Y="33" ConfigurationId="Lakes"	TerrainType="TERRAIN_COAST" ResourceType="RESOURCE_FISH"/>
+		<Replace MapName="TSLEE" X="22" Y="16" ConfigurationId="Lakes"	TerrainType="TERRAIN_COAST" ResourceType="RESOURCE_FISH"/>
+		
+		<!-- Add Bosporus straits -->
+		<Replace MapName="TSLEE" X="46" Y="39" ConfigurationId="Bosporus"	TerrainType="TERRAIN_COAST" />
+		<!-- Add Sinai straits -->
+		<Replace MapName="TSLEE" X="47" Y="29" ConfigurationId="Sinai"	TerrainType="TERRAIN_COAST" />	
+		
+		<!-- Extra mountains -->
+		<!-- <Replace MapName="TSLEE" X="35" Y="39" ConfigurationId="MtsEuro"	TerrainType="TERRAIN_GRASS_MOUNTAIN" /> -->
+		<!-- <Replace MapName="TSLEE" X="39" Y="39" ConfigurationId="MtsEuro"	TerrainType="TERRAIN_GRASS_MOUNTAIN" ResourceType="NONE" /> -->
+		<!-- <Replace MapName="TSLEE" X="43" Y="44" ConfigurationId="MtsEuro"	TerrainType="TERRAIN_GRASS_MOUNTAIN" /> -->
+		<!-- <Replace MapName="TSLEE" X="45" Y="43" ConfigurationId="MtsEuro"	TerrainType="TERRAIN_GRASS_MOUNTAIN" /> -->
+		<!-- <Replace MapName="TSLEE" X="8" Y="40" ConfigurationId="MtsNortham"	TerrainType="TERRAIN_DESERT_MOUNTAIN" /> -->
+		<!-- <Replace MapName="TSLEE" X="7" Y="41" ConfigurationId="MtsNortham"	TerrainType="TERRAIN_DESERT_MOUNTAIN" /> -->
+		<!-- <Replace MapName="TSLEE" X="7" Y="45" ConfigurationId="MtsNortham"	TerrainType="TERRAIN_DESERT_MOUNTAIN" /> -->
+		<!-- <Replace MapName="TSLEE" X="22" Y="20" ConfigurationId="MtsSoutham"	TerrainType="TERRAIN_GRASS_HILLS" FeatureType="FEATURE_JUNGLE" /> -->
+	</ExtraPlacement>
+	
+	<NaturalWonderPosition>
+
+		<!-- FEATURE_BARRIER_REEF : 2 plots, coast, 1st plot is SOUTHEAST -->
+		<Replace MapName="CordEarth" X="76" Y="15" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="CordEarth" X="76" Y="16" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="80" Y="12" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="79" Y="13" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />		
+		<Replace MapName="TinyEarth" X="8" Y="4" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TinyEarth" X="8" Y="5" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />			
+		
+		<!-- FEATURE_CLIFFS_DOVER : 2 plots, hills on coast, 1st plot is WEST -->
+		<Replace MapName="CordEarth" X="33" Y="32" FeatureType="FEATURE_CLIFFS_DOVER" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapName="CordEarth" X="34" Y="32" FeatureType="FEATURE_CLIFFS_DOVER" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapName="TSLEE" X="36" Y="46" FeatureType="FEATURE_CLIFFS_DOVER" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapName="TSLEE" X="37" Y="46" FeatureType="FEATURE_CLIFFS_DOVER" TerrainType="TERRAIN_PLAINS_HILLS" />		
+		
+		<!-- FEATURE_CRATER_LAKE : 1 plot -->
+		<Replace MapName="CordEarth" X="8" Y="40" FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="8" Y="44" FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_COAST" />
+		
+		<!-- FEATURE_DEAD_SEA : 2 plots, flat desert surrounded by desert, 1st plot is SOUTHWEST -->
+		<Replace MapName="CordEarth" X="47" Y="18" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CordEarth" X="47" Y="19" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="49" Y="30" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="49" Y="31" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
+		
+		<!-- FEATURE_EVEREST : 3 plots, mountains, 1st plot is WEST (mountains are removed after feature is placed, must be placed again under ExtraPlacement)-->
+		<Replace MapName="CordEarth" X="58" Y="27" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="59" Y="27" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="59" Y="28" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="61" Y="35" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="62" Y="36" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="62" Y="35" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_GRASS_MOUNTAIN" />		
+		<Replace MapName="TinyEarth" X="40" Y="15" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="41" Y="15" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="41" Y="16" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />			
+		
+		<!-- FEATURE_GALAPAGOS : 2 plots, coast, surrounded by coast, 1st plot is SOUTHEAST -->
+		<Replace MapName="CordEarth" X="7" Y="17" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="CordEarth" X="8" Y="18" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="14" Y="23" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="14" Y="24" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />	
+		<Replace MapName="TinyEarth" X="15" Y="7" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TinyEarth" X="16" Y="8" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />			
+		
+		<!-- FEATURE_KILIMANJARO: 1 plot (mountain is removed after feature is placed, must be placed again under ExtraPlacement) -->
+		<Replace MapName="CordEarth" X="43" Y="8" FeatureType="FEATURE_KILIMANJARO" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="49" Y="16" FeatureType="FEATURE_KILIMANJARO" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="32" Y="7" FeatureType="FEATURE_KILIMANJARO" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		
+		<!-- FEATURE_PANTANAL : 4 plots, flat grass/plains without features, 1st plot is SOUTHWEST -->
+		<Replace MapName="CordEarth" X="17" Y="11" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CordEarth" X="18" Y="12" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CordEarth" X="18" Y="11" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CordEarth" X="19" Y="12" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="25" Y="16" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="25" Y="17" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="26" Y="16" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="26" Y="17" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />		
+		
+		<!-- FEATURE_PIOPIOTAHI : 3 plots, flat grass near coast, 1st plot is WEST -->
+		<Replace MapName="CordEarth" X="77" Y="1" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CordEarth" X="78" Y="1" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CordEarth" X="78" Y="2" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="83" Y="2" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="83" Y="3" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="0" Y="2" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />		
+		<Replace MapName="TinyEarth" X="10" Y="1" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TinyEarth" X="11" Y="1" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TinyEarth" X="11" Y="2" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />				
+		
+		<!-- FEATURE_TORRES_DEL_PAINE : 2 plots EAST-WEST without features, 1st plot is WEST -->
+		<Replace MapName="CordEarth" X="18" Y="2" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CordEarth" X="19" Y="2" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="21" Y="4" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="22" Y="4" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TinyEarth" X="21" Y="1" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TinyEarth" X="22" Y="1" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />		
+		
+		<!-- FEATURE_TSINGY : 1 plot -->
+		<Replace MapName="CordEarth" X="45" Y="5" FeatureType="FEATURE_TSINGY" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="52" Y="10" FeatureType="FEATURE_TSINGY" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TinyEarth" X="35" Y="4" FeatureType="FEATURE_TSINGY" TerrainType="TERRAIN_GRASS" />
+		
+		<!-- FEATURE_YOSEMITE : 2 plots EAST-WEST, flat tundra/plains without features, 1st plot is WEST -->
+		<Replace MapName="CordEarth" X="6" Y="38" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="CordEarth" X="7" Y="38" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="8" Y="43" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="9" Y="43" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />		
+		
+		<!-- **************** -->
+		<!--     DLC NW       -->
+		<!-- **************** -->
+		
+		<!-- FEATURE_EYJAFJALLAJOKULL : 2 plots EAST-WEST, flat tundra/plains without features, 1st plot is WEST -->
+		<Replace MapName="CordEarth" X="31" Y="41" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="CordEarth" X="32" Y="41" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="TSLEE" X="29" Y="55" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="TSLEE" X="30" Y="55" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA_HILLS" />		
+		
+		<!-- FEATURE_LYSEFJORDEN : 3 plots, , flat grass near coast, 1st plot is EAST -->
+		<Replace MapName="CordEarth" X="37" Y="38" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CordEarth" X="36" Y="37" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CordEarth" X="36" Y="38" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="40" Y="54" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="39" Y="53" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="39" Y="54" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />		
+		
+		<!-- FEATURE_GIANTS_CAUSEWAY : 2 plots, one on coastal land and one in water, 1st plot is land, SOUTHEAST -->
+		<Replace MapName="CordEarth" X="30" Y="37" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="CordEarth" X="31" Y="38" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_COAST" />	
+		<Replace MapName="TSLEE" X="33" Y="52" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="32" Y="53" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_PLAINS" />			
+		
+		<!-- FEATURE_ULURU : 1 plot -->
+		<Replace MapName="CordEarth" X="72" Y="11" FeatureType="FEATURE_ULURU" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="73" Y="11" FeatureType="FEATURE_ULURU" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TinyEarth" X="4" Y="3" FeatureType="FEATURE_ULURU" TerrainType="TERRAIN_PLAINS" />
+
+		<!-- FEATURE_HA_LONG_BAY: 2 plots -->
+		<Replace MapName="CordEarth" X="65" Y="28" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="CordEarth" X="65" Y="29" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="69" Y="31" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TSLEE" X="70" Y="30" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />	
+		<Replace MapName="TinyEarth" X="2" Y="12" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="TinyEarth" X="3" Y="12" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />			
+		
+		<!-- **************** -->
+		<!-- Rise and Fall NW -->
+		<!-- **************** -->	
+		
+		<!-- FEATURE_RORAIMA: 4 plots (mountains are removed after feature is placed, must be placed again under ExtraPlacement) -->
+		<Replace MapName="CordEarth" X="16" Y="16" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="15" Y="17" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="15" Y="18" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="16" Y="18" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="23" Y="24" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="24" Y="24" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="23" Y="25" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="25" Y="24" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />		
+		
+		<!-- FEATURE_ZHANGYE_DANXIA: 3 plots (mountains are removed after feature is placed, must be placed again under ExtraPlacement) -->
+		<Replace MapName="CordEarth" X="57" Y="32" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="56" Y="32" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="55" Y="32" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="63" Y="41" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="62" Y="41" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="61" Y="41" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />		
+		
+		<!-- FEATURE_UBSUNUR_HOLLOW: 4 plots -->
+		<Replace MapName="CordEarth" X="52" Y="36" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CordEarth" X="53" Y="36" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CordEarth" X="52" Y="35" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CordEarth" X="53" Y="35" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="63" Y="46" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="63" Y="47" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="62" Y="47" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="TSLEE" X="63" Y="48" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />		
+		
+		<!-- FEATURE_LAKE_RETBA: 2 plots, appears as a lake, requires grassland plots to spawn -->
+		<Replace MapName="CordEarth" X="28" Y="16" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CordEarth" X="29" Y="16" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="33" Y="25" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="34" Y="25" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />		
+		
+		<!-- FEATURE_MATTERHORN: 1 plot (mountain is removed after feature is placed, must be placed again under ExtraPlacement) -->
+		<Replace MapName="CordEarth" X="35" Y="27" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_GRASS_MOUNTAIN" /> 
+		<Replace MapName="TSLEE" X="40" Y="40" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_GRASS_MOUNTAIN" /> 
+		<Replace MapName="TinyEarth" X="30" Y="18" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_GRASS_MOUNTAIN" /> 
+		
+		<!-- FEATURE_DELICATE_ARCH: 1 plot -->
+		<Replace MapName="CordEarth" X="9" Y="38" FeatureType="FEATURE_DELICATE_ARCH" TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="TSLEE" X="11" Y="44" FeatureType="FEATURE_DELICATE_ARCH" TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="TinyEarth" X="16" Y="16" FeatureType="FEATURE_DELICATE_ARCH" TerrainType="TERRAIN_DESERT_HILLS" />
+		
+		<!-- FEATURE_EYE_OF_THE_SAHARA: 3 plots, first plot is SOUTHWEST -->
+		<Replace MapName="CordEarth" X="29" Y="17" FeatureType="FEATURE_EYE_OF_THE_SAHARA" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="34" Y="27" FeatureType="FEATURE_EYE_OF_THE_SAHARA" TerrainType="TERRAIN_DESERT" />
+		
+		<!-- ****************** -->
+		<!-- Gathering Storm NW -->
+		<!-- ****************** -->
+		
+		<!-- FEATURE_CHOCOLATEHILLS: 4 plots, 1st plot is NORTHWEST -->
+		<Replace MapName="CordEarth" X="69" Y="36" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="CordEarth" X="70" Y="36" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="CordEarth" X="69" Y="35" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="CordEarth" X="70" Y="35" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="TSLEE" X="75" Y="32" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="TSLEE" X="76" Y="32" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="TSLEE" X="75" Y="31" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="TSLEE" X="76" Y="31" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />		
+		
+		<!-- FEATURE_GOBUSTAN: 3 plots -->
+		<!-- <Replace MapName="CordEarth" X="44" Y="60" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" /> -->
+		<!-- <Replace MapName="CordEarth" X="44" Y="61" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" /> -->
+		<!-- <Replace MapName="CordEarth" X="45" Y="60" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" /> -->
+		<Replace MapName="TSLEE" X="52" Y="39" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="53" Y="39" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="53" Y="40" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />		
+		
+		<!-- FEATURE_PAMUKKALE: 3 plots -->
+		<!-- <Replace MapName="CordEarth" X="32" Y="57" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" /> -->
+		<!-- <Replace MapName="CordEarth" X="33" Y="57" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" /> -->
+		<Replace MapName="TSLEE" X="47" Y="37" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapName="TSLEE" X="48" Y="37" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
+		
+		<!-- FEATURE_WHITEDESERT: 4 plots -->
+		<Replace MapName="CordEarth" X="40" Y="15" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CordEarth" X="41" Y="15" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CordEarth" X="41" Y="16" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CordEarth" X="42" Y="16" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="42" Y="29" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="43" Y="30" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="43" Y="29" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="44" Y="30" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />		
+		
+		<!-- FEATURE_DEVILSTOWER: 1 plot -->
+		<Replace MapName="CordEarth" X="12" Y="38" FeatureType="FEATURE_DEVILSTOWER" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="13" Y="44" FeatureType="FEATURE_DEVILSTOWER" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		
+		<!-- FEATURE_IKKIL: 1 plot -->
+		<Replace MapName="CordEarth" X="8" Y="26" FeatureType="FEATURE_IKKIL"  />
+		<Replace MapName="TSLEE" X="17" Y="33" FeatureType="FEATURE_IKKIL"  />
+		
+		<!-- FEATURE_VESUVIUS: 1 plot (mountain is removed after feature is placed, must be placed again under ExtraPlacement) -->
+		<Replace MapName="CordEarth" X="36" Y="21" FeatureType="FEATURE_VESUVIUS" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapName="TSLEE" X="41" Y="34" FeatureType="FEATURE_VESUVIUS" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		
+		<!-- ****************** -->
+		<!-- New Frontier NW -->
+		<!-- ****************** -->		
+		<Replace MapName="TSLEE" X="24" Y="35" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="TSLEE" X="25" Y="35" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="TSLEE" X="25" Y="36" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		
+		<Replace MapName="CordEarth" X="16" Y="26" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="CordEarth" X="17" Y="26" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="CordEarth" X="16" Y="27" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />		
+		
+		<!-- **************** -->
+		<!--    Modded NW     -->
+		<!-- **************** -->
+		
+		<Replace MapName="TSLEE" X="76" Y="39" FeatureType="FEATURE_SUK_FUJI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="61" Y="45" FeatureType="FEATURE_SUK_FUJI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="TinyEarth" X="6" Y="15" FeatureType="FEATURE_SUK_FUJI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		
+		<Replace MapName="TSLEE" X="47" Y="17" FeatureType="FEATURE_SUK_NGORONGORO_CRATER" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="48" Y="16" FeatureType="FEATURE_SUK_NGORONGORO_CRATER" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="48" Y="17" FeatureType="FEATURE_SUK_NGORONGORO_CRATER" TerrainType="TERRAIN_GRASS" />
+		
+		<Replace MapName="TSLEE" X="10" Y="41" FeatureType="FEATURE_SUK_GRANDCANYON" TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="TSLEE" X="11" Y="42" FeatureType="FEATURE_SUK_GRANDCANYON" TerrainType="TERRAIN_DESERT_HILLS" />
+		<Replace MapName="TSLEE" X="11" Y="41" FeatureType="FEATURE_SUK_GRANDCANYON" TerrainType="TERRAIN_DESERT_HILLS" />
+		
+		<Replace MapName="TSLEE" X="67" Y="29" FeatureType="FEATURE_SUK_TONLESAP" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="68" Y="28" FeatureType="FEATURE_SUK_TONLESAP" TerrainType="TERRAIN_GRASS" />		
+		
+		<Replace MapName="TSLEE" X="18" Y="30" FeatureType="FEATURE_SUK_GREATBLUEHOLE" TerrainType="TERRAIN_COAST" />
+
+		<Replace MapName="TSLEE" X="23" Y="15" FeatureType="FEATURE_CERRO_DE_POTOSI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="17" Y="10" FeatureType="FEATURE_CERRO_DE_POTOSI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		<Replace MapName="TinyEarth" X="20" Y="5" FeatureType="FEATURE_CERRO_DE_POTOSI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		
+		<Replace MapName="TSLEE" X="62" Y="20" FeatureType="FEATURE_SRI_PADA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="61" Y="13" FeatureType="FEATURE_SRI_PADA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />					
+		
+		<Replace MapName="TSLEE" X="67" Y="18" FeatureType="FEATURE_KRAKATOA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CordEarth" X="69" Y="16" FeatureType="FEATURE_KRAKATOA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		
+		<Replace MapName="TSLEE" X="49" Y="21" FeatureType="FEATURE_DALLOL" TerrainType="TERRAIN_DESERT" />		
+		<Replace MapName="CordEarth" X="46" Y="13" FeatureType="FEATURE_DALLOL" TerrainType="TERRAIN_DESERT" />				
+
+		<Replace MapName="TSLEE" X="48" Y="19" FeatureType="FEATURE_LAKE_VICTORIA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="47" Y="18" FeatureType="FEATURE_LAKE_VICTORIA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="47" Y="19" FeatureType="FEATURE_LAKE_VICTORIA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="48" Y="18" FeatureType="FEATURE_LAKE_VICTORIA" TerrainType="TERRAIN_GRASS" />
+		
+		<Replace MapName="TSLEE" X="41" Y="11" FeatureType="FEATURE_NAMIB" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="42" Y="10" FeatureType="FEATURE_NAMIB" TerrainType="TERRAIN_DESERT" />	
+		<Replace MapName="TSLEE" X="42" Y="9" FeatureType="FEATURE_NAMIB" TerrainType="TERRAIN_DESERT" />				
+		
+		<Replace MapName="CordEarth" X="40" Y="13" FeatureType="FEATURE_OUNIANGA" TerrainType="TERRAIN_DESERT" />	
+		<Replace MapName="CordEarth" X="41" Y="14" FeatureType="FEATURE_OUNIANGA" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="TSLEE" X="42" Y="26" FeatureType="FEATURE_OUNIANGA" TerrainType="TERRAIN_DESERT" />	
+		<Replace MapName="TSLEE" X="42" Y="27" FeatureType="FEATURE_OUNIANGA" TerrainType="TERRAIN_DESERT" />		
+
+		<Replace MapName="TSLEE" X="20" Y="15" FeatureType="FEATURE_SALAR_DE_UYUNI" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="21" Y="14" FeatureType="FEATURE_SALAR_DE_UYUNI" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="21" Y="15" FeatureType="FEATURE_SALAR_DE_UYUNI" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="TSLEE" X="21" Y="16" FeatureType="FEATURE_SALAR_DE_UYUNI" TerrainType="TERRAIN_PLAINS" />
+		
+		<Replace MapName="TSLEE" X="12" Y="46" FeatureType="FEATURE_OLD_FAITHFUL" TerrainType="TERRAIN_PLAINS" />	
+		
+		<Replace MapName="TSLEE" X="12" Y="42" FeatureType="FEATURE_GRAND_MESA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />		
+
+		<Replace MapName="TSLEE" X="60" Y="37" FeatureType="FEATURE_KAILASH" TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		
+		<Replace MapName="TSLEE" X="26" Y="30" FeatureType="FEATURE_BIOLUMINESCENT_BAY" TerrainType="TERRAIN_COAST" />
+		
+		<Replace MapName="TSLEE" X="48" Y="28" FeatureType="FEATURE_SINAI" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		
+		<Replace MapName="TSLEE" X="47" Y="9" FeatureType="FEATURE_MOSI_OA_TUNYA" TerrainType="TERRAIN_GRASS" />
+		
+		<Replace MapName="TSLEE" X="35" Y="34" FeatureType="FEATURE_GIBRALTAR" TerrainType="TERRAIN_GRASS" />
+
+	</NaturalWonderPosition>
+	<FountainPosition>
+		<!-- Selects one location from this list. No spawn locations means it won't appear in the game. Number of No Spawn locations determines spawn chance, ie 50% default-->
+		<!-- TSL Earth Remastered -->
+		<Replace MapName="TSLEE" X="20" Y="38" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="21" Y="22" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="43" Y="17" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="76" Y="18" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="TSLEE" X="63" Y="55" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_TUNDRA" />
+		<!-- No Spawns -->
+		<Replace MapName="TSLEE" X="-1" Y="-1" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="-1" Y="-2" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="-1" Y="-3" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="-1" Y="-4" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="TSLEE" X="-1" Y="-5" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+	</FountainPosition>
+	<!-- <TinyEarthWonders> -->
+		<!-- <Replace MapName="TinyEarth" X="30" Y="18" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_GRASS_MOUNTAIN" Continent="Europe"/>  -->
+		
+		<!-- <Replace MapName="TinyEarth" X="16" Y="16" FeatureType="FEATURE_DELICATE_ARCH" TerrainType="TERRAIN_DESERT_HILLS" Continent="NorthAm"/> -->
+		<!-- <Replace MapName="TinyEarth" X="16" Y="16" FeatureType="FEATURE_YOSEMITE" 		TerrainType="TERRAIN_DESERT_HILLS" Continent="NorthAm"/> -->
+		
+		<!-- <Replace MapName="TinyEarth" X="21" Y="1" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" Continent="SouthAm"/> -->
+		
+		<!-- <Replace MapName="TinyEarth" X="2" Y="12" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" Continent="Asia"/> -->
+		<!-- <Replace MapName="TinyEarth" X="40" Y="15" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" Continent="Asia"/> -->
+		
+		<!-- <Replace MapName="TinyEarth" X="4" Y="3" 	FeatureType="FEATURE_ULURU" TerrainType="TERRAIN_PLAINS" Continent="Australia"/> -->
+		<!-- <Replace MapName="TinyEarth" X="8" Y="4" 	FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" Continent="Australia"/> -->
+		<!-- <Replace MapName="TinyEarth" X="10" Y="1" 	FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" Continent="Australia"/> -->
+	<!-- </TinyEarthWonders> -->
+</GameData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AutoBuilders_Text_zh_Hans_CN -->
+<!-- Author: MadManCam -->
+<!-- DateCreated: 5/27/2018 5:38:23 AM -->
+<GameData>
+	<LocalizedText>
+
+		<!-- Simplified Chinese -->
+		<Replace Tag="LOC_CNO_AUTOUNITS_AUTOMATE_TOOLTIP" Language="zh_Hans_CN">
+			<Text>自动化操作</Text>
+		</Replace>
+		<Replace Tag="LOC_CNO_AUTOUNITS_STOP_AUTOMATE_TOOLTIP" Language="zh_Hans_CN">
+			<Text>停止自动化</Text>
+		</Replace>
+
+	</LocalizedText>
+</GameData>

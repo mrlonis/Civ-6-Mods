@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<!-- Land Units -->
+		<Replace Tag="LOC_UNIT_AT_CREW_NAME" Language="ja_JP">
+			<Text>バズーカ兵</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_AT_CREW_DESCRIPTION" Language="ja_JP">
+			<Text>原子力時代の火力支援ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MODERN_AT_NAME" Language="ja_JP">
+			<Text>現代バズーカ兵</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MODERN_AT_DESCRIPTION" Language="ja_JP">
+			<Text>情報時代の火力支援ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HELICOPTER_NAME" Language="ja_JP">
+			<Text>攻撃ヘリコプター</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_HELICOPTER_DESCRIPTION" Language="ja_JP">
+			<Text>情報時代の高速な対騎兵ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_BOOST_TRIGGER_LONGDESC_MACHINERY" Language="ja_JP">
+			<Text>既存の大規模な長距離戦闘部隊の能力を、機械を用いて更に向上させることを検討中です。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INDIAN_VARU_DESCRIPTION" Language="ja_JP">
+			<Text>古典時代のインド固有ユニット。隣接する敵ユニットの [ICON_STRENGTH] 戦闘力-5。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACHINE_GUN_DESCRIPTION" Language="ja_JP">
+			<Text>近代の火力支援ユニット。近接戦闘/対騎兵/軽騎兵ユニットに対し [ICON_Strength] 戦闘力ボーナス。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_INFANTRY_DESCRIPTION" Language="ja_JP">
+			<Text>原子力時代の近接戦闘ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PIKE_AND_SHOT_DESCRIPTION" Language="ja_JP">
+			<Text>ルネサンス時代の対騎兵ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_TANK_DESCRIPTION" Language="ja_JP">
+			<Text>原子力時代の重騎兵ユニット。支配領域を無視可能。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MODERN_ARMOR_NAME" Language="ja_JP">
+			<Text>現代機甲部隊</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_OBSERVATION_BALLOON_DESCRIPTION" Language="ja_JP">
+			<Text>産業時代の支援ユニット。隣接する攻城ユニットに [ICON_Range] 射程+1。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ARTILLERY_NAME" Language="ja_JP">
+			<Text>大砲</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MECHANIZED_INFANTRY_DESCRIPTION" Language="ja_JP">
+			<Text>情報時代の軽騎兵ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_SWEDEN_CAROLEAN_DESCRIPTION" Language="ja_JP">
+			<Text>スウェーデン固有ユニット。戦列歩兵を代替する。戦列歩兵より速い。未使用の [ICON_Movement] 移動力1つにつき [ICON_Strength] 戦闘力 +3。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION" Language="ja_JP">
+			<Text>マケドニア固有の白兵ユニット。区域攻撃時に [ICON_Strength] 戦闘力 +5。追加支援ボーナス50%。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="ja_JP">
+			<Text>マケドニアの固有ユニット。甲冑騎兵を代替する。大将軍隣接時に [ICON_Strength] 戦闘力 +5。敵ユニット撃破時に大将軍ポイント+5。最初から無償のレベルアップを1つ有する。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_DRONE_DESCRIPTION" Language="ja_JP">
+			<Text>情報時代の支援ユニット。周囲1ヘックス以内の攻囲ユニットに [ICON_Range] 射程＋1、 [ICON_Bombard] 砲撃力＋5。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PIKEMAN_NAME" Language="ja_JP">
+			<Text>薙刀兵</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_PIKE_AND_SHOT_NAME" Language="ja_JP">
+			<Text>槍銃兵</Text>
+		</Replace>
+		<!-- Air Units -->
+		<Replace Tag="LOC_UNIT_BOMBER_DESCRIPTION" Language="ja_JP">
+			<Text>原子力時代初期の爆撃機ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BIPLANE_NAME" Language="ja_JP">
+			<Text>複葉戦闘機</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_FIGHTER_DESCRIPTION" Language="ja_JP">
+			<Text>近代の戦闘機ユニット。</Text>
+		</Replace>
+		<!-- Naval Units -->
+		<Replace Tag="LOC_UNIT_CARAVEL_DESCRIPTION" Language="ja_JP">
+			<Text>中世の高速な海洋近接戦闘ユニット。探索任務に適している。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_DESTROYER_DESCRIPTION" Language="ja_JP">
+			<Text>原子力時代の海洋近接戦闘ユニット。視界内の海洋略奪ユニットを発見可能。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BATTLESHIP_DESCRIPTION" Language="ja_JP">
+			<Text>原子力時代の海洋砲撃ユニット。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_NUCLEAR_SUBMARINE_NAME" Language="ja_JP">
+			<Text>弾道ミサイル潜水艦</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MISSILE_CRUISER_NAME" Language="ja_JP">
+			<Text>ミサイル巡洋艦</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MISSILE_CRUISER_DESCRIPTION" Language="ja_JP">
+			<Text>最強の海洋砲撃ユニット。1タイル先までの航空攻撃および核攻撃を迎撃可能。</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <LocalizedText>
+	<!-- Maps -->
+	<Replace Tag="LOC_MAP_TSLEE" Language="en_US">
+      <Text>TSL Earth Remastered</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_TSLEE_DESC" Language="en_US">
+      <Text>Based on the Firaxis True Start Location Earth (84 * 58)[NEWLINE]Part of the TSL Earth Remastered Map Pack.</Text>
+    </Replace>  
+	<Replace Tag="LOC_MAP_CORDEARTH" Language="en_US">
+      <Text>Cordiform Earth</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_CORDEARTH_DESC" Language="en_US">
+      <Text>smellymummy's Cordiform Earth (80 * 52). Based on the Stabius-Werner map projection.[NEWLINE]Part of the TSL Earth Remastered Map Pack.</Text>
+    </Replace>	
+	<Replace Tag="LOC_MAP_TINYEARTH" Language="en_US">
+      <Text>TinyEarth</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_TINYEARTH_DESC" Language="en_US">
+      <Text>Arendelle's Tiny Earth (60 * 38)[NEWLINE]Part of the TSL Earth Remastered Map Pack.</Text>
+    </Replace> 	
+	<Replace Tag="LOC_MAP_CogEarth" Language="en_US">
+      <Text>Cogitator's Earth Huge</Text>
+    </Replace>	
+	<Replace Tag="LOC_MAP_CogEarth_DESC" Language="en_US">
+      <Text>Cogitator's Huge Earth (106 * 66) with added YNAMP features.[NEWLINE]Part of the TSL Earth Remastered Map Pack.</Text>
+    </Replace>		
+	<!-- Setup parameters -->
+    <Replace Tag="LOC_CITY_NAMES" Language="en_US">
+      <Text>City Names</Text>
+    </Replace>	
+    <Replace Tag="LOC_CITY_NAMES_RAND" Language="en_US">
+      <Text>Random</Text>
+    </Replace>	
+    <Replace Tag="LOC_CITY_NAMES_RAND_DESC" Language="en_US">
+      <Text>City names are chosen randomly</Text>
+    </Replace>	
+    <Replace Tag="LOC_CITY_NAMES_TSL" Language="en_US">
+      <Text>True Start Location</Text>
+    </Replace>	
+    <Replace Tag="LOC_CITY_NAMES_TSL_DESC" Language="en_US">
+      <Text>City names are chosen based on their real world location</Text>
+    </Replace>		
+    <Replace Tag="LOC_FORCE_TSL" Language="en_US">
+      <Text>Force TSL</Text>
+    </Replace>	
+    <Replace Tag="LOC_FORCE_TSL_OFF" Language="en_US">
+      <Text>Turn Off</Text>
+    </Replace>
+    <Replace Tag="LOC_FORCE_TSL_OFF_DESC" Language="en_US">
+      <Text>Players are free to move their starting settler</Text>
+    </Replace>
+	<Replace Tag="LOC_FORCE_TSL_AI" Language="en_US">
+      <Text>AI Players</Text>
+    </Replace>
+    <Replace Tag="LOC_FORCE_TSL_AI_DESC" Language="en_US">
+      <Text>All AI players will build their first city on the starting plot</Text>
+    </Replace>
+	<Replace Tag="LOC_FORCE_TSL_ALL" Language="en_US">
+      <Text>Everyone</Text>
+    </Replace>
+    <Replace Tag="LOC_FORCE_TSL_ALL_DESC" Language="en_US">
+      <Text>All players will build their first city on the starting plot</Text>
+    </Replace>	
+	<Replace Tag="LOC_FORCE_TSL_CS" Language="en_US">
+      <Text>City-States Only</Text>
+    </Replace>
+    <Replace Tag="LOC_FORCE_TSL_CS_DESC" Language="en_US">
+      <Text>Only City-States will build their first city on the starting plot</Text>
+    </Replace>	
+	<Replace Tag="LOC_HORSES" Language="en_US">
+		<Text>Add Horses to Americas</Text>
+	</Replace>	
+	<Replace Tag="LOC_HORSES_DESC" Language="en_US">
+		<Text>Disable for historical realism</Text>
+	</Replace>		
+	<Replace Tag="LOC_GOODYHUTS" Language="en_US">
+		<Text>More Goody Huts</Text>
+	</Replace>	
+	<Replace Tag="LOC_GOODYHUTS_DESC" Language="en_US">
+		<Text>Doubles the number of tribal villages</Text>
+	</Replace>		
+	<Replace Tag="LOC_LAKES" Language="en_US">
+		<Text>Extra lakes</Text>
+	</Replace>	
+	<Replace Tag="LOC_LAKES_DESC" Language="en_US">
+		<Text>Add extra lake tiles for Huey Teocalli</Text>
+	</Replace>		
+	<Replace Tag="LOC_BOSPORUS" Language="en_US">
+		<Text>Bosporus Straits</Text>
+	</Replace>	
+	<Replace Tag="LOC_BOSPORUS_DESC" Language="en_US">
+		<Text>Toggle Bosporus Straits</Text>
+	</Replace>		
+	<Replace Tag="LOC_SINAI" Language="en_US">
+		<Text>Sinai Straits</Text>
+	</Replace>	
+	<Replace Tag="LOC_SINAI_DESC" Language="en_US">
+		<Text>Toggle Sinai straits</Text>
+	</Replace>
+	<Replace Tag="LOC_GOLDEN_GATE" Language="en_US">
+		<Text>Golden Gate Bay</Text>
+	</Replace>	
+	<Replace Tag="LOC_GOLDEN_GATE_DESC" Language="en_US">
+		<Text>Add extra water tile for real world Golden Gate Bridge placement</Text>
+	</Replace>	
+	<Replace Tag="LOC_MTS_EURO" Language="en_US">
+		<Text>Extra Mountains Europe</Text>
+	</Replace>	
+	<Replace Tag="LOC_MTS_EURO_DESC" Language="en_US">
+		<Text>Add extra mountain tiles in Europe</Text>
+	</Replace>	
+	<Replace Tag="LOC_MTS_NORTHAM" Language="en_US">
+		<Text>Extra Mountains North America</Text>
+	</Replace>	
+	<Replace Tag="LOC_MTS_NORTHAM_DESC" Language="en_US">
+		<Text>Add extra mountain tiles in North America</Text>
+	</Replace>	
+	<Replace Tag="LOC_MTS_SOUTHAM" Language="en_US">
+		<Text>Mountain passes South America</Text>
+	</Replace>	
+	<Replace Tag="LOC_MTS_SOUTHAM_DESC" Language="en_US">
+		<Text>Add mountain passes in South America</Text>
+	</Replace>			
+	<Replace Tag="LOC_NAT_WONDERS" Language="en_US">
+		<Text>Natural Wonders</Text>
+	</Replace>
+	<Replace Tag="LOC_NAT_WONDERS_ENABLE_TEXT" Language="en_US">
+		<Text>Enable all Natural Wonders</Text>
+	</Replace>	
+	<Replace Tag="LOC_NAT_WONDERS_DISABLE_TEXT" Language="en_US">
+		<Text>Check below to disable</Text>
+	</Replace>		
+	<Replace Tag="LOC_CLIFFS_DOVER" Language="en_US">
+		<Text>Cliffs of Dover</Text>
+	</Replace>
+	<Replace Tag="LOC_DEAD_SEA" Language="en_US">
+		<Text>Dead Sea</Text>
+	</Replace>	
+	<Replace Tag="LOC_CRATER_LAKE" Language="en_US">
+		<Text>Crater Lake</Text>
+	</Replace>		
+	<Replace Tag="LOC_WHITE_DESERT" Language="en_US">
+		<Text>Sahara el-Beyda</Text>
+	</Replace>
+	<Replace Tag="LOC_VIKING_DLC" Language="en_US">
+		<Text>Viking DLC</Text>
+	</Replace>	
+	<Replace Tag="LOC_EYE_SAHARA" Language="en_US">
+		<Text>Eye of the Sahara</Text>
+	</Replace>
+	<Replace Tag="LOC_GOBUSTAN" Language="en_US">
+		<Text>Gobustan</Text>
+	</Replace>
+	<Replace Tag="LOC_PAMUKKALE" Language="en_US">
+		<Text>Pamukkale</Text>
+	</Replace>	
+	<Replace Tag="LOC_TONLE_SAP" Language="en_US">
+		<Text>Tonle Sap</Text>
+	</Replace>		
+	<Replace Tag="LOC_GRAND_CANYON" Language="en_US">
+		<Text>Grand Canyon</Text>
+	</Replace>	
+	<Replace Tag="LOC_BLUE_HOLE" Language="en_US">
+		<Text>Great Blue Hole</Text>
+	</Replace>	
+	<Replace Tag="LOC_NGORONGORO" Language="en_US">
+		<Text>Ngorongoro Crater</Text>
+	</Replace>	
+	<Replace Tag="LOC_BARRINGER" Language="en_US">
+		<Text>Barringer Crater</Text>
+	</Replace>
+	<Replace Tag="LOC_BIO_BAY" Language="en_US">
+		<Text>Bioluminescent Bay</Text>
+	</Replace>
+	<Replace Tag="LOC_DALLOL" Language="en_US">
+		<Text>Dallol</Text>
+	</Replace>	
+	<Replace Tag="LOC_GIBRALTAR" Language="en_US">
+		<Text>Gibraltar</Text>
+	</Replace>		
+	<Replace Tag="LOC_GRAND_MESA" Language="en_US">
+		<Text>Grand Mesa</Text>
+	</Replace>	
+	<Replace Tag="LOC_KAILASH" Language="en_US">
+		<Text>Mount Kailash</Text>
+	</Replace>	
+	<Replace Tag="LOC_LAKE_VIC" Language="en_US">
+		<Text>Lake Victoria</Text>
+	</Replace>	
+	<Replace Tag="LOC_MOTLATSE" Language="en_US">
+		<Text>Motlatse Canyon</Text>
+	</Replace>		
+	<Replace Tag="LOC_NAMIB" Language="en_US">
+		<Text>Namib Sand-Sea</Text>
+	</Replace>			
+	<Replace Tag="LOC_OLD_FAITHFUL" Language="en_US">
+		<Text>Old Faithful</Text>
+	</Replace>			
+	<Replace Tag="LOC_OUNIANGA" Language="en_US">
+		<Text>Lakes of Ounianga</Text>
+	</Replace>	
+	<Replace Tag="LOC_SALAR" Language="en_US">
+		<Text>Salar de Uyuni</Text>
+	</Replace>		
+<!-- 	<Replace Tag="LOC_SINAI" Language="en_US">
+		<Text>Mount Sinai</Text>
+	</Replace>	 -->	
+	<Replace Tag="LOC_VIC_FALLS" Language="en_US">
+		<Text>Mosi-oa-Tunya</Text>
+	</Replace>		
+	<Replace Tag="LOC_VREDEFORT" Language="en_US">
+		<Text>Vredefort Dome</Text>
+	</Replace>		
+	<Replace Tag="LOC_TERRA_MB" Language="en_US">
+		<Text>Disable all Terra Mirabilis NWs</Text>
+	</Replace>	
+	<Replace Tag="LOC_TERRA_MB_DESC" Language="en_US">
+		<Text>Disables all Terra Mirabilis wonders except Cerro de Potosi, Krakatoa and Sri Pada</Text>
+	</Replace>		
+  </LocalizedText>
+</GameData>

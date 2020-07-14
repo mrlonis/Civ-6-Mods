@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="80bd7757-fa50-42ee-912e-0a32df08638a" version="1">
+  <Properties>
+    <Name>UC - Builder Charges for Housing</Name>
+    <Description>Builders can use their charges to speed up the construction of an Aqueduct or Neighborhood by 10 percent per charge (20 percent for unique replacements). Roman Legions and Maori Toa can use their charge to speed up construction of an Encampment by 30 percent.</Description>
+    <Teaser>Use builder charges for housing districts.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Databse">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <File>BBH_Districts.sql</File>
+      <File>BBH_Uniques.sql</File>
+    </UpdateDatabase>
+  </InGameActions>
+  <Files>
+    <File>BBH_Districts.sql</File>
+    <File>BBH_Uniques.sql</File>
+  </Files>
+</Mod>

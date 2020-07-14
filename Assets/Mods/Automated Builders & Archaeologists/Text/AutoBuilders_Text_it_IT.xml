@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AutoBuilders_Text_it_IT -->
+<!-- Author: MadManCam -->
+<!-- DateCreated: 5/27/2018 5:36:32 AM -->
+<GameData>
+	<LocalizedText>
+
+		<Replace Tag="LOC_CNO_AUTOUNITS_AUTOMATE_TOOLTIP" Language="it_IT">
+			<Text>Automatizza le azioni</Text>
+		</Replace>
+		<Replace Tag="LOC_CNO_AUTOUNITS_STOP_AUTOMATE_TOOLTIP" Language="it_IT">
+			<Text>Arresta l'automazione</Text>
+		</Replace>
+
+	</LocalizedText>
+</GameData>

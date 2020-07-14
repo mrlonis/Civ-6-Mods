@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="5b24d366-7522-4a6b-806a-b5869ef2377b" version="1">
+  <Properties>
+    <Name>UC - Satellites</Name>
+    <Description>Adds eight new Satellite projects as national projects. They are available in spaceports after researching Satellites technology and finishing the Space Race satellite project. Each Satellite is associated with a district type, of which at least three fully developed instances need to exist in your empire for the Satellite to unlock.</Description>
+    <Created>1572359920</Created>
+    <Teaser>Adds eight new Satellite projects.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Properties>
+        <LoadOrder>130</LoadOrder>
+      </Properties>
+      <File>Data/UC_SAT_Requirements.sql</File>
+      <File>Data/UC_SAT_UnitAbilities.sql</File>
+      <File>Data/UC_SAT_Projects.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <Properties>
+        <LoadOrder>130</LoadOrder>
+      </Properties>
+      <File>Text/UC_SAT_Text.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Icons">
+      <File>Icons/UC_SAT_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="Foundation">
+      <Properties>
+        <LoadOrder>1</LoadOrder>
+      </Properties>
+      <File>Data/UC_SAT_Misc.sql</File>
+    </UpdateDatabase>
+    <ReplaceUIScript id="ProjectBuiltPopup">
+      <Properties>
+        <LuaContext>ProjectBuiltPopup</LuaContext>
+        <LuaReplace>UI/Replacements/UC_SAT_ProjectBuiltPopup.lua</LuaReplace>
+      </Properties>
+    </ReplaceUIScript>
+  </InGameActions>
+  <Files>
+    <File>Data/UC_SAT_Misc.sql</File>
+    <File>Data/UC_SAT_Projects.sql</File>
+    <File>Data/UC_SAT_Requirements.sql</File>
+    <File>Data/UC_SAT_UnitAbilities.sql</File>
+    <File>Icons/UC_SAT_Icons.sql</File>
+    <File>Text/UC_SAT_Text.sql</File>
+    <File>UI/Replacements/UC_SAT_ProjectBuiltPopup.lua</File>
+  </Files>
+</Mod>

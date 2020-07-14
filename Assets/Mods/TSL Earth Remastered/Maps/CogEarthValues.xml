@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!-- ++++++++++++++++++++++++++++++ -->
+	<!--   Cogitator's Earth Huge   -->
+	<!-- ++++++++++++++++++++++++++++++ -->
+
+	<!-- Majors -->
+	<StartPosition>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_AMERICA"		X="53" Y="42" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ARABIA"		X="90" Y="33" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_AUSTRALIA"	X="20" Y="12" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_AZTEC"		X="45" Y="32" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_BRAZIL"		X="62" Y="15" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CHINA"		X="5" Y="41" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CREE"		X="48" Y="52" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_EGYPT"		X="85" Y="35" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ENGLAND"		X="74" Y="53" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_FRANCE"		X="75" Y="49" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_FRANCE"		X="73" Y="46" AlternateStart="1" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GEORGIA"		X="93" Y="44" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GERMANY"		X="81" Y="50" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GREECE"		X="86" Y="40" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_INDIA"		X="102" Y="37" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_INDIA"		X="102" Y="31" AlternateStart="1"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_INDONESIA"	X="6" Y="22" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_JAPAN"		X="16" Y="40" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KHMER"		X="3" Y="31" DisabledByCivilization="CIVILIZATION_SUK_SIAM"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KHMER"		X="7" Y="30"  AlternateStart="1"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KONGO"		X="83" Y="18" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KOREA"		X="11" Y="43" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MACEDON"		X="83" Y="43" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MAPUCHE"		X="55" Y="10" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MONGOLIA"	X="4" Y="48" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NETHERLANDS"	X="78" Y="53" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NORWAY"		X="81" Y="62" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NUBIA"		X="87" Y="29" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ROME"		X="79" Y="42" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_RUSSIA"		X="90" Y="53" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SCOTLAND"	X="73" Y="57" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SCYTHIA"		X="92" Y="48" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SPAIN"		X="71" Y="42" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUMERIA"		X="94" Y="35" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_PERSIA"		X="97" Y="38" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_POLAND"		X="84" Y="51" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ZULU"		X="85" Y="13" />
+		<!-- Gathering Storm -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SWEDEN"		X="83"	Y="59" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MALI"		X="71" 	Y="30" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MAORI"		X="30"	Y="22" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_INCA"		X="55"	Y="17" />			
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CANADA"		X="52"	Y="48" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_HUNGARY"		X="83"	Y="47" Leader="LEADER_MATTHIAS_CORVINUS" />
+		<!-- Hungary Alternate Start: Ural Mountains -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_HUNGARY"		X="95"	Y="53" />			
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_PHOENICIA"	X="76"	Y="38" Leader="LEADER_DIDO" />
+		<!-- Phoenicia Alternate Start: Tyre -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_PHOENICIA"	X="90"	Y="40" AlternateStart="1"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_OTTOMAN"		X="87"	Y="44" Leader="LEADER_SULEIMAN" />
+		<!-- Ottoman Alternate Start: Altai Mountains -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_OTTOMAN"		X="103"	Y="51" />	
+		<!-- New Frontier -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MAYA"				X="50" 	Y="30" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GRAN_COLOMBIA"		X="53" 	Y="26" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ETHIOPIA"			X="90" 	Y="26" />		
+		<!-- Modded Civs -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_TIBET" 		X="2" Y="40" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_BURMA" 		X="2" Y="35" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_SIAM" 		X="3" Y="31" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_GAUL" 		X="75" Y="45" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_ICELAND" 	X="65" Y="61" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_ETHIOPIA" 	X="90" Y="26" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SUK_SWAHILI" 	X="90" Y="20" />
+	</StartPosition>	
+	
+	<!-- Minors -->
+	<StartPosition>		
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ANTIOCH"			X="90" Y="40" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_AMSTERDAM"		X="78" Y="53" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_BABYLON"			X="93" Y="39" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_BRUSSELS"		X="79" Y="52" DisabledByCivilization="CIVILIZATION_NETHERLANDS" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="59" Y="12" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CARTHAGE"		X="77" Y="38" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GENEVA"			X="76" Y="44" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_HATTUSA"			X="90" Y="42" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_HONG_KONG"		X="9" Y="36" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_JAKARTA"			X="7" Y="27" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_JERUSALEM"		X="90" Y="38" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KABUL"			X="99" Y="41" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KANDY"			X="103" Y="27" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KUMASI"			X="77" Y="27" DisabledByCivilization="CIVILIZATION_TARUGA"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_KUMASI"			X="74" Y="25" AlternateStart="1"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_LA_VENTA"		X="48" Y="33" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_LISBON"			X="68" Y="40" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MOHENJO_DARO"	X="100" Y="34" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NAN_MADOL"		X="17" Y="31" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_PRESLAV"			X="83" Y="47" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_PRESLAV"			X="87" Y="49" AlternateStart="1" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SEOUL"			X="11" Y="43" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_STOCKHOLM"		X="83" Y="59" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_TORONTO"			X="52" Y="48" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_VALLETTA"		X="79" Y="42" DisabledByCivilization="CIVILIZATION_ROME" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_VALLETTA"		X="80" Y="38" AlternateStart="1" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_VILNIUS"			X="84" Y="51" DisabledByCivilization="CIVILIZATION_POLAND" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_VILNIUS"			X="87" Y="54" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_YEREVAN"			X="93" Y="44" DisabledByCivilization="CIVILIZATION_GEORGIA"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="90" Y="20" DisabledByCivilization="CIVILIZATION_SUK_SWAHILI"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="16" Y="26" AlternateStart="1"/>
+		<!-- DLC -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_AUCKLAND" 		X="28" Y="8" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ANTANANARIVO" 	X="94" Y="15" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_ARMAGH" 			X="69" Y="55" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GRANADA" 		X="71" Y="41" DisabledByCivilization="CIVILIZATION_SPAIN"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_GRANADA" 		X="73" Y="38" AlternateStart="1"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MUSCAT" 			X="97" Y="32" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_PALENQUE" 		X="49" Y="29" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_AKKAD"			X="93"	Y="39" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_BOLOGNA"			X="80"	Y="46" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CAHOKIA"			X="49"	Y="42" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CARDIFF"			X="75"	Y="52" DisabledByCivilization="CIVILIZATION_ENGLAND" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CARDIFF"			X="71"	Y="52" AlternateStart="1" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_FEZ"				X="70"	Y="36" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MEXICO_CITY"		X="45"	Y="32" DisabledByCivilization="CIVILIZATION_AZTEC" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_MEXICO_CITY"		X="53"	Y="26" AlternateStart="1"/>
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NAZCA"			X="55"	Y="17" DisabledByCivilization="CIVILIZATION_INCA" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NAZCA"			X="52"	Y="18" AlternateStart="1" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_NGAZARGAMU"		X="81"	Y="29" />
+		<!-- <Replace MapName="CogEarth" Civilization="CIVILIZATION_RAPA_NUI"	X="46"	Y="12" DisabledByCivilization="CIVILIZATION_MAORI" />	 -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_RAPA_NUI"		X="46"	Y="12" />	
+		<!-- New Frontier -->
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_CAGUANA"			X="54"	Y="33" />	
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_HUNZA"			X="102"	Y="43" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_LAHORE"			X="102"	Y="40" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_SINGAPORE"		X="4"	Y="26" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_TARUGA"			X="77"	Y="27" />
+		<Replace MapName="CogEarth" Civilization="CIVILIZATION_VATICAN_CITY"	X="79"	Y="42" DisabledByCivilization="CIVILIZATION_ROME"/>			
+	</StartPosition>
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--      EXTRA SPAWNS      -->
+	<!-- +++++++++++++++++++++++++++ -->
+	<!-- If Natural Wonder mountains don't spawn as mountain tiles, you can use this section to manually change the tile into a mountain -->
+	<ExtraPlacement>
+		<!-- Horses in Americas -->
+		<Replace MapName="CogEarth" X="42" Y="50" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />		
+		<Replace MapName="CogEarth" X="39" Y="48" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />		
+		<Replace MapName="CogEarth" X="43" Y="47" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="CogEarth" X="45" Y="44" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />	
+		<Replace MapName="CogEarth" X="46" Y="41" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />
+		<Replace MapName="CogEarth" X="56" Y="28" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />
+		<Replace MapName="CogEarth" X="58" Y="12" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />		
+		<Replace MapName="CogEarth" X="60" Y="18" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />
+		<Replace MapName="CogEarth" X="62" Y="23" ConfigurationId="Horses"	ResourceType="RESOURCE_HORSES" />
+		<!-- Cattle Too -->
+		<Replace MapName="CogEarth" X="47" Y="47" ConfigurationId="Horses"	ResourceType="RESOURCE_CATTLE" />	
+		<Replace MapName="CogEarth" X="45" Y="39" ConfigurationId="Horses"	ResourceType="RESOURCE_CATTLE" />	
+		<Replace MapName="CogEarth" X="61" Y="21" ConfigurationId="Horses"	ResourceType="RESOURCE_CATTLE" />	
+		<Replace MapName="CogEarth" X="59" Y="19" ConfigurationId="Horses"	ResourceType="RESOURCE_CATTLE" />	
+		<Replace MapName="CogEarth" X="57" Y="11" ConfigurationId="Horses"	ResourceType="RESOURCE_CATTLE" />	
+		<!-- Civ Specific Resources -->
+		<Replace MapName="CogEarth" X="10" Y="13" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_HORSES" />
+		<Replace MapName="CogEarth" X="18" Y="14" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_HORSES" />
+		<Replace MapName="CogEarth" X="9" Y="13" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="CogEarth" X="11" Y="18" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="CogEarth" X="13" Y="17" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="CogEarth" X="16" Y="17" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />	
+		<Replace MapName="CogEarth" X="16" Y="12" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="CogEarth" X="16" Y="10" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_SHEEP" />
+		<Replace MapName="CogEarth" X="18" Y="9" Civilization="CIVILIZATION_AUSTRALIA"	ResourceType="RESOURCE_CATTLE" />		
+		<!-- Everest spawn glitch fix -->
+		<Replace MapName="CogEarth" X="104" Y="38"	TerrainType="TERRAIN_GRASS_HILLS" FeatureType="FEATURE_FOREST" />	
+		<!-- Matterhorn -->
+		<Replace MapName="CogEarth" X="78" Y="47"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		<!-- Vesuvius -->
+		<Replace MapName="CogEarth" X="80" Y="40"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" />	
+		<!-- Kilimanjaro -->
+		<Replace MapName="CogEarth" X="88" Y="21"	TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		<!-- Iceland Volcano -->
+		<Replace MapName="CogEarth" X="66" Y="61"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />	
+		<Replace MapName="CogEarth" X="67" Y="61"	TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />	
+		<!-- Roirama -->
+		<Replace MapName="CogEarth" X="59" Y="25" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="58" Y="25" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="57" Y="25" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="58" Y="26" TerrainType="TERRAIN_GRASS_MOUNTAIN" />			
+		<!-- Zhangye -->
+		<Replace MapName="CogEarth" X="3" Y="44" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="2" Y="44" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="1" Y="44" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<!-- Everest -->
+		<Replace MapName="CogEarth" X="103" Y="39" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="104" Y="39" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="104" Y="40" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />	
+		<!-- Golden Gate Bay -->
+		<Replace MapName="CogEarth" X="38" Y="42" TerrainType="TERRAIN_COAST" FeatureType="NONE" />	
+		
+	</ExtraPlacement>
+	
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--      NATURAL WONDERS      -->
+	<!-- +++++++++++++++++++++++++++ -->
+	
+	<NaturalWonderPosition>
+
+		<Replace MapName="CogEarth" X="20" Y="18" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="CogEarth" X="19" Y="19" FeatureType="FEATURE_BARRIER_REEF" TerrainType="TERRAIN_COAST" />	
+		
+		<Replace MapName="CogEarth" X="75" Y="52" FeatureType="FEATURE_CLIFFS_DOVER" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapName="CogEarth" X="76" Y="52" FeatureType="FEATURE_CLIFFS_DOVER" TerrainType="TERRAIN_PLAINS_HILLS" />	
+		
+		<Replace MapName="CogEarth" X="38" Y="46" FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_COAST" />
+		
+		<Replace MapName="CogEarth" X="90" Y="37" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CogEarth" X="91" Y="38" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
+		
+		<Replace MapName="CogEarth" X="103" Y="39" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="104" Y="39" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="104" Y="40" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />		
+		
+		<Replace MapName="CogEarth" X="47" Y="23" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="CogEarth" X="48" Y="24" FeatureType="FEATURE_GALAPAGOS" TerrainType="TERRAIN_COAST" />			
+		
+		<Replace MapName="CogEarth" X="88" Y="21" FeatureType="FEATURE_KILIMANJARO" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		
+		<Replace MapName="CogEarth" X="57" Y="17" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="58" Y="17" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="58" Y="16" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="59" Y="16" FeatureType="FEATURE_PANTANAL" TerrainType="TERRAIN_GRASS" />	
+		
+		<Replace MapName="CogEarth" X="24" Y="1" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="25" Y="2" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="25" Y="1" FeatureType="FEATURE_PIOPIOTAHI" TerrainType="TERRAIN_GRASS" />			
+		
+		<Replace MapName="CogEarth" X="57" Y="4" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CogEarth" X="58" Y="4" FeatureType="FEATURE_TORRES_DEL_PAINE" TerrainType="TERRAIN_TUNDRA" />	
+		
+		<Replace MapName="CogEarth" X="94" Y="14" FeatureType="FEATURE_TSINGY" TerrainType="TERRAIN_GRASS" />
+		
+		<Replace MapName="CogEarth" X="39" Y="43" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="CogEarth" X="40" Y="43" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />	
+		
+		
+		<!-- **************** -->
+		<!--     DLC NW       -->
+		<!-- **************** -->
+		
+
+		<Replace MapName="CogEarth" X="66" Y="61" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA_HILLS" />
+		<Replace MapName="CogEarth" X="67" Y="61" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA_HILLS" />	
+		
+
+		<Replace MapName="CogEarth" X="79" Y="60" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CogEarth" X="78" Y="60" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CogEarth" X="78" Y="59" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_TUNDRA" />		
+		
+
+		<Replace MapName="CogEarth" X="71" Y="59" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="CogEarth" X="71" Y="60" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_COAST" />			
+		
+		<Replace MapName="CogEarth" X="13" Y="16" FeatureType="FEATURE_ULURU" TerrainType="TERRAIN_PLAINS" />
+
+		<Replace MapName="CogEarth" X="6" Y="34" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="CogEarth" X="7" Y="34" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />		
+		
+		<!-- **************** -->
+		<!-- Rise and Fall NW -->
+		<!-- **************** -->		
+		
+		<Replace MapName="CogEarth" X="59" Y="25" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="58" Y="25" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="57" Y="25" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="58" Y="26" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		
+		<Replace MapName="CogEarth" X="3" Y="44" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="2" Y="44" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="1" Y="44" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_DESERT_MOUNTAIN" />	
+		
+		<Replace MapName="CogEarth" X="0" Y="50" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CogEarth" X="1" Y="50" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CogEarth" X="0" Y="49" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="CogEarth" X="0" Y="51" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_TUNDRA" />
+		
+		<Replace MapName="CogEarth" X="67" Y="30" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="68" Y="30" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
+		
+		<Replace MapName="CogEarth" X="78" Y="47" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_GRASS_MOUNTAIN" /> 
+		
+		<Replace MapName="CogEarth" X="41" Y="44" FeatureType="FEATURE_DELICATE_ARCH" TerrainType="TERRAIN_DESERT_HILLS" />
+		
+		<Replace MapName="CogEarth" X="69" Y="33" FeatureType="FEATURE_EYE_OF_THE_SAHARA" TerrainType="TERRAIN_DESERT" />
+		
+		 
+		<!-- ****************** -->
+		<!-- Gathering Storm NW -->
+		<!-- ****************** -->
+		
+		<!-- <Replace MapName="CogEarth" X="12" Y="34" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" /> -->
+		<!-- <Replace MapName="CogEarth" X="13" Y="34" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" /> -->
+		<!-- <Replace MapName="CogEarth" X="12" Y="33" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" /> -->
+		<!-- <Replace MapName="CogEarth" X="13" Y="33" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" /> -->
+		
+		<!-- <Replace MapName="CogEarth" X="94" Y="41" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" /> -->
+		<!-- <Replace MapName="CogEarth" X="95" Y="41" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" /> -->
+		<!-- <Replace MapName="CogEarth" X="95" Y="42" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" /> -->
+		
+		<Replace MapName="CogEarth" X="88" Y="42" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapName="CogEarth" X="89" Y="42" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
+		
+		<Replace MapName="CogEarth" X="83" Y="34" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CogEarth" X="84" Y="34" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CogEarth" X="83" Y="35" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapName="CogEarth" X="84" Y="35" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		
+		<Replace MapName="CogEarth" X="43" Y="44" FeatureType="FEATURE_DEVILSTOWER" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapName="CogEarth" X="49" Y="33" FeatureType="FEATURE_IKKIL"  />
+		<Replace MapName="CogEarth" X="80" Y="40" FeatureType="FEATURE_VESUVIUS" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+
+		<!-- ****************** -->
+		<!-- New Frontier NW -->
+		<!-- ****************** -->		
+		
+		<Replace MapName="CogEarth" X="56" Y="35" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="CogEarth" X="57" Y="35" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="CogEarth" X="57" Y="36" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />			
+		
+		<Replace MapName="CogEarth" X="54" Y="19" FeatureType="FEATURE_PAITITI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="55" Y="19" FeatureType="FEATURE_PAITITI" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="55" Y="20" FeatureType="FEATURE_PAITITI" TerrainType="TERRAIN_GRASS" />		
+		 
+		<!-- **************** -->
+		<!--    Modded NW     -->
+		<!-- **************** -->
+		
+		<Replace MapName="CogEarth" X="15" Y="39" FeatureType="FEATURE_SUK_FUJI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		
+		<Replace MapName="CogEarth" X="1" Y="21" FeatureType="FEATURE_KRAKATOA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		
+		<Replace MapName="CogEarth" X="102" Y="25" FeatureType="FEATURE_SRI_PADA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+
+		<Replace MapName="CogEarth" X="56" Y="14" FeatureType="FEATURE_CERRO_DE_POTOSI" TerrainType="TERRAIN_GRASS_MOUNTAIN" />	
+		
+		<!-- <Replace MapName="CogEarth" X="40" Y="13" FeatureType="FEATURE_OUNIANGA" TerrainType="TERRAIN_DESERT" />	 -->
+		<!-- <Replace MapName="CogEarth" X="41" Y="14" FeatureType="FEATURE_OUNIANGA" TerrainType="TERRAIN_DESERT" />	 -->
+
+	</NaturalWonderPosition>
+	
+	<FountainPosition>
+		<!-- Florida -->
+		<Replace MapName="CogEarth" X="51" Y="38" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<!-- Canada -->
+		<Replace MapName="CogEarth" X="47" Y="62" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_SNOW" />
+		<!-- New Guinea -->
+		<Replace MapName="CogEarth" X="14" Y="23" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_OCEAN" />
+		<!-- Tibet -->
+		<Replace MapName="CogEarth" X="105" Y="41" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_COAST" />
+	
+		<Replace MapName="CogEarth" X="-1" Y="-1" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="-1" Y="-2" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="-1" Y="-3" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="CogEarth" X="-1" Y="-4" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		<!-- <Replace MapName="CogEarth" X="-1" Y="-5" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" /> -->
+		<!-- <Replace MapName="CogEarth" X="-1" Y="-6" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" /> -->
+		<!-- <Replace MapName="CogEarth" X="-1" Y="-7" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" /> -->
+		<!-- <Replace MapName="CogEarth" X="-1" Y="-8" 	FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" /> -->
+	</FountainPosition>
+	
+<!-- 	<RegionPosition>
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_AMERICA_EAST"	X="30" Y="64" Width="11" Height="11" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_AMERICA_CENTRAL"	X="20" Y="64" Width="9" Height="9" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_AMERICA_SOUTH"	X="20" Y="57" Width="10" Height="6" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_AMERICA_WEST"	X="9" Y="57" Width="10" Height="18" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_ARCTIC_AMERICA_WEST"	X="0" Y="76" Width="20" Height="11" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_ARCTIC_AMERICA_EAST"	X="21" Y="76" Width="17" Height="17" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_CENTRAL_AMERICA"		X="14" Y="44" Width="12" Height="12" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_CARIBBEAN"				X="27" Y="44" Width="11" Height="12" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_VENEZUELA"				X="28" Y="39" Width="10" Height="4" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_GRAN_COLUMBIA"			X="26" Y="32" Width="5" Height="8" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_AMAZON"				X="32" Y="32" Width="4" Height="6" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SOUTH_AMERICA_WEST"	X="28" Y="21" Width="8" Height="10" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SOUTH_AMERICA_EAST"	X="37" Y="21" Width="10" Height="17" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_PATAGONIA"				X="31" Y="12" Width="8" Height="8" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_ANTARCTIC_AMERICA"		X="31" Y="5" Width="10" Height="6" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_AUSTRALIA"				X="122" Y="7" Width="21" Height="20" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_ZEALANDIA"				X="144" Y="7" Width="9" Height="13" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_MELANESIA"				X="129" Y="29" Width="14" Height="25" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_POLYNESIA"				X="144" Y="23" Width="14" Height="33" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SOUTH_ASIA"			X="115" Y="28" Width="13" Height="26" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_CENTRAL_ASIA"			X="94" Y="59" Width="20" Height="9" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_PERSIA"				X="94" Y="53" Width="9" Height="5" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_EAST_ASIA"				X="115" Y="55" Width="27" Height="13" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_ASIA"			X="94" Y="69" Width="47" Height="4" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SIBERIA_WEST"			X="94" Y="74" Width="10" Height="19" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SIBERIA_CENTRAL"		X="105" Y="74" Width="15" Height="19" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SIBERIA_EAST"			X="121" Y="74" Width="13" Height="19" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SIBERIA_FAR_EAST"		X="135" Y="74" Width="14" Height="19" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_INDIA"					X="104" Y="34" Width="11" Height="24" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_MIDDLE_EAST"			X="81" Y="53" Width="12" Height="4" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_TURKEY"				X="81" Y="57" Width="12" Height="4" />		
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_ARABIA"				X="85" Y="40" Width="18" Height="12" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_MEDITERRANEAN"			X="55" Y="54" Width="25" Height="6" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SOUTH_EUROPA"			X="55" Y="61" Width="27" Height="7" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_EUROPA"			X="63" Y="69" Width="19" Height="2" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_BRITTANIA"				X="52" Y="69" Width="10" Height="12" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SCANDINAVIA"			X="64" Y="79" Width="18" Height="12" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_BALTICS"				X="63" Y="72" Width="22" Height="6" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_EAST_EUROPA"			X="83" Y="62" Width="10" Height="28" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_EGYPT"					X="79" Y="40" Width="6" Height="12" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_NORTH_AFRICA"			X="50" Y="49" Width="28" Height="4" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SAHARA"				X="50" Y="40" Width="28" Height="8" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_CENTRAL_AFRICA"		X="54" Y="23" Width="27" Height="16" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_EAST_AFRICA"			X="82" Y="23" Width="10" Height="16" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_SOUTH_AFRICA"			X="73" Y="13" Width="12" Height="8" />
+		<Replace MapName="CogEarth" Region="HUGE_EARTH_MADAGASCAR"			X="86" Y="17" Width="12" Height="5" />
+	</RegionPosition>		 -->
+
+</GameData>

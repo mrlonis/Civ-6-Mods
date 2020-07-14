@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Anton Strenger (Firaxis Games) -->
+<GameInfo>
+	<Types>
+		<!--Define el recurso que introduces es del tipo recurso-->
+		
+		<Row Type="RESOURCE_RUBY" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_GRANITE" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_LEAD" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_PLATINUM" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_LAPIS" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_QUARTZ" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_OAK" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SANDALWOOD" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_MAPLE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_LIMESTONE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_ALOE" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_BERRIES" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_POPPIES" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SALMON" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_CAVIAR" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_ALGAE" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_CORAL" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SEASHELLS" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_BAMBOO" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_EBONY" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SAKURA" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_CASHMERE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_ALABASTER" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_TRAVERTINE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_OXEN" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_TIN" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_HAM" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_PINE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_RUBBER" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_GOLD2" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_COD" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_MACKEREL" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SPONGE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SEA_URCHIN" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_MUSSELS" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_ORCA" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_WOLF" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_TIGER" Kind="KIND_RESOURCE"/>
+		
+		<Row Type="RESOURCE_LION" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_MUSHROOMS" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_MEDIHERBS" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_TOXINS" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_HONEY" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_DATES" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SAFFRON" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_TOMATO" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_BARLEY" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_MAIZE" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_POTATO" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_SORGHUM" Kind="KIND_RESOURCE"/>
+
+		<Row Type="RESOURCE_STRAWBERRY" Kind="KIND_RESOURCE"/>
+
+		
+		
+	</Types>
+	<TypeTags>
+		<!--Hay que colocar un row por cada beneficio que da el recurso-->
+		<Row Type="RESOURCE_RUBY" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_RUBY" Tag="CLASS_PRODUCTION"/>
+		
+		<Row Type="RESOURCE_GRANITE" Tag="CLASS_PRODUCTION"/>
+		
+		<Row Type="RESOURCE_LEAD" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_LEAD" Tag="CLASS_SCIENCE"/>
+
+		<Row Type="RESOURCE_PLATINUM" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_PLATINUM" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_PLATINUM" Tag="CLASS_SCIENCE"/>
+
+		<Row Type="RESOURCE_LAPIS" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_LAPIS" Tag="CLASS_CULTURE"/>
+
+		<Row Type="RESOURCE_QUARTZ" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_QUARTZ" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_QUARTZ" Tag="CLASS_SCIENCE"/>
+
+		<Row Type="RESOURCE_OAK" Tag="CLASS_PRODUCTION"/>
+
+		<Row Type="RESOURCE_SANDALWOOD" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_SANDALWOOD" Tag="CLASS_CULTURE"/>
+
+		<Row Type="RESOURCE_MAPLE" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_MAPLE" Tag="CLASS_FOOD"/>
+
+		<Row Type="RESOURCE_LIMESTONE" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_LIMESTONE" Tag="CLASS_CULTURE"/>
+
+		<Row Type="RESOURCE_ALOE" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_ALOE" Tag="CLASS_SCIENCE"/>
+		<Row Type="RESOURCE_ALOE" Tag="CLASS_ORAL_TRADITION"/>
+		
+		<Row Type="RESOURCE_BERRIES" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_BERRIES" Tag="CLASS_ORAL_TRADITION"/>
+		
+		<Row Type="RESOURCE_POPPIES" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_POPPIES" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_POPPIES" Tag="CLASS_GODDESS_OF_FESTIVALS"/>
+		
+		<Row Type="RESOURCE_CAVIAR" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_CAVIAR" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_SALMON" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_SALMON" Tag="CLASS_SEA"/>
+		<Row Type="RESOURCE_SALMON" Tag="CLASS_GOLD"/>
+
+		<Row Type="RESOURCE_ALGAE" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_ALGAE" Tag="CLASS_SCIENCE"/>
+		<Row Type="RESOURCE_ALGAE" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_CORAL" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_CORAL" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_CORAL" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_SEASHELLS" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_SEASHELLS" Tag="CLASS_SEA"/>
+	
+		<Row Type="RESOURCE_BAMBOO" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_BAMBOO" Tag="CLASS_PRODUCTION"/>
+
+		<Row Type="RESOURCE_EBONY" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_EBONY" Tag="CLASS_ORAL_TRADITION"/>
+
+		<Row Type="RESOURCE_SAKURA" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_SAKURA" Tag="CLASS_CULTURE"/>
+
+		<Row Type="RESOURCE_CASHMERE" Tag="CLASS_GOLD"/>
+
+		<Row Type="RESOURCE_PINE" Tag="CLASS_GOLD"/>
+
+		<Row Type="RESOURCE_TIN" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_TIN" Tag="CLASS_GOLD"/>
+
+		<Row Type="RESOURCE_RUBBER" Tag="CLASS_PRODUCTION"/>
+
+		<Row Type="RESOURCE_TRAVERTINE" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_TRAVERTINE" Tag="CLASS_CULTURE"/>
+
+		<Row Type="RESOURCE_ALABASTER" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_ALABASTER" Tag="CLASS_CULTURE"/>
+
+		<Row Type="RESOURCE_OXEN" Tag="CLASS_PRODUCTION"/>
+
+		<Row Type="RESOURCE_HAM" Tag="CLASS_FOOD"/>
+
+		<Row Type="RESOURCE_GOLD2" Tag="CLASS_GOLD"/>
+
+		<Row Type="RESOURCE_COD" Tag="CLASS_SCIENCE"/>
+		<Row Type="RESOURCE_COD" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_COD" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_MACKEREL" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_MACKEREL" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_MACKEREL" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_SPONGE" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_SPONGE" Tag="CLASS_SCIENCE"/>
+		<Row Type="RESOURCE_SPONGE" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_SEA_URCHIN" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_SEA_URCHIN" Tag="CLASS_SCIENCE"/>
+		<Row Type="RESOURCE_SEA_URCHIN" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_MUSSELS" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_MUSSELS" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_MUSSELS" Tag="CLASS_SEA"/>
+		
+		<Row Type="RESOURCE_ORCA" Tag="CLASS_PRODUCTION"/>
+		<Row Type="RESOURCE_ORCA" Tag="CLASS_ORAL_TRADITION"/>
+		<Row Type="RESOURCE_ORCA" Tag="CLASS_SEA"/>
+
+		<Row Type="RESOURCE_WOLF" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_WOLF" Tag="CLASS_PRODUCTION"/>
+
+		<Row Type="RESOURCE_TIGER" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_TIGER" Tag="CLASS_ORAL_TRADITION"/>
+
+		<Row Type="RESOURCE_MUSHROOMS" Tag="CLASS_FOOD"/>
+	
+		<Row Type="RESOURCE_MEDIHERBS" Tag="CLASS_SCIENCE"/>
+	
+		<Row Type="RESOURCE_TOXINS" Tag="CLASS_SCIENCE"/>
+		<Row Type="RESOURCE_TOXINS" Tag="CLASS_GOLD"/>
+	
+		<Row Type="RESOURCE_HONEY" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_HONEY" Tag="CLASS_GOLD"/>
+
+		<Row Type="RESOURCE_DATES" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_DATES" Tag="CLASS_GODDESS_OF_FESTIVALS"/>
+
+		<Row Type="RESOURCE_SAFFRON" Tag="CLASS_CULTURE"/>
+		<Row Type="RESOURCE_SAFFRON" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_SAFFRON" Tag="CLASS_ORAL_TRADITION"/>
+		
+		<Row Type="RESOURCE_TOMATO" Tag="CLASS_FOOD"/>
+		<Row Type="RESOURCE_TOMATO" Tag="CLASS_GODDESS_OF_FESTIVALS"/>
+		
+		<Row Type="RESOURCE_BARLEY" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_BARLEY" Tag="CLASS_FOOD"/>
+
+	
+		<Row Type="RESOURCE_MAIZE" Tag="CLASS_FOOD"/>
+	
+		<Row Type="RESOURCE_POTATO" Tag="CLASS_FOOD"/>
+	
+	
+		<Row Type="RESOURCE_SORGHUM" Tag="CLASS_FOOD"/>
+	
+
+		<Row Type="RESOURCE_STRAWBERRY" Tag="CLASS_GOLD"/>
+		<Row Type="RESOURCE_STRAWBERRY" Tag="CLASS_FOOD"/>
+		
+		
+	</TypeTags>
+	<Resources>
+		<!--Tipos de recursos: Bonus, Luxury y Strategy-->
+		<!--Si es bonus no tiene que tener happiness no funciona y si es luxury si-->
+		<!--CAMBIAR LA FRECUENCIA ANTES DE IR A PRODUCCIÓN-->
+		<Row ResourceType="RESOURCE_GRANITE" Name="LOC_RESOURCE_GRANITE_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_LAPIS" Name="LOC_RESOURCE_LAPIS_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="3"/>
+		
+		<Row ResourceType="RESOURCE_LEAD" Name="LOC_RESOURCE_LEAD_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="3"/>
+		
+		<Row ResourceType="RESOURCE_PLATINUM" Name="LOC_RESOURCE_PLATINUM_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="2"/>
+		
+		<Row ResourceType="RESOURCE_QUARTZ" Name="LOC_RESOURCE_QUARTZ_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="3"/>
+		
+		<Row ResourceType="RESOURCE_RUBY" Name="LOC_RESOURCE_RUBY_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="6" Frequency="2"/>
+		
+		<Row ResourceType="RESOURCE_SANDALWOOD" Name="LOC_RESOURCE_SANDALWOOD_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="8"/>
+		
+		<Row ResourceType="RESOURCE_OAK" Name="LOC_RESOURCE_OAK_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="5"/>
+		
+		<Row ResourceType="RESOURCE_MAPLE" Name="LOC_RESOURCE_MAPLE_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_LIMESTONE" Name="LOC_RESOURCE_LIMESTONE_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_ALOE" Name="LOC_RESOURCE_ALOE_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_BERRIES" Name="LOC_RESOURCE_BERRIES_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_POPPIES" Name="LOC_RESOURCE_POPPIES_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_CAVIAR" Name="LOC_RESOURCE_CAVIAR_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_LUXURY"	Happiness="4"	SeaFrequency="1"/>
+
+		<Row ResourceType="RESOURCE_SALMON" Name="LOC_RESOURCE_SALMON_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_BONUS" SeaFrequency="17"/>
+
+		<Row ResourceType="RESOURCE_ALGAE" Name="LOC_RESOURCE_ALGAE_NAME" ResourceClassType="RESOURCECLASS_BONUS" SeaFrequency="17"/>
+
+		<Row ResourceType="RESOURCE_CORAL" Name="LOC_RESOURCE_CORAL_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"	SeaFrequency="1"/>
+
+		<Row ResourceType="RESOURCE_SEASHELLS" Name="LOC_RESOURCE_SEASHELLS_NAME" ResourceClassType="RESOURCECLASS_BONUS" SeaFrequency="17"/>
+
+		<Row ResourceType="RESOURCE_BAMBOO" Name="LOC_RESOURCE_BAMBOO_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_EBONY" Name="LOC_RESOURCE_EBONY_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_SAKURA" Name="LOC_RESOURCE_SAKURA_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_CASHMERE" Name="LOC_RESOURCE_CASHMERE_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_PINE" Name="LOC_RESOURCE_PINE_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_TIN" Name="LOC_RESOURCE_TIN_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_RUBBER" Name="LOC_RESOURCE_RUBBER_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_OXEN" Name="LOC_RESOURCE_OXEN_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_HAM" Name="LOC_RESOURCE_HAM_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_TRAVERTINE" Name="LOC_RESOURCE_TRAVERTINE_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_ALABASTER" Name="LOC_RESOURCE_ALABASTER_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_GOLD2" Name="LOC_RESOURCE_GOLD2_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_COD" Name="LOC_RESOURCE_COD_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_BONUS" SeaFrequency="17"/>
+
+		<Row ResourceType="RESOURCE_MACKEREL" Name="LOC_RESOURCE_MACKEREL_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_BONUS" SeaFrequency="17"/>
+
+		<Row ResourceType="RESOURCE_MUSSELS" Name="LOC_RESOURCE_MUSSELS_NAME" ResourceClassType="RESOURCECLASS_BONUS" SeaFrequency="17"/>
+
+		<Row ResourceType="RESOURCE_SPONGE" Name="LOC_RESOURCE_SPONGE_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  SeaFrequency="1"/>
+
+		<Row ResourceType="RESOURCE_SEA_URCHIN" Name="LOC_RESOURCE_SEA_URCHIN_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  SeaFrequency="1"/>
+
+		<Row ResourceType="RESOURCE_ORCA" Name="LOC_RESOURCE_ORCA_NAME" LakeEligible="false" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  SeaFrequency="1"/>
+		
+		<Row ResourceType="RESOURCE_WOLF" Name="LOC_RESOURCE_WOLF_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  Frequency="3"/>
+
+		<Row ResourceType="RESOURCE_TIGER" Name="LOC_RESOURCE_TIGER_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  Frequency="3"/>
+
+		<Row ResourceType="RESOURCE_LION" Name="LOC_RESOURCE_LION_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4"  Frequency="3"/>
+
+		<Row ResourceType="RESOURCE_MUSHROOMS" Name="LOC_RESOURCE_MUSHROOMS_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_MEDIHERBS" Name="LOC_RESOURCE_MEDIHERBS_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_TOXINS" Name="LOC_RESOURCE_TOXINS_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_HONEY" Name="LOC_RESOURCE_HONEY_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+		
+	    <Row ResourceType="RESOURCE_DATES" Name="LOC_RESOURCE_DATES_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>   
+
+		<Row ResourceType="RESOURCE_SAFFRON" Name="LOC_RESOURCE_SAFFRON_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_TOMATO" Name="LOC_RESOURCE_TOMATO_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_BARLEY" Name="LOC_RESOURCE_BARLEY_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+		
+		<Row ResourceType="RESOURCE_MAIZE" Name="LOC_RESOURCE_MAIZE_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_POTATO" Name="LOC_RESOURCE_POTATO_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_SORGHUM" Name="LOC_RESOURCE_SORGHUM_NAME" ResourceClassType="RESOURCECLASS_BONUS" Frequency="4"/>
+
+		<Row ResourceType="RESOURCE_STRAWBERRY" Name="LOC_RESOURCE_STRAWBERRY_NAME" ResourceClassType="RESOURCECLASS_LUXURY" Happiness="4" Frequency="4"/>
+		
+		
+	</Resources>
+	<Resource_ValidTerrains>
+		<Row ResourceType="RESOURCE_GRANITE" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Row ResourceType="RESOURCE_GRANITE" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_GRANITE" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_GRANITE" TerrainType="TERRAIN_SNOW_HILLS"/>
+		
+		<Row ResourceType="RESOURCE_LAPIS" TerrainType="TERRAIN_DESERT"/>
+		<Row ResourceType="RESOURCE_LAPIS" TerrainType="TERRAIN_DESERT_HILLS"/>
+		<Row ResourceType="RESOURCE_LAPIS" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_LAPIS" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_LAPIS" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_LAPIS" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		
+		<Row ResourceType="RESOURCE_LEAD" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_LEAD" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_LEAD" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_LEAD" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_LEAD" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Row ResourceType="RESOURCE_LEAD" TerrainType="TERRAIN_TUNDRA"/>
+		
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_DESERT_HILLS"/>
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_DESERT"/>
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_SNOW_HILLS"/>
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ResourceType="RESOURCE_PLATINUM" TerrainType="TERRAIN_SNOW"/>
+		
+		<Row ResourceType="RESOURCE_QUARTZ" TerrainType="TERRAIN_DESERT"/>
+		<Row ResourceType="RESOURCE_QUARTZ" TerrainType="TERRAIN_DESERT_HILLS"/>
+		<Row ResourceType="RESOURCE_QUARTZ" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_QUARTZ" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		
+		<Row ResourceType="RESOURCE_RUBY" TerrainType="TERRAIN_DESERT_HILLS"/>
+		<Row ResourceType="RESOURCE_RUBY" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_RUBY" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		
+		<Row ResourceType="RESOURCE_LIMESTONE" TerrainType="TERRAIN_DESERT_HILLS"/>
+		
+		<Row ResourceType="RESOURCE_ALOE" TerrainType="TERRAIN_DESERT"/>
+
+		<Row ResourceType="RESOURCE_BERRIES" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ResourceType="RESOURCE_BERRIES" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+
+		<Row ResourceType="RESOURCE_POPPIES" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_POPPIES" TerrainType="TERRAIN_PLAINS"/>
+		
+		<Row ResourceType="RESOURCE_CAVIAR" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_SALMON" TerrainType="TERRAIN_COAST"/>
+		
+		<Row ResourceType="RESOURCE_ALGAE" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_CORAL" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_SEASHELLS" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_CASHMERE" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Row ResourceType="RESOURCE_CASHMERE" TerrainType="TERRAIN_TUNDRA"/>
+
+		<Row ResourceType="RESOURCE_TIN" TerrainType="TERRAIN_PLAINS_HILLS"/>
+
+		<Row ResourceType="RESOURCE_ALABASTER" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+
+		<Row ResourceType="RESOURCE_TRAVERTINE" TerrainType="TERRAIN_GRASS_HILLS"/>
+
+		<Row ResourceType="RESOURCE_OXEN" TerrainType="TERRAIN_GRASS"/>
+
+		<Row ResourceType="RESOURCE_GOLD2" TerrainType="TERRAIN_DESERT_HILLS"/>
+
+		<Row ResourceType="RESOURCE_HAM" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_HAM" TerrainType="TERRAIN_PLAINS"/>
+
+		<Row ResourceType="RESOURCE_COD" TerrainType="TERRAIN_COAST"/>
+		
+		<Row ResourceType="RESOURCE_MACKEREL" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_MUSSELS" TerrainType="TERRAIN_COAST"/>
+		
+		<Row ResourceType="RESOURCE_SPONGE" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_SEA_URCHIN" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_ORCA" TerrainType="TERRAIN_COAST"/>
+
+		<Row ResourceType="RESOURCE_WOLF" TerrainType="TERRAIN_TUNDRA"/>
+
+		<Row ResourceType="RESOURCE_LION" TerrainType="TERRAIN_DESERT"/>
+		<Row ResourceType="RESOURCE_LION" TerrainType="TERRAIN_PLAINS"/>
+
+		<Row ResourceType="RESOURCE_TIGER" TerrainType="TERRAIN_DESERT"/>
+		
+		<Row ResourceType="RESOURCE_MUSHROOMS" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ResourceType="RESOURCE_MUSHROOMS" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		
+		<Row ResourceType="RESOURCE_TOMATO" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_TOMATO" TerrainType="TERRAIN_PLAINS"/>
+
+		<Row ResourceType="RESOURCE_BARLEY" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ResourceType="RESOURCE_BARLEY" TerrainType="TERRAIN_PLAINS"/>
+
+		<Row ResourceType="RESOURCE_MAIZE" TerrainType="TERRAIN_GRASS"/>
+	
+		<Row ResourceType="RESOURCE_POTATO" TerrainType="TERRAIN_PLAINS"/>
+			
+		<Row ResourceType="RESOURCE_SORGHUM" TerrainType="TERRAIN_DESERT"/>
+
+		<Row ResourceType="RESOURCE_STRAWBERRY" TerrainType="TERRAIN_GRASS"/>
+		
+		
+		
+	</Resource_ValidTerrains>
+
+	<Resource_ValidFeatures>
+		
+		<Row ResourceType="RESOURCE_LAPIS" FeatureType="FEATURE_JUNGLE"/>
+	
+		<Row ResourceType="RESOURCE_RUBY" FeatureType="FEATURE_JUNGLE"/>
+	
+		<Row ResourceType="RESOURCE_OAK" FeatureType="FEATURE_FOREST"/>
+		
+		<Row ResourceType="RESOURCE_SANDALWOOD" FeatureType="FEATURE_JUNGLE"/>
+		
+		<Row ResourceType="RESOURCE_MAPLE" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_BAMBOO" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_EBONY" FeatureType="FEATURE_JUNGLE"/>
+
+		<Row ResourceType="RESOURCE_SAKURA" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_PINE" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_RUBBER" FeatureType="FEATURE_JUNGLE"/>
+
+		<Row ResourceType="RESOURCE_WOLF" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_TIGER" FeatureType="FEATURE_JUNGLE"/>
+
+		<Row ResourceType="RESOURCE_LION" FeatureType="FEATURE_FLOODPLAINS"/>
+
+		<Row ResourceType="RESOURCE_MUSHROOMS" FeatureType="FEATURE_FOREST"/>
+		
+		<Row ResourceType="RESOURCE_MEDIHERBS" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_TOXINS" FeatureType="FEATURE_JUNGLE"/>
+
+		<Row ResourceType="RESOURCE_HONEY" FeatureType="FEATURE_FOREST"/>
+
+		<Row ResourceType="RESOURCE_DATES" FeatureType="FEATURE_FLOODPLAINS"/>
+
+		<Row ResourceType="RESOURCE_SAFFRON" FeatureType="FEATURE_FLOODPLAINS"/>
+
+		<Row ResourceType="RESOURCE_SORGHUM" FeatureType="FEATURE_FLOODPLAINS"/>
+		
+		
+	</Resource_ValidFeatures>
+	
+	<Resource_YieldChanges>
+		<Row ResourceType="RESOURCE_GRANITE" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		
+		<Row ResourceType="RESOURCE_LAPIS" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_LAPIS" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_LAPIS" YieldType="YIELD_GOLD" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_LEAD" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		
+		<Row ResourceType="RESOURCE_PLATINUM" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_PLATINUM" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_QUARTZ" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_QUARTZ" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_RUBY" YieldType="YIELD_GOLD" YieldChange="3"/>
+		
+		<Row ResourceType="RESOURCE_OAK" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_SANDALWOOD" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SANDALWOOD" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SANDALWOOD" YieldType="YIELD_GOLD" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_MAPLE" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_MAPLE" YieldType="YIELD_GOLD" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_LIMESTONE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_LIMESTONE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_ALOE" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_ALOE" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_BERRIES" YieldType="YIELD_FOOD" YieldChange="2"/>
+
+		
+		<Row ResourceType="RESOURCE_POPPIES" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_POPPIES" YieldType="YIELD_GOLD" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_CAVIAR" YieldType="YIELD_GOLD" YieldChange="3"/>
+		
+		<Row ResourceType="RESOURCE_SALMON" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SALMON" YieldType="YIELD_GOLD" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_ALGAE" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_SEASHELLS" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SEASHELLS" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_CORAL" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_CORAL" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_BAMBOO" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_BAMBOO" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_EBONY" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_EBONY" YieldType="YIELD_FAITH" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_SAKURA" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_SAKURA" YieldType="YIELD_GOLD" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_CASHMERE" YieldType="YIELD_GOLD" YieldChange="3"/>
+
+		<Row ResourceType="RESOURCE_PINE" YieldType="YIELD_GOLD" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_TIN" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		
+
+		<Row ResourceType="RESOURCE_RUBBER" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_TRAVERTINE" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_TRAVERTINE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_ALABASTER" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_ALABASTER" YieldType="YIELD_CULTURE" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_OXEN" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_GOLD2" YieldType="YIELD_GOLD" YieldChange="3"/>
+
+		<Row ResourceType="RESOURCE_HAM" YieldType="YIELD_FOOD" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_COD" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_COD" YieldType="YIELD_FOOD" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_MACKEREL" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_MACKEREL" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_MUSSELS" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_MUSSELS" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_SPONGE" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SPONGE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_SEA_URCHIN" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SEA_URCHIN" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_ORCA" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_ORCA" YieldType="YIELD_FAITH" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_WOLF" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_WOLF" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_TIGER" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_TIGER" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_LION" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_LION" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_MUSHROOMS" YieldType="YIELD_FOOD" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_MEDIHERBS" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		
+		<Row ResourceType="RESOURCE_TOXINS" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_TOXINS" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_HONEY" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_HONEY" YieldType="YIELD_FOOD" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_DATES" YieldType="YIELD_FOOD" YieldChange="1"/>
+	
+		<Row ResourceType="RESOURCE_SAFFRON" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_SAFFRON" YieldType="YIELD_CULTURE" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_TOMATO" YieldType="YIELD_FOOD" YieldChange="2"/>
+
+		<Row ResourceType="RESOURCE_BARLEY" YieldType="YIELD_GOLD" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_MAIZE" YieldType="YIELD_FOOD" YieldChange="2"/>
+		
+		<Row ResourceType="RESOURCE_POTATO" YieldType="YIELD_FOOD" YieldChange="1"/>
+		
+		<Row ResourceType="RESOURCE_SORGHUM" YieldType="YIELD_FOOD" YieldChange="1"/>
+
+		<Row ResourceType="RESOURCE_STRAWBERRY" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_STRAWBERRY" YieldType="YIELD_GOLD" YieldChange="1"/>
+		
+	</Resource_YieldChanges>
+	
+	<Resource_Harvests>
+		<Row ResourceType="RESOURCE_OAK" YieldType="YIELD_PRODUCTION" Amount="40" PrereqTech="TECH_SHIPBUILDING"/>
+		
+		<Row ResourceType="RESOURCE_LIMESTONE" YieldType="YIELD_PRODUCTION" Amount="15" PrereqTech="TECH_MASONRY"/>
+		<Row ResourceType="RESOURCE_LIMESTONE" YieldType="YIELD_CULTURE" Amount="15" PrereqTech="TECH_MASONRY"/>
+		
+		<Row ResourceType="RESOURCE_GRANITE" YieldType="YIELD_PRODUCTION" Amount="40" PrereqTech="TECH_MASONRY"/>
+		
+		<Row ResourceType="RESOURCE_LEAD" YieldType="YIELD_PRODUCTION" Amount="20" PrereqTech="TECH_MINING"/>
+		<Row ResourceType="RESOURCE_LEAD" YieldType="YIELD_SCIENCE" Amount="10" PrereqTech="TECH_MINING"/>
+		
+		<Row ResourceType="RESOURCE_MAPLE" YieldType="YIELD_PRODUCTION" Amount="10" PrereqTech="TECH_SHIPBUILDING"/>
+		<Row ResourceType="RESOURCE_MAPLE" YieldType="YIELD_FOOD" Amount="10" PrereqTech="TECH_SHIPBUILDING"/>
+		<Row ResourceType="RESOURCE_MAPLE" YieldType="YIELD_GOLD" Amount="10" PrereqTech="TECH_SHIPBUILDING"/>
+		
+		<Row ResourceType="RESOURCE_QUARTZ" YieldType="YIELD_GOLD" Amount="10" PrereqTech="TECH_MINING"/>
+		<Row ResourceType="RESOURCE_QUARTZ" YieldType="YIELD_FAITH" Amount="10" PrereqTech="TECH_MINING"/>
+		<Row ResourceType="RESOURCE_QUARTZ" YieldType="YIELD_SCIENCE" Amount="10" PrereqTech="TECH_MINING"/>
+
+		<Row ResourceType="RESOURCE_RUBY" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_MINING"/>
+
+		<Row ResourceType="RESOURCE_LAPIS" YieldType="YIELD_PRODUCTION" Amount="20" PrereqTech="TECH_MINING"/>
+		<Row ResourceType="RESOURCE_LAPIS" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_MINING"/>
+
+		<Row ResourceType="RESOURCE_PLATINUM" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_MINING"/>
+
+		<Row ResourceType="RESOURCE_SANDALWOOD" YieldType="YIELD_PRODUCTION" Amount="20" PrereqTech="TECH_SHIPBUILDING"/>
+		<Row ResourceType="RESOURCE_SANDALWOOD" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_SHIPBUILDING"/>
+
+		<Row ResourceType="RESOURCE_ALOE" YieldType="YIELD_FOOD" Amount="30" PrereqTech="TECH_POTTERY"/>
+		<Row ResourceType="RESOURCE_ALOE" YieldType="YIELD_SCIENCE" Amount="20" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_BERRIES" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_POTTERY"/>
+		
+
+		<Row ResourceType="RESOURCE_POPPIES" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_POTTERY"/>
+		<Row ResourceType="RESOURCE_POPPIES" YieldType="YIELD_CULTURE" Amount="20" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_CAVIAR" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+		
+		<Row ResourceType="RESOURCE_SALMON" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+		<Row ResourceType="RESOURCE_SALMON" YieldType="YIELD_FOOD" Amount="20" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+		
+		<Row ResourceType="RESOURCE_ALGAE" YieldType="YIELD_FOOD" Amount="30" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+		<Row ResourceType="RESOURCE_ALGAE" YieldType="YIELD_SCIENCE" Amount="20" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_CORAL" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+		<Row ResourceType="RESOURCE_CORAL" YieldType="YIELD_CULTURE" Amount="20" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_SEASHELLS" YieldType="YIELD_CULTURE" Amount="30" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+		<Row ResourceType="RESOURCE_SEASHELLS" YieldType="YIELD_FAITH" Amount="20" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_BAMBOO" YieldType="YIELD_PRODUCTION" Amount="40" PrereqTech="TECH_SHIPBUILDING"/>
+
+		<Row ResourceType="RESOURCE_EBONY" YieldType="YIELD_FAITH" Amount="20" PrereqTech="TECH_SHIPBUILDING"/>
+		<Row ResourceType="RESOURCE_EBONY" YieldType="YIELD_GOLD" Amount="20" PrereqTech="TECH_SHIPBUILDING"/>
+
+		<Row ResourceType="RESOURCE_SAKURA" YieldType="YIELD_CULTURE" Amount="20" PrereqTech="TECH_SHIPBUILDING"/>
+		<Row ResourceType="RESOURCE_SAKURA" YieldType="YIELD_GOLD" Amount="20" PrereqTech="TECH_SHIPBUILDING"/>
+
+		<Row ResourceType="RESOURCE_CASHMERE" YieldType="YIELD_GOLD" Amount="40" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+
+		<Row ResourceType="RESOURCE_PINE" YieldType="YIELD_PRODUCTION" Amount="40" PrereqTech="TECH_SHIPBUILDING"/>
+
+		<Row ResourceType="RESOURCE_TIN" YieldType="YIELD_PRODUCTION" Amount="20" PrereqTech="TECH_MINING"/>
+		<Row ResourceType="RESOURCE_TIN" YieldType="YIELD_GOLD" Amount="20" PrereqTech="TECH_MINING"/>
+
+		<Row ResourceType="RESOURCE_RUBBER" YieldType="YIELD_PRODUCTION" Amount="50" PrereqTech="TECH_SHIPBUILDING"/>
+
+		<Row ResourceType="RESOURCE_TRAVERTINE" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_MASONRY"/>
+		<Row ResourceType="RESOURCE_TRAVERTINE" YieldType="YIELD_CULTURE" Amount="20" PrereqTech="TECH_MASONRY"/>
+
+		<Row ResourceType="RESOURCE_ALABASTER" YieldType="YIELD_GOLD" Amount="20" PrereqTech="TECH_MASONRY"/>
+		<Row ResourceType="RESOURCE_ALABASTER" YieldType="YIELD_CULTURE" Amount="30" PrereqTech="TECH_MASONRY"/>
+
+		<Row ResourceType="RESOURCE_OXEN" YieldType="YIELD_PRODUCTION" Amount="40" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+
+		<Row ResourceType="RESOURCE_GOLD2" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_MINING"/>
+
+		<Row ResourceType="RESOURCE_HAM" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+
+		<Row ResourceType="RESOURCE_COD" YieldType="YIELD_GOLD" Amount="30" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_MACKEREL" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+	
+		<Row ResourceType="RESOURCE_MUSSELS" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_SPONGE" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_SEA_URCHIN" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_ORCA" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_CELESTIAL_NAVIGATION"/>
+
+		<Row ResourceType="RESOURCE_WOLF" YieldType="YIELD_GOLD" Amount="40" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+
+		<Row ResourceType="RESOURCE_TIGER" YieldType="YIELD_GOLD" Amount="40" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+
+		<Row ResourceType="RESOURCE_LION" YieldType="YIELD_GOLD" Amount="40" PrereqTech="TECH_ANIMAL_HUSBANDRY"/>
+
+		<Row ResourceType="RESOURCE_MUSHROOMS" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_MEDIHERBS" YieldType="YIELD_SCIENCE" Amount="30" PrereqTech="TECH_BRONZE_WORKING"/>
+
+		<Row ResourceType="RESOURCE_TOXINS" YieldType="YIELD_SCIENCE" Amount="50" PrereqTech="TECH_BRONZE_WORKING"/>
+
+		<Row ResourceType="RESOURCE_HONEY" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_DATES" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_BRONZE_WORKING"/>
+
+		<Row ResourceType="RESOURCE_SAFFRON" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_TOMATO" YieldType="YIELD_FOOD" Amount="30" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_BARLEY" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_MAIZE" YieldType="YIELD_FOOD" Amount="50" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_POTATO" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_SORGHUM" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_POTTERY"/>
+
+		<Row ResourceType="RESOURCE_STRAWBERRY" YieldType="YIELD_FOOD" Amount="40" PrereqTech="TECH_POTTERY"/>
+		<Row ResourceType="RESOURCE_STRAWBERRY" YieldType="YIELD_GOLD" Amount="50" PrereqTech="TECH_POTTERY"/>
+		
+		
+	</Resource_Harvests>
+
+	<Modifiers>
+
+		<Row>
+			<ModifierId>WATERMILL_ADDBARLEYFOOD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>RESOURCE_IS_BARLEY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDMAIZEFOOD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>RESOURCE_IS_MAIZE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDSORGHUMFOOD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>RESOURCE_IS_SORGHUM</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDSTRAWBERRYFOOD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>RESOURCE_IS_STRAWBERRY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDPOTATOFOOD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>RESOURCE_IS_POTATO</SubjectRequirementSetId>
+		</Row>
+		
+		
+	</Modifiers>
+	<ModifierArguments>
+
+		<Row>
+			<ModifierId>WATERMILL_ADDBARLEYFOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDBARLEYFOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDMAIZEFOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDMAIZEFOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDSORGHUMFOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDSORGHUMFOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDSTRAWBERRYFOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDSTRAWBERRYFOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDPOTATOFOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>WATERMILL_ADDPOTATOFOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		
+
+	</ModifierArguments>
+	<BuildingModifiers>
+		
+		<Row>
+			<BuildingType>BUILDING_WATER_MILL</BuildingType>
+			<ModifierId>WATERMILL_ADDBARLEYFOOD</ModifierId>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WATER_MILL</BuildingType>
+			<ModifierId>WATERMILL_ADDMAIZEFOOD</ModifierId>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WATER_MILL</BuildingType>
+			<ModifierId>WATERMILL_ADDSORGHUMFOOD</ModifierId>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WATER_MILL</BuildingType>
+			<ModifierId>WATERMILL_ADDSTRAWBERRYFOOD</ModifierId>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WATER_MILL</BuildingType>
+			<ModifierId>WATERMILL_ADDPOTATOFOOD</ModifierId>
+		</Row>
+		
+		
+	</BuildingModifiers>
+	<Requirements>
+
+		<Row>
+			<RequirementId>REQUIRES_BARLEY_IN_PLOT</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_RESOURCE_TYPE_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_MAIZE_IN_PLOT</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_RESOURCE_TYPE_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_SORGHUM_IN_PLOT</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_RESOURCE_TYPE_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_STRAWBERRY_IN_PLOT</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_RESOURCE_TYPE_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_POTATO_IN_PLOT</RequirementId>
+			<RequirementType>REQUIREMENT_PLOT_RESOURCE_TYPE_MATCHES</RequirementType>
+		</Row>
+		
+		
+	</Requirements>
+	<RequirementArguments>
+
+		<Row>
+			<RequirementId>REQUIRES_BARLEY_IN_PLOT</RequirementId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_BARLEY</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_MAIZE_IN_PLOT</RequirementId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_MAIZE</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_SORGHUM_IN_PLOT</RequirementId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_SORGHUM</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_STRAWBERRY_IN_PLOT</RequirementId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_STRAWBERRY</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_POTATO_IN_PLOT</RequirementId>
+			<Name>ResourceType</Name>
+			<Value>RESOURCE_POTATO</Value>
+		</Row>
+		
+		
+	</RequirementArguments>
+	<RequirementSets>
+
+		<Row>
+			<RequirementSetId>RESOURCE_IS_BARLEY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_MAIZE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_SORGHUM</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_STRAWBERRY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_POTATO</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		
+		
+	</RequirementSets>
+	<RequirementSetRequirements>
+		
+		<Row>
+			<RequirementSetId>RESOURCE_IS_BARLEY</RequirementSetId>
+			<RequirementId>REQUIRES_BARLEY_IN_PLOT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_SORGHUM</RequirementSetId>
+			<RequirementId>REQUIRES_SORGHUM_IN_PLOT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_MAIZE</RequirementSetId>
+			<RequirementId>REQUIRES_MAIZE_IN_PLOT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_STRAWBERRY</RequirementSetId>
+			<RequirementId>REQUIRES_STRAWBERRY_IN_PLOT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>RESOURCE_IS_POTATO</RequirementSetId>
+			<RequirementId>REQUIRES_POTATO_IN_PLOT</RequirementId>
+		</Row>
+		
+	
+	</RequirementSetRequirements>	
+		
+		
+		
+		
+
+	</GameInfo>

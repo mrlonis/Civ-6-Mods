@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="82251e10-148c-4b7a-83b9-1c91c6f95f02" version="1">
+  <Properties>
+    <Name>Warfare Expanded Medieval</Name>
+    <Description>Warfare Expanded Medieval era expansion that adds early medieval and high medieval units to the medieval ers.</Description>
+    <Created>1590430653</Created>
+    <Teaser>Warfare Expanded Medieval era expansion.</Teaser>
+    <Authors>Wolfdog (Hizkiyahu), KrumStrashni, siau2tie1 and Zipprian</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="38a49494-5ec4-46ac-b01b-9629d96950f3" title="Warfare Expanded" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Gameplay">
+      <Properties>
+        <LoadOrder>15</LoadOrder>
+      </Properties>
+      <File>WE_Medieval_units.sql</File>
+    </UpdateDatabase>
+    <UpdateIcons id="Icons">
+      <Properties>
+        <LoadOrder>14</LoadOrder>
+      </Properties>
+      <File>WE_Medieval_Icons_Units.sql</File>
+    </UpdateIcons>
+    <UpdateText id="Text">
+      <Properties>
+        <LoadOrder>14</LoadOrder>
+      </Properties>
+      <File>WE_Medieval_Text_en_US.xml</File>
+    </UpdateText>
+  </InGameActions>
+  <Files>
+    <File>WE_Medieval_Icons_Units.sql</File>
+    <File>WE_Medieval_Text_en_US.xml</File>
+    <File>WE_Medieval_units.sql</File>
+  </Files>
+</Mod>

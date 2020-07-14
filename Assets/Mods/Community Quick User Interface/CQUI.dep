@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects::GameDependencyData>
+  <ID>
+    <name text="Community Quick User Interface" />
+    <id text="2603aabf-97f2-4c02-8274-2f6e8f0583a4" />
+  </ID>
+  <SystemDependencies>
+    <Element>
+      <ConsumerName text="Minimap"/>
+      <ArtDefDependencyPaths>
+        <Element text="Minimap.artdef"/>
+      </ArtDefDependencyPaths>
+      <LibraryDependencies/>
+      <LoadsLibraries>false</LoadsLibraries>
+    </Element>
+  </SystemDependencies>
+</AssetObjects::GameDependencyData>

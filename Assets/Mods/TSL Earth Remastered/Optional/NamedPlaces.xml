@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<NamedRiverCivilizations>
+		<Row NamedRiverType="NAMED_RIVER_RIO_GRANDE" 	CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedRiverType="NAMED_RIVER_COLORADO" 		CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedRiverType="NAMED_RIVER_MISSISSIPPI" 	CivilizationType="CIVILIZATION_CREE"/>
+		<Row NamedRiverType="NAMED_RIVER_NILE" 			CivilizationType="CIVILIZATION_EGYPT"/>
+		<Row NamedRiverType="NAMED_RIVER_CONGO" 		CivilizationType="CIVILIZATION_KONGO"/>
+		<Row NamedRiverType="NAMED_RIVER_YANGTZE" 		CivilizationType="CIVILIZATION_KOREA"/>
+		<Row NamedRiverType="NAMED_RIVER_DANUBE" 		CivilizationType="CIVILIZATION_MACEDON"/>
+		<Row NamedRiverType="NAMED_RIVER_AMUR" 			CivilizationType="CIVILIZATION_MONGOLIA"/>
+		<Row NamedRiverType="NAMED_RIVER_LENA" 			CivilizationType="CIVILIZATION_MONGOLIA"/>
+		<Row NamedRiverType="NAMED_RIVER_OB" 			CivilizationType="CIVILIZATION_MONGOLIA"/>
+		<Row NamedRiverType="NAMED_RIVER_SYR_DARYA" 	CivilizationType="CIVILIZATION_MONGOLIA"/>
+		<Row NamedRiverType="NAMED_RIVER_CONGO" 		CivilizationType="CIVILIZATION_NUBIA"/>
+		<Row NamedRiverType="NAMED_RIVER_TIGRIS" 		CivilizationType="CIVILIZATION_PHOENICIA"/>
+		<Row NamedRiverType="NAMED_RIVER_EUPHRATES" 	CivilizationType="CIVILIZATION_PHOENICIA"/>
+		<Row NamedRiverType="NAMED_RIVER_DNIEPER" 		CivilizationType="CIVILIZATION_SCYTHIA"/>
+		<Row NamedRiverType="NAMED_RIVER_ZAMBEZI" 		CivilizationType="CIVILIZATION_ZULU"/>
+	</NamedRiverCivilizations>
+	<NamedVolcanoCivilizations>
+		<Row NamedVolcanoType="NAMED_VOLCANO_THERA" 	CivilizationType="CIVILIZATION_PHOENICIA"/>	
+		<Row NamedVolcanoType="NAMED_VOLCANO_THERA" 	CivilizationType="CIVILIZATION_EGYPT"/>	
+	</NamedVolcanoCivilizations>
+	<NamedDesertCivilizations>
+		<Row NamedDesertType="NAMED_DESERT_SAHARA" 		CivilizationType="CIVILIZATION_ARABIA"/>
+		<Row NamedDesertType="NAMED_DESERT_CHIHUAHUAN" 	CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedDesertType="NAMED_DESERT_COLORADO_PLATEAU" CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedDesertType="NAMED_DESERT_GREAT_BASIN" CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedDesertType="NAMED_DESERT_MOJAVE" 		CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedDesertType="NAMED_DESERT_SONORAN" 	CivilizationType="CIVILIZATION_AZTEC"/>
+		<Row NamedDesertType="NAMED_DESERT_KARAKUM" 	CivilizationType="CIVILIZATION_GEORGIA"/>
+		<Row NamedDesertType="NAMED_DESERT_KYZYLKUM" 	CivilizationType="CIVILIZATION_GEORGIA"/>
+		<Row NamedDesertType="NAMED_DESERT_KALAHARI" 	CivilizationType="CIVILIZATION_KONGO"/>
+		<Row NamedDesertType="NAMED_DESERT_ATACAMA" 	CivilizationType="CIVILIZATION_MAPUCHE"/>
+		<Row NamedDesertType="NAMED_DESERT_TAKLAMAKAN" 	CivilizationType="CIVILIZATION_MONGOLIA"/>
+		<Row NamedDesertType="NAMED_DESERT_SAHARA" 		CivilizationType="CIVILIZATION_NUBIA"/>
+		<Row NamedDesertType="NAMED_DESERT_ARABIAN" 	CivilizationType="CIVILIZATION_PHOENICIA"/>
+		<Row NamedDesertType="NAMED_DESERT_ARABIAN" 	CivilizationType="CIVILIZATION_SUMERIA"/>
+		<Row NamedDesertType="NAMED_DESERT_KALAHARI" 	CivilizationType="CIVILIZATION_ZULU"/>
+	</NamedDesertCivilizations>	
+	<NamedMountainCivilizations>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ROCKIES" 	CivilizationType="CIVILIZATION_AMERICA"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ANDES" 		CivilizationType="CIVILIZATION_BRAZIL"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ROCKIES" 	CivilizationType="CIVILIZATION_CREE"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ATLAS" 		CivilizationType="CIVILIZATION_MALI"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ALTAI" 		CivilizationType="CIVILIZATION_SCYTHIA"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_ATLAS" 		CivilizationType="CIVILIZATION_SPAIN"/>
+	</NamedMountainCivilizations>		
+</GameInfo>

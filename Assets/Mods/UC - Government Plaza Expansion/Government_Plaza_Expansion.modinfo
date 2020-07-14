@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="cf1615ca-1543-4c67-9da9-1d518f31c0e7" version="13">
+  <Properties>
+    <Name>UC - Government Plaza Expansion</Name>
+    <Description>New features for the Government Plaza district.[NEWLINE]- Three new Level 4 buildings to choose from, connected to future era governments.[NEWLINE]- Future Era government legacy policies granted by the new buildings.[NEWLINE]- All Level 1 buildings in the Government Plaza district allow you to move your capital via project to that city.[NEWLINE]- All Level 2 buildings in the Government Plaza district grant +50% Production towards Settlers in your civilization.[NEWLINE]- All Level 3 buildings in the Government Plaza district increase the border expansion rate by 200% and reduce land purchase cost by 50%.[NEWLINE]-  Building a Government Plaza triggers a Culture Bomb.</Description>
+    <Created>1571494437</Created>
+    <Teaser>New features for the Government Plaza district.</Teaser>
+    <Authors>JNR</Authors>
+    <CompatibleVersions>2.0</CompatibleVersions>
+  </Properties>
+  <Dependencies>
+    <Mod id="4873eb62-8ccc-4574-b784-dda455e74e68" title="Expansion: Gathering Storm" />
+  </Dependencies>
+  <InGameActions>
+    <UpdateDatabase id="Database">
+      <Properties>
+        <LoadOrder>410</LoadOrder>
+      </Properties>
+      <File>Data/UC_GP_Buildings.sql</File>
+      <File>Data/UC_GP_UnitAbilities.sql</File>
+      <File>Data/UC_GP_Culture_Bomb.sql</File>
+      <File>Data/UC_GP_Tier_123.sql</File>
+      <File>Data/UC_GP_Tier_4.sql</File>
+      <File>Data/UC_GP_Policies.sql</File>
+      <File>Data/UC_GP_Projects.sql</File>
+      <File>Data/UC_GP_Dido.sql</File>
+      <File>Data/UC_GP_Pedia.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="Text">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <File>Text/UC_GP_Text.sql</File>
+    </UpdateText>
+    <UpdateIcons id="Icons">
+      <Properties>
+        <LoadOrder>13</LoadOrder>
+      </Properties>
+      <File>Icons/UC_GP_Icons.sql</File>
+    </UpdateIcons>
+    <UpdateDatabase id="RwF">
+      <Properties>
+        <LoadOrder>411</LoadOrder>
+      </Properties>
+      <File>ModSupport/UC_GP_RwF_Tiers.sql</File>
+    </UpdateDatabase>
+    <UpdateArt id="Dependency">
+      <File>UC - Government Plaza Expansion.dep</File>
+    </UpdateArt>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/UserInterface.artdef</File>
+    <File>Data/UC_GP_Buildings.sql</File>
+    <File>Data/UC_GP_Culture_Bomb.sql</File>
+    <File>Data/UC_GP_Dido.sql</File>
+    <File>Data/UC_GP_Pedia.sql</File>
+    <File>Data/UC_GP_Policies.sql</File>
+    <File>Data/UC_GP_Projects.sql</File>
+    <File>Data/UC_GP_Tier_123.sql</File>
+    <File>Data/UC_GP_Tier_4.sql</File>
+    <File>Data/UC_GP_UnitAbilities.sql</File>
+    <File>Government_Plaza_Expansion.art.xml</File>
+    <File>Icons/UC_GP_Icons.sql</File>
+    <File>ModSupport/UC_GP_RwF_Tiers.sql</File>
+    <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
+    <File>Text/UC_GP_Text.sql</File>
+    <File>UC - Government Plaza Expansion.dep</File>
+    <File>XLPs/UC_GP_Buildings.xlp</File>
+  </Files>
+</Mod>

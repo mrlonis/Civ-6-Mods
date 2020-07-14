@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<BaseGameText>
+		<!-- New Units Pedia Text -->
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZWEIHANDER_CHAPTER_HISTORY_PARA_1">
+			<Text>A man-at-arms was a soldier of the High Medieval to Renaissance periods who was typically well-versed in the use of arms and served as a fully armoured heavy cavalryman. A man-at-arms could be a knight or nobleman, a member of a knight or nobleman's retinue or a mercenary in a company under a mercenary captain. Such men could serve for pay or through a feudal obligation. The terms knight and man-at-arms are often used interchangeably, but while all knights equipped for war certainly were men-at-arms, not all men-at-arms were knights.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZWEIHANDER_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZWEIHANDER_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZWEIHANDER_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZWEIHANDER_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FEUDAL_SPEARMAN_CHAPTER_HISTORY_PARA_1">
+			<Text>Feudal Spearmen are professional warriors, drawn from the lower classes. The thrusting spear has the advantage of reach, being considerably longer than other weapon types. Exact spear lengths are hard to deduce as few spear shafts survive archaeologically but 6–8 ft (1.8–2.4 m) would seem to have been the norm. Some nations were noted for their long spears, including the Scots and the Flemish. Spears usually were used in tightly ordered formations, such as the shieldwall or the schiltron. To resist cavalry, spear shafts could be planted against the ground. William Wallace drew up his schiltrons in a circle at the Battle of Falkirk in 1298 to deter charging cavalry, it was a widespread tactic sometimes known as the "crown" formation.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FEUDAL_SPEARMAN_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FEUDAL_SPEARMAN_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FEUDAL_SPEARMAN_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FEUDAL_SPEARMAN_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_YEOMAN_ARCHER_CHAPTER_HISTORY_PARA_1">
+			<Text>Yeoman Archers are highly skilled ranged troops. Lightly armoured and equipped with a longbow for ranged combat. The yeoman comprised a military class or status (usually known as in the third order of the fighting class, between squire and page). A longbow is a type of bow that is tall – roughly equal to the height of the user – allowing the archer a fairly long draw. A longbow is not significantly recurved. Its limbs are relatively narrow so that they are circular or D-shaped in cross section. Flatbows can be just as long; the difference is that, in cross-section, a flatbow has limbs that are approximately rectangular.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_YEOMAN_ARCHER_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_YEOMAN_ARCHER_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_YEOMAN_ARCHER_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_YEOMAN_ARCHER_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CONDOTIERRE_CHAPTER_HISTORY_PARA_1">
+			<Text>Condottieri were Italian captains contracted to command mercenary companies during the Middle Ages and multinational armies during the early modern period. They notably served European monarchs and Popes during the Italian Wars of the Renaissance and the European Wars of Religion. Notable condottieri include Prospero Colonna, Giovanni dalle Bande Nere, Cesare Borgia, Andrea Doria, the Duke of Parma, and the Marquis of Pescara.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CONDOTIERRE_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CONDOTIERRE_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CONDOTIERRE_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CONDOTIERRE_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EARLY_KNIGHT_CHAPTER_HISTORY_PARA_1">
+			<Text>The institution of knights was already well-established by the 10th century. While the knight was essentially a title denoting a military office, the term could also be used for positions of higher nobility such as landholders. The higher nobles grant the vassals their portions of land (fiefs) in return for their loyalty, protection, and service. The nobles also provided their knights with necessities, such as lodging, food, armour, weapons, horses, and money.[30] The knight generally held his lands by military tenure which was measured through military service that usually lasted 40 days a year. The military service was the quid pro quo for each knight's fief. Vassals and lords could maintain any number of knights, although knights with more military experience were those most sought after. Thus, all petty nobles intending to become prosperous knights needed a great deal of military experience.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EARLY_KNIGHT_CHAPTER_HISTORY_PARA_2">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EARLY_KNIGHT_CHAPTER_HISTORY_PARA_3">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EARLY_KNIGHT_CHAPTER_HISTORY_PARA_4">
+			<Text />
+		</Row>
+		<Row Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EARLY_KNIGHT_CHAPTER_HISTORY_PARA_5">
+			<Text />
+		</Row>
+		<!-- New Units Text -->
+		<Row Tag="LOC_UNIT_ZWEIHANDER_NAME">
+			<Text>Man-at-arms</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_ZWEIHANDER_DESCRIPTION">
+			<Text>High Medieval era melee unit.</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_FEUDAL_SPEARMAN_NAME">
+			<Text>Feudal Spearman</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_FEUDAL_SPEARMAN_DESCRIPTION">
+			<Text>Early Medieval era melee unit that's effective against mounted units.</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_YEOMAN_ARCHER_NAME">
+			<Text>Yeoman Archer</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_YEOMAN_ARCHER_DESCRIPTION">
+			<Text>Early Medieval era ranged unit.</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CONDOTIERRE_NAME">
+			<Text>Condotierre</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_CONDOTIERRE_DESCRIPTION">
+			<Text>High Medieval era light cavalry unit.</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_EARLY_KNIGHT_NAME">
+			<Text>Early Knight</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_EARLY_KNIGHT_DESCRIPTION">
+			<Text>Early Medieval era heavy cavalry unit.</Text>
+		</Row>
+		<!-- Text Changes -->
+		<Replace Tag="LOC_UNIT_KNIGHT_NAME">
+			<Text>Heavy Knight</Text>
+		</Replace>
+	</BaseGameText>
+</GameData>

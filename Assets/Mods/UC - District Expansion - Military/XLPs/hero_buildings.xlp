@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>260</build>
+		<revision>754</revision>
+	</m_Version>
+	<m_ClassName text="TileBase"/>
+	<m_PackageName text="landmarks/hero_buildings"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="DIS_ENC_Target_Range_Classical_JNR"/>
+			<m_ObjectName text="DIS_ENC_Target_Range_Classical_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ENC_Target_Range_Industrial_JNR"/>
+			<m_ObjectName text="DIS_ENC_Target_Range_Industrial_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ENC_Target_Range_Industrial_Wall_JNR"/>
+			<m_ObjectName text="DIS_ENC_Target_Range_Industrial_Wall_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="PROP_IN_Haybales_LG_TexFix_JNR"/>
+			<m_ObjectName text="PROP_IN_Haybales_LG_TexFix_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_ENC_Ikanda_Target_Range_JNR"/>
+			<m_ObjectName text="DIS_ENC_Ikanda_Target_Range_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="PROP_Haypile_Dry_JNR"/>
+			<m_ObjectName text="PROP_Haypile_Dry_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="PROP_IN_Haybales_LG_Dry_JNR"/>
+			<m_ObjectName text="PROP_IN_Haybales_LG_Dry_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="PROP_MD_Haybales_LG_Dry_JNR"/>
+			<m_ObjectName text="PROP_MD_Haybales_LG_Dry_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_HBR_Modern_Naval_Base_JNR"/>
+			<m_ObjectName text="DIS_HBR_Modern_Naval_Base_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_HBR_Modern_Naval_Base_Bld_JNR"/>
+			<m_ObjectName text="DIS_HBR_Modern_Naval_Base_Bld_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_HBR_Modern_Naval_Base_Tanks_JNR"/>
+			<m_ObjectName text="DIS_HBR_Modern_Naval_Base_Tanks_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_HBR_RNY_Modern_Naval_Base_JNR"/>
+			<m_ObjectName text="DIS_HBR_RNY_Modern_Naval_Base_JNR"/>
+		</Element>
+		<Element>
+			<m_EntryID text="DIS_COTHON_Naval_Base_JNR"/>
+			<m_ObjectName text="DIS_COTHON_Naval_Base_JNR"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+
