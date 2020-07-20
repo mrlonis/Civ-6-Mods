@@ -409,11 +409,6 @@
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_CENTER_ADDTRADEROUTE</ModifierId>
-            <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
-            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-        </Row>
-        <Row>
             <ModifierId>GODS_CENTER_GOLD</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
@@ -444,13 +439,6 @@
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
-            <ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
-            <RunOnce>true</RunOnce>
-            <Permanent>true</Permanent>
-            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
-        </Row>
-        <Row>
             <ModifierId>GODS_CENTER_DOUBLE_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
             <RunOnce>true</RunOnce>
@@ -458,14 +446,98 @@
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <!-- District: Encampment -->
+        <Row>
+            <ModifierId>GODS_BARRACKS_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BARRACKS_MODERN_ARMOR</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
+            <RunOnce>true</RunOnce>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Holy Site -->
+        <Row>
+            <ModifierId>GODS_TEMPLE_FAITH</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Campus -->
+        <Row>
+            <ModifierId>GODS_LIBRARY_SCIENCE</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Harbor -->
+        <Row>
+            <ModifierId>GODS_DOCK_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_DOCK_FOOD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Commercial Hub -->
+        <Row>
+            <ModifierId>GODS_BANK_ADDTRADEROUTE</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BANK_GOLD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BANK_DOUBLE_GOLD</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
+            <RunOnce>true</RunOnce>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Entertainment Complex -->
+        <Row>
+            <ModifierId>GODS_ARENA_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_ARENA_FOOD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Theater -->
+        <Row>
+            <ModifierId>GODS_THEATER_CULTURE</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Industrial Zone -->
+        <Row>
+            <ModifierId>GODS_WORKSHOP_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_WORKSHOP_FOOD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
         <!-- District: Aerodrome -->
+        <Row>
+            <ModifierId>GODS_AIRPORT_PRODUCTION</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_AIRPORT_FOOD</ModifierId>
+            <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
     </Modifiers>
     <ModifierArguments>
         <!-- District: City Center -->
@@ -488,11 +560,6 @@
             <ModifierId>GODS_CENTER_ADDGROWTH</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
-        </Row>
-        <Row>
-            <ModifierId>GODS_CENTER_ADDTRADEROUTE</ModifierId>
-            <Name>Amount</Name>
-            <Value>100</Value>
         </Row>
         <Row>
             <ModifierId>GODS_CENTER_GOLD</ModifierId>
@@ -555,29 +622,164 @@
             <Value>YIELD_SCIENCE</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
-            <Name>UnitType</Name>
-            <Value>UNIT_MODERN_ARMOR</Value>
-        </Row>
-        <Row>
-            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
-            <Name>Amount</Name>
-            <Value>1</Value>
-        </Row>
-        <Row>
             <ModifierId>GODS_CENTER_DOUBLE_GOLD</ModifierId>
             <Name>Amount</Name>
             <Value>200</Value>
         </Row>
         <!-- District: Encampment -->
+        <Row>
+            <ModifierId>GODS_BARRACKS_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BARRACKS_MODERN_ARMOR</ModifierId>
+            <Name>UnitType</Name>
+            <Value>UNIT_MODERN_ARMOR</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BARRACKS_MODERN_ARMOR</ModifierId>
+            <Name>Amount</Name>
+            <Value>1</Value>
+        </Row>
         <!-- District: Holy Site -->
+        <Row>
+            <ModifierId>GODS_TEMPLE_FAITH</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_TEMPLE_FAITH</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FAITH</Value>
+        </Row>
         <!-- District: Campus -->
+        <Row>
+            <ModifierId>GODS_LIBRARY_SCIENCE</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_LIBRARY_SCIENCE</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_SCIENCE</Value>
+        </Row>
         <!-- District: Harbor -->
+        <Row>
+            <ModifierId>GODS_DOCK_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_DOCK_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_DOCK_FOOD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_DOCK_FOOD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FOOD</Value>
+        </Row>
         <!-- District: Commercial Hub -->
+        <Row>
+            <ModifierId>GODS_BANK_ADDTRADEROUTE</ModifierId>
+            <Name>Amount</Name>
+            <Value>100</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BANK_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BANK_GOLD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_GOLD</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_BANK_DOUBLE_GOLD</ModifierId>
+            <Name>Amount</Name>
+            <Value>200</Value>
+        </Row>
         <!-- District: Entertainment Complex -->
+        <Row>
+            <ModifierId>GODS_ARENA_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_ARENA_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_ARENA_FOOD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_ARENA_FOOD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FOOD</Value>
+        </Row>
         <!-- District: Theater -->
+        <Row>
+            <ModifierId>GODS_THEATER_CULTURE</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_THEATER_CULTURE</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_CULTURE</Value>
+        </Row>
         <!-- District: Industrial Zone -->
+        <Row>
+            <ModifierId>GODS_WORKSHOP_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_WORKSHOP_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_WORKSHOP_FOOD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_WORKSHOP_FOOD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FOOD</Value>
+        </Row>
         <!-- District: Aerodrome -->
+        <Row>
+            <ModifierId>GODS_AIRPORT_PRODUCTION</ModifierId>
+            <Name>Amount</Name>
+            <Value>1000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_AIRPORT_PRODUCTION</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_PRODUCTION</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_AIRPORT_FOOD</ModifierId>
+            <Name>Amount</Name>
+            <Value>50000</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_AIRPORT_FOOD</ModifierId>
+            <Name>YieldType</Name>
+            <Value>YIELD_FOOD</Value>
+        </Row>
     </ModifierArguments>
     <BuildingModifiers>
         <!-- District: City Center -->
@@ -596,10 +798,6 @@
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_CENTER_ADDGROWTH</ModifierId>
-        </Row>
-        <Row>
-            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>COLOSSUS_ADDTRADEROUTE</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
@@ -627,20 +825,80 @@
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
-        </Row>
-        <Row>
-            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_CENTER_DOUBLE_GOLD</ModifierId>
         </Row>
         <!-- District: Encampment -->
+        <Row>
+            <BuildingType>BUILDING_GODS_BARRACKS</BuildingType>
+            <ModifierId>GODS_BARRACKS_ADJUST_GARRISON_STRENGTH</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_BARRACKS</BuildingType>
+            <ModifierId>GODS_BARRACKS_MODERN_ARMOR</ModifierId>
+        </Row>
         <!-- District: Holy Site -->
+        <Row>
+            <BuildingType>BUILDING_GODS_TEMPLE</BuildingType>
+            <ModifierId>GODS_TEMPLE_FAITH</ModifierId>
+        </Row>
         <!-- District: Campus -->
+        <Row>
+            <BuildingType>BUILDING_GODS_LIBRARY</BuildingType>
+            <ModifierId>GODS_LIBRARY_SCIENCE</ModifierId>
+        </Row>
         <!-- District: Harbor -->
+        <Row>
+            <BuildingType>BUILDING_GODS_DOCK</BuildingType>
+            <ModifierId>GODS_DOCK_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_DOCK</BuildingType>
+            <ModifierId>GODS_DOCK_FOOD</ModifierId>
+        </Row>
         <!-- District: Commercial Hub -->
+        <Row>
+            <BuildingType>BUILDING_GODS_BANK</BuildingType>
+            <ModifierId>GODS_BANK_ADDTRADEROUTE</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_BANK</BuildingType>
+            <ModifierId>GODS_BANK_GOLD</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_BANK</BuildingType>
+            <ModifierId>GODS_BANK_DOUBLE_GOLD</ModifierId>
+        </Row>
         <!-- District: Entertainment Complex -->
+        <Row>
+            <BuildingType>BUILDING_GODS_ARENA</BuildingType>
+            <ModifierId>GODS_ARENA_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_ARENA</BuildingType>
+            <ModifierId>GODS_ARENA_FOOD</ModifierId>
+        </Row>
         <!-- District: Theater -->
+        <Row>
+            <BuildingType>BUILDING_GODS_THEATER</BuildingType>
+            <ModifierId>GODS_THEATER_CULTURE</ModifierId>
+        </Row>
         <!-- District: Industrial Zone -->
+        <Row>
+            <BuildingType>BUILDING_GODS_WORKSHOP</BuildingType>
+            <ModifierId>GODS_WORKSHOP_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_WORKSHOP</BuildingType>
+            <ModifierId>GODS_WORKSHOP_FOOD</ModifierId>
+        </Row>
         <!-- District: Aerodrome -->
+        <Row>
+            <BuildingType>BUILDING_GODS_AIRPORT</BuildingType>
+            <ModifierId>GODS_AIRPORT_PRODUCTION</ModifierId>
+        </Row>
+        <Row>
+            <BuildingType>BUILDING_GODS_AIRPORT</BuildingType>
+            <ModifierId>GODS_AIRPORT_FOOD</ModifierId>
+        </Row>
     </BuildingModifiers>
 </GameData>
