@@ -13,7 +13,7 @@
     <SupportsMultiplayer>false</SupportsMultiplayer>
     <SupportsHotSeat>false</SupportsHotSeat>
     <CompatibleVersions>1.2,2.0</CompatibleVersions>
-    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><File>Gods_Arsenal_Gameplay.xml</File></UpdateDatabase><UpdateIcons id="Icons"><File>Gods_Arsenal_Icons.xml</File></UpdateIcons><UpdateText id="Text"><File>Gods_Arsenal_Text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Gameplay"><File>Gods_Arsenal_UnitAbilities.xml</File><File>Gods_Arsenal_Buildings.xml</File></UpdateDatabase><UpdateIcons id="Icons"><File>Gods_Arsenal_Icons.xml</File></UpdateIcons><UpdateText id="Text"><File>Gods_Arsenal_Text.xml</File></UpdateText></InGameActions>]]></InGameActionData>
     <AssemblyName>God's House</AssemblyName>
     <RootNamespace>God's House</RootNamespace>
     <Authors>mrlonis</Authors>
@@ -22,10 +22,13 @@
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Gods_Arsenal_Gameplay.xml" />
+    <Content Include="Gods_Arsenal_Buildings.xml" />
     <Content Include="Gods_Arsenal_Icons.xml" />
     <Content Include="Gods_Arsenal_Text.xml" />
     <Content Include="Gods_Arsenal.Art.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Gods_Arsenal_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
