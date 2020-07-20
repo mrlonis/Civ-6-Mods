@@ -6,81 +6,133 @@
 <!-- Last Modified On: 07/12/2020 -->
 <GameData>
     <Types>
-        <Row Type="BUILDING_GODS_HOUSE"
+        <!-- District: City Center -->
+        <Row Type="BUILDING_GODS_CENTER"
              Kind="KIND_BUILDING" />
+        <!-- District: Encampment -->
+        <Row Type="BUILDING_GODS_BARRACKS"
+            Kind="KIND_BUILDING" />
+        <!-- District: Holy Site -->
+        <Row Type="BUILDING_GODS_TEMPLE"
+            Kind="KIND_BUILDING" />
+        <!-- District: Campus -->
+        <Row Type="BUILDING_GODS_LIBRARY"
+            Kind="KIND_BUILDING" />
+        <!-- District: Harbor -->
+        <Row Type="BUILDING_GODS_DOCK"
+            Kind="KIND_BUILDING" />
+        <!-- District: Commercial Hub -->
+        <Row Type="BUILDING_GODS_BANK"
+            Kind="KIND_BUILDING" />
+        <!-- District: Entertainment Complex -->
+        <Row Type="BUILDING_GODS_ARENA"
+            Kind="KIND_BUILDING" />
+        <!-- District: Theater -->
+        <Row Type="BUILDING_GODS_THEATER"
+            Kind="KIND_BUILDING" />
+        <!-- District: Industrial Zone -->
+        <Row Type="BUILDING_GODS_WORKSHOP"
+            Kind="KIND_BUILDING" />
+        <!-- District: Aerodrome -->
+        <Row Type="BUILDING_GODS_AIRPORT"
+            Kind="KIND_BUILDING" />
     </Types>
     <Buildings>
-        <Row BuildingType="BUILDING_GODS_HOUSE"
-             Name="LOC_BUILDING_GODS_HOUSE"
+        <!-- District: City Center-->
+        <Row BuildingType="BUILDING_GODS_CENTER"
+             Name="LOC_BUILDING_GODS_CENTER"
              PrereqDistrict="DISTRICT_CITY_CENTER"
              PurchaseYield="YIELD_FAITH"
              Cost="10"
              AdvisorType="ADVISOR_GENERIC"
              Housing="10"
              CitizenSlots="1" />
+        <!-- District: Encampment -->
+        <!-- District: Holy Site -->
+        <!-- District: Campus -->
+        <!-- District: Harbor -->
+        <!-- District: Commercial Hub -->
+        <!-- District: Entertainment Complex -->
+        <!-- District: Theater -->
+        <!-- District: Industrial Zone -->
+        <!-- District: Aerodrome -->
     </Buildings>
     <Building_YieldChanges>
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <!-- District: City Center -->
+        <Row BuildingType="BUILDING_GODS_CENTER"
              YieldType="YIELD_FAITH"
              YieldChange="1"/>
+        <!-- District: Encampment -->
+        <!-- District: Holy Site -->
+        <!-- District: Campus -->
+        <!-- District: Harbor -->
+        <!-- District: Commercial Hub -->
+        <!-- District: Entertainment Complex -->
+        <!-- District: Theater -->
+        <!-- District: Industrial Zone -->
+        <!-- District: Aerodrome -->
     </Building_YieldChanges>
     <Building_GreatWorks>
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <!-- District: City Center -->
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_PALACE"
              NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_RELIC"
              NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_WRITING"
              NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_ART"
              NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
              NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_MUSIC"
              NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_HOUSE"
+        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_CATHEDRAL"
              NumSlots="10" />
+        <!-- District: Encampment -->
+        <!-- District: Holy Site -->
+        <!-- District: Campus -->
+        <!-- District: Harbor -->
+        <!-- District: Commercial Hub -->
+        <!-- District: Entertainment Complex -->
+        <!-- District: Theater -->
+        <!-- District: Industrial Zone -->
+        <!-- District: Aerodrome -->
     </Building_GreatWorks>
-    <!-- All bonuses are limited to human players only -->
     <Modifiers>
-        <!-- Adjust city garrison strength -->
+        <!-- District: City Center -->
         <Row>
             <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Adjust Builder Chargers-->
         <Row>
             <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
             <ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_BUILDER_CHARGES</ModifierType>
             <SubjectRequirementSetId>UNIT_IS_BUILDER</SubjectRequirementSetId>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Adjust City Appeal-->
         <Row>
             <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_APPEAL</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Adjust City Growth-->
         <Row>
             <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_GROWTH</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Adjust City Trade Route Capacity-->
         <Row>
             <ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Adjust City Yield-->
         <Row>
             <ModifierId>GODS_HOUSE_GOLD</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
@@ -111,7 +163,6 @@
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Grant Unit-->
         <Row>
             <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
@@ -119,7 +170,6 @@
             <Permanent>true</Permanent>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
-        <!--Multiply Treasury-->
         <Row>
             <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
@@ -127,39 +177,43 @@
             <Permanent>true</Permanent>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
+        <!-- District: Encampment -->
+        <!-- District: Holy Site -->
+        <!-- District: Campus -->
+        <!-- District: Harbor -->
+        <!-- District: Commercial Hub -->
+        <!-- District: Entertainment Complex -->
+        <!-- District: Theater -->
+        <!-- District: Industrial Zone -->
+        <!-- District: Aerodrome -->
     </Modifiers>
     <ModifierArguments>
-        <!-- Adjust city garrison strength -->
+        <!-- District: City Center -->
         <Row>
             <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
-        <!--Adjust Charges-->
         <Row>
             <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
             <Name>Amount</Name>
             <Value>10</Value>
         </Row>
-        <!--Adjust City Appeal-->
         <Row>
             <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
-        <!--Adjust City Growth-->
         <Row>
             <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
-        <!--Adjust City Trade Route Capacity-->
         <Row>
             <ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
             <Name>Amount</Name>
             <Value>100</Value>
         </Row>
-        <!--Adjust City Yield-->
         <Row>
             <ModifierId>GODS_HOUSE_GOLD</ModifierId>
             <Name>Amount</Name>
@@ -220,7 +274,6 @@
             <Name>YieldType</Name>
             <Value>YIELD_SCIENCE</Value>
         </Row>
-        <!--Grant Unit-->
         <Row>
             <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
             <Name>UnitType</Name>
@@ -231,73 +284,83 @@
             <Name>Amount</Name>
             <Value>1</Value>
         </Row>
-        <!--Multiply Treasury-->
         <Row>
             <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
             <Name>Amount</Name>
             <Value>200</Value>
         </Row>
+        <!-- District: Encampment -->
+        <!-- District: Holy Site -->
+        <!-- District: Campus -->
+        <!-- District: Harbor -->
+        <!-- District: Commercial Hub -->
+        <!-- District: Entertainment Complex -->
+        <!-- District: Theater -->
+        <!-- District: Industrial Zone -->
+        <!-- District: Aerodrome -->
     </ModifierArguments>
     <BuildingModifiers>
-        <!-- Adjust city garrison strength -->
+        <!-- District: City Center -->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
         </Row>
-        <!--Adjust Chargers-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
         </Row>
-        <!--Adjust City Growth-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
         </Row>
-        <!--Adjust City Growth-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
         </Row>
-        <!--Adjust City Trade Route Capacity-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>COLOSSUS_ADDTRADEROUTE</ModifierId>
         </Row>
-        <!--Adjust City Yield-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_GOLD</ModifierId>
         </Row>
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_FAITH</ModifierId>
         </Row>
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
         </Row>
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
         </Row>
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_FOOD</ModifierId>
         </Row>
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
         </Row>
-        <!--Grant Unit-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
         </Row>
-        <!--Multiply Treasury-->
         <Row>
-            <BuildingType>BUILDING_GODS_HOUSE</BuildingType>
+            <BuildingType>BUILDING_GODS_CENTER</BuildingType>
             <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
         </Row>
+        <!-- District: Encampment -->
+        <!-- District: Holy Site -->
+        <!-- District: Campus -->
+        <!-- District: Harbor -->
+        <!-- District: Commercial Hub -->
+        <!-- District: Entertainment Complex -->
+        <!-- District: Theater -->
+        <!-- District: Industrial Zone -->
+        <!-- District: Aerodrome -->
     </BuildingModifiers>
 </GameData>
