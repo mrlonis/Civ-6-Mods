@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Gods_Arsenal_UnitAbilities -->
+<!-- Author: mrlonis -->
+<!-- DateCreated: 07/20/2020 -->
+<!-- Last Modified By: mrlonis -->
+<!-- Last Modified On: 07/20/2020 -->
+<GameData>
+    <Types>
+        <!-- Building Assigned Abilities-->
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_GODS_DOCK_TRAINED_UNIT_XP"
+             Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP"
+             Kind="KIND_ABILITY"/>
+    </Types>
+    <TypeTags>
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Tag="CLASS_MELEE"/>
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Tag="CLASS_RANGED"/>
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Tag="CLASS_ANTI_CAVALRY"/>
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Tag="CLASS_LIGHT_CAVALRY"/>
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Tag="CLASS_HEAVY_CAVALRY"/>
+        <Row Type="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Tag="CLASS_SIEGE"/>
+        <Row Type="ABILITY_GODS_DOCK_TRAINED_UNIT_XP"
+             Tag="CLASS_NAVAL_MELEE"/>
+        <Row Type="ABILITY_GODS_DOCK_TRAINED_UNIT_XP"
+             Tag="CLASS_NAVAL_RANGED"/>
+        <Row Type="ABILITY_GODS_DOCK_TRAINED_UNIT_XP"
+             Tag="CLASS_NAVAL_RAIDER"/>
+        <Row Type="ABILITY_GODS_DOCK_TRAINED_UNIT_XP"
+             Tag="CLASS_NAVAL_CARRIER"/>
+        <Row Type="ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP"
+             Tag="CLASS_AIRCRAFT"/>
+    </TypeTags>
+    <UnitAbilities>
+        <Row UnitAbilityType="ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP"
+             Name="LOC_ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP_NAME"
+             Description="LOC_ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION"
+             Inactive="true"/>
+        <Row UnitAbilityType="ABILITY_GODS_DOCK_TRAINED_UNIT_XP"
+             Name="LOC_ABILITY_GODS_DOCK_TRAINED_UNIT_XP_NAME"
+             Description="LOC_ABILITY_GODS_DOCK_TRAINED_UNIT_XP_DESCRIPTION"
+             Inactive="true"/>
+        <Row UnitAbilityType="ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP"
+             Name="LOC_ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP_NAME"
+             Description="LOC_ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION"
+             Inactive="true"/>
+    </UnitAbilities>
+    <UnitAbilityModifiers>
+        <Row>
+            <UnitAbilityType>ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP</UnitAbilityType>
+            <ModifierId>GODS_BARRACKS_TRAINED_UNIT_XP</ModifierId>
+        </Row>
+        <Row>
+            <UnitAbilityType>ABILITY_GODS_DOCK_TRAINED_UNIT_XP</UnitAbilityType>
+            <ModifierId>GODS_DOCK_TRAINED_UNIT_XP</ModifierId>
+        </Row>
+        <Row>
+            <UnitAbilityType>ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP</UnitAbilityType>
+            <ModifierId>GODS_AIRPORT_TRAINED_AIRCRAFT_XP</ModifierId>
+        </Row>
+    </UnitAbilityModifiers>
+    <Modifiers>
+        <Row>
+            <ModifierId>GODS_BARRACKS_TRAINED_UNIT_XP</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER</ModifierType>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_DOCK_TRAINED_UNIT_XP</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER</ModifierType>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+        <Row>
+            <ModifierId>GODS_AIRPORT_TRAINED_AIRCRAFT_XP</ModifierId>
+            <ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_UNIT_EXPERIENCE_MODIFIER</ModifierType>
+            <Permanent>true</Permanent>
+            <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
+        </Row>
+    </Modifiers>
+    <ModifierArguments>
+        <Row>
+            <ModifierId>GODS_BARRACKS_TRAINED_UNIT_XP</ModifierId>
+            <Name>Amount</Name>
+            <Value>200</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_DOCK_TRAINED_UNIT_XP</ModifierId>
+            <Name>Amount</Name>
+            <Value>200</Value>
+        </Row>
+        <Row>
+            <ModifierId>GODS_AIRPORT_TRAINED_AIRCRAFT_XP</ModifierId>
+            <Name>Amount</Name>
+            <Value>200</Value>
+        </Row>
+    </ModifierArguments>
+</GameData>
