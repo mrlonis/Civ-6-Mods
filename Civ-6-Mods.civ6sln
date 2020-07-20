@@ -7,9 +7,9 @@ Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "Cheat Menu", "Cheat Menu\Ch
 EndProject
 Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "Cheat Menu - Units", "Cheat Menu - Units\Cheat Menu - Units.civ6proj", "{DFE1DB53-084A-4F9A-9ACE-2E778B68F0E1}"
 EndProject
-Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "God's House", "God's House\God's House.civ6proj", "{40FA4F22-2893-4BF7-BD13-2CF978F5023A}"
-EndProject
 Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "Map Editor - Cheat", "Map Editor - Cheat\Map Editor - Cheat.civ6proj", "{97968690-BB39-47B2-AD57-021238F1D5DF}"
+EndProject
+Project("{5DAE07AF-E217-45C1-8DE7-FF99D6011E8A}") = "God's Aresenal", "God's Arsenal\God's Aresenal.civ6proj", "{40FA4F22-2893-4BF7-BD13-2CF978F5023A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +20,10 @@ Global
 		{AF423F95-1397-4D6A-86C3-036947549E8F}.Default|Civ6.Build.0 = Default|Civ6
 		{DFE1DB53-084A-4F9A-9ACE-2E778B68F0E1}.Default|Civ6.ActiveCfg = Default|Civ6
 		{DFE1DB53-084A-4F9A-9ACE-2E778B68F0E1}.Default|Civ6.Build.0 = Default|Civ6
-		{40FA4F22-2893-4BF7-BD13-2CF978F5023A}.Default|Civ6.ActiveCfg = Default|Civ6
-		{40FA4F22-2893-4BF7-BD13-2CF978F5023A}.Default|Civ6.Build.0 = Default|Civ6
 		{97968690-BB39-47B2-AD57-021238F1D5DF}.Default|Civ6.ActiveCfg = Default|Civ6
 		{97968690-BB39-47B2-AD57-021238F1D5DF}.Default|Civ6.Build.0 = Default|Civ6
+		{40FA4F22-2893-4BF7-BD13-2CF978F5023A}.Default|Civ6.ActiveCfg = Default|Civ6
+		{40FA4F22-2893-4BF7-BD13-2CF978F5023A}.Default|Civ6.Build.0 = Default|Civ6
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
