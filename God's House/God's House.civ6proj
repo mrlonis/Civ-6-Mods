@@ -10,7 +10,7 @@
     <Description>Gives Gold, Faith, Food, Production, Science, and more every turn!
 
 NOW WITH PLAYER ONLY GAINS - No more pesky AI getting it too.</Description>
-    <AffectsSavedGames>false</AffectsSavedGames>
+    <AffectsSavedGames>true</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>false</SupportsMultiplayer>
     <SupportsHotSeat>false</SupportsHotSeat>
