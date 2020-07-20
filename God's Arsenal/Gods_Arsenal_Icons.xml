@@ -9,82 +9,82 @@
         <!-- District: City Center-->
         <!-- ICON_BUILDING_CASTLE -->
         <Row Name="ICON_BUILDING_GODS_CENTER"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="17"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="17"/>
         <Row Name="ICON_BUILDING_GODS_CENTER_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="17"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="17"/>
         <!-- District: Encampment -->
         <!-- ICON_BUILDING_BARRACKS -->
         <Row Name="ICON_BUILDING_GODS_BARRACKS"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="2"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="2"/>
         <Row Name="ICON_BUILDING_GODS_BARRACKS_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="2"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="2"/>
         <!-- District: Holy Site -->
         <!-- ICON_BUILDING_TEMPLE -->
         <Row Name="ICON_BUILDING_GODS_TEMPLE"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="14"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="14"/>
         <Row Name="ICON_BUILDING_GODS_TEMPLE_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="14"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="14"/>
         <!-- District: Campus -->
         <!-- ICON_BUILDING_LIBRARY -->
         <Row Name="ICON_BUILDING_GODS_LIBRARY"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="4"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="4"/>
         <Row Name="ICON_BUILDING_GODS_LIBRARY_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="4"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="4"/>
         <!-- District: Harbor -->
         <!-- ICON_BUILDING_SHIPYARD -->
         <Row Name="ICON_BUILDING_GODS_DOCK"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="22"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="22"/>
         <Row Name="ICON_BUILDING_GODS_DOCK_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="22"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="22"/>
         <!-- District: Commercial Hub -->
         <!-- ICON_BUILDING_BANK -->
         <Row Name="ICON_BUILDING_GODS_BANK"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="23"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="23"/>
         <Row Name="ICON_BUILDING_GODS_BANK_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="23"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="23"/>
         <!-- District: Entertainment Complex -->
         <!-- ICON_BUILDING_ARENA -->
         <Row Name="ICON_BUILDING_GODS_ARENA"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="8"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="8"/>
         <Row Name="ICON_BUILDING_GODS_ARENA_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="8"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="8"/>
         <!-- District: Theater -->
         <!-- ICON_BUILDING_AMPHITHEATER -->
         <Row Name="ICON_BUILDING_GODS_THEATER"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="16"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="16"/>
         <Row Name="ICON_BUILDING_GODS_THEATER_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="16"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="16"/>
         <!-- District: Industrial Zone -->
         <!-- ICON_BUILDING_FACTORY -->
         <Row Name="ICON_BUILDING_GODS_WORKSHOP"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="26"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="26"/>
         <Row Name="ICON_BUILDING_GODS_WORKSHOP_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="26"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="26"/>
         <!-- District: Aerodrome -->
         <!-- ICON_BUILDING_AIRPORT -->
         <Row Name="ICON_BUILDING_GODS_AIRPORT"
-            Atlas="ICON_ATLAS_BUILDINGS"
-            Index="38"/>
+             Atlas="ICON_ATLAS_BUILDINGS"
+             Index="38"/>
         <Row Name="ICON_BUILDING_GODS_AIRPORT_FOW"
-            Atlas="ICON_ATLAS_BUILDINGS_FOW"
-            Index="38"/>
+             Atlas="ICON_ATLAS_BUILDINGS_FOW"
+             Index="38"/>
     </IconDefinitions>
 </GameData>
