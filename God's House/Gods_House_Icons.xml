@@ -3,12 +3,76 @@
 <!-- Author: mrlonis -->
 <!-- DateCreated: 07/11/2020 -->
 <!-- Last Modified By: mrlonis -->
-<!-- Last Modified On: 07/12/2020 -->
+<!-- Last Modified On: 07/20/2020 -->
 <GameData>
-    <!-- For simplicity, reuse an existing icon. -->
+    <!-- District: City Center-->
     <IconDefinitions>
-        <Row Name="ICON_BUILDING_GODS_HOUSE"
+        <Row Name="ICON_BUILDING_GODS_CENTER"
              Atlas="ICON_ATLAS_BUILDINGS"
-             Index="26"/>
+             Index="17"/>
+             <!-- ICON_BUILDING_CASTLE -->
+    </IconDefinitions>
+    <!-- District: Encampment -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_BARRACKS"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="2"/>
+        <!-- ICON_BUILDING_BARRACKS -->
+    </IconDefinitions>
+    <!-- District: Holy Site -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_TEMPLE"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="14"/>
+        <!-- ICON_BUILDING_TEMPLE -->
+    </IconDefinitions>
+    <!-- District: Campus -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_LIBRARY"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="4"/>
+        <!-- ICON_BUILDING_LIBRARY -->
+    </IconDefinitions>
+    <!-- District: Harbor -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_DOCK"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="22"/>
+        <!-- ICON_BUILDING_SHIPYARD -->
+    </IconDefinitions>
+    <!-- District: Commercial Hub -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_BANK"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="23"/>
+        <!-- ICON_BUILDING_BANK -->
+    </IconDefinitions>
+    <!-- District: Entertainment Complex -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_ARENA"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="8"/>
+        <!-- ICON_BUILDING_ARENA -->
+    </IconDefinitions>
+    <!-- District: Theater -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_THEATER"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="16"/>
+        <!-- ICON_BUILDING_AMPHITHEATER -->
+    </IconDefinitions>
+    <!-- District: Industrial Zone -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_WORKSHOP"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="26"/>
+        <!-- ICON_BUILDING_FACTORY -->
+    </IconDefinitions>
+    <!-- District: Aerodrome -->
+    <IconDefinitions>
+        <Row Name="ICON_BUILDING_GODS_AIRPORT"
+            Atlas="ICON_ATLAS_BUILDINGS"
+            Index="38"/>
+        <!-- ICON_BUILDING_AIRPORT -->
     </IconDefinitions>
 </GameData>
