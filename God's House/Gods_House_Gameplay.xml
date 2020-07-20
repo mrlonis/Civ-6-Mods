@@ -45,17 +45,99 @@
              PurchaseYield="YIELD_FAITH"
              Cost="10"
              AdvisorType="ADVISOR_GENERIC"
-             Housing="10"
-             CitizenSlots="1" />
+             Housing="5"
+             Entertainment="5"
+             CitizenSlots="5" />
         <!-- District: Encampment -->
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            Name="LOC_BUILDING_GODS_BARRACKS"
+            PrereqDistrict="DISTRICT_ENCAMPMENT"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Holy Site -->
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            Name="LOC_BUILDING_GODS_TEMPLE"
+            PrereqDistrict="DISTRICT_HOLY_SITE"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Campus -->
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            Name="LOC_BUILDING_GODS_LIBRARY"
+            PrereqDistrict="DISTRICT_CAMPUS"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Harbor -->
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            Name="LOC_BUILDING_GODS_DOCK"
+            PrereqDistrict="DISTRICT_HARBOR"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Commercial Hub -->
+        <Row BuildingType="BUILDING_GODS_BANK"
+            Name="LOC_BUILDING_GODS_BANK"
+            PrereqDistrict="DISTRICT_COMMERCIAL_HUB"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Entertainment Complex -->
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            Name="LOC_BUILDING_GODS_ARENA"
+            PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Theater -->
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            Name="LOC_BUILDING_GODS_THEATER"
+            PrereqDistrict="DISTRICT_THEATER"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Industrial Zone -->
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            Name="LOC_BUILDING_GODS_WORKSHOP"
+            PrereqDistrict="DISTRICT_INDUSTRIAL_ZONE"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
         <!-- District: Aerodrome -->
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            Name="LOC_BUILDING_GODS_AIRPORT"
+            PrereqDistrict="DISTRICT_AERODROME"
+            PurchaseYield="YIELD_FAITH"
+            Cost="10"
+            AdvisorType="ADVISOR_GENERIC"
+            Housing="5"
+            Entertainment="5"
+            CitizenSlots="5" />
     </Buildings>
     <Building_YieldChanges>
         <!-- District: City Center -->
@@ -108,70 +190,70 @@
     <Modifiers>
         <!-- District: City Center -->
         <Row>
-            <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <ModifierId>GODS_CENTER_ADJUST_GARRISON_STRENGTH</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_INNER_DEFENSE</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
+            <ModifierId>GODS_CENTER_ADJUST_BUILDER_CHARGES</ModifierId>
             <ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_BUILDER_CHARGES</ModifierType>
             <SubjectRequirementSetId>UNIT_IS_BUILDER</SubjectRequirementSetId>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
+            <ModifierId>GODS_CENTER_ADDAPPEAL</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_APPEAL</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
+            <ModifierId>GODS_CENTER_ADDGROWTH</ModifierId>
             <ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_GROWTH</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
+            <ModifierId>GODS_CENTER_ADDTRADEROUTE</ModifierId>
             <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_GOLD</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <ModifierId>GODS_CENTER_FAITH</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <ModifierId>GODS_CENTER_CULTURE</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <ModifierId>GODS_CENTER_PRODUCTION</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <ModifierId>GODS_CENTER_FOOD</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <ModifierId>GODS_CENTER_SCIENCE</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
             <ModifierType>MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY</ModifierType>
             <RunOnce>true</RunOnce>
             <Permanent>true</Permanent>
             <OwnerRequirementSetId>PLAYER_IS_HUMAN</OwnerRequirementSetId>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_DOUBLE_GOLD</ModifierId>
             <ModifierType>MODIFIER_PLAYER_MULTIPLY_TREASURY</ModifierType>
             <RunOnce>true</RunOnce>
             <Permanent>true</Permanent>
@@ -190,102 +272,102 @@
     <ModifierArguments>
         <!-- District: City Center -->
         <Row>
-            <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <ModifierId>GODS_CENTER_ADJUST_GARRISON_STRENGTH</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
+            <ModifierId>GODS_CENTER_ADJUST_BUILDER_CHARGES</ModifierId>
             <Name>Amount</Name>
             <Value>10</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
+            <ModifierId>GODS_CENTER_ADDAPPEAL</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
+            <ModifierId>GODS_CENTER_ADDGROWTH</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_ADDTRADEROUTE</ModifierId>
+            <ModifierId>GODS_CENTER_ADDTRADEROUTE</ModifierId>
             <Name>Amount</Name>
             <Value>100</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_GOLD</ModifierId>
             <Name>Amount</Name>
             <Value>50000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_GOLD</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_GOLD</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <ModifierId>GODS_CENTER_FAITH</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <ModifierId>GODS_CENTER_FAITH</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_FAITH</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <ModifierId>GODS_CENTER_CULTURE</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <ModifierId>GODS_CENTER_CULTURE</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_CULTURE</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <ModifierId>GODS_CENTER_PRODUCTION</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <ModifierId>GODS_CENTER_PRODUCTION</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_PRODUCTION</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <ModifierId>GODS_CENTER_FOOD</ModifierId>
             <Name>Amount</Name>
             <Value>50000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <ModifierId>GODS_CENTER_FOOD</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_FOOD</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <ModifierId>GODS_CENTER_SCIENCE</ModifierId>
             <Name>Amount</Name>
             <Value>1000</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <ModifierId>GODS_CENTER_SCIENCE</ModifierId>
             <Name>YieldType</Name>
             <Value>YIELD_SCIENCE</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
             <Name>UnitType</Name>
             <Value>UNIT_MODERN_ARMOR</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
             <Name>Amount</Name>
             <Value>1</Value>
         </Row>
         <Row>
-            <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_DOUBLE_GOLD</ModifierId>
             <Name>Amount</Name>
             <Value>200</Value>
         </Row>
@@ -303,19 +385,19 @@
         <!-- District: City Center -->
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_ADJUST_GARRISON_STRENGTH</ModifierId>
+            <ModifierId>GODS_CENTER_ADJUST_GARRISON_STRENGTH</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_ADJUST_BUILDER_CHARGES</ModifierId>
+            <ModifierId>GODS_CENTER_ADJUST_BUILDER_CHARGES</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_ADDAPPEAL</ModifierId>
+            <ModifierId>GODS_CENTER_ADDAPPEAL</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_ADDGROWTH</ModifierId>
+            <ModifierId>GODS_CENTER_ADDGROWTH</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
@@ -323,35 +405,35 @@
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_GOLD</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_FAITH</ModifierId>
+            <ModifierId>GODS_CENTER_FAITH</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_CULTURE</ModifierId>
+            <ModifierId>GODS_CENTER_CULTURE</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_PRODUCTION</ModifierId>
+            <ModifierId>GODS_CENTER_PRODUCTION</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_FOOD</ModifierId>
+            <ModifierId>GODS_CENTER_FOOD</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_SCIENCE</ModifierId>
+            <ModifierId>GODS_CENTER_SCIENCE</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_MODERN_ARMOR</ModifierId>
+            <ModifierId>GODS_CENTER_MODERN_ARMOR</ModifierId>
         </Row>
         <Row>
             <BuildingType>BUILDING_GODS_CENTER</BuildingType>
-            <ModifierId>GODS_HOUSE_DOUBLE_GOLD</ModifierId>
+            <ModifierId>GODS_CENTER_DOUBLE_GOLD</ModifierId>
         </Row>
         <!-- District: Encampment -->
         <!-- District: Holy Site -->
