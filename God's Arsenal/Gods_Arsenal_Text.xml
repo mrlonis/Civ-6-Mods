@@ -21,120 +21,147 @@
         </Row>
         <!-- District: Encampment -->
         <Row Tag="LOC_BUILDING_GODS_BARRACKS"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Barracks</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_BARRACKS_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Barracks can house Angels for usage during battle.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_BARRACKS_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>Militiamen had homes, had jobs, and fed and clothed themselves, waging war only when called out by the government; professional soldiers had no homes, war was their occupation, and they got their victuals and spiffy uniforms from the government. Once writing was invented, professional armies were possible (along with most everything else, including kings and civilizations). Since they didn’t have homes as such, the barracks housed them … usually near the center of town so the soldiers could react to any threat, external or internal. Effectively, the barracks were permanent camps, with such amenities as training grounds, bath rooms, medical facilities, mess halls and gymnasia added. Often these barracks were at least minimally fortified, just in case of trouble. Be it ever so humble, home is where the heart is … in this case, war.</Text>
         </Row>
         <!-- District: Holy Site -->
         <Row Tag="LOC_BUILDING_GODS_TEMPLE"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Temple</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_TEMPLE_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Temple is for communicating directly with God.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_TEMPLE_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>A temple is that structure reserved for spiritual activities – prayer, communion, sacrifice, and the like – devoted to a deity. Virtually every organized religion has temples of some sort; unlike shrines, these are planned piety, the power of God made manifest. Temples are also business concerns, what with all the tithes and donations, and so serve to feed, clothe, and support the priests, acolytes, vestal virgins, monks, rabbis, etc. The oldest known temples, found in Mesopotamia, date from the 10th Century BC and are simple affairs. But over time temples became ever more elaborate and magnificent, and had a significant impact on civilization – such as the Temple of Karnak in Thebes, the Parthenon in Athens, the Mahabodhi Temple in Bihar, or the Temple of the Church of Jesus Christ of Latter-day Saints in Salt Lake.</Text>
         </Row>
         <!-- District: Campus -->
         <Row Tag="LOC_BUILDING_GODS_LIBRARY"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Library</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_LIBRARY_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God' Library is for studying the divine.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_LIBRARY_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>Once literacy fastened on civilization, it was inevitable that reading materials (books, periodicals, maps, newspapers, scrolls, tablets, documents of all sorts) should be gathered in one place – a library. The first libraries, those of Sumer dating back to approximately 2600 BC, were archives of clay tablets covered in cuneiform script. Over 30 thousand clay tablets have been unearthed in the Library of Ashurbanipal in Nineveh, including the Epic of Gilgamesh. The Library of Alexandria was the greatest and most significant library in the classical world, but it was burned – a fate most great libraries suffer, it seems. While Europe plunged into a Dark Age, libraries flourished under the Muslim Arabs, whose development of papermaking helped considerably in their acquisition of texts from the known world. Although many of these historical libraries were open to all, the foundation of free, public libraries came with the British Public Libraries Act of 1850, a boon to the literate (about 76% in 1870) no matter their low birth.</Text>
         </Row>
         <!-- District: Harbor -->
         <Row Tag="LOC_BUILDING_GODS_DOCK"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Dock</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_DOCK_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Dock is a pretty dank dock.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_DOCK_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>The earliest known dockyards – dating c. 2400 BC - have been found in the ruins of Lothal in the state of Gujarat, India. Naupactus means “shipyard” in Greek; it is not surprising that that ancient city was known for building warships. Every nation with pretentions of being an empire had its shipyards. Ships were one of the first things to be mass produced; centuries before the wondrous Industrial Revolution, the Arsenal in Venice was able to produce a merchant or war ship in a day, using pre-manufactured and standardized parts on an assembly line. With the advent of iron and steel vessels, shipyards became more like factories than ever, with massive drydocks to build the greatest ocean-going vessels ever … but it took more than a day. At the sprawling Harland &amp; Wolff shipyard in Belfast, the RMS Titanic was laid down in March 1909 but not launched until May 1911, with nearly a year still until completion and its fateful maiden voyage.</Text>
         </Row>
         <!-- District: Commercial Hub -->
         <Row Tag="LOC_BUILDING_GODS_BANK"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Bank</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_BANK_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Bank delivers immense Gold to whomever can claim it.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_BANK_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>Although there had been money-lenders and treasuries before (money, after all, greases the wheels of civilization), banking begins in early Renaissance Italy, in the rich cities of the north such as Genoa, Venice, Florence, Siena and Lucca. During the 14th Century, already wealthy, avaricious families – the Bardi, de Medici, Peruzzi, Cerchi, Gondi and others – not only dominated the commercial banking in their home city-states but established branches across Europe. The oldest bank still in operation is the Monte dei Paschi in Siena, operating continuously since 1472 AD. Banking spread across the Holy Roman Empire and the northern European nations by 1600, and the Europeans took the practice with them when they set out to colonize the world. Although the details have changed dramatically with technology, the basics of banking profits remain the same: checking and savings fees, loans and credit cards, currency exchanges, fund management, and so forth.</Text>
         </Row>
         <!-- District: Entertainment Complex -->
         <Row Tag="LOC_BUILDING_GODS_ARENA"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Arena</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_ARENA_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Arena is where humanity entertains God in with games.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_ARENA_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>An indoor amphitheater … an “arena,” from the Latin harena, a fine sand that was very good at absorbing blood in colosseums across the Roman Empire. These days, that has been forgotten by all those who go to arenas to watch sporting events, concerts, and other performances (such as political speeches). The most distinguishing feature of an arena is that the performance area is the lowest point in the main space, with seating for spectators banked up around it. Since the ancients had some difficulty roofing over large areas, it is unknown what might be termed civilization’s first indoor arena, although the famed Colosseum had retractable awnings to cover the spectators’ area. Currently the largest arena in the world is the Philippine Arena in Bocaue, seating about 55 thousand. But likely the best known is Madison Square Garden in Manhattan, fourth of that name, the first opening in 1879 AD under lease to P.T. Barnum. The current Garden, seating between 18 and 20 thousand depending on event, opened in 1968 and has been home to heartache and history ever since.</Text>
         </Row>
         <!-- District: Theater -->
         <Row Tag="LOC_BUILDING_GODS_THEATER"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Theater</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_THEATER_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Theater is a human created chamber meant to entertain God with humanity's finest arts and culture.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_THEATER_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>When bread and circuses didn’t keep the masses happy, there was always the theater to distract them. An amphitheater is an outdoor arena (modern usage of the term is rather lax) that serves as a venue for performances, sporting events and public speeches. Although there had certainly been public spectacles in various places before, these tended to be staged ad hoc. But when the Greeks began writing plays around 532 BC, they built small, open-air structures (called theatrons) in which to perform these; the Romans, always looking to build bigger and better, created the amphitheater. The Romans built them all over their conquered lands, for every frontier outpost wanted to be civilized. The practice spread outward from the empire to other places, for amphitheaters were great places to stage plays, gladiatorial and Olympic Games, religious spectacles, executions, political debates, concerts, and all manner of other entertainments.</Text>
         </Row>
         <!-- District: Industrial Zone -->
         <Row Tag="LOC_BUILDING_GODS_WORKSHOP"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Workshop</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_WORKSHOP_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Workshop is where God crafts heavenly objects for our usage.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_WORKSHOP_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>The Industrial Revolution came upon civilization, and all those things once made by hand are soon made in factories… and in great quantities. The workshops, where master craftsmen proudly made things by hand, gave way to the assembly line and the mass production of standardized products. The Englishman Richard Arkwright is credited with creating the prototype for the modern factory; in 1769 he patented the “water frame,” a water-powered spinning device, and built Cromford Mill in Derbyshire. In the process, he replaced skilled workers (on spinning wheels) with unskilled migrants who could produce more yarn quicker (albeit of poorer quality); in effect, Arkwright made workers a replaceable commodity in his plant. Soon enough, others copied the formula, and it was applied to other industries as technology brought steam, and then electricity, to the workshops. The final step in the industrialization of the workplace: Henry Ford revolutionized factory production with the first assembly line in 1913, capable of producing a Model T Ford using interchangeable parts in 93 minutes.</Text>
         </Row>
         <!-- District: Aerodrome -->
         <Row Tag="LOC_BUILDING_GODS_AIRPORT"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Airport</Text>
         </Row>
         <Row Tag="LOC_BUILDING_GODS_AIRPORT_DESCRIPTION"
-            Language="en_US">
+             Language="en_US">
             <Text>God's Airport is God's means of travelling between Earth and Heaven.</Text>
         </Row>
         <Row Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_GODS_AIRPORT_CHAPTER_HISTORY_PARA_1"
-            Language="en_US">
+             Language="en_US">
             <Text>Technically, an “airport” is any sort of location where airplanes, helicopters, blimps, or other aircraft can take off and land. However, in common usage an airport is a complex for commercial passenger aircraft, consisting of runways, control towers, hangers, terminals, emergency facilities and even parking structures. Man’s tendency to be in a hurry has made airports an inherent part of every city landscape (although most commercial airports are now located well away from the city, given the noise and pollution). Prior to 1930, most airports were small airfields or aerodromes, with runways of less than 2000 feet. In 1939 busy La Guardia in New York City handled nearly a quarter million passengers a month; the most recent statistics for airport passenger traffic list Hartsfield-Jackson in Atlanta as the world’s busiest, with over 92 million passing through it in 2011.</Text>
+        </Row>
+        <!-- Unit Ability: -->
+        <Row Tag="LOC_ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP_NAME"
+             Language="en_US">
+            <Text>God's Barracks Unit XP</Text>
+        </Row>
+        <Row Tag="LOC_ABILITY_GODS_BARRACKS_TRAINED_UNIT_XP_DESCRIPTION"
+             Language="en_US">
+            <Text>+200% Earned experience from God's Barracks</Text>
+        </Row>
+        <!-- Unit Ability: -->
+        <Row Tag="LOC_ABILITY_GODS_DOCK_TRAINED_UNIT_XP_NAME"
+             Language="en_US">
+            <Text>God's Dock Unit XP</Text>
+        </Row>
+        <Row Tag="LOC_ABILITY_GODS_DOCK_TRAINED_UNIT_XP_DESCRIPTION"
+             Language="en_US">
+            <Text>+200% Earned experience from God's Dock</Text>
+        </Row>
+        <!-- Unit Ability: -->
+        <Row Tag="LOC_ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP_NAME"
+             Language="en_US">
+            <Text>God's Airport Aircraft XP</Text>
+        </Row>
+        <Row Tag="LOC_ABILITY_GODS_AIRPORT_TRAINED_AIRCRAFT_XP_DESCRIPTION"
+             Language="en_US">
+            <Text>+200% Earned experience from God's Airport</Text>
         </Row>
     </LocalizedText>
 </GameData>
