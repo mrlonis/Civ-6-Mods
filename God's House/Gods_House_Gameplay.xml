@@ -142,50 +142,248 @@
     <Building_YieldChanges>
         <!-- District: City Center -->
         <Row BuildingType="BUILDING_GODS_CENTER"
-             YieldType="YIELD_FAITH"
+             YieldType="YIELD_FOOD"
              YieldChange="1"/>
         <!-- District: Encampment -->
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            YieldType="YIELD_FOOD"
+            YieldChange="1"/>
         <!-- District: Holy Site -->
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            YieldType="YIELD_FAITH"
+            YieldChange="1"/>
         <!-- District: Campus -->
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            YieldType="YIELD_SCIENCE"
+            YieldChange="1"/>
         <!-- District: Harbor -->
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            YieldType="YIELD_FOOD"
+            YieldChange="1"/>
         <!-- District: Commercial Hub -->
+        <Row BuildingType="BUILDING_GODS_BANK"
+            YieldType="YIELD_GOLD"
+            YieldChange="1"/>
         <!-- District: Entertainment Complex -->
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            YieldType="YIELD_FOOD"
+            YieldChange="1"/>
         <!-- District: Theater -->
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            YieldType="YIELD_CULTURE"
+            YieldChange="1"/>
         <!-- District: Industrial Zone -->
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            YieldType="YIELD_PRODUCTION"
+            YieldChange="1"/>
         <!-- District: Aerodrome -->
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            YieldType="YIELD_FOOD"
+            YieldChange="1"/>
     </Building_YieldChanges>
+    <Building_GreatPersonPoints>
+        <!-- District: City Center -->
+        <Row BuildingType="BUILDING_GODS_CENTER"
+            GreatPersonClassType="GREAT_PERSON_CLASS_WRITER"
+            PointsPerTurn="1"/>
+        <!-- District: Encampment -->
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL"
+            PointsPerTurn="1"/>
+        <!-- District: Holy Site -->
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET"
+            PointsPerTurn="1"/>
+        <!-- District: Campus -->
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST"
+            PointsPerTurn="1"/>
+        <!-- District: Harbor -->
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            GreatPersonClassType="GREAT_PERSON_CLASS_ADMIRAL"
+            PointsPerTurn="1"/>
+        <!-- District: Commercial Hub -->
+        <Row BuildingType="BUILDING_GODS_BANK"
+            GreatPersonClassType="GREAT_PERSON_CLASS_MERCHANT"
+            PointsPerTurn="1"/>
+        <!-- District: Entertainment Complex -->
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            GreatPersonClassType="GREAT_PERSON_CLASS_MUSICIAN"
+            PointsPerTurn="1"/>
+        <!-- District: Theater -->
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST"
+            PointsPerTurn="1"/>
+        <!-- District: Industrial Zone -->
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            GreatPersonClassType="GREAT_PERSON_CLASS_ENGINEER"
+            PointsPerTurn="1"/>
+        <!-- District: Aerodrome -->
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            GreatPersonClassType="GREAT_PERSON_CLASS_GENERAL"
+            PointsPerTurn="1"/>
+    </Building_GreatPersonPoints>
     <Building_GreatWorks>
         <!-- District: City Center -->
         <Row BuildingType="BUILDING_GODS_CENTER"
-             GreatWorkSlotType="GREATWORKSLOT_PALACE"
-             NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_RELIC"
-             NumSlots="10" />
+             NumSlots="1" />
         <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_WRITING"
-             NumSlots="10" />
+             NumSlots="1" />
         <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_ART"
-             NumSlots="10" />
+             NumSlots="1" />
         <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
-             NumSlots="10" />
+             NumSlots="1" />
         <Row BuildingType="BUILDING_GODS_CENTER"
              GreatWorkSlotType="GREATWORKSLOT_MUSIC"
-             NumSlots="10" />
-        <Row BuildingType="BUILDING_GODS_CENTER"
-             GreatWorkSlotType="GREATWORKSLOT_CATHEDRAL"
-             NumSlots="10" />
+             NumSlots="1" />
         <!-- District: Encampment -->
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BARRACKS"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Holy Site -->
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_TEMPLE"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Campus -->
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_LIBRARY"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Harbor -->
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_DOCK"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Commercial Hub -->
+        <Row BuildingType="BUILDING_GODS_BANK"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BANK"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BANK"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BANK"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_BANK"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Entertainment Complex -->
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_ARENA"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Theater -->
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_THEATER"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Industrial Zone -->
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_WORKSHOP"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
         <!-- District: Aerodrome -->
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            GreatWorkSlotType="GREATWORKSLOT_RELIC"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            GreatWorkSlotType="GREATWORKSLOT_WRITING"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            GreatWorkSlotType="GREATWORKSLOT_ART"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            GreatWorkSlotType="GREATWORKSLOT_ARTIFACT"
+            NumSlots="1" />
+        <Row BuildingType="BUILDING_GODS_AIRPORT"
+            GreatWorkSlotType="GREATWORKSLOT_MUSIC"
+            NumSlots="1" />
     </Building_GreatWorks>
     <Modifiers>
         <!-- District: City Center -->
