@@ -31,9 +31,6 @@ Cheat actions:
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Cheat_Menu_Units.Art.xml">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Cheat_Menu_Units_Base.lua">
       <SubType>Content</SubType>
     </Content>
@@ -47,6 +44,9 @@ Cheat actions:
       <SubType>Content</SubType>
     </Content>
     <Content Include="Cheat_Menu_Units_Minibar_Import_DupDlg.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Cheat_Menu_Units.Art.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>
