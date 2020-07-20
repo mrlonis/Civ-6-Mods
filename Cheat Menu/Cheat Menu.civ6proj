@@ -28,15 +28,15 @@
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Cheat_Menu.Art.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Text" />
     <Folder Include="Script" />
     <Folder Include="Popups" />
     <Folder Include="Panels" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cheat_Menu.Art.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Panels\Cheat_Menu_Functions.lua">
       <SubType>Content</SubType>
     </Content>
