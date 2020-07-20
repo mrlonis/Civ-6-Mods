@@ -26,9 +26,6 @@
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Map_Editor.Art.xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Art\MapEditorRiverE.dds">
       <SubType>Content</SubType>
     </Content>
@@ -66,6 +63,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Art\MapEditorTopBarButton.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Map_Editor.Art.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Map_Editor_Gameplay.lua">
