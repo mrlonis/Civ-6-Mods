@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>Cheat Menu - Units</Name>
+    <Name>Cheat Menu - [COLOR_Civ6Yellow]Units[ENDCOLOR]</Name>
     <Guid>7297e337-9ebc-4675-a61f-403f525ca01c</Guid>
     <ProjectGuid>dfe1db53-084a-4f9a-9ace-2e778b68f0e1</ProjectGuid>
     <ModVersion>1</ModVersion>
