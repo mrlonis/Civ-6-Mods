@@ -7,7 +7,9 @@
     <ProjectGuid>40fa4f22-2893-4bf7-bd13-2cf978f5023a</ProjectGuid>
     <ModVersion>1</ModVersion>
     <Teaser>You Can't Loose</Teaser>
-    <Description>Gives Gold, Faith, Food, Production, Science, and more every turn![NEWLINE][NEWLINE]NOW WITH PLAYER ONLY GAINS - No more pesky AI getting it too.</Description>
+    <Description>Gives Gold, Faith, Food, Production, Science, and more every turn!
+
+NOW WITH PLAYER ONLY GAINS - No more pesky AI getting it too.</Description>
     <AffectsSavedGames>true</AffectsSavedGames>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
     <SupportsMultiplayer>false</SupportsMultiplayer>
