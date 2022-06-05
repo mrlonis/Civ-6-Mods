@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>Cheat Map Editor</Name>
+    <Guid>f5aa64aa-b8ec-4c7e-b71c-345d458a84ba</Guid>
+    <ProjectGuid>97968690-bb39-47b2-ad57-021238f1d5df</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Allows to change terrain type, features, improvements and resources.</Teaser>
+    <Description>Adds a new button in top right corner of the window near the Civilopedia button that allows the player to change terrain type, features, improvements and resources.
+
+- May need to Save and Load game to update visuals.
+- No validation checks are implemented so be careful with wild terrain/features/resources/improvements combinations.</Description>
+    <Authors>mrlonis</Authors>
+    <SpecialThanks>_Zur13_, Gedemon, Mockingcrow, Zyxpsilon, &amp; GOROH_K</SpecialThanks>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>false</SupportsMultiplayer>
+    <SupportsHotSeat>false</SupportsHotSeat>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+    <AssemblyName>Map Editor - Cheat</AssemblyName>
+    <RootNamespace>Map Editor - Cheat</RootNamespace>
+    <InGameActionData><![CDATA[<InGameActions><AddGameplayScripts id="Main"><File priority="6">CTE_Gameplay.lua</File><File priority="9">CME_WonderGen.lua</File></AddGameplayScripts><AddUserInterfaces id="UI"><Properties><Context>InGame</Context><LoadOrder>99000</LoadOrder></Properties><File>CTE_UI.xml</File></AddUserInterfaces><ImportFiles id="CmeImport"><File>Art/CmeRiverE.dds</File><File>Art/CmeRiverED1.dds</File><File>Art/CmeRiverED2.dds</File><File>Art/CmeRiverSE.dds</File><File>Art/CmeRiverSED1.dds</File><File>Art/CmeRiverSED2.dds</File><File>Art/CmeRiverSW.dds</File><File>Art/CmeRiverSWD1.dds</File><File>Art/CmeRiverSWD2.dds</File><File>Art/CmeRiverED0.dds</File><File>Art/CmeRiverSED0.dds</File><File>Art/CmeRiverSWD0.dds</File><File>Art/TopBarCMEButton.dds</File></ImportFiles><UpdateText id="AddLocalization"><File>CTE_UI_TEXT.xml</File><File>CTE_UI_TEXT_ja_JP.xml</File></UpdateText><ImportFiles id="CmeUiImport"><File>CTE_UI_Pulldowns.lua</File><File>CTE_UI_PulldownsHelper.lua</File></ImportFiles></InGameActions>]]></InGameActionData>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Art\CmeRiverE.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverED0.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverED1.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverED2.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSE.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSED0.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSED1.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSED2.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSW.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSWD0.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSWD1.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\CmeRiverSWD2.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Art\TopBarCMEButton.dds">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CME_WonderGen.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_Gameplay.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_UI.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_UI.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_UI_Pulldowns.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_UI_PulldownsHelper.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_UI_TEXT.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CTE_UI_TEXT_ja_JP.xml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Art" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
